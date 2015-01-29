@@ -20,14 +20,34 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Project name</a>
+				<a class="navbar-brand" href="#">TigerTrade</a>
 			</div>
+			
+			<nav class="collapse navbar-collapse bs-navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active">
+					<a href="#">Home</a>
+					</li>
+					<li>
+					<a href="#">Market</a>
+					</li>
+					<li>
+					<a href="#">Components</a>
+					</li>
+					<li>
+					<a href="#">JavaScript</a>
+					</li>
+					<li>
+					<a href="#">Customize</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</nav>	
 	
 	<?php echo $content_for_layout ?>
 
-	<div> Footer </div>
+	<div>Page rendered in <strong>{elapsed_time}</strong> seconds</div>
 	
 	<script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
