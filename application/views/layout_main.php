@@ -41,6 +41,10 @@
 					<a href="#">Customize</a>
 					</li>
 				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" >Register</a></li>
+					<li><a href="#" >Login</a></li>
+				</ul>
 			</nav>
 		</div>
 	</nav>	
