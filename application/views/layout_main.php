@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title><?php $title_for_layout ?></title>
-	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge;text/html;charset=utf-8">
 	<!-- <link rel="stylesheet" href="/css/main.css" type="text/css" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
@@ -10,29 +10,26 @@
 
 </head>
 <body>
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Project name</a>
+			</div>
+		</div>
+	</nav>	
+	
 	<div class="container" >
-		<!--
-		<div class="navbar navbar-fixed-top" >
-			<div class="navbar-inner">
-			<a class="brand" href="#">Title</a>
-				<ul class="nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-				</ul>
-			</div>
-		</div>
-		-->
-		<div class="row" >
-			<div class="span2" >
-				<p>This is Menu</p>
-			</div>
-			<div class="span10" >
-				<?php echo $content_for_layout ?>
-			</div>
-		</div>
-		<div> Footer </div>
+		<?php echo $content_for_layout ?>
 	</div>
+	
+	<div> Footer </div>
 	
 	<script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
