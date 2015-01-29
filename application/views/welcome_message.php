@@ -1,6 +1,3 @@
-
-
-
 <div class="hero-unit">
 	<h1>Welcome to CodeIgniter!</h1>
 	
