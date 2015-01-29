@@ -26,7 +26,10 @@
 		</div>
 		-->
 		<div class="row-fluid" >
-			<div class="span12" >
+			<div class="span2" >
+				<p>This is Menu</p>
+			</div>
+			<div class="span10" >
 				<?php echo $content_for_layout ?>
 			</div>
 		</div>
