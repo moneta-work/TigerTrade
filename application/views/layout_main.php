@@ -7,12 +7,11 @@
     
     <link href="<?php echo base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/font-awesome.min.css') ?>" rel="stylesheet">
-    <link href="<?php echo base_url('assets/css/f.css') ?>" rel="stylesheet">
 	<script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
 </head>
 <body>
-	<div class="container-fluid" >
+	<div class="container" >
 		<!--
 		<div class="navbar navbar-fixed-top" >
 			<div class="navbar-inner">
@@ -25,7 +24,7 @@
 			</div>
 		</div>
 		-->
-		<div class="row-fluid" >
+		<div class="row" >
 			<div class="span2" >
 				<p>This is Menu</p>
 			</div>
@@ -33,7 +32,7 @@
 				<?php echo $content_for_layout ?>
 			</div>
 		</div>
-		<div id="footer" > Footer </div>
+		<div> Footer </div>
 	</div>
 </body>
 </html>
