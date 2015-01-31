@@ -76,10 +76,10 @@
 					<p class="text-center">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
 				</div>
 				<div class="col-xs-4">
-					<p class="text-center"><a href="#">Back to top</a></p>
+					<p class="text-center"><a href="#">Back to top</a><br/><a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
 				</div>
 				<div class="col-xs-4">
-					<p class="text-center">&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+					<p class="text-center">&copy; 2015 TigerTrade Capstone Team</p>
 				</div>
 			</div>
 		</div>
