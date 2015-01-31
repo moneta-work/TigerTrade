@@ -70,13 +70,13 @@
 	<footer class="footer">
 		<div class="container text-muted">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class=".col-sm-4">
 					<p>Page rendered in <strong>{elapsed_time}</strong> seconds</p>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-sm-4">
 					<p class="text-center"><a href="#">Back to top</a></p>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-sm-4">
 					<p class="text-right">&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
 				</div>
 			</div>
