@@ -28,8 +28,17 @@
 					<li class="active">
 					<a href="#">Home</a>
 					</li>
-					<li>
-					<a href="#">Market</a>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Market <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">All</a></li>
+							<li><a href="#">For Sale</a></li>
+							<li><a href="#">Services</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Search/a></li>
+							<li class="divider"></li>
+							<li><a href="#">Filter</a></li>
+						</ul>
 					</li>
 					<li>
 					<a href="#">About</a>
