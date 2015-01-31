@@ -35,7 +35,7 @@
 							<li><a href="#">For Sale</a></li>
 							<li><a href="#">Services</a></li>
 							<li class="divider"></li>
-							<li><a href="#">Search/a></li>
+							<li><a href="#">Search</a></li>
 							<li class="divider"></li>
 							<li><a href="#">Filter</a></li>
 						</ul>
