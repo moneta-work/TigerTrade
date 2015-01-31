@@ -79,7 +79,7 @@
 					<p class="text-center"><a href="#">Back to top</a><br/><a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
 				</div>
 				<div class="col-xs-4">
-					<p class="text-center">&copy; 2015 TigerTrade Capstone Team</p>
+					<p class="text-center">&copy; 2015 TigerTrade Dev Team</p>
 				</div>
 			</div>
 		</div>
