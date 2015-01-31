@@ -82,7 +82,7 @@
 					</p>
 				</div>
 				<div class="col-xs-4">
-					<p class="text-center">&copy; 2015 TigerTrade Dev Team</p>
+					<p class="text-center">&copy; 2015 TigerTrade Team</p>
 				</div>
 			</div>
 		</div>
