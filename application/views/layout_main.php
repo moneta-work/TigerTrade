@@ -66,6 +66,7 @@
 	      <!-- FOOTER -->
 	<div class="container">
 		<footer class="footer">
+			<div class="container">
 			<div class="row">
 				<div class="col-lg-4">
 					<p>Page rendered in <strong>{elapsed_time}</strong> seconds</p>
@@ -76,6 +77,7 @@
 				<div class="col-lg-4">
 					<p class="text-right">&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
 				</div>
+			</div>
 		</footer>
 	</div>
 	
