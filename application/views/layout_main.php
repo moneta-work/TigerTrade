@@ -70,7 +70,7 @@
 	<br/>
 	<br/>
 	<footer class="footer">
-		<div class="container-fluid text-muted">
+		<div class="container text-muted">
 			<div class="row">
 				<div class="col-xs-4">
 					<p class="text-center">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
