@@ -49,6 +49,9 @@
 					<li>
 					<a href="#">Customize</a>
 					</li>
+					<li>
+					Hi, <strong><?php echo $username; ?></strong>! <?php echo anchor('/auth/logout/', 'Logout'); ?>
+					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#">Register</a></li>
