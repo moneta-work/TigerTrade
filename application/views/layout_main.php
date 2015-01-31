@@ -11,8 +11,8 @@
 
 </head>
 <body>
-
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+<!--
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -49,6 +49,42 @@
 			</nav>
 		</div>
 	</nav>	
+-->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+	    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">TigerTrade</a>
+			</div>
+		</div>
+		<div class="collapse navbar-collapse" id="example-navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Market</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Buy</a></li>
+						<li><a href="#">Sell</a></li>
+						<li><a href="#">Category</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Search</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Filter</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Register</a></li>
+						<li><a href="#">Login</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
 	
 	<?php echo $content_for_layout ?>
 
