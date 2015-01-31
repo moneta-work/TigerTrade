@@ -65,7 +65,7 @@
 	
       <!-- FOOTER -->
 	<footer class="footer">
-		<div class="container">
+		<div class="container text-muted">
 			<div class="row">
 				<div class="col-lg-4">
 					<p>Page rendered in <strong>{elapsed_time}</strong> seconds</p>
