@@ -11,10 +11,8 @@
 
 </head>
 <body>
-	<!-- MAIN NAVIGATION -->
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
-			<!-- HEADER/MOBILE NAVIGATION TOGGLE -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span>
@@ -24,13 +22,12 @@
 				</button>
 				<a class="navbar-brand" href="#">TigerTrade</a>
 			</div>
-			<!-- MENU OPTIONS -->
+			
 			<nav class="collapse navbar-collapse bs-navbar-collapse" id="navbar">
 				<ul class="nav navbar-nav">
 					<li class="active">
 					<a href="#">Home</a>
 					</li>
-					<!-- DROPDOWN BUTTON -->
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Market <b class="caret"></b></a>
 						<ul class="dropdown-menu">
@@ -52,9 +49,6 @@
 					<li>
 					<a href="#">Customize</a>
 					</li>
-					<li>
-					Hi, <strong><?php echo $username; ?></strong>! <?php echo anchor('/auth/logout/', 'Logout'); ?>
-					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#">Register</a></li>
@@ -65,14 +59,6 @@
 	</nav>	
 	
 	<?php echo $content_for_layout ?>
-
-      <!-- FOOTER -->
-      <footer>
-	    <p>Page rendered in <strong>{elapsed_time}</strong> seconds</p>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 TigerTrade Capstone Team &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
 
 	<div>Page rendered in <strong>{elapsed_time}</strong> seconds</div>
 	
