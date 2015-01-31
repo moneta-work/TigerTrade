@@ -63,7 +63,10 @@
 	
 	<?php echo $content_for_layout ?>
 	
-      <!-- FOOTER -->
+    <!-- FOOTER -->
+	<br/>
+	<br/>
+	<br/>
 	<footer class="footer">
 		<div class="container text-muted">
 			<div class="row">
