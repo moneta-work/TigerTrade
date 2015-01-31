@@ -28,13 +28,13 @@ body > .container {
   
 }
 .container .text-muted {
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .footer > .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 code {
