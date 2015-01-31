@@ -12,6 +12,7 @@
 		<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 	</div>
 </div>
+
 <div class="container">
 	<!-- Three columns of text below the carousel -->
 	<div class="row">

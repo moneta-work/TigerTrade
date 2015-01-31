@@ -64,11 +64,20 @@
 	<?php echo $content_for_layout ?>
 	
 	      <!-- FOOTER -->
-	<footer>
-		<p>Page rendered in <strong>{elapsed_time}</strong> seconds</p>
-		<p class="pull-right"><a href="#">Back to top</a></p>
-		<p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-	</footer>
+	<div class="container">
+		<footer>
+			<div class="row">
+				<div class="col-lg-4">
+					<p>Page rendered in <strong>{elapsed_time}</strong> seconds</p>
+				</div>
+				<div class="col-lg-4">
+					<p class="pull-right"><a href="#">Back to top</a></p>
+				</div>
+				<div class="col-lg-4">
+					<p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+				</div>
+		</footer>
+	</div>
 	
 	<script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
