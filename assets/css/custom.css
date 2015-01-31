@@ -31,10 +31,10 @@ body > .container {
   margin: 20px 0;
 }
 
-.footer > .container > .col-lg-4 {
+.footer > .container {
   padding-right: 15px;
   padding-left: 15px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 code {
