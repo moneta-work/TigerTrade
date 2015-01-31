@@ -85,20 +85,6 @@
 					<p class="text-center">&copy; 2015 TigerTrade Team</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-xs-4">
-					<p class="text-center">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
-				</div>
-				<div class="col-xs-4">
-					<p class="text-center">
-						<!--<a href="#">Back to top</a><br/>-->
-						<a href="#">Terms of Use</a>
-					</p>
-				</div>
-				<div class="col-xs-4">
-					<p class="text-center">&copy; 2015 TigerTrade Team</p>
-				</div>
-			</div>
 		</div>
 	</footer>
 	
