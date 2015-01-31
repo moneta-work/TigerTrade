@@ -41,6 +41,6 @@ code {
   font-size: 80%;
 }
 
-.jumbotron {
+.jumbotron > .container {
 	padding-top: 20px;
 }
