@@ -11,7 +11,7 @@
 
 </head>
 <body>
-
+<!--
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -49,11 +49,10 @@
 			</nav>
 		</div>
 	</nav>	
-	
+-->
 	<nav class="navbar navbar-default" role="navigation">
    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" 
-         data-target="#example-navbar-collapse">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
          <span class="sr-only">Toggle navigation</span>
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
@@ -66,8 +65,7 @@
          <li class="active"><a href="#">iOS</a></li>
          <li><a href="#">SVN</a></li>
          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-               Java <b class="caret"></b>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Java <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
                <li><a href="#">jmeter</a></li>
