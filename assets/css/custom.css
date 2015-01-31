@@ -34,7 +34,7 @@ body > .container {
 .footer > .container > .col-lg-4 {
   padding-right: 15px;
   padding-left: 15px;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 code {
