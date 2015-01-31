@@ -75,10 +75,15 @@
 				<div class="col-xs-5">
 					<p class="text-center">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
 				</div>
-				<div class="col-xs-2">
+				<div class="col-xs-1">
 					<p class="text-center">
 						<!--<a href="#">Back to top</a><br/>-->
-						<a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+						<a href="#">Privacy</a>
+					</p>
+				</div>
+				<div class="col-xs-1">
+					<p class="text-center">
+						<a href="#">Terms</a>
 					</p>
 				</div>
 				<div class="col-xs-5">
