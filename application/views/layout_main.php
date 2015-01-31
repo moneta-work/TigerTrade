@@ -72,16 +72,16 @@
 	<footer class="footer">
 		<div class="container text-muted">
 			<div class="row">
-				<div class="col-xs-4">
+				<div class="col-xs-5">
 					<p class="text-center">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-xs-2">
 					<p class="text-center">
 						<!--<a href="#">Back to top</a><br/>-->
 						<a href="#">Privacy</a> &middot; <a href="#">Terms</a>
 					</p>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-xs-5">
 					<p class="text-center">&copy; 2015 TigerTrade Dev Team</p>
 				</div>
 			</div>
