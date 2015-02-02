@@ -11,6 +11,6 @@ class User extends CI_Controller
 
 	function index()
 	{
-		echo "This will be the user home page";
+		echo "This will be the user home page test";
 	}
 }
