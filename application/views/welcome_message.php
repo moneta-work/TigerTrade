@@ -1,3 +1,4 @@
+Master?
 <div class="jumbotron">
 	<div class="container">
 		<h1>Welcome to TigerTrade!</h1>
