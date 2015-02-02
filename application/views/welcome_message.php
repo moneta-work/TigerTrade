@@ -10,8 +10,6 @@
 		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="http://getbootstrap.com/getting-started/">User Guide</a>.</p>
 		
 		<!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>-->
-		<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-		<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 	</div>
 </div>
 
