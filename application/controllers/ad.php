@@ -11,7 +11,7 @@ class Ad extends CI_Controller
 
 	function index()
 	{
-		echo "This will be the ad controller";
+		$this->layout->view('ad_view');
 	}
 
 	//shows details of a specific ad
@@ -33,10 +33,10 @@ class Ad extends CI_Controller
 	}
 
 	//shows form to create a new ad
-	function new()
-	{
+	//function new()
+	//{
 
-	}
+	//}
 
 	//create an ad
 	function create()
