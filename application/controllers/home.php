@@ -30,7 +30,8 @@ class Home extends CI_Controller {
 		//$this->load->view('header');
 		//$this->load->view('welcome_message');
 		//$this->load->view('footer');
-		$this->layout->view('home');
+		$data['page_title'] = 'Your title';
+		$this->layout->view('home', $data);
 		//$this->layout->view('welcome_message', $data);
 	}
 }
