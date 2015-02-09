@@ -13,7 +13,7 @@
 		<div class="form-group">
 			<label for="title" class="col-sm-2 control-label label-20">Title</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="title" >PRICE OF ITEM</input>
+				<input type="text" class="form-control" id="title" value="PRICE OF ITEM">
 			</div>
 		</div>
 		<div class="form-group">
