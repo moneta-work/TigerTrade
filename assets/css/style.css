@@ -16,7 +16,7 @@
 }
 
 .navbar-default .navbar-brand:hover {
-	color: #bdba42;
+	color: rgba(189, 187, 66, 0.87);
 }
 
 .navbar-default .navbar-nav > .active > a {
