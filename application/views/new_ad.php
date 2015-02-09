@@ -12,7 +12,7 @@
 		<div class="form-group">
 			<label for="price" class="col-sm-2 control-label label-20">price</label>
 			<div class="col-sm-10">
-				<textbox type="text" class="form-control" id="price" placeholder="$0.00">
+				<textarea type="text" class="form-control" id="price" rows="5"></textarea>
 			</div>
 		</div>
 		<div class="form-group">
