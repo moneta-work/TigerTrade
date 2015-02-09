@@ -2,18 +2,18 @@
 
 	<h1>New Ad Form</h1>
 
-	<form>
+	<form class="form-horizontal">
 		<div class="form-group">
-			<label for="exampleInputEmail1">Email address</label>
-			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+			<label for="exampleInputEmail1">Title</label>
+			<input type="email" class="form-control" id="" placeholder="Enter Listing Title">
 		</div>
 		<div class="form-group">
 			<label for="exampleInputPassword1">Password</label>
-			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			<input type="password" class="form-control" id="" placeholder="Password">
 		</div>
 		<div class="form-group">
 			<label for="exampleInputFile">File input</label>
-			<input type="file" id="exampleInputFile">
+			<input type="file" id="">
 			<p class="help-block">Example block-level help text here.</p>
 		</div>
 		<div class="checkbox">
