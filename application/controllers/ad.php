@@ -36,13 +36,15 @@ class Ad extends CI_Controller
 	//shows form to create a new ad
 	function new_ad()
 	{
-		$this->layout->view('new_ad');
+		$data['title'] = 'New Ad';
+		$this->layout->view('new_ad', $data);
 	}
 
 	//shows form to create a new ad
 	function make_offer()
 	{
-		$this->layout->view('make_offer');
+		$data['title'] = 'Make an Offer';
+		$this->layout->view('make_offer', $data);
 	}
 
 	//create an ad
