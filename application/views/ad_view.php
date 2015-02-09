@@ -12,5 +12,5 @@
 	<br>
 	<p>Form for new ad: <a href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a></p>
 	<br>
-	<p>Form for new offer:<a href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a></p>
+	<p>Form for new offer: <a href="<?php echo base_url('/ad/make_offer') ?>">Place an Ad</a></p>
 </div>
