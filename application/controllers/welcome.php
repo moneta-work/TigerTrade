@@ -33,6 +33,13 @@ class Welcome extends CI_Controller {
 		$this->layout->view('home');
 		//$this->layout->view('welcome_message', $data);
 	}
+	
+	public function terms()
+	{
+
+		$this->layout->view('terms');
+		//$this->layout->view('terms', $data);
+	}
 }
 
 /* End of file welcome.php */
