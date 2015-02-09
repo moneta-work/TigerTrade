@@ -5,9 +5,9 @@
 	<!-- <link rel="stylesheet" href="/css/main.css" type="text/css" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <link href="<?php echo base_url('assets/css/custom.css') ?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/font-awesome.min.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/custom.css') ?>" rel="stylesheet">
 
 </head>
 <body>
@@ -50,7 +50,7 @@
 					<a href='<?php echo base_url("/ad") ?>'>Ad</a>
 					</li>
 					<li>
-					<a href="#">Customize</a>
+					<a href='<?php echo base_url("/bad-url") ?>'>404 Page</a>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
@@ -90,5 +90,6 @@
 	
 	<script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
+	<script src="<?php echo base_url('assets/js/back_button.js') ?>"></script>
 </body>
 </html>

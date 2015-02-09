@@ -33,10 +33,10 @@ class Ad extends CI_Controller
 	}
 
 	//shows form to create a new ad
-	//function new()
-	//{
-
-	//}
+	function new_ad()
+	{
+		$this->layout->view('new_ad');
+	}
 
 	//create an ad
 	function create()
