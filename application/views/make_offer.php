@@ -11,15 +11,9 @@
 		
 	<form class="form-horizontal" id="make-offer-form">
 		<div class="form-group">
-			<label for="title" class="col-sm-2 control-label label-20">Title</label>
-			<div class="col-sm-10">
-				<input type="text" class="form-control" id="title" value="$PRICE_OF_ITEM">
-			</div>
-		</div>
-		<div class="form-group">
 			<label for="price" class="col-sm-2 control-label label-20">Price</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="price" placeholder="$0.00">
+				<input type="text" class="form-control" id="price" value="$PRICE_OF_ITEM">
 			</div>
 		</div>
 		<div class="form-group">
