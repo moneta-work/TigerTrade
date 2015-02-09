@@ -3,11 +3,11 @@
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: #cbcbcb;
+	color: rgba(206, 206, 206, 0.93);
 }
 
 .navbar-default .navbar-brand {
-	color: #c2bf55;
+	color: #ded94f;
 }
 
 .navbar-default .navbar-nav > .active > a {
