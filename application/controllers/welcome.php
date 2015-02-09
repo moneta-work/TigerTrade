@@ -22,7 +22,7 @@ class Welcome extends CI_Controller {
 		//$this->load->view('header');
 		//$this->load->view('welcome_message');
 		//$this->load->view('footer');
-		$this->layout->view('welcome_message');
+		$this->layout->view('home');
 		//$this->layout->view('welcome_message', $data);
 	}
 }
