@@ -19,4 +19,14 @@
 		padding-left: 30px;
 	}
 }
+@media (max-width: 700px) {
+	.custom-h1 {
+		padding-left: 20px;
+	}
+}
+@media (max-width: 800px) {
+	.custom-h1 {
+		padding-left: 10px;
+	}
+}
 </style>
