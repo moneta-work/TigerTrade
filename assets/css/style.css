@@ -5,3 +5,7 @@
 .navbar-default .navbar-nav > li > a {
 	color: #cbcbcb;
 }
+
+.navbar-default .navbar-brand {
+	color: #c2bf55;
+}
