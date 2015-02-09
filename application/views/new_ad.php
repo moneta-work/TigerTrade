@@ -4,29 +4,29 @@
 	
 	<form class="form-horizontal">
 		<div class="form-group">
-			<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+			<label for="title" class="col-sm-2 control-label">Title</label>
 			<div class="col-sm-10">
-				<input type="email" class="form-control" id="" placeholder="Email">
+				<input type="text" class="form-control" id="title" placeholder="...">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+			<label for="price" class="col-sm-2 control-label">price</label>
 			<div class="col-sm-10">
-				<input type="password" class="form-control" id="" placeholder="Password">
+				<input type="number" class="form-control" id="price" placeholder="$0.00">
 			</div>
 		</div>
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
 				<div class="checkbox">
 					<label>
-						<input type="checkbox"> Remember me
+						<input type="checkbox"> Agree to Terms
 					</label>
 				</div>
 			</div>
 		</div>
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
-				<button type="submit" class="btn btn-default">Sign in</button>
+				<button type="submit" class="btn btn-default">Submit</button>
 			</div>
 		</div>
 	</form>
