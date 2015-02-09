@@ -12,7 +12,7 @@
 </head>
 <body>
 	<!-- MAIN NAVIGATION -->
-	<?php if (!isset($menu)) { echo "Menu not included in controller construct."; } else { $menu } ?>
+	<?php if (!isset($menu)) { echo "Menu not included in controller construct."; } else { $menu; } ?>
 	
 	<?php echo $content_for_layout ?>
 	
