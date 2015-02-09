@@ -5,15 +5,15 @@
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
 		<div class="col-xs-11">
-			<h1 class="custom-h1">New Ad Form</h1>
+			<h1 class="custom-h1">Make Offer: LISTING_TITLE_HERE</h1>
 		</div>
 	</div>
 		
-	<form class="form-horizontal" id="ad-form">
+	<form class="form-horizontal" id="make-offer-form">
 		<div class="form-group">
 			<label for="title" class="col-sm-2 control-label label-20">Title</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="title" placeholder="...">
+				<input type="text" class="form-control" id="title" >PRICE OF ITEM</input>
 			</div>
 		</div>
 		<div class="form-group">
