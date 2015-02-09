@@ -39,25 +39,3 @@
 	</form>
 
 </div>
-
-<style>
-
-#ad-form {
-	margin-top: 20px;
-}
-
-.label-20 {
-	font-size: 20px;
-}
-
-.description-box {
-    resize: none;
-}
-
-</style>
-
-<script>
-function goBack() {
-    window.history.back()
-}
-</script>
