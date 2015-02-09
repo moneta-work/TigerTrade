@@ -50,7 +50,7 @@
 					<a href='<?php echo base_url("/ad") ?>'>Ad</a>
 					</li>
 					<li>
-					<a href='<?php echo base_url("/bad-url") ?>'>404 Page</a>
+					<a href='<?php echo base_url("/bad-url") ?>'>404 Test</a>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
