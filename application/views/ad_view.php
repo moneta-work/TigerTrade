@@ -14,17 +14,17 @@
 
 <style>
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
 	.custom-h1 {
 		padding-left: 30px;
 	}
 }
-@media (max-width: 700px) {
+@media (min-width: 600px) and (max-width: 699px) {
 	.custom-h1 {
 		padding-left: 20px;
 	}
 }
-@media (max-width: 800px) {
+@media (min-width: 700px) and (max-width: 800px) {
 	.custom-h1 {
 		padding-left: 10px;
 	}
