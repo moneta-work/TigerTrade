@@ -45,7 +45,3 @@ code {
 .jumbotron {
 	padding-top: 0px !important;
 }
-
-.jumbotron > .container {
-	padding-bottom: 10px;
-}
