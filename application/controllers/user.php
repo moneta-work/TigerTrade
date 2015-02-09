@@ -7,10 +7,12 @@ class User extends CI_Controller
 		parent::__construct();
 
 		$this->load->helper('url');
+		$data['menu'] = $this->load->view('shared/menu');
 	}
 
 	function index()
 	{
-		$this->layout->view('user_home');
+		$data['title'] = 'User Home';
+		$this->layout->view('user/user_home', $data);
 	}
 }

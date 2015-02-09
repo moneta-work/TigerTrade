@@ -9,5 +9,8 @@
 	</div>
 	
 	<p>Will this be the controller for single ad views?</p>
-	<a href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a>
+	<br>
+	<p>Form for new ad: <a href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a></p>
+	<br>
+	<p>Form for new offer: <a href="<?php echo base_url('/ad/make_offer') ?>">Make an Offer</a></p>
 </div>

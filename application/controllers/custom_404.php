@@ -4,12 +4,13 @@ class Custom_404 extends CI_Controller
     public function __construct() 
     {
         parent::__construct(); 
+        $data['menu'] = $this->load->view('shared/menu');
     } 
 
     public function index() 
     { 
-        $this->output->set_status_header('404'); 
-        $this->layout->view('custom_404');
+        $data['title'] = '404 Not Found';
+        $this->layout->view('error/custom_404', $data);
     } 
 } 
 ?> 

@@ -23,6 +23,7 @@ class Content extends CI_Controller {
 		parent::__construct();
 
 		$this->load->helper('url');
+		$data['menu'] = $this->load->view('shared/menu');
 	}
 
 	public function terms()
@@ -30,7 +31,8 @@ class Content extends CI_Controller {
 		//$this->load->view('header');
 		//$this->load->view('welcome_message');
 		//$this->load->view('footer');
-		$this->layout->view('terms');
+		$data['title'] = 'Terms';
+		$this->layout->view('terms/terms', $data);
 		//$this->layout->view('welcome_message', $data);
 	}
 }

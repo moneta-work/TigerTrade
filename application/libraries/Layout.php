@@ -10,7 +10,7 @@ class Layout
     function __construct()
     {
         $this->obj =& get_instance();
-        $this->layout = 'layout_main';
+        $this->layout = 'shared/layout_main';
     }
 
     function setLayout($layout)
