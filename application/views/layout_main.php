@@ -44,7 +44,7 @@
 						</ul>
 					</li>
 					<li>
-					<a href="#">About</a>
+					<a href=<?php base_url("/user") ?>>User</a>
 					</li>
 					<li>
 					<a href="#">JavaScript</a>
