@@ -34,13 +34,6 @@ class Home extends CI_Controller {
 		//$this->layout->view('welcome_message', $data);
 	}
 	
-	function terms()
-	{
-
-		$this->layout->view('terms');
-		//$this->layout->view('terms', $data);
-	}
-	
 	public function terms()
 	{
 
