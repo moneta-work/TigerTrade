@@ -60,7 +60,7 @@
 			</nav>
 		</div>
 	</nav>
-	<?php if (isset($menu)) { $menu } ?>
+	<?php if (isset($menu)) $menu ?>
 	
 	<?php echo $content_for_layout ?>
 	
