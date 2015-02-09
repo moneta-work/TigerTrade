@@ -9,3 +9,7 @@
 .navbar-default .navbar-brand {
 	color: #c2bf55;
 }
+
+.navbar-default .navbar-nav > .active > a {
+	color: #eee;
+}
