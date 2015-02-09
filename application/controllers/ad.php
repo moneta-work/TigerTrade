@@ -7,10 +7,16 @@ class Ad extends CI_Controller
 		parent::__construct();
 
 		$this->load->helper('url');
+		$this->load->library('breadcrumbcomponent');
 	}
 
 	function index()
 	{
+		
+				
+		$this->breadcrumbcomponent->add('Home', base_url());
+		$this->breadcrumbcomponent->add('Ad', base_url('/ad'));		
+		$this->breadcrumbcomponent->add('New Ad', base_url('/ad/new_ad'));
 		$this->layout->view('ad_view');
 	}
 
