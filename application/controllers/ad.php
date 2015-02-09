@@ -12,7 +12,7 @@ class Ad extends CI_Controller
 	function index()
 	{
 		$data['title'] = 'Ad Home';
-		$this->layout->view('ad_view', $data);
+		$this->layout->view('ad/ad_view', $data);
 	}
 
 	//shows details of a specific ad
@@ -37,14 +37,14 @@ class Ad extends CI_Controller
 	function new_ad()
 	{
 		$data['title'] = 'New Ad';
-		$this->layout->view('new_ad', $data);
+		$this->layout->view('forms/new_ad', $data);
 	}
 
 	//shows form to create a new ad
 	function make_offer()
 	{
 		$data['title'] = 'Make an Offer';
-		$this->layout->view('make_offer', $data);
+		$this->layout->view('forms/make_offer', $data);
 	}
 
 	//create an ad
