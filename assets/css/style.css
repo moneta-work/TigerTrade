@@ -2,6 +2,6 @@
 	background-color: rgba(60, 57, 57, 0.91);
 }
 
-.navbar > a, .navbar-default > a, .navbar-fixed-top > a {
+.navbar-default .navbar-nav > li > a {
 	color: white;
 }
