@@ -15,6 +15,10 @@
 	color: #ded94f;
 }
 
+.navbar-default .navbar-brand:hover {
+	color: #bdba42;
+}
+
 .navbar-default .navbar-nav > .active > a {
 	background-color: #eee;
 }
