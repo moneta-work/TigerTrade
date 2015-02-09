@@ -7,7 +7,7 @@ class Ad extends CI_Controller
 		parent::__construct();
 
 		$this->load->helper('url');
-		$this->load->library('breadcrumbcomponent');
+		$this->load->library('breadcrumb');
 	}
 
 	function index()
