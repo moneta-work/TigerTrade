@@ -12,7 +12,7 @@
 </head>
 <body>
 	<!-- MAIN NAVIGATION -->
-	<?php if (isset($menu)) { $menu } else { echo "Menu not included in $data" } ?>
+	<?php if (isset($menu)) { $menu; } else { echo "Menu not included in $data"; } ?>
 	
 	<?php echo $content_for_layout ?>
 	
