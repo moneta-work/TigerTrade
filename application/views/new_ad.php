@@ -12,7 +12,7 @@
 		<div class="form-group">
 			<label for="price" class="col-sm-2 control-label label-20">price</label>
 			<div class="col-sm-10">
-				<textarea type="text" class="form-control" id="price" rows="5"></textarea>
+				<textarea type="text" class="form-control description-box" id="price" rows="5"></textarea>
 			</div>
 		</div>
 		<div class="form-group">
@@ -41,6 +41,10 @@
 
 .label-20 {
 	font-size: 20px;
+}
+
+.description-box {
+    resize: none;
 }
 
 </style>
