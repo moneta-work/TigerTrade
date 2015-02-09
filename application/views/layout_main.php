@@ -22,13 +22,13 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">TigerTrade</a>
+				<a class="navbar-brand" href='<?php echo base_url() ?>'>TigerTrade</a>
 			</div>
 			<!-- MENU OPTIONS -->
 			<nav class="collapse navbar-collapse bs-navbar-collapse" id="navbar">
 				<ul class="nav navbar-nav">
 					<li class="active">
-					<a href="#">Home</a>
+					<a href='<?php echo base_url() ?>'>Home</a>
 					</li>
 					<!-- DROPDOWN BUTTON -->
 					<li class="dropdown">
@@ -47,7 +47,7 @@
 					<a href='<?php echo base_url("/user") ?>'>User</a>
 					</li>
 					<li>
-					<a href="#">JavaScript</a>
+					<a href='<?php echo base_url("/ad") ?>'>Ad</a>
 					</li>
 					<li>
 					<a href="#">Customize</a>
