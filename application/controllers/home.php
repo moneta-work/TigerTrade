@@ -23,6 +23,7 @@ class Home extends CI_Controller {
 		parent::__construct();
 
 		$this->load->helper('url');
+		$data['menu'] = $this->load->view('shared/menu');
 	}
 
 	public function index()
@@ -31,7 +32,6 @@ class Home extends CI_Controller {
 		//$this->load->view('welcome_message');
 		//$this->load->view('footer');
 		$data['title'] = 'Home';
-		$data['menu'] = $this->load->view('shared/menu');
 		$this->layout->view('home/home', $data);
 		//$this->layout->view('welcome_message', $data);
 	}

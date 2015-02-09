@@ -4,6 +4,7 @@ class Custom_404 extends CI_Controller
     public function __construct() 
     {
         parent::__construct(); 
+        $data['menu'] = $this->load->view('shared/menu');
     } 
 
     public function index() 
