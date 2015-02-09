@@ -1,10 +1,12 @@
 <div class="container">
 	
-	<div class="col-sm-1">
-		<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
-	</div>
-	<div class="col-md-11">
-		<h1>New Ad Form</h1>
+	<div class="row">
+		<div class="col-sm-1">
+			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
+		</div>
+		<div class="col-md-11">
+			<h1>New Ad Form</h1>
+		</div>
 	</div>
 		
 	<form class="form-horizontal" id="ad-form">
