@@ -18,3 +18,7 @@
 .navbar-default .navbar-nav > .active > a {
 	background-color: #eee;
 }
+
+.navbar-default .navbar-nav > .active > a:hover {
+	background-color: #eee;
+}
