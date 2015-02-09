@@ -2,7 +2,7 @@
 
 	<h1>New Ad Form</h1>
 	
-	<form class="form-horizontal" style="width: 80%">
+	<form class="form-horizontal" style="">
 		<div class="form-group">
 			<label for="title" class="col-sm-2 control-label">Title</label>
 			<div class="col-sm-10">
