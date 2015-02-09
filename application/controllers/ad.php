@@ -7,7 +7,7 @@ class Ad extends CI_Controller
 		parent::__construct();
 
 		$this->load->helper('url');
-		//$data['menu'] = $this->load->view('shared/menu');
+		$data['menu'] = $this->load->view('shared/menu');
 	}
 
 	function index()
