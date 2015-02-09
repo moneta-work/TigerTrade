@@ -4,7 +4,7 @@
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
 		<div class="col-xs-11">
-			<h1>Ad Index</h1>
+			<h1 class="page-header">Ad Index</h1>
 		</div>
 	
 	</div>
@@ -14,8 +14,9 @@
 
 <style>
 
-h1 {
-	padding-left: 30px;
+@media (max-width: 600px) {
+	.page-header {
+		padding-left: 30px;
+	}
 }
-
 </style>
