@@ -15,7 +15,7 @@
 <style>
 
 h1 {
-	padding-left: 10px;
+	padding-left: 30px;
 }
 
 </style>
