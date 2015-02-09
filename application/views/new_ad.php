@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="price" class="col-sm-2 control-label label-20">price</label>
+			<label for="price" class="col-sm-2 control-label label-20">Description</label>
 			<div class="col-sm-10">
 				<textarea type="text" class="form-control description-box" id="price" rows="5"></textarea>
 			</div>
@@ -41,7 +41,7 @@
 <style>
 
 #ad-form {
-	
+	margin-top: 20px;
 }
 
 .label-20 {
