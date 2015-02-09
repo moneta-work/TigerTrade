@@ -17,9 +17,15 @@
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="price" class="col-sm-2 control-label label-20">Description</label>
+			<label for="price" class="col-sm-2 control-label label-20">Price</label>
 			<div class="col-sm-10">
-				<textarea type="text" class="form-control description-box" id="price" rows="5"></textarea>
+				<input type="text" class="form-control" id="price" placeholder="$0.00">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="description" class="col-sm-2 control-label label-20">Description</label>
+			<div class="col-sm-10">
+				<textarea type="text" class="form-control description-box" id="description" rows="5"></textarea>
 			</div>
 		</div>
 		<div class="form-group">
