@@ -30,7 +30,8 @@ class Content extends CI_Controller {
 		//$this->load->view('header');
 		//$this->load->view('welcome_message');
 		//$this->load->view('footer');
-		$this->layout->view('terms');
+		$data['title'] = 'Terms';
+		$this->layout->view('terms', $data);
 		//$this->layout->view('welcome_message', $data);
 	}
 }

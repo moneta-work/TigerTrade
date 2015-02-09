@@ -11,6 +11,7 @@ class User extends CI_Controller
 
 	function index()
 	{
-		$this->layout->view('user_home');
+		$data['title'] = 'User Home';
+		$this->layout->view('user_home', $data);
 	}
 }
