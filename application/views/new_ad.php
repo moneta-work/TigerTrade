@@ -2,7 +2,7 @@
 
 	<h1>New Ad Form</h1>
 	
-	<form class="form-horizontal" style="">
+	<form class="form-horizontal" id="ad-form">
 		<div class="form-group">
 			<label for="title" class="col-sm-2 control-label">Title</label>
 			<div class="col-sm-10">
@@ -32,3 +32,15 @@
 	</form>
 
 </div>
+
+<style>
+
+#ad-form {
+	
+}
+
+label {
+	font-size: 20px;
+}
+
+</style>
