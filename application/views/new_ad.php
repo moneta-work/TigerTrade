@@ -1,5 +1,7 @@
 <div class="container">
-
+	
+	<button class="btn btn-default" onclick="goBack()">Back</button>
+	
 	<h1>New Ad Form</h1>
 	
 	<form class="form-horizontal" id="ad-form">
