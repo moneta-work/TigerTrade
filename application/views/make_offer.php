@@ -18,9 +18,9 @@
 		</div>
 		<div class="form-group">
 			<label for="description" class="col-sm-2 control-label label-20">Message</label>
-			<p>Blah<p>
 			<div class="col-sm-10">
 				<textarea type="text" class="form-control description-box" id="description" rows="5"></textarea>
+				<p class="help-block">Write a message for the seller, including good times to meet.</p>
 			</div>
 		</div>
 		<div class="form-group">
