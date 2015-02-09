@@ -47,10 +47,5 @@ code {
 }
 
 .back-button {
-    height:20px; 
-    width:100px; 
-    margin: -20px -50px; 
-    position:relative;
-    top:50%; 
-    left:50%;
+	margin: 0 auto;
 }

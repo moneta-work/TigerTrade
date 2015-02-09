@@ -2,7 +2,7 @@
 	
 	<h1>New Ad Form</h1>
 	
-	<p><button class="back-button btn btn-default" onclick="goBack()">Back</button></p>
+	<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 	
 	<form class="form-horizontal" id="ad-form">
 		<div class="form-group">
