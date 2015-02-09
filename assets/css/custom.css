@@ -24,24 +24,33 @@ body {
 /* Not required for template or sticky footer method. */
 
 body > .container {
-  padding-top: 10px;
-  padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
   
 }
 .container .text-muted {
-  margin: 20px 0;
+	margin: 20px 0;
 }
 
 .footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 15px;
 }
 
 code {
-  font-size: 80%;
+	font-size: 80%;
 }
 
 .jumbotron {
 	padding-top: 0px !important;
+}
+
+.back-button {
+    height:20px; 
+    width:100px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
 }
