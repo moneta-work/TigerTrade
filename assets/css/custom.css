@@ -7,7 +7,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 .footer {
   position: absolute;
@@ -43,4 +43,6 @@ code {
 }
 
 .jumbotron > .container {
+	padding-bottom: 10px;
+	padding-top: 0px;
 }
