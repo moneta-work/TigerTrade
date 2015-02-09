@@ -5,7 +5,7 @@
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
 		<div class="col-md-11">
-			<h1>New Ad Form</h1>
+			<h1 class="custom-h1">New Ad Form</h1>
 		</div>
 	</div>
 		
