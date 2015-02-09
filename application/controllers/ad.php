@@ -11,7 +11,8 @@ class Ad extends CI_Controller
 
 	function index()
 	{
-		$this->layout->view('ad_view');
+		$data['title'] = 'Ad Home';
+		$this->layout->view('ad_view', $data);
 	}
 
 	//shows details of a specific ad
