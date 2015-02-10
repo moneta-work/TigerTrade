@@ -53,7 +53,7 @@
 			<div class="col-sm-offset-2 col-sm-10">
 				<div class="checkbox">
 					<label>
-						<input type="checkbox" required="true"> <a href="<?php echo base_url('/content/terms') ?>">I Agree to the Terms & Conditions</a> and acknowledge that accepting this offer will reveal my contact information to the interested buyer.
+						<input type="checkbox" required="true"> <a href="<?php echo base_url('/content/terms') ?>">I Agree to the Terms & Conditions</a>
 					</label>
 				</div>
 			</div>
