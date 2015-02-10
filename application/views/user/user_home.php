@@ -8,5 +8,7 @@
 		</div>
 	</div>
 	
+	<hr>
+	
 	<p>This will be the homepage for logged in users.</p>
 </div>

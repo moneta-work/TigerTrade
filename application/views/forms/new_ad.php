@@ -8,6 +8,8 @@
 			<h1 class="">New Ad Form</h1>
 		</div>
 	</div>
+	
+	<hr>
 		
 	<form class="form-horizontal" id="ad-form">
 		<div class="form-group">
@@ -28,6 +30,9 @@
 				<textarea type="text" class="form-control description-box" id="description" rows="5"></textarea>
 			</div>
 		</div>
+		
+		<hr>
+		
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
 				<div class="checkbox">

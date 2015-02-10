@@ -31,7 +31,7 @@
 				<div class="col-xs-4">
 					<p class="text-center">
 						<!--<a href="#">Back to top</a><br/>-->
-						<a href="#">Terms of Use</a>
+						<a href="<?php echo base_url('content/terms') ?>">Terms of Use</a>
 					</p>
 				</div>
 				<div class="col-xs-4">
@@ -44,5 +44,6 @@
 	<script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/back_button.js') ?>"></script>
+	<script src="<?php echo base_url('assets/js/show_hidden_message.js') ?>"></script>
 </body>
 </html>
