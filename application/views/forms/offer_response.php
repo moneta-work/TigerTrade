@@ -29,7 +29,7 @@
 
 		<div class="form-group">
 			<label for="price" class="col-sm-2 control-label label-20">Offer Decision</label>
-			<div class="col-sm-offset-2 col-sm-10">
+			<div class="col-sm-10">
 				<div class="radio">
 					<label>
 						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
