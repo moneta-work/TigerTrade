@@ -1,12 +1,7 @@
-<div class="container padding-top-20">
 
-<h1>
-	Web Site Terms and Conditions of Use
-</h1>
-
-<h2>
-	1. Terms
-</h2>
+<h1>TigerTrade Web Site Terms and Conditions of Use</h1>
+<hr>
+<h2>1. Terms</h2>
 
 <p>
 	By accessing this web site, you are agreeing to be bound by these 
@@ -17,9 +12,7 @@
 	protected by applicable copyright and trade mark law.
 </p>
 
-<h2>
-	2. Use License
-</h2>
+<h2>2. Use License</h2>
 
 <ol type="a">
 	<li>
@@ -41,9 +34,7 @@
 	</li>
 </ol>
 
-<h2>
-	3. Disclaimer
-</h2>
+<h2>3. Disclaimer</h2>
 
 <ol type="a">
 	<li>
@@ -51,55 +42,41 @@
 	</li>
 </ol>
 
-<h2>
-	4. Limitations
-</h2>
+<h2>4. Limitations</h2>
 
 <p>
 	In no event shall TigerTrade or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption,) arising out of the use or inability to use the materials on TigerTrade's Internet site, even if TigerTrade or a TigerTrade authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
 </p>
 			
-<h2>
-	5. Revisions and Errata
-</h2>
+<h2>5. Revisions and Errata</h2>
 
 <p>
 	The materials appearing on TigerTrade's web site could include technical, typographical, or photographic errors. TigerTrade does not warrant that any of the materials on its web site are accurate, complete, or current. TigerTrade may make changes to the materials contained on its web site at any time without notice. TigerTrade does not, however, make any commitment to update the materials.
 </p>
 
-<h2>
-	6. Links
-</h2>
+<h2>6. Links</h2>
 
 <p>
 	TigerTrade has not reviewed all of the sites linked to its Internet web site and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TigerTrade of the site. Use of any such linked web site is at the user's own risk.
 </p>
 
-<h2>
-	7. Site Terms of Use Modifications
-</h2>
+<h2>7. Site Terms of Use Modifications</h2>
 
 <p>
 	TigerTrade may revise these terms of use for its web site at any time without notice. By using this web site you are agreeing to be bound by the then current version of these Terms and Conditions of Use.
 </p>
 
-<h2>
-	8. Governing Law
-</h2>
+<h2>8. Governing Law</h2>
 
 <p>
 	Any claim relating to TigerTrade's web site shall be governed by the laws of the State of Missouri without regard to its conflict of law provisions.
 </p>
 
-<p>
-	General Terms and Conditions applicable to Use of a Web Site.
-</p>
+<p>General Terms and Conditions applicable to Use of a Web Site.</p>
 
+<hr>
 
-
-<h1>
-	Privacy Policy
-</h2>
+<h1>Privacy Policy</h1>
 
 <p>
 	Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. The following outlines our privacy policy.
@@ -134,4 +111,3 @@
 </p>		
 
 			
-</div>
