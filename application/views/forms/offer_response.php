@@ -24,6 +24,26 @@
 				<p class="help-block">Write a message for the seller, including good times to meet.</p>
 			</div>
 		</div>
+
+
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<div class="radio">
+					<label>
+						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+						Accept Offer
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+						Decline Offer
+					</label>
+				</div>
+			</div>
+		</div>
+
+
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
 				<div class="checkbox">
