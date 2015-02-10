@@ -22,8 +22,15 @@
 		<div class="form-group">
 			<label for="description" class="col-sm-2 control-label label-20">Message</label>
 			<div class="col-sm-10">
+				<textarea type="text" class="form-control description-box" id="description" rows="5" disabled=""></textarea>
+				<p class="help-block">Offer message from the buyer.</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="description" class="col-sm-2 control-label label-20">Reply</label>
+			<div class="col-sm-10">
 				<textarea type="text" class="form-control description-box" id="description" rows="5"></textarea>
-				<p class="help-block">Write a message for the seller, including good times to meet.</p>
+				<p class="help-block">Write a message for the buyer, including good times to meet.</p>
 			</div>
 		</div>
 
