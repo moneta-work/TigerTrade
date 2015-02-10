@@ -25,6 +25,9 @@
 				<p class="help-block">Write a message for the seller, including good times to meet.</p>
 			</div>
 		</div>
+		
+		<hr>
+		
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
 				<div class="checkbox">

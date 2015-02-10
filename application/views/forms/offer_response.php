@@ -11,8 +11,6 @@
 			<h3 class="">LISTING_TITLE_HERE</h3>
 		</div>
 	</div>
-	
-	<hr>
 		
 	<form class="form-horizontal" id="offer-response-form">
 		<div class="form-group">
