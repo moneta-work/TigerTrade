@@ -1,4 +1,4 @@
-
+<script src="<?php echo base_url('assets/js/show_hidden.js') ?>"></script>
 
 <div class="container">
 	
