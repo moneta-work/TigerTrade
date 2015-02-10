@@ -5,7 +5,7 @@
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
 		<div class="col-xs-11">
-			<h1 class="custom-h1">Make Offer: LISTING_TITLE_HERE</h1>
+			<h1 class="back-button-heading">Make Offer: LISTING_TITLE_HERE</h1>
 		</div>
 	</div>
 		

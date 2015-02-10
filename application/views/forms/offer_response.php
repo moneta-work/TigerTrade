@@ -5,8 +5,8 @@
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
 		<div class="col-xs-11">
-			<h1 class="custom-h1">Woohoo! You have an offer for:</h1>
-			<h2 class="custom-h1">LISTING_TITLE_HERE</h2>
+			<h1 class="back-button-heading">Woohoo! You have an offer for:</h1>
+			<h2 class="back-button-heading">LISTING_TITLE_HERE</h2>
 		</div>
 	</div>
 		
