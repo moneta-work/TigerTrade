@@ -1,9 +1,9 @@
 <div class="container padding-top-20">
 	<div class="row">
-		<div class="col-xs-1">
+		<div class="col-md-1 col-xs-2">
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
-		<div class="col-xs-11">
+		<div class="col-md-11 col-xs-10">
 			<h1 class="back-button-heading">Ad Index</h1>
 		</div>
 	</div>
