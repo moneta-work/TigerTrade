@@ -1,8 +1,9 @@
 $('input[name=decision]').click(function () {
     if (this.id == "accept-offer") {
-        $("#show-me").show('slow');
-        $("#show-me").css('display', 'inline')
+        $("#offer-warning").show('slow');
+        $("#offer-warning").css('display', 'inline')
     } else {
-        $("#show-me").hide('slow');
+	    $("#offer-warning").css('display', 'inline')
+        $("#offer-warning").hide('slow');
     }
 });	
