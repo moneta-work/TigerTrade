@@ -13,8 +13,8 @@
 	
 	
 	<div class="row">
-		<div class="col-xs-12 col-sm-6 col-md-8">.col-md-4</div>
-		<div class="col-md-4">.col-md-4</div>
+		<div class="col-sm-2 col-md-1">2 sm 1 md</div>
+		<div class="col-sm-10 col-md-11">10 sm 11 md</div>
 	</div>
 
 
