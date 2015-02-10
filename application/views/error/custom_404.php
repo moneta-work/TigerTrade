@@ -9,6 +9,8 @@
 		</div>
 	</div>
 
+	<hr>
+
 	<p>We're sorry, but there's no content here!</p>
 	
 </div>
