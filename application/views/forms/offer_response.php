@@ -1,6 +1,6 @@
 <script>
-$('input[name=test]').click(function () {
-    if (this.id == "decision") {
+$('input[name=decision]').click(function () {
+    if (this.id == "watch-me") {
         $("#show-me").show('slow');
     } else {
         $("#show-me").hide('slow');
