@@ -1,3 +1,13 @@
+<script>
+$('input[name=test]').click(function () {
+    if (this.id == "decision") {
+        $("#show-me").show('slow');
+    } else {
+        $("#show-me").hide('slow');
+    }
+});	
+</script>
+
 <div class="container">
 	
 	<div class="row">
@@ -32,8 +42,8 @@
 			<div class="col-sm-10">
 				<div class="radio">
 					<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-						Accept Offer
+						<input type="radio" id='watch-me' name="decision" id="optionsRadios1" value="option1">
+						Accept Offer<div id='show-me' style='display:none'>Hello</div>
 					</label>
 				</div>
 				<div class="radio">
