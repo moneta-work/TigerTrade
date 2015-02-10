@@ -4,7 +4,7 @@
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
 		<div class="col-xs-10">
-			<h1 class="">Ad Index</h1>
+			<h1 class="back-button-header">Ad Index</h1>
 		</div>
 	</div>
 	
