@@ -43,7 +43,15 @@
 	
 	<script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
-	<script src="<?php echo base_url('assets/js/show_hidden.js') ?>"></script>
-	
+	<script src="<?php echo base_url('assets/js/back_button.js') ?>"></script>
+<script>
+$('input[name=decision]').click(function () {
+    if (this.id == "watch-me") {
+        $("#show-me").show('slow');
+    } else {
+        $("#show-me").hide('slow');
+    }
+});	
+</script>
 </body>
 </html>
