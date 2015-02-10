@@ -33,7 +33,7 @@
 			<label for="description" class="col-sm-2 control-label label-20">Reply</label>
 			<div class="col-sm-10">
 				<textarea type="text" class="form-control description-box" id="description" rows="5"></textarea>
-				<p class="help-block">Write a message for the buyer, including good times to meet.</p>
+				<p class="help-block">Write a message for the buyer, including good times to meet or preferred method of contact.</p>
 			</div>
 		</div>
 
