@@ -10,6 +10,8 @@
 		</div>
 		<div class="clearfix visible-sm-block"></div>
 	</div>
+	
+	<hr>
 
 	<form class="form-horizontal" id="make-offer-form">
 		<div class="form-group">

@@ -8,6 +8,8 @@
 			<h1 class="">New Ad Form</h1>
 		</div>
 	</div>
+	
+	<hr>
 		
 	<form class="form-horizontal" id="ad-form">
 		<div class="form-group">
