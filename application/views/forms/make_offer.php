@@ -1,10 +1,10 @@
 <div class="container">
 	
 	<div class="row">
-		<div class="col-sm-2 col-md-1">
+		<div class="col-xs-2 col-md-1">
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
-		<div class="col-sm-10 col-md-11">
+		<div class="col-xs-10 col-md-11">
 			<h1 class="">Make Offer: LISTING_TITLE_HERE</h1>
 		</div>
 		<div class="clearfix visible-sm-block"></div>
@@ -13,13 +13,13 @@
 	
 	
 	<div class="row">
-		<div class="col-sm-2 col-md-1">2 sm 1 md</div>
-		<div class="col-sm-10 col-md-11">10 sm 11 md</div>
+		<div class="col-xs-2 col-md-1">2 sm 1 md</div>
+		<div class="col-xs-10 col-md-11">10 sm 11 md</div>
 	</div>
 
 	<div class="row">
-		<div class="col-sm-2">2 sm</div>
-		<div class="col-sm-10">10 sm</div>
+		<div class="col-xs-2">2 sm</div>
+		<div class="col-xs-10">10 sm</div>
 	</div>
 	
 	<div class="row">
