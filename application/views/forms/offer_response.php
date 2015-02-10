@@ -1,5 +1,5 @@
 <script>
-$('input[name=decision]').click(function () {
+$('input[name=test]').click(function () {
     if (this.id == "watch-me") {
         $("#show-me").show('slow');
     } else {
@@ -42,7 +42,7 @@ $('input[name=decision]').click(function () {
 			<div class="col-sm-10">
 				<div class="radio">
 					<label>
-						<input type="radio" id='watch-me' name="decision" id="optionsRadios1" value="option1">
+						<input type="radio" id='watch-me' name='test' id="optionsRadios1" value="option1">
 						Accept Offer<div id='show-me' style='display:none'>Hello</div>
 					</label>
 				</div>
