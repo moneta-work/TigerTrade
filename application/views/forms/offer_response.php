@@ -34,7 +34,7 @@
 			<div class="col-sm-10">
 				<div class="radio">
 					<label>
-						<input type="radio" id='accept-offer' name="decision" id="optionsRadios1" value="option1">
+						<input type="radio" id='accept-offer' name="decision" id="optionsRadios1" value="option1" required="">
 						Accept Offer<p class="text-danger" id='offer-warning' style='display: none; padding-left: 10px'> Buyer will receive your contact information.</p>
 					</label>
 				</div>
