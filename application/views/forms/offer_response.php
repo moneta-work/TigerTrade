@@ -5,13 +5,12 @@
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
 		<div class="col-xs-10 col-md-11">
-			<h1 class="">Make Offer:</h1>
+			<h1 class="">Woohoo! You have an offer for:</h1>
 			<h3 class="">LISTING_TITLE_HERE</h3>
 		</div>
-		<div class="clearfix visible-sm-block"></div>
 	</div>
-
-	<form class="form-horizontal" id="make-offer-form">
+		
+	<form class="form-horizontal" id="offer-response-form">
 		<div class="form-group">
 			<label for="price" class="col-sm-2 control-label label-20">Price</label>
 			<div class="col-sm-10">

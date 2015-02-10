@@ -52,11 +52,15 @@ code {
 }
 
 #ad-form {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 #make-offer-form {
-	margin-top: 20px;
+	margin-top: 10px;
+}
+
+#offer-response-form {
+	margin-top: 10px;
 }
 
 .label-20 {
@@ -68,17 +72,11 @@ code {
 }
 
 @media (max-width: 599px) {
-	.custom-h1 {
-		padding-left: 30px;
-	}
+
 }
 @media (min-width: 600px) and (max-width: 699px) {
-	.custom-h1 {
-		padding-left: 20px;
-	}
+
 }
 @media (min-width: 700px) and (max-width: 800px) {
-	.custom-h1 {
-		padding-left: 10px;
-	}
+
 }
