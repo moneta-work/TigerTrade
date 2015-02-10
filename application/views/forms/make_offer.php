@@ -7,8 +7,18 @@
 		<div class="col-sm-10 col-md-11">
 			<h1 class="">Make Offer: LISTING_TITLE_HERE</h1>
 		</div>
+		<div class="clearfix visible-xs-block"></div>
 	</div>
-		
+	
+	
+	
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-8">.col-md-4</div>
+		<div class="col-md-4">.col-md-4</div>
+	</div>
+
+
+
 	<form class="form-horizontal" id="make-offer-form">
 		<div class="form-group">
 			<label for="price" class="col-sm-2 control-label label-20">Price</label>
