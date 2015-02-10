@@ -35,7 +35,7 @@
 				<div class="radio">
 					<label>
 						<input type="radio" id='accept-offer' name="decision" id="optionsRadios1" value="option1">
-						Accept Offer<div id='offer-warning' style='display:none'>Hello</div>
+						Accept Offer<div class="warning" id='offer-warning' style='display:none'> Accepting this offer will provide the buyer with your personal contact information.</div>
 					</label>
 				</div>
 				<div class="radio">
