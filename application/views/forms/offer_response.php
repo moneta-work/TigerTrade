@@ -45,7 +45,6 @@ $('input[name=test]').click(function () {
 						<input type="radio" id='watch-me' name='test' id="optionsRadios1" value="option1">
 						Accept Offer
 					</label>
-					<div id='show-me' style='display:none'>Hello</div>
 				</div>
 				<div class="radio">
 					<label>
