@@ -32,13 +32,13 @@
 			<div class="col-sm-10">
 				<div class="radio">
 					<label>
-						<input type="radio" name="decision" id="optionsRadios1 offer-accept" value="option1">
+						<input type="radio" name="decision" id="offer-accept" value="option1">
 						Accept Offer<div id='offer-warning' style='display:none'>Hello</div>
 					</label>
 				</div>
 				<div class="radio">
 					<label>
-						<input type="radio" name="decision" id="optionsRadios2" value="option2">
+						<input type="radio" name="decision" id="" value="option2">
 						Decline Offer
 					</label>
 				</div>
