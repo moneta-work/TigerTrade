@@ -1,10 +1,10 @@
 <div class="container">
 	
 	<div class="row">
-		<div class="col-md-11 col-sm-2 col-sm-2">
+		<div class="col-md-11 col-sm-2 col-xs-2">
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
-		<div class="col-md-11 col-sm-10 col-sm-10">
+		<div class="col-md-11 col-sm-10 col-xs-10">
 			<h1 class="">New Ad Form</h1>
 		</div>
 	</div>
