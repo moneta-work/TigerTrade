@@ -1,10 +1,10 @@
 <div class="container">
 	
 	<div class="row">
-		<div class="col-xs-2">
+		<div class="col-md-11 col-sm-2">
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
-		<div class="col-xs-10">
+		<div class="col-md-11 col-sm-2">
 			<h1 class="">Woohoo! You have an offer for:</h1>
 			<h3 class="">LISTING_TITLE_HERE</h3>
 		</div>
