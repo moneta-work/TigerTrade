@@ -4,6 +4,6 @@ $('input[name=decision]').click(function () {
         $("#offer-warning").css('display', 'inline')
     } else {
 	    $("#offer-warning").css('display', 'inline')
-        $("#offer-warning").hide('slow');
+        $("#offer-warning").hide();
     }
 });	
