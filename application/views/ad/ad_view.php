@@ -3,7 +3,7 @@
 		<div class="col-md-11 col-sm-2">
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
-		<div class="col-md-11 col-sm-2">
+		<div class="col-md-11 col-sm-10">
 			<h1 class="">Ad Index</h1>
 		</div>
 	</div>
