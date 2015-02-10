@@ -17,7 +17,15 @@
 		<div class="col-sm-10 col-md-11">10 sm 11 md</div>
 	</div>
 
-
+	<div class="row">
+		<div class="col-sm-2">2 sm</div>
+		<div class="col-sm-10">10 sm</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-1">1 md</div>
+		<div class="col-md-11">11 md</div>
+	</div>
 
 	<form class="form-horizontal" id="make-offer-form">
 		<div class="form-group">
