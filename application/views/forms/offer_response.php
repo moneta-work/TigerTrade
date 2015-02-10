@@ -14,7 +14,7 @@
 		<div class="form-group">
 			<label for="price" class="col-sm-2 control-label label-20">Price</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="price" value="$PRICE_OF_ITEM">
+				<input type="text" class="form-control" id="price" value="$OFFER_PRICE" disabled="">
 			</div>
 		</div>
 		<div class="form-group">
