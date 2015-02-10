@@ -44,12 +44,13 @@
 	<script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/back_button.js') ?>"></script>
+	
 <script>
-$('input[name=decision]').click(function () {
-    if (this.id == "watch-me") {
-        $("#show-me").show('slow');
+	$('input[name=decision]').click(function () {
+    if (this.id == "offer-accept") {
+        $("#offer-warning").show('slow');
     } else {
-        $("#show-me").hide('slow');
+        $("#offer-warning").hide('slow');
     }
 });	
 </script>

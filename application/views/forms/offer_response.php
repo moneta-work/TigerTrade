@@ -34,7 +34,7 @@
 			<div class="col-sm-10">
 				<div class="radio">
 					<label>
-						<input type="radio" id='watch-me' name="decision" id="optionsRadios1" value="option1">
+						<input type="radio" name="decision" id="optionsRadios1 offer-accept" value="option1">
 						Accept Offer<div id='show-me' style='display:none'>Hello</div>
 					</label>
 				</div>
