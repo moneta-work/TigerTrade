@@ -10,7 +10,7 @@
 		</div>
 	</div>
 		
-	<form class="form-horizontal" id="make-offer-form">
+	<form class="form-horizontal" id="offer-response-form">
 		<div class="form-group">
 			<label for="price" class="col-sm-2 control-label label-20">Price</label>
 			<div class="col-sm-10">
