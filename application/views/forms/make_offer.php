@@ -7,7 +7,7 @@
 		<div class="col-sm-10 col-md-11">
 			<h1 class="">Make Offer: LISTING_TITLE_HERE</h1>
 		</div>
-		<div class="clearfix visible-xs-block"></div>
+		<div class="clearfix visible-sm-block"></div>
 	</div>
 	
 	
