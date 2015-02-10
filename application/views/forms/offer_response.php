@@ -26,6 +26,9 @@
 				<p class="help-block">Offer message from the buyer.</p>
 			</div>
 		</div>
+		
+		<hr>
+		
 		<div class="form-group">
 			<label for="description" class="col-sm-2 control-label label-20">Reply</label>
 			<div class="col-sm-10">
