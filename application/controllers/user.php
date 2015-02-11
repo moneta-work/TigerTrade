@@ -14,5 +14,6 @@ class User extends CI_Controller
 	{
 		$data['title'] = 'User Home';
 		$this->layout->view('user/user_home', $data);
+
 	}
 }
