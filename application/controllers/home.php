@@ -38,12 +38,22 @@ class Home extends CI_Controller {
 
 	public function databaseTest()
 	{
-		$dbconn = mysqli_connect("localhost", "kylecarlson", "QRvC3TMCBt", "kylecarlson_tigertrade");
+		$dbconn = mysqli_connect("localhost", "kylecarlson", "QRvC3TMCBt", "kylecarlson_rebearth");
 
 		if (!$dbconn)
 		{
 		  echo "Please try later.";
 		}
+		else
+		{
+			echo "it worked";
+		}
+
+		$blah = mysqli_query($dbconn, "SELECT * FROM content");
+
+		var_dump($blah);
+
+
 	}
 }
 
