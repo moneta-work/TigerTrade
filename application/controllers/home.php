@@ -38,7 +38,7 @@ class Home extends CI_Controller {
 
 	public function databaseTest()
 	{
-		$dbconn = mysqli_connect("localhost", "kylecarlson", "QRvC3TMCBt", "kylecarlson_rebearth");
+		$dbconn = mysqli_connect("localhost", "kylecarlson", "QRvC3TMCBt", "kylecarlson_tigertrade");
 
 		if (!$dbconn)
 		{
