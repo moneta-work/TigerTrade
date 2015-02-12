@@ -35,6 +35,16 @@ class Home extends CI_Controller {
 		$this->layout->view('home/home', $data);
 		//$this->layout->view('welcome_message', $data);
 	}
+
+	public function databaseTest()
+	{
+		$dbconn = mysqli_connect("localhost", "kylecarlson", "QRvC3TMCBt", "kylecarlson");
+
+		if (!$dbconn)
+		{
+		  echo "Please try later.";
+		}
+	}
 }
 
 /* End of file welcome.php */
