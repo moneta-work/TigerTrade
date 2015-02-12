@@ -38,7 +38,7 @@ class Home extends CI_Controller {
 
 	public function databaseTest()
 	{
-		$dbconn = mysqli_connect("localhost", "kylecarlson", "QRvC3TMCBt", "kylecarlson_rebearth");
+		$dbconn = mysqli_connect("localhost", "kylecarlson", "QRvC3TMCBt", "kylecarlson_tigertrade");
 
 		if (!$dbconn)
 		{
@@ -49,7 +49,7 @@ class Home extends CI_Controller {
 			echo "it worked";
 		}
 
-		$blah = mysqli_query($dbconn, "SELECT * FROM content");
+		$blah = mysqli_query($dbconn, "SELECT * FROM users");
 
 		var_dump($blah);
 
