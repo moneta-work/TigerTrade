@@ -48,7 +48,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
+$db['default']['hostname'] = 'kylecarlson.info';
 $db['default']['username'] = 'kylecarlson';
 $db['default']['password'] = 'QRvC3TMCBt';
 $db['default']['database'] = 'kylecarlson_tigertrade';
