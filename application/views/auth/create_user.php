@@ -9,8 +9,7 @@
             </div>
       </div>
       
-      <hr>
-            
+      <hr>   
       <?php echo form_open("auth/create_user", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
             <div class="form-group">
                   <label for="title" class="col-sm-2 control-label label-20">First Name</label>
@@ -39,13 +38,13 @@
             <div class="form-group">
                   <label for="price" class="col-sm-2 control-label label-20">Password</label>
                   <div class="col-sm-10">
-                        <?php echo form_input($password, array('class' => 'form-control'));?>
+                        <?php echo form_password($password, array('class' => 'form-control'));?>
                   </div>
             </div>
             <div class="form-group">
                   <label for="price" class="col-sm-2 control-label label-20">Confirm Password</label>
                   <div class="col-sm-10">
-                        <?php echo form_input($password_confirm, array('class' => 'form-control'));?>
+                        <?php echo form_password($password_confirm, array('class' => 'form-control'));?>
                   </div>
             </div>
             <div class="form-group">
