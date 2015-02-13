@@ -8,13 +8,13 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href='<?php echo base_url() ?>'>TigerTrade</a>
+				<a class="navbar-brand" href='<?= base_url() ?>'>TigerTrade</a>
 			</div>
 			<!-- MENU OPTIONS -->
 			<nav class="collapse navbar-collapse bs-navbar-collapse" id="navbar">
 				<ul class="nav navbar-nav">
 					<li class="active">
-					<a href='<?php echo base_url() ?>'>Home</a>
+					<a href='<?= base_url() ?>'>Home</a>
 					</li>
 					<!-- DROPDOWN BUTTON -->
 					<li class="dropdown">
@@ -30,18 +30,18 @@
 						</ul>
 					</li>
 					<li>
-					<a href='<?php echo base_url("/user") ?>'>User</a>
+					<a href='<?= base_url("/user") ?>'>User</a>
 					</li>
 					<li>
-					<a href='<?php echo base_url("/ad") ?>'>Ad</a>
+					<a href='<?= base_url("/ad") ?>'>Ad</a>
 					</li>
 					<li>
-					<a href='<?php echo base_url("/bad-url") ?>'>404 Test</a>
+					<a href='<?= base_url("/bad-url") ?>'>404 Test</a>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Register</a></li>
-					<li><a href="#">Login</a></li>
+					<li><a href='<?= base_url("auth/create_user") ?>'>Register</a></li>
+					<li><a href='<?= base_url("auth/") ?>'>Login</a></li>
 				</ul>
 			</nav>
 		</div>
