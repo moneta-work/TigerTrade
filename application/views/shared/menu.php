@@ -40,8 +40,8 @@
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Register</a></li>
-					<li><a href="#">Login</a></li>
+					<li><a href=<%=base_url("auth/create_user")%>>Register</a></li>
+					<li><a href=<%base_url("auth/")%>>Login</a></li>
 				</ul>
 			</nav>
 		</div>
