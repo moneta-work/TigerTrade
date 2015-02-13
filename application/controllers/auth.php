@@ -419,11 +419,6 @@ class Auth extends CI_Controller {
 	{
 		$this->data['title'] = "Create User";
 
-		if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin())
-		{
-			redirect('auth', 'refresh');
-		}
-
 		$tables = $this->config->item('tables','ion_auth');
 
 		//validate form input
