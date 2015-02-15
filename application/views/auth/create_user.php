@@ -14,7 +14,15 @@
             <div class="form-group">
                   <label for="title" class="col-sm-2 control-label label-20">First Name</label>
                   <div class="col-sm-10">
-                        <?php echo form_input($first_name, array('class' => 'form-control'));?>
+                        <?php
+	                         $data = array(
+					          'name'        => 'first_name',
+					          'id'          => 'first_name',
+					          'class'       => 'form-control',
+					          'type'       => 'text',
+					        );
+	                        echo form_input($data);
+	                    ?>
                   </div>
             </div>
             <div class="form-group">
