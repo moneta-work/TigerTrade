@@ -1,3 +1,14 @@
+<script type="javascript">
+function isNumber(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
+}
+</script>
+
 <div class="container">
 	
 	<div class="row">
@@ -21,7 +32,7 @@
 		<div class="form-group">
 			<label for="price" class="col-sm-2 control-label label-20">Price</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="price" placeholder="$0.00" onkeyup="document.getElementById('preview_price').innerHTML = this.value">
+				<input type="text" class="form-control" id="price" placeholder="0.00" onkeyup="document.getElementById('preview_price').innerHTML = this.value" onkeypress="return isNumber(event)">
 			</div>
 		</div>
 		<div class="form-group">
