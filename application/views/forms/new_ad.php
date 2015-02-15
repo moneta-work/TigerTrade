@@ -27,7 +27,7 @@
 		<div class="form-group">
 			<label for="description" class="col-sm-2 control-label label-20">Description</label>
 			<div class="col-sm-10">
-				<textarea type="text" class="form-control description-box" id="WPComment description" name="WPComment" rows="5"></textarea>
+				<textarea type="text" class="form-control description-box" id="description" onkeyup="document.getElementById('prevCom').innerHTML = this.value" rows="5"></textarea>
 			</div>
 		</div>
 		
