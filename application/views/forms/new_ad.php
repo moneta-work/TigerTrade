@@ -53,7 +53,7 @@
 		<label class="col-sm-2 control-label label-20">Preview</label>
 		<div class="col-sm-10">
 			<h2 id="preview_title"></h2>
-			<div id="preview_price"></div>
+			<h3 id="preview_price"></h3>
 			<div id="preview_message"></div>
 		</div>
 	</div>
