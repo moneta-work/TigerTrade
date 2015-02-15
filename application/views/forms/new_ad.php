@@ -56,7 +56,7 @@
 		<div class="col-sm-10">
 			<h2 id="preview_title">Title</h2>
 			<h3 style="display: inline;">$</h3><h3 id="preview_price" style="display: inline;">Price</h3>
-			<p style="padding-top: 10px" id="preview_message">Message</p>
+			<p style="padding-top: 10px;" id="preview_message">Message</p>
 		</div>
 	</div>
 </div>
