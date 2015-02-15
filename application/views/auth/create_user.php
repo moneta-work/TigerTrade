@@ -1,5 +1,11 @@
 <div class="container">
-      <div id="infoMessage"><?php echo $message;?></div>
+      <div id="infoMessage">
+	      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+	      <div class="alert alert-danger" role="alert">
+		      <span class="sr-only">Error:</span>
+		      <?php echo $message;?>
+		  </div>
+	  </div>
       <div class="row">
             <div class="col-xs-2 col-md-1">
                   <div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
