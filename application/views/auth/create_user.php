@@ -79,7 +79,7 @@
             <div class="form-group">
                   <label for="password_confirm" class="col-sm-2 control-label label-20">Confirm Password</label>
                   <div class="col-sm-10">
-                        <<?php
+                        <?php
 	                         $data = array(
 					          'name'        => 'password_confirm',
 					          'id'          => 'password_confirm',
