@@ -52,20 +52,9 @@
 	<div class="row">
 		<label class="col-sm-2 control-label label-20">Preview</label>
 		<div class="col-sm-10">
-			<h2 id="preview_title"></h2>
-			<h3 style="display: inline;">$</h3><h3 id="preview_price" style="display: inline;"></h3>
-			<p id="preview_message"></p>
+			<h2 id="preview_title">Title</h2>
+			<h3 style="display: inline;">$</h3><h3 id="preview_price" style="display: inline;">Price</h3>
+			<p id="preview_message">Message</p>
 		</div>
 	</div>
 </div>
-
-<script type="javascript">
-function isNumber(evt) {
-    evt = (evt) ? evt : window.event;
-    var charCode = (evt.which) ? evt.which : evt.keyCode;
-    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
-        return false;
-    }
-    return true;
-}
-</script>
