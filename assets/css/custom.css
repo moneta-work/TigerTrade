@@ -7,6 +7,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  padding-top: 50px;
 }
 .footer {
   position: absolute;
@@ -23,24 +24,59 @@ body {
 /* Not required for template or sticky footer method. */
 
 body > .container {
-  padding-top: 10px;
-  padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
   
 }
 .container .text-muted {
-  margin: 20px 0;
+	margin: 20px 0;
 }
 
 .footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 15px;
 }
 
 code {
-  font-size: 80%;
+	font-size: 80%;
 }
 
-.jumbotron > .container {
-	padding-top: 20px;
+.jumbotron {
+	padding-top: 0px !important;
+}
+
+.back-button {
+	margin: 0 auto;
+	margin-top: 23px;
+}
+
+#ad-form {
+	margin-top: 10px;
+}
+
+#make-offer-form {
+	margin-top: 10px;
+}
+
+#offer-response-form {
+	margin-top: 10px;
+}
+
+.label-20 {
+	font-size: 20px;
+}
+
+.description-box {
+    resize: none;
+}
+
+@media (max-width: 599px) {
+
+}
+@media (min-width: 600px) and (max-width: 699px) {
+
+}
+@media (min-width: 700px) and (max-width: 800px) {
+
 }

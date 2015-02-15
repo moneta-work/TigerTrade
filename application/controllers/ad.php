@@ -7,11 +7,13 @@ class Ad extends CI_Controller
 		parent::__construct();
 
 		$this->load->helper('url');
+		$data['menu'] = $this->load->view('shared/menu');
 	}
 
 	function index()
 	{
-		echo "This will be the ad controller";
+		$data['title'] = 'Ad Home';
+		$this->layout->view('ad/ad_view', $data);
 	}
 
 	//shows details of a specific ad
@@ -33,9 +35,24 @@ class Ad extends CI_Controller
 	}
 
 	//shows form to create a new ad
-	function new()
+	function new_ad()
 	{
+		$data['title'] = 'New Ad';
+		$this->layout->view('forms/new_ad', $data);
+	}
 
+	//shows form to create a new ad
+	function make_offer()
+	{
+		$data['title'] = 'Make an Offer';
+		$this->layout->view('forms/make_offer', $data);
+	}
+	
+	//shows form to create a new ad
+	function review_offer()
+	{
+		$data['title'] = 'Review Offer';
+		$this->layout->view('forms/offer_response', $data);
 	}
 
 	//create an ad
