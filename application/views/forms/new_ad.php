@@ -49,6 +49,8 @@
 		</div>
 	</form>
 	
+	<hr>
+	
 	<div class="row">
 		<label class="col-sm-2 control-label label-20">Preview</label>
 		<div class="col-sm-10">
