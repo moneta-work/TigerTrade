@@ -27,7 +27,7 @@
 		<div class="form-group">
 			<label for="description" class="col-sm-2 control-label label-20">Description</label>
 			<div class="col-sm-10">
-				<textarea type="text" class="form-control description-box" id="description" rows="5"></textarea>
+				<textarea type="text" class="form-control description-box" id="description AdText" name="AdText" rows="5"></textarea>
 			</div>
 		</div>
 		
@@ -49,4 +49,7 @@
 		</div>
 	</form>
 	
+	<div class="row">
+		<div class="col-xs-12" id="preview"></div>
+	</div>
 </div>
