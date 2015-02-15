@@ -1,5 +1,5 @@
-var ad_preview = document.getElementById('AdText');
+var wpcomment = document.getElementById('WPComment');
 
-ad_preview.onkeyup = ad_preview.onkeypress = function(){
-    document.getElementById('preview').innerHTML = this.value;
+wpcomment.onkeyup = wpcomment.onkeypress = function(){
+    document.getElementById('prevCom').innerHTML = this.value;
 }
