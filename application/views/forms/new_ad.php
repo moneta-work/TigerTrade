@@ -53,7 +53,7 @@
 		<label class="col-sm-2 control-label label-20">Preview</label>
 		<div class="col-sm-10">
 			<h2 id="preview_title"></h2>
-			<h3>$</h3><h3 id="preview_price" style="display: inline;"></h3>
+			<h3 style="display: inline;">$</h3><h3 id="preview_price" style="display: inline;"></h3>
 			<div id="preview_message"></div>
 		</div>
 	</div>
