@@ -72,7 +72,8 @@
 					          'id'          => 'password',
 					          'class'       => 'form-control'
 					        );
-	                        echo form_password($data); echo form_password($password, array('class' => 'form-control'));?>
+	                        echo form_password($data);
+	                    ?>
                   </div>
             </div>
             <div class="form-group">
@@ -84,7 +85,8 @@
 					          'id'          => 'password_confirm',
 					          'class'       => 'form-control'
 					        );
-	                        echo form_password($data); echo form_password($password_confirm, array('class' => 'form-control'));?>
+	                        echo form_password($data);
+	                    ?>
                   </div>
             </div>
             <div class="form-group">
