@@ -50,6 +50,6 @@
 	</form>
 	
 	<div class="row">
-		<div class="col-xs-12" id="prevCom"></div>
+		<div class=".col-md-10 .col-md-offset-2" id="prevCom"></div>
 	</div>
 </div>
