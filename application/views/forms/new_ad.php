@@ -50,6 +50,9 @@
 	</form>
 	
 	<div class="row">
-		<div class=".col-md-10 .col-md-offset-2" id="prevCom"></div>
+		<label class="col-sm-2 control-label label-20">Preview</label>
+		<div class="col-sm-10">
+			<div class=".col-md-10 .col-md-offset-2" id="prevCom"></div>
+		</div>
 	</div>
 </div>
