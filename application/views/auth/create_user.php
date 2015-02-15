@@ -1,13 +1,9 @@
 <div class="container">
       <div id="infoMessage">
 	      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-	      
+	      <div class="alert alert-danger" role="alert">
 		      <span class="sr-only">Error:</span>
-		      <?php foreach ($message as $test) {?>
-			    <div class="alert alert-danger" role="alert">
-				<?php 
-			      echo $test;
-			  };?>
+		      <?php echo $message;?>
 		  </div>
 	  </div>
       <div class="row">
