@@ -15,19 +15,19 @@
 		<div class="form-group">
 			<label for="title" class="col-sm-2 control-label label-20">Title</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="title" placeholder="...">
+				<input type="text" class="form-control" id="title" placeholder="..." onkeyup="document.getElementById('preview_title').innerHTML = this.value">
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="price" class="col-sm-2 control-label label-20">Price</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="price" placeholder="$0.00">
+				<input type="text" class="form-control" id="price" placeholder="$0.00" onkeyup="document.getElementById('preview_price').innerHTML = this.value">
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="description" class="col-sm-2 control-label label-20">Description</label>
 			<div class="col-sm-10">
-				<textarea type="text" class="form-control description-box" id="description" onkeyup="document.getElementById('prevCom').innerHTML = this.value" rows="5"></textarea>
+				<textarea type="text" class="form-control description-box" id="description" onkeyup="document.getElementById('preview_message').innerHTML = this.value" rows="5"></textarea>
 			</div>
 		</div>
 		
@@ -52,7 +52,9 @@
 	<div class="row">
 		<label class="col-sm-2 control-label label-20">Preview</label>
 		<div class="col-sm-10">
-			<div class=".col-md-10 .col-md-offset-2" id="prevCom"></div>
+			<div id="preview_title"></div>
+			<div id="preview_price"></div>
+			<div id="preview_message"></div>
 		</div>
 	</div>
 </div>
