@@ -1,4 +1,3 @@
-<script type="javascript" src="<?php base_url("assets/js/live_preview.js") ?>"
 <div class="container">
 	
 	<div class="row">
