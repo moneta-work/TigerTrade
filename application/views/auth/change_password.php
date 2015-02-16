@@ -48,7 +48,7 @@
 	  <?php }; ?>
       
 
-      <?php echo form_open("auth/login", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
+      <?php echo form_open("auth/change_password", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
             <div class="form-group">
                   <label for="old_password" class="col-sm-4 control-label label-20">Old Password</label>
                   <div class="col-sm-4">
