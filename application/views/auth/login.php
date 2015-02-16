@@ -94,9 +94,9 @@
 	                    ?>Remember me
 					    </label>
 	                </div>
-                  <div class="col-xs-4">
-                        <button type="submit" class="btn btn-default">Login</button>
-                  </div>
+                </div>
+                <div class="col-xs-4">
+                    <button type="submit" class="btn btn-default">Login</button>
                 </div>
             </div>
             <div class="form-group">
