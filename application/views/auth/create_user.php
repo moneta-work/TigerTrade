@@ -1,6 +1,6 @@
 <div class="container">
       <div id="infoMessage">
-		<div class="alert alert-danger" role="alert" style="margin-botton: 0px; margin-top: 5px;">
+		<div class="alert alert-danger" role="alert" style="margin-bottom: 0px; margin-top: 5px;">
 		  <span class="sr-only">Error:</span>
 		  <?php echo $message;?>
 		</div>
