@@ -54,8 +54,8 @@
 
       <?php echo form_open("auth/login", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
             <div class="form-group">
-                  <label for="identity" class="col-sm-3 control-label label-20">Email</label>
-                  <div class="col-sm-9">
+                  <label for="identity" class="col-sm-4 control-label label-20">Email</label>
+                  <div class="col-sm-4">
                         <?php
 	                         $data = array(
 					          'name'        => 'identity',
@@ -67,8 +67,8 @@
                   </div>
             </div>
             <div class="form-group">
-                  <label for="password" class="col-sm-3 control-label label-20">Password</label>
-                  <div class="col-sm-9">
+                  <label for="password" class="col-sm-4 control-label label-20">Password</label>
+                  <div class="col-sm-4">
 	                    <?php
 	                         $data = array(
 					          'name'        => 'password',
@@ -80,8 +80,8 @@
                   </div>
             </div>
             <div class="form-group">
-                  <label for="remember" class="col-sm-3 control-label label-20">Remember Me</label>
-                  <div class="col-sm-9">
+                  <label for="remember" class="col-sm-4 control-label label-20">Remember Me</label>
+                  <div class="col-sm-4">
                         <?php
 	                         $data = array(
 					          'name'        => 'remember',
@@ -93,7 +93,7 @@
                   </div><p class="help-block"><a href="forgot_password"><?php echo lang('login_forgot_password');?></a></p>
             </div>
             <div class="form-group">
-                  <div class="col-sm-offset-3 col-sm-9">
+                  <div class="col-sm-offset-4 col-sm-8">
                         <button type="submit" class="btn btn-default">Login</button>
                   </div>
             </div>
