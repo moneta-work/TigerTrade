@@ -1,3 +1,6 @@
+<!-- OLD LOGIN FORM -->
+	
+<!--
 <h1><?php echo lang('login_heading');?></h1>
 <p><?php echo lang('login_subheading');?></p>
 
@@ -26,3 +29,74 @@
 <?php echo form_close();?>
 
 <p><a href="forgot_password"><?php echo lang('login_forgot_password');?></a></p>
+-->
+
+
+<div class="container">
+      <div class="row">
+            <div class="col-xs-2 col-md-1">
+                  <div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
+            </div>
+            <div class="col-xs-10 col-md-11">
+                  <h1 class="">New User Form</h1>
+            </div>
+      </div>
+      <hr>
+      <?php if ($message != "") { ?>
+      <div id="infoMessage">
+		<div class="alert alert-danger" role="alert" style="margin-top: 10px;">
+		  <span class="sr-only">Error:</span>
+		  <?php echo $message;?>
+		</div>
+	  </div>
+	  <?php }; ?>
+      
+
+      <?php echo form_open("auth/login", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
+            <div class="form-group">
+                  <label for="identity" class="col-sm-3 control-label label-20">Email</label>
+                  <div class="col-sm-9">
+                        <?php
+	                         $data = array(
+					          'name'        => 'identity',
+					          'id'          => 'identity',
+					          'class'       => 'form-control'
+					        );
+	                        echo form_input($data);
+	                    ?>
+                  </div>
+            </div>
+            <div class="form-group">
+                  <label for="password" class="col-sm-3 control-label label-20">Password</label>
+                  <div class="col-sm-9">
+	                    <?php
+	                         $data = array(
+					          'name'        => 'password',
+					          'id'          => 'password',
+					          'class'       => 'form-control'
+					        );
+	                        echo form_input($data);
+	                    ?>
+                  </div>
+            </div>
+            <div class="form-group">
+                  <label for="remember" class="col-sm-3 control-label label-20">Remember Me</label>
+                  <div class="col-sm-9">
+                        <?php
+	                         $data = array(
+					          'name'        => 'remember',
+					          'id'          => 'remember',
+					          'class'       => 'form-control'
+					        );
+	                        echo form_checkbox($data);
+	                    ?>
+                  </div>
+            </div>
+            <div class="form-group">
+                  <div class="col-sm-offset-3 col-sm-9">
+                        <button type="submit" class="btn btn-default">Login</button>
+                  </div>
+            </div>
+      <?php echo form_close();?>
+      
+</div>
