@@ -40,7 +40,7 @@
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<?php if (!$this->ion_auth->logged_in()) { ?>
+					<?php if (!logged_in()) { ?>
 					<li><a href='<?= base_url("auth/create_user") ?>'>Register</a></li>
 					<li><a href='<?= base_url("auth/") ?>'>Login</a></li>
 					<?php }; ?>
