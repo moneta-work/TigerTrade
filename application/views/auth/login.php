@@ -94,6 +94,7 @@
 	                    ?>Remember me
 					    </label>
 	                </div>
+	                <button type="submit" style="float: right;" class="btn btn-default">Login</button>
                 </div>
                 <div class="col-xs-4">
                     <button type="submit" class="btn btn-default">Login</button>
