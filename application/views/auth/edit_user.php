@@ -97,11 +97,11 @@
                   <div class="col-sm-4">
                         <?php
 	                         $data = array(
-					          'name'        => $first_name,
+					          'name'        => 'first_name',
 					          'id'          => 'first_name',
 					          'class'       => 'form-control'
 					        );
-	                        echo form_input($data);
+	                        echo form_input($first_name);
 	                    ?>
                   </div>
             </div>
