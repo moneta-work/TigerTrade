@@ -1,9 +1,10 @@
 <h1><?php echo lang('index_heading');?></h1>
+<hr>
 <p><?php echo lang('index_subheading');?></p>
 
 <div id="infoMessage"><?php echo $message;?></div>
 
-<table class="table table-condensed">
+<table class="table">
 	<tr>
 		<th><?php echo lang('index_fname_th');?></th>
 		<th><?php echo lang('index_lname_th');?></th>
