@@ -81,8 +81,7 @@
                   </div> 
             </div>
             <div class="form-group">
-                  <label for="remember" class="col-xs-4 control-label label-20">Remember Me</label>
-                  <div class="col-xs-4">
+                  <div class="col-sm-offset-4 col-sm-8">
                         <?php
 	                         $data = array(
 					          'name'        => 'remember',
@@ -91,7 +90,7 @@
 					        );
 	                        echo form_checkbox($data);
 	                    ?>
-                  </div>
+                  </div>Remember me
             </div>
             <div class="form-group">
                   <div class="col-sm-offset-4 col-sm-8">
