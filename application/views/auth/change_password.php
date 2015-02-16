@@ -76,7 +76,7 @@
                   </div> 
             </div>
             <div class="form-group" style="margin-bottom: 0px;">
-                  <label for="new_password_confirm" class="col-sm-4 control-label label-20">Confirm New Password</label>
+                  <label for="new_password_confirm" class="col-sm-4 control-label label-20">Confirm Password</label>
                   <div class="col-sm-4">
 	                    <?php
 	                         $data = array(
