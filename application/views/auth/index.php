@@ -1,9 +1,23 @@
-<h1><?php echo lang('index_heading');?></h1>
-<hr>
-<p><?php echo lang('index_subheading');?></p>
-
-<div id="infoMessage"><?php echo $message;?></div>
-
+<div class="container padding-top-20">
+	<div class="row">
+		<div class="col-xs-2 col-md-1">
+			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
+		</div>
+		<div class="col-xs-10 col-md-11">
+			<h1 class="">User Homepage</h1>
+		</div>
+	</div>
+      <hr>
+      <?php if ($message != "") { ?>
+      <div id="infoMessage">
+		<div class="alert alert-info" role="alert" style="margin-top: 10px;">
+		  <span class="sr-only">Error:</span>
+		  <?php echo $message;?>
+		</div>
+	  </div>
+	  <?php }; ?>
+      
+	
 <table class="table">
 	<tr>
 		<th><?php echo lang('index_fname_th');?></th>
@@ -30,18 +44,4 @@
 </table>
 
 <p><?php echo anchor('auth/create_user', lang('index_create_user_link'))?> | <?php echo anchor('auth/create_group', lang('index_create_group_link'))?></p>
-
-<div class="container padding-top-20">
-	<div class="row">
-		<div class="col-xs-2 col-md-1">
-			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
-		</div>
-		<div class="col-xs-10 col-md-11">
-			<h1 class="">User Homepage</h1>
-		</div>
-	</div>
-	
-	<hr>
-	
-	<p>This will be the homepage for logged in users.</p>
 </div>
