@@ -1,6 +1,6 @@
 <!-- OLD EDIT USER FORM -->
 
-<!--
+
 <h1><?php echo lang('edit_user_heading');?></h1>
 <p><?php echo lang('edit_user_subheading');?></p>
 
@@ -67,7 +67,7 @@
       <p><?php echo form_submit('submit', lang('edit_user_submit_btn'));?></p>
 
 <?php echo form_close();?>
--->
+
 
 
 
@@ -172,7 +172,7 @@
             </div>
             <div class="form-group">
                   <div class="col-sm-offset-4 col-sm-4">
-                        <button type="submit" class="btn btn-default">Create User</button>
+                        <button type="submit" class="btn btn-default">Save</button>
                   </div>
             </div>
       <?php echo form_close();?>
