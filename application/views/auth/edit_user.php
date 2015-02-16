@@ -101,7 +101,7 @@
 					          'id'          => 'first_name',
 					          'class'       => 'form-control'
 					        );
-	                        echo form_input($first_name);
+	                        echo form_input($first_name, $data);
 	                    ?>
                   </div>
             </div>
