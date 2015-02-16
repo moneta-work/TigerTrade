@@ -83,7 +83,7 @@
             <div class="form-group">
                 <div class="col-sm-offset-4 col-sm-4">
 	                <div class="checkbox">
-					    <label>
+					    <label style="padding-top: 5px;">
                         <?php
 	                         $data = array(
 					          'name'        => 'remember',
@@ -97,14 +97,7 @@
 	                </div>
 	                
                 </div>
-                <div class="col-xs-4">
-                    <button type="submit" class="btn btn-default">Login</button>
-                </div>
             </div>
-            <div class="form-group">
-                  <div class="col-sm-offset-4 col-sm-8">
-                        <button type="submit" class="btn btn-default">Login</button>
-                  </div>
-            </div>
+
       <?php echo form_close();?>
 </div>
