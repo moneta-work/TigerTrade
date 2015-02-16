@@ -87,7 +87,7 @@
 	                         $data = array(
 					          'name'        => 'remember',
 					          'id'          => 'remember',
-					          'class'       => 'form-control'
+					          'class'       => ''
 					        );
 	                        echo form_checkbox($data);
 	                    ?>
