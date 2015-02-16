@@ -73,7 +73,7 @@
                   </div>
             </div>
 			<div class="form-group">
-                  <div class="col-sm-offset-4 col-sm-4">
+                  <div class="col-sm-offset-3 col-sm-6">
                         <button type="submit" class="btn btn-default">Create Group</button>
                   </div>
             </div>
