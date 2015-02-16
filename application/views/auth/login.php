@@ -75,7 +75,7 @@
 					          'id'          => 'password',
 					          'class'       => 'form-control'
 					        );
-	                        echo form_input($data);
+	                        echo form_password($data);
 	                    ?>
 						<p class="help-block"><a href="forgot_password"><?php echo lang('login_forgot_password');?></a></p>
                   </div> 
