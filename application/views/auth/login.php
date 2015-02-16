@@ -90,7 +90,7 @@
 					        );
 	                        echo form_checkbox($data);
 	                    ?>
-                  </div>
+                  </div><p class="help-block"><a href="forgot_password"><?php echo lang('login_forgot_password');?></a></p>
             </div>
             <div class="form-group">
                   <div class="col-sm-offset-3 col-sm-9">
@@ -98,6 +98,4 @@
                   </div>
             </div>
       <?php echo form_close();?>
-      
-      <p><a href="forgot_password"><?php echo lang('login_forgot_password');?></a></p>
 </div>
