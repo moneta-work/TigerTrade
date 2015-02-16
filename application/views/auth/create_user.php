@@ -1,10 +1,4 @@
 <div class="container">
-      <div id="infoMessage">
-		<div class="alert alert-danger" role="alert" style="margin-bottom: 5px; margin-top: 10px;">
-		  <span class="sr-only">Error:</span>
-		  <?php echo $message;?>
-		</div>
-	  </div>
       <div class="row">
             <div class="col-xs-2 col-md-1">
                   <div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
@@ -13,6 +7,13 @@
                   <h1 class="">New User Form</h1>
             </div>
       </div>
+ 
+       <div id="infoMessage">
+		<div class="alert alert-danger" role="alert" style="margin-bottom: 5px; margin-top: 10px;">
+		  <span class="sr-only">Error:</span>
+		  <?php echo $message;?>
+		</div>
+	  </div>
       
       <hr>   
       <?php echo form_open("auth/create_user", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
