@@ -59,7 +59,7 @@
             </div>
             <div class="form-group">
                   <label for="description" class="col-sm-4 control-label label-20">Description</label>
-                  <div class="col-sm-4">
+                  <div class="col-sm-6">
                         <?php
 	                         $data = array(
 					          'name'        => 'description',
@@ -70,6 +70,10 @@
 	                    ?>
                   </div>
             </div>
-
+			<div class="form-group">
+                  <div class="col-sm-offset-4 col-sm-4">
+                        <button type="submit" class="btn btn-default">Create Group</button>
+                  </div>
+            </div>
       <?php echo form_close();?>
 </div>
