@@ -62,7 +62,7 @@
 	                    ?>
                   </div>
             </div>
-            <div class="form-group" style="margin-bottom: 0px;">
+            <div class="form-group">
                   <label for="new_password" class="col-sm-4 control-label label-20">New Password</label>
                   <div class="col-sm-4">
 	                    <?php
@@ -75,7 +75,7 @@
 	                    ?>
                   </div> 
             </div>
-            <div class="form-group" style="margin-bottom: 0px;">
+            <div class="form-group">
                   <label for="new_password_confirm" class="col-sm-4 control-label label-20">Confirm Password</label>
                   <div class="col-sm-4">
 	                    <?php
