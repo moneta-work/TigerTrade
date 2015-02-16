@@ -97,7 +97,7 @@
                   <div class="col-sm-4">
                         <?php
 	                         $data = array(
-					          'name'        => 'first_name',
+					          'name'        => $first_name,
 					          'id'          => 'first_name',
 					          'class'       => 'form-control'
 					        );
