@@ -66,7 +66,7 @@
 	                    ?>
                   </div>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="margin-bottom: 0px;">
                   <label for="password" class="col-sm-4 control-label label-20">Password</label>
                   <div class="col-sm-4">
 	                    <?php
