@@ -38,7 +38,7 @@
                   <div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
             </div>
             <div class="col-xs-10 col-md-11">
-                  <h1 class="">New User Form</h1>
+                  <h1 class="">Login</h1>
             </div>
       </div>
       <hr>
@@ -99,4 +99,5 @@
             </div>
       <?php echo form_close();?>
       
+      <p><a href="forgot_password"><?php echo lang('login_forgot_password');?></a></p>
 </div>
