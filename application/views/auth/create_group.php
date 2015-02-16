@@ -45,8 +45,8 @@
 
       <?php echo form_open("auth/login", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
             <div class="form-group">
-                  <label for="group_name" class="col-sm-4 control-label label-20">Group Name</label>
-                  <div class="col-sm-4">
+                  <label for="group_name" class="col-sm-3 control-label label-20">Group Name</label>
+                  <div class="col-sm-6">
                         <?php
 	                         $data = array(
 					          'name'        => 'group_name',
@@ -58,15 +58,16 @@
                   </div>
             </div>
             <div class="form-group">
-                  <label for="description" class="col-sm-4 control-label label-20">Description</label>
+                  <label for="description" class="col-sm-3 control-label label-20">Description</label>
                   <div class="col-sm-6">
                         <?php
 	                         $data = array(
 					          'name'        => 'description',
 					          'id'          => 'description',
-					          'class'       => 'form-control'
+					          'class'       => 'form-control',
+					          'rows'		=> '3'
 					        );
-	                        echo form_input($data);
+	                        echo form_textarea($data);
 	                    ?>
                   </div>
             </div>
