@@ -10,7 +10,7 @@
       <hr>
       <?php if ($message != "") { ?>
       <div id="infoMessage">
-		<div class="alert alert-danger" role="alert" style="margin-top: 10px;">
+		<div class="alert alert-info" role="alert" style="margin-top: 10px;">
 		  <span class="sr-only">Error:</span>
 		  <?php echo $message;?>
 		</div>
