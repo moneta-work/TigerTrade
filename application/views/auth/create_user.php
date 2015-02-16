@@ -18,8 +18,8 @@
 
       <?php echo form_open("auth/create_user", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
             <div class="form-group">
-                  <label for="first_name" class="col-sm-2 control-label label-20">First Name</label>
-                  <div class="col-sm-10">
+                  <label for="first_name" class="col-sm-3 control-label label-20">First Name</label>
+                  <div class="col-sm-9">
                         <?php
 	                         $data = array(
 					          'name'        => 'first_name',
@@ -31,8 +31,8 @@
                   </div>
             </div>
             <div class="form-group">
-                  <label for="last_name" class="col-sm-2 control-label label-20">Last Name</label>
-                  <div class="col-sm-10">
+                  <label for="last_name" class="col-sm-3 control-label label-20">Last Name</label>
+                  <div class="col-sm-9">
 	                    <?php
 	                         $data = array(
 					          'name'        => 'last_name',
@@ -44,8 +44,8 @@
                   </div>
             </div>
             <div class="form-group">
-                  <label for="email" class="col-sm-2 control-label label-20">Email</label>
-                  <div class="col-sm-10">
+                  <label for="email" class="col-sm-3 control-label label-20">Email</label>
+                  <div class="col-sm-9">
                         <?php
 	                         $data = array(
 					          'name'        => 'email',
@@ -57,8 +57,8 @@
                   </div>
             </div>
             <div class="form-group">
-                  <label for="phone" class="col-sm-2 control-label label-20">Phone</label>
-                  <div class="col-sm-10">
+                  <label for="phone" class="col-sm-3 control-label label-20">Phone</label>
+                  <div class="col-sm-9">
                         <?php
 	                         $data = array(
 					          'name'        => 'phone',
@@ -70,8 +70,8 @@
                   </div>
             </div>
             <div class="form-group">
-                  <label for="password" class="col-sm-2 control-label label-20">Password</label>
-                  <div class="col-sm-10">
+                  <label for="password" class="col-sm-3 control-label label-20">Password</label>
+                  <div class="col-sm-9">
                         <?php
 	                         $data = array(
 					          'name'        => 'password',
@@ -83,8 +83,8 @@
                   </div>
             </div>
             <div class="form-group">
-                  <label for="password_confirm" class="col-sm-2 control-label label-20">Confirm Password</label>
-                  <div class="col-sm-10">
+                  <label for="password_confirm" class="col-sm-3 control-label label-20">Confirm Password</label>
+                  <div class="col-sm-9">
                         <?php
 	                         $data = array(
 					          'name'        => 'password_confirm',
@@ -96,7 +96,7 @@
                   </div>
             </div>
             <div class="form-group">
-                  <div class="col-sm-offset-2 col-sm-10">
+                  <div class="col-sm-offset-3 col-sm-9">
                         <button type="submit" class="btn btn-default">Create User</button>
                   </div>
             </div>
