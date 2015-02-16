@@ -7,15 +7,15 @@
                   <h1 class="">New User Form</h1>
             </div>
       </div>
- 
-       <div id="infoMessage">
+      <hr>
+      <div id="infoMessage">
 		<div class="alert alert-danger" role="alert" style="margin-bottom: 5px; margin-top: 10px;">
 		  <span class="sr-only">Error:</span>
 		  <?php echo $message;?>
 		</div>
 	  </div>
       
-      <hr>   
+
       <?php echo form_open("auth/create_user", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
             <div class="form-group">
                   <label for="first_name" class="col-sm-2 control-label label-20">First Name</label>
