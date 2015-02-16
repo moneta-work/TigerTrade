@@ -29,7 +29,7 @@
       </div>
       <hr>
       <div class="row">
-			<div class="col-xs-offset-4 col-xs-8">
+			<div class="col-sm-offset-4 col-sm-8">
 			    <p>Enter your the email address you used to sign up.</p>
                 <p>We will send you an email about resetting your password.</p>
 			</div>
