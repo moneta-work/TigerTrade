@@ -8,12 +8,14 @@
             </div>
       </div>
       <hr>
+      <?php if isset($message) { ?>
       <div id="infoMessage">
 		<div class="alert alert-danger" role="alert" style="margin-top: 10px;">
 		  <span class="sr-only">Error:</span>
 		  <?php echo $message;?>
 		</div>
 	  </div>
+	  <?php }; ?>
       
 
       <?php echo form_open("auth/create_user", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
