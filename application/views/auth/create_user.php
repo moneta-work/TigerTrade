@@ -60,7 +60,7 @@
             </div>
             <div class="form-group">
                   <label for="phone" class="col-sm-4 control-label label-20">Phone</label>
-                  <div class="col-sm-">
+                  <div class="col-sm-4">
                         <?php
 	                         $data = array(
 					          'name'        => 'phone',
