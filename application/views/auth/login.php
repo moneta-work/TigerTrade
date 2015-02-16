@@ -81,7 +81,7 @@
                   </div> 
             </div>
             <div class="form-group">
-                <div class="col-sm-offset-4 col-sm-8">
+                <div class="col-xs-offset-4 col-sm-8">
 	                <div class="checkbox">
 					    <label>
                         <?php
@@ -94,6 +94,9 @@
 	                    ?>Remember me
 					    </label>
 	                </div>
+                  <div class="col-xs-4">
+                        <button type="submit" class="btn btn-default">Login</button>
+                  </div>
                 </div>
             </div>
             <div class="form-group">
