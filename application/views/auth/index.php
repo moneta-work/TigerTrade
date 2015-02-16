@@ -7,7 +7,6 @@
 			<h1 class="">User Homepage</h1>
 		</div>
 	</div>
-      <hr>
       <?php if ($message != "") { ?>
       <div id="infoMessage">
 		<div class="alert alert-info" role="alert" style="margin-top: 10px;">
