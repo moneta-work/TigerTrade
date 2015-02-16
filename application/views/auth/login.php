@@ -78,6 +78,7 @@
 	                        echo form_input($data);
 	                    ?>
                   </div>
+                  <p class="help-block"><a href="forgot_password"><?php echo lang('login_forgot_password');?></a></p>
             </div>
             <div class="form-group">
                   <label for="remember" class="col-sm-4 control-label label-20">Remember Me</label>
@@ -90,7 +91,7 @@
 					        );
 	                        echo form_checkbox($data);
 	                    ?>
-                  </div><p class="help-block"><a href="forgot_password"><?php echo lang('login_forgot_password');?></a></p>
+                  </div>
             </div>
             <div class="form-group">
                   <div class="col-sm-offset-4 col-sm-8">
