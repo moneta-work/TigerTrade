@@ -49,45 +49,50 @@
       
 
       <?php echo form_open("auth/change_password", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
-            <div class="form-group">
-                  <label for="old_password" class="col-sm-4 control-label label-20">Old Password</label>
-                  <div class="col-sm-4">
-                        <?php
-	                         $data = array(
-					          'name'        => 'old_password',
-					          'id'          => 'old_password',
-					          'class'       => 'form-control'
-					        );
-	                        echo form_password($data);
-	                    ?>
-                  </div>
-            </div>
-            <div class="form-group">
-                  <label for="new_password" class="col-sm-4 control-label label-20">New Password</label>
-                  <div class="col-sm-4">
-	                    <?php
-	                         $data = array(
-					          'name'        => 'new_password',
-					          'id'          => 'new_password',
-					          'class'       => 'form-control'
-					        );
-	                        echo form_password($data);
-	                    ?>
-                  </div> 
-            </div>
-            <div class="form-group">
-                  <label for="new_password_confirm" class="col-sm-4 control-label label-20">Confirm Password</label>
-                  <div class="col-sm-4">
-	                    <?php
-	                         $data = array(
-					          'name'        => 'new_password_confirm',
-					          'id'          => 'new_password_confirm',
-					          'class'       => 'form-control'
-					        );
-	                        echo form_password($data);
-	                    ?>
-                  </div> 
-            </div>
+        <div class="form-group">
+              <label for="old_password" class="col-sm-4 control-label label-20">Old Password</label>
+              <div class="col-sm-4">
+                    <?php
+                         $data = array(
+				          'name'        => 'old_password',
+				          'id'          => 'old_password',
+				          'class'       => 'form-control'
+				        );
+                        echo form_password($data);
+                    ?>
+              </div>
+        </div>
+        <div class="form-group">
+              <label for="new_password" class="col-sm-4 control-label label-20">New Password</label>
+              <div class="col-sm-4">
+                    <?php
+                         $data = array(
+				          'name'        => 'new_password',
+				          'id'          => 'new_password',
+				          'class'       => 'form-control'
+				        );
+                        echo form_password($data);
+                    ?>
+              </div> 
+        </div>
+        <div class="form-group">
+              <label for="new_password_confirm" class="col-sm-4 control-label label-20">Confirm Password</label>
+              <div class="col-sm-4">
+                    <?php
+                         $data = array(
+				          'name'        => 'new_password_confirm',
+				          'id'          => 'new_password_confirm',
+				          'class'       => 'form-control'
+				        );
+                        echo form_password($data);
+                    ?>
+              </div> 
+        </div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button type="submit" class="btn btn-default">Submit</button>
+			</div>
+		</div>
 
       <?php echo form_close();?>
 </div>
