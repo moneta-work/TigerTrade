@@ -65,7 +65,8 @@
 					          'name'        => 'description',
 					          'id'          => 'description',
 					          'class'       => 'form-control',
-					          'rows'		=> '3'
+					          'rows'		=> '3',
+					          'style'		=> 'style="resize: none;"'
 					        );
 	                        echo form_textarea($data);
 	                    ?>
