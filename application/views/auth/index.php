@@ -4,7 +4,7 @@
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
 		<div class="col-xs-10 col-md-11">
-			<h1 class="">User Homepage</h1>
+			<h1 class="">User Management</h1>
 		</div>
 	</div>
       <?php if ($message != "") { ?>
