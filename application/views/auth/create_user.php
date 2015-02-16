@@ -8,7 +8,7 @@
             </div>
       </div>
       <hr>
-      <?php if (isset($message)) { ?>
+      <?php if $message != "" { ?>
       <div id="infoMessage">
 		<div class="alert alert-danger" role="alert" style="margin-top: 10px;">
 		  <span class="sr-only">Error:</span>
