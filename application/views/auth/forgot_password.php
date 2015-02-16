@@ -26,12 +26,14 @@
             <div class="col-xs-10 col-md-11">
                 <h1 class="">Forgot Password</h1>
             </div>
+      </div>
+      <hr>
+      <div class="row">
 			<div class="col-xs-offset-2 col-xs-10">
 			    <p>Enter your the email address you used to sign up.</p>
                 <p>We will send you an email about resetting your password.</p>
 			</div>
       </div>
-      <hr>
       <?php if ($message != "") { ?>
       <div id="infoMessage">
 		<div class="alert alert-info" role="alert" style="margin-top: 10px;">
