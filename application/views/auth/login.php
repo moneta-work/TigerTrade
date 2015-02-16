@@ -81,8 +81,8 @@
                   </div> 
             </div>
             <div class="form-group">
-                  <label for="remember" class="col-sm-4 control-label label-20">Remember Me</label>
-                  <div class="col-sm-4">
+                  <label for="remember" class="col-xs-4 control-label label-20">Remember Me</label>
+                  <div class="col-xs-4">
                         <?php
 	                         $data = array(
 					          'name'        => 'remember',
