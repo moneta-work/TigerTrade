@@ -45,7 +45,7 @@
 					<li><a href='<?= base_url("auth/create_user") ?>'>Register</a></li>
 					<li><a href='<?= base_url("auth/login") ?>'>Login</a></li>
 				<?php } else { ?>
-					<li><a href='<?= base_url("auth/") ?>'><?php $user->first_name; ?></a></li>
+					<li><a href='<?= base_url("auth/") ?>'><?php echo $user->first_name; ?></a></li>
 					<li><a href='<?= base_url("auth/logout") ?>'>Logout</a></li>
 				<?php }; ?>
 			</ul>
