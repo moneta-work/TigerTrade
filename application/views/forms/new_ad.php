@@ -15,19 +15,19 @@
 		<div class="form-group">
 			<label for="title" class="col-sm-2 control-label label-20">Title</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="title" placeholder="...">
+				<input type="text" class="form-control" id="title" placeholder="..." onkeyup="document.getElementById('preview_title').innerHTML = this.value">
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="price" class="col-sm-2 control-label label-20">Price</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="price" placeholder="$0.00">
+				<input type="text" class="form-control" id="price" placeholder="0.00" onkeyup="document.getElementById('preview_price').innerHTML = this.value" onkeypress="return isNumber(event)">
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="description" class="col-sm-2 control-label label-20">Description</label>
 			<div class="col-sm-10">
-				<textarea type="text" class="form-control description-box" id="description" rows="5"></textarea>
+				<textarea type="text" class="form-control description-box" id="description" onkeyup="document.getElementById('preview_message').innerHTML = this.value" rows="5"></textarea>
 			</div>
 		</div>
 		
@@ -49,4 +49,14 @@
 		</div>
 	</form>
 	
+	<hr>
+	
+	<div class="row">
+		<label class="col-sm-2 control-label label-20">Preview</label>
+		<div class="col-sm-10">
+			<h2 id="preview_title">Title</h2>
+			<h3 style="display: inline;">$</h3><h3 id="preview_price" style="display: inline;">Price</h3>
+			<p style="padding-top: 10px;" id="preview_message">Message</p>
+		</div>
+	</div>
 </div>
