@@ -14,9 +14,9 @@
 	<form class="form-horizontal" id="ad-form" action="<?php echo base_url();?>user/update_profile_info"" method="POST">
 	
 		<div class="form-group">
-			<label for="pawprint" class="col-sm-2 control-label label-20">Pawprint</label>
+			<label for="username" class="col-sm-2 control-label label-20">Username</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="pawprint" name="pawprint" placeholder="" disabled>
+				<input type="text" class="form-control" id="username" name="username" placeholder="" disabled>
 			</div>
 		</div>
 	
