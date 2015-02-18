@@ -32,6 +32,11 @@ class User extends CI_Controller
 		$optional_email = $this->input->post('optionalEmail');
 		$phone_number = $this->input->post('phoneNumber');
 		
+		//call model to update info
+		
+		//Go to user home
+		redirect('user');
+		
 	}
 }
 ?>
