@@ -16,7 +16,7 @@
 		<div class="form-group">
 			<label for="pawprint" class="col-sm-2 control-label label-20">Pawprint</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="pawprint" placeholder="" disabled>
+				<input type="text" class="form-control" id="pawprint" name="pawprint" placeholder="" disabled>
 			</div>
 		</div>
 	
@@ -30,28 +30,28 @@
 		<div class="form-group">
 			<label for="lastName" class="col-sm-2 control-label label-20">Last Name</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="lastName" placeholder="">
+				<input type="text" class="form-control" id="lastName" name="lastName" placeholder="">
 			</div>
 		</div>
 		
 		<div class="form-group">
 			<label for="primaryEmail" class="col-sm-2 control-label label-20">Primary Email</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="primaryEmail" placeholder="" disabled>
+				<input type="text" class="form-control" id="primaryEmail" name="primaryEmail" placeholder="" disabled>
 			</div>
 		</div>
 		
 		<div class="form-group">
 			<label for="optionalEmail" class="col-sm-2 control-label label-20">Secondary Email (Optional)</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="optionalEmail" >
+				<input type="text" class="form-control" id="optionalEmail" name="optionalEmail" >
 			</div>
 		</div>
 		
 		<div class="form-group">
 			<label for="phoneNumber" class="col-sm-2 control-label label-20">Phone Number</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="phoneNumber" >
+				<input type="text" class="form-control" id="phoneNumber" name="phoneNumber" >
 			</div>
 		</div>
 		

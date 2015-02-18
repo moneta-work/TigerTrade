@@ -24,7 +24,7 @@ class User extends CI_Controller
 		$this->layout->view('forms/profile_information_form', $data);
 	}
 	
-	//shows form to edit profile information
+	//update profile info
 	function update_profile_info()
 	{
 		$firstName = $this->input->post('firstName');
@@ -32,7 +32,6 @@ class User extends CI_Controller
 		$optional_email = $this->input->post('optionalEmail');
 		$phone_number = $this->input->post('phoneNumber');
 		
-		echo "<h1>" . $firstName . "</h1>";
 	}
 }
 ?>
