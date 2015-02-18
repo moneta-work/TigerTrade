@@ -23,4 +23,15 @@ class User extends CI_Controller
 		$data['title'] = 'Edit Info';
 		$this->layout->view('forms/profile_information_form', $data);
 	}
+	
+	//shows form to edit profile information
+	function update_profile_info()
+	{
+		$firstName = $this->input->post('firstName');
+		$lastName = $this->input->post('lastName');
+		$optional_email = $this->input->post('optionalEmail');
+		$phone_number = $this->input->post('phoneNumber');
+		
+		echo $firstName;
+	}
 }
