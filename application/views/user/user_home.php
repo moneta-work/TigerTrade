@@ -11,4 +11,6 @@
 	<hr>
 	
 	<p>This will be the homepage for logged in users.</p>
+	
+	<p>Form for user information: <a href="<?php echo base_url('/user/edit_profile_info') ?>">Edit Profile Information</a></p>
 </div>

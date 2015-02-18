@@ -16,4 +16,11 @@ class User extends CI_Controller
 		$this->layout->view('user/user_home', $data);
 
 	}
+	
+	//shows form to edit profile information
+	function edit_profile_info()
+	{
+		$data['title'] = 'Edit Info';
+		$this->layout->view('forms/profile_information_form', $data);
+	}
 }
