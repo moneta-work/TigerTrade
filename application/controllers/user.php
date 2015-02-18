@@ -34,7 +34,7 @@ class User extends CI_Controller
 		
 		//call model to update info
 		
-		//Go to user home
+		//Go to user home for now
 		redirect('user');
 		
 	}
