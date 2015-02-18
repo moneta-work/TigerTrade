@@ -32,7 +32,7 @@ class User extends CI_Controller
 		$optional_email = $this->input->post('optionalEmail');
 		$phone_number = $this->input->post('phoneNumber');
 		
-		echo $firstName;
+		echo "<h1>" . $firstName . "</h1>";
 	}
 }
 ?>
