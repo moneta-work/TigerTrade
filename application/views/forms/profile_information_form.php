@@ -11,7 +11,7 @@
 	
 	<hr>
 		
-	<form class="form-horizontal" id="ad-form" action='<?php echo base_url();?>user/update_profile_info' method='post'>
+	<form class="form-horizontal" id="ad-form" action="<?php echo base_url();?>user/update_profile_info"" method="POST">
 	
 		<div class="form-group">
 			<label for="pawprint" class="col-sm-2 control-label label-20">Pawprint</label>
@@ -23,7 +23,7 @@
 		<div class="form-group">
 			<label for="firstName" class="col-sm-2 control-label label-20">First Name</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="firstName" placeholder="">
+				<input type="text" class="form-control" id="firstName" name="firstName" placeholder="">
 			</div>
 		</div>
 		
