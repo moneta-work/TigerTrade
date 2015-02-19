@@ -43,10 +43,12 @@ CREATE TABLE kylecarlson_tigertrade.subcategories (
 --	flag_count		- The count of flags on the ad.
 CREATE TABLE kylecarlson_tigertrade.ads (
 	ad_id  	 INTEGER PRIMARY KEY AUTO_INCREMENT,
-	title_description VARCHAR (100),
+	title	VARCHAR (128),
+	description	VARCHAR (512),
 	creation_date 	TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	expiration_date 	TIMESTAMP,
 	price	DECIMAL(7,2),
+	user_id INTEGER REFERENCES kylecarlson_tigertrade.users(id),
 	flag_count	INTEGER	
 );
 
