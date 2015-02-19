@@ -7,6 +7,7 @@ class Ad extends CI_Controller
 		parent::__construct();
 
 		$this->load->helper('url');
+		$this->load->model('ad_model');
 		$data['menu'] = $this->load->view('shared/menu');
 	}
 
@@ -58,6 +59,26 @@ class Ad extends CI_Controller
 	//create an ad
 	function create()
 	{
+		$this->form_validation->set_rules('title', 'Title', 'required');
+		$this->form_validation->set_rules('price', 'Price', 'required');
+		$this->form_validation->set_rules('description', 'Description', 'required');
+
+		//if validation fails
+		if ($this->form_validation->run() == false)
+		{
+
+		}
+		//if validation passes
+		else
+		{
+			$title = $this->security->xss_clean($this->input->post('title'));
+			$description = $this->security->xss_clean($this->input->post('description'));
+			$price = $this->security->xss_clean($this->input->post('price'));
+
+			$user_id = 1;
+
+			$this->ad_model->insert_new_ad($title, $description, $price, $user_id);
+		}
 
 	}
 
