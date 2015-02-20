@@ -31,7 +31,7 @@ class Category_model extends CI_Model
 
 	public function get_category($category_id)
 	{
-		return $this->db->get_where('categories', array('category_id' => $category_id));
+		return $this->db->get_where('categories', array('category_id' => $category_id, 1));
 	}
 
 }

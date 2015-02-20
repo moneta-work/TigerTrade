@@ -36,7 +36,7 @@ class Market extends CI_Controller
 	{
 		$data['category'] = $this->category_model->get_category($category_id)->result();
 		$data['title'] = 'A Category Home';
-		$this->layout->view('market/category_home', $data, 1);
+		$this->layout->view('market/category_home', $data);
 	}
 
 	//edit ad by id
