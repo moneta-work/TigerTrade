@@ -1,1 +1,4 @@
-<?php echo $category->name; ?>
+<?php
+  var_dump($category);
+  echo $category->result();	
+?>
