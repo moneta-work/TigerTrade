@@ -135,9 +135,10 @@ class Ad extends CI_Controller
         {
             $data['created'] = true;
         }
-        
-        $this->load->view('upload',$data);
-    }
+       		$data['title'] = 'New Ad';
+			$this->layout->view('forms/new_ad', $data);
+
+    	}
 		/*
 		$config['upload_path'] = './assets/images/';
 			$config['allowed_types'] = 'gif|jpg|png|img|jpeg|pdf';
@@ -163,9 +164,10 @@ class Ad extends CI_Controller
 			      	}
 			    }
 			}
-		*/
+		
 			$data['title'] = 'New Ad';
 			$this->layout->view('forms/new_ad', $data);
+		*/
 		/*	
 		$this->form_validation->set_rules('title', 'Title', 'required');
 		$this->form_validation->set_rules('price', 'Price', 'required');
