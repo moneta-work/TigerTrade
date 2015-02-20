@@ -1,23 +1,3 @@
-<script type="text/javascript">
-	
-	function readURL(input) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
-            
-            reader.onload = function (e) {
-                $('#pic1').attr('src', e.target.result);
-            }
-            
-            reader.readAsDataURL(input.files[0]);
-        }
-    }
-    
-    $("#imgInp").change(function(){
-        readURL(this);
-    });
-</script>
-
-
 <div class="container">
 
 	<?php if(isset($created)) {?>
@@ -64,10 +44,10 @@
 			</div>
 		</div>
 
-		<div class="form-group imgUpload" id="imgInp">
+		<div class="form-group imgUpload" >
 			<label for="description" class="col-sm-2 control-label label-20">Upload Images</label>
 			<div class="col-sm-10">
-				<input type="file" name="userfile1" />
+				<input type="file" id="imgInp" name="userfile1" />
 				<br />
 			</div>
 		</div>
