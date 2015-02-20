@@ -25,7 +25,7 @@
 	    			<?php $count++; ?>
 				    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->category_id) ?>">
 					    <?php echo $subcategory->name ?>
-					</a><?php if ($count < $total) { echo ' / ' } ?>
+					</a><?php if ($count < $total) { echo ' / '; } ?>
 				<?php } ?>
 	    	<?php } ?>
 	    	<br>
