@@ -58,6 +58,34 @@ class Ad extends CI_Controller
 	//create an ad
 	function create()
 	{
+		$config['upload_path'] = './assets/images/';
+			$config['allowed_types'] = 'gif|jpg|png|img|jpeg|pdf';
+			$config['max_size'] = '100';
+			$config['max_width'] = '1024';
+			$config['max_height'] = '768';
+
+			$this->load->library('upload', $config);
+
+			foreach ($_FILES as $file => $fileObject)  //fieldname is the form field name
+			{
+			    if (!empty($fileObject['name']))
+			    {
+			        $this->upload->initialize($config);
+			        if (!$this->upload->do_upload($fieldname))
+			        {
+			            $errors = $this->upload->display_errors();
+			            flashMsg($errors);
+			        }
+			        else
+			        {
+			             $data['created'] = true;
+			
+						$data['title'] = 'New Ad';
+						$this->layout->view('forms/new_ad', $data);
+			      	}
+			    }
+			}
+		/*	
 		$this->form_validation->set_rules('title', 'Title', 'required');
 		$this->form_validation->set_rules('price', 'Price', 'required');
 		$this->form_validation->set_rules('description', 'Description', 'required');
@@ -70,13 +98,8 @@ class Ad extends CI_Controller
 		//if validation passes
 		else
 		{
-			$config['upload_path'] = './assets/images/';
-			$config['allowed_types'] = 'gif|jpg|png|img|jpeg|pdf';
-			$config['max_size'] = '100';
-			$config['max_width'] = '1024';
-			$config['max_height'] = '768';
+			
 
-			$this->load->library('upload', $config);
 
 			$title = $this->security->xss_clean($this->input->post('title'));
 			$description = $this->security->xss_clean($this->input->post('description'));
@@ -91,6 +114,7 @@ class Ad extends CI_Controller
 		}
 		$data['title'] = 'New Ad';
 		$this->layout->view('forms/new_ad', $data);
+		*/
 	}
 
 	//delete a specific ad
