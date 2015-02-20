@@ -105,12 +105,8 @@
                   <label for="last_name" class="col-sm-4 control-label label-20">Last Name</label>
                   <div class="col-sm-4">
 	                    <?php
-	                         $data = array(
-					          'name'        => 'last_name',
-					          'id'          => 'last_name',
-					          'class'       => 'form-control'
-					        );
-	                        echo form_input($data);
+							$last_name['class'] = 'form-control';
+	                        echo form_input($last_name);
 	                    ?>
                   </div>
             </div>
@@ -122,6 +118,7 @@
 					          'name'        => 'email',
 					          'id'          => 'email',
 					          'class'       => 'form-control'
+							  'readonly'    => 'true'
 					        );
 	                        echo form_input($data);
 	                    ?>
@@ -131,12 +128,8 @@
                   <label for="phone" class="col-sm-4 control-label label-20">Phone</label>
                   <div class="col-sm-4">
                         <?php
-	                         $data = array(
-					          'name'        => 'phone',
-					          'id'          => 'phone',
-					          'class'       => 'form-control'
-					        );
-	                        echo form_input($data);
+	                        $phone['class'] = 'form-control';
+	                        echo form_input($phone);
 	                    ?>
                   </div>
             </div>
@@ -144,12 +137,8 @@
                   <label for="password" class="col-sm-4 control-label label-20">Password</label>
                   <div class="col-sm-4">
                         <?php
-	                         $data = array(
-					          'name'        => 'password',
-					          'id'          => 'password',
-					          'class'       => 'form-control'
-					        );
-	                        echo form_password($data);
+	                        $password['class'] = 'form-control';
+	                        echo form_input($password);
 	                    ?>
                   </div>
             </div>
@@ -157,12 +146,8 @@
                   <label for="password_confirm" class="col-sm-4 control-label label-20">Confirm Password</label>
                   <div class="col-sm-4">
                         <?php
-	                         $data = array(
-					          'name'        => 'password_confirm',
-					          'id'          => 'password_confirm',
-					          'class'       => 'form-control'
-					        );
-	                        echo form_password($data);
+	                        $password_confirm['class'] = 'form-control';
+	                        echo form_input($password_confirm);
 	                    ?>
                   </div>
             </div>
