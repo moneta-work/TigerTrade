@@ -27,6 +27,7 @@
 		</ul>
 	<?php } ?>
 	
+	<br>
 	<p>Main page for categories.</p>
 	<br>
 	<p>Form for new ad: <a href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a></p>
