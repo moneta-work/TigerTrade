@@ -1,5 +1,5 @@
 <div class="container">
-	<?php echo form_open("auth/login", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
+	<?php echo form_open("ad/create", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
 	<div class="row">
 		<div class="col-xs-2 col-md-1">
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
