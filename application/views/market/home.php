@@ -16,12 +16,13 @@
 		    <b><a href="<?php echo base_url('/market/category/' . $category->category_id) ?>">
 			    <?php echo $category->name ?>
 			</a></b><br>
-	    	<?php foreach ($subcategories->result() as $subcategory) { ?>
-	    		<?php
+				    		<?php
 		    		$total = count(get_object_vars($this->subcategory_model->get_subcategories($category->category_id)));
 		    		echo $total;
 		    		$count = 0;
 	    		?>
+	    	<?php foreach ($subcategories->result() as $subcategory) { ?>
+
 	    		<?php if ($subcategory->category_id == $category->category_id) { ?>
 	    			<?php $count++; ?>
 				    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->category_id) ?>">
