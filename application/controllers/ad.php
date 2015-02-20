@@ -98,7 +98,7 @@ class Ad extends CI_Controller
 					// If file moved to uploads folder.
 						echo '<div class="alert alert-success">
 		        			<a href="#" class="close" data-dismiss="alert">&times;</a>
-		       				 <strong>Success!</strong> '.$_FILES['file']['tmp_name'][$i] .' Image Uploaded.</div>';
+		       				 <strong>Success!</strong> '.$target_path .' Image Uploaded.</div>';
 					} 
 					else {     //  If File Was Not Moved.
 						echo '<div class="alert alert-error">
