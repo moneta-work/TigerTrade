@@ -23,6 +23,7 @@
 					</a>
 				<?php } ?>
 	    	<?php } ?>
+	    	<br>
 		<?php } ?>
 		</div>
 		<div class="col-xs-9">
