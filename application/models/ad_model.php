@@ -30,7 +30,7 @@ class Ad_model extends CI_Model
 
 	public function get_new_ad_id($title, $description, $price, $user_id)
 	{
-		 $query = $this->db->query("SELECT * FROM ads WHERE title = '$title' AND description = '$description' and price = '$price' and user_id = '$user_id'");
+		$query = $this->db->query("SELECT * FROM ads WHERE title = '$title' AND description = '$description' and price = '$price' and user_id = '$user_id'");
 		if($query->num_rows() == 1)
 		{
 			$query = $query->row();
