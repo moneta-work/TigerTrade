@@ -6,8 +6,6 @@ class Market extends CI_Controller
 	{
 		parent::__construct();
 		
-		$data['categories'] = $this->category_model->get_all_categories()
-		
 		$this->load->model('category_model');
 		$this->load->model('subcategory_model');
 		$data['menu'] = $this->load->view('shared/menu');
@@ -15,6 +13,7 @@ class Market extends CI_Controller
 
 	function index()
 	{
+		$data['categories'] = $this->category_model->get_all_categories();
 		$data['title'] = 'Market Home';
 		$this->layout->view('market/home', $data);
 	}
