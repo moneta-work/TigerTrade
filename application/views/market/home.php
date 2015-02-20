@@ -10,7 +10,13 @@
 	
 	<hr>
 	
-	<?php var_dump($categories); ?>
+	<?php var_dump($categories); 
+		
+	foreach ($categories->result() as $row)
+{
+    echo $row->name;
+}
+	?>
 	
 	<p>Main page for categories.</p>
 	<br>
