@@ -32,9 +32,16 @@ class Market extends CI_Controller
 	}
 
 	//shows details of a specific ad
-	function view_category($category_id)
+	function category($category_id)
 	{
 		$data['category'] = $this->category_model->get_category($category_id);
+		$data['title'] = ucfirst($category->name);
+		$this->layout->view('market/category_home', $data);
+	}
+	
+	function subcategory($category_id)
+	{
+		$data['subcategory'] = $this->subcategory_model->get_subcategory($category_id);
 		$data['title'] = 'A Category Home';
 		$this->layout->view('market/category_home', $data);
 	}
