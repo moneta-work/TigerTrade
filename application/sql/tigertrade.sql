@@ -176,11 +176,11 @@ PRIMARY KEY (`id`)
 ); 
 
 INSERT INTO categories (name) VALUES
-('for sale'), --1
-('services'), --2
-('tutoring'), --3
-('housing'), --4
-('jobs'), --5
+('for sale'),
+('services'),
+('tutoring'),
+('housing'),
+('jobs'),
 ('study groups');
 	
 INSERT INTO kylecarlson_tigertrade.subcategories (category_id, name) VALUES
