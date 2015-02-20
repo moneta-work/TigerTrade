@@ -31,7 +31,9 @@ class Category_model extends CI_Model
 
 	public function get_category($category_id)
 	{
-		return $this->db->query('SELECT * FROM categories WHERE category_id = ' $category_id ');
+		$query = $this->db->query("SELECT * FROM categories WHERE category_id = '$category_id'");
+		$query = $query->row();
+		return $query;
 	}
 
 }
