@@ -59,6 +59,8 @@ class Ad extends CI_Controller
 	//create an ad
 	function create()
 	{
+		echo COUNT($_FILES);
+		/*
 		$upload_conf = array(
             'upload_path'   => realpath('assets/images'),
             'allowed_types' => 'gif|jpg|png',
@@ -139,7 +141,7 @@ class Ad extends CI_Controller
        		
    		$data['title'] = 'New Ad';
 		$this->layout->view('forms/new_ad', $data);
-
+		*/
     	
 		/*
 		$config['upload_path'] = './assets/images/';
