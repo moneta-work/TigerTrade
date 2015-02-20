@@ -31,7 +31,7 @@
 					</a>
 				<?php } ?>
 	    	<?php } ?>
-	    	<br>
+	    	<br><br>
 		<?php } ?>
 		</div>
 		<div class="col-xs-9">
