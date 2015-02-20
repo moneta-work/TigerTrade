@@ -33,8 +33,10 @@ class Ad_model extends CI_Model
 		 $query = $this->db->query("SELECT * FROM images WHERE title = '$title' AND description = '$description' and price = '$price' and user_id = '$user_id'");
 		if($query->num_rows() == 1)
 		{
-		$query = $query->row();
-		return $query->ad_id;
+			$query = $query->row();
+			return $query->ad_id;
+		}
+		
 		/*
 		$this->db->where('title', $title);
 		$this->db->where('description', $description);
