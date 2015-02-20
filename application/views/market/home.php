@@ -11,7 +11,7 @@
 	<hr>
 	
 	<?php foreach ($categories->result() as $row) { ?>
-    <a href="<?php base_url('/market/' . $row->category_id) ?>"><?php echo $row->name ?></a>
+    <a href="<?php base_url('/market/' . $row->category_id) ?>"><?php echo $row->name ?> (<?php echo $row->category_id ?>)</a>
 	<?php } ?>
 	
 	<p>Main page for categories.</p>
