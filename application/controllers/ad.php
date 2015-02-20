@@ -66,7 +66,7 @@ class Ad extends CI_Controller
 		//if validation fails
 		if ($this->form_validation->run() == false)
 		{
-
+			$data['error'] = true;
 		}
 		//if validation passes
 		else
@@ -78,8 +78,12 @@ class Ad extends CI_Controller
 			$user_id = 1;
 
 			$this->ad_model->insert_new_ad($title, $description, $price, $user_id);
-		}
 
+			$data['Created'] = true;
+			
+		}
+		$data['title'] = 'New Ad';
+		$this->layout->view('forms/new_ad', $data);
 	}
 
 	//delete a specific ad

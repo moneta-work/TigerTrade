@@ -1,4 +1,18 @@
 <div class="container">
+
+	<?php if($created == true) {?>
+	    <div class="alert alert-success">
+	        <a href="#" class="close" data-dismiss="alert">&times;</a>
+	        <strong>Success!</strong> Your ad has been created.
+	    </div>
+    <?php }?>
+    <?php if($error == true) {?>
+	    <div class="alert alert-error">
+	        <a href="#" class="close" data-dismiss="alert">&times;</a>
+	        <strong>Error!</strong> Your ad was not created, something went wrong.
+	    </div>
+    <?php }?>
+
 	<?php echo form_open("ad/create", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
 	<div class="row">
 		<div class="col-xs-2 col-md-1">
