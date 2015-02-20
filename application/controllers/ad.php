@@ -73,18 +73,18 @@ class Ad extends CI_Controller
 			        $this->upload->initialize($config);
 			        if (!$this->upload->do_upload($file))
 			        {
-			            $errors = $this->upload->display_errors();
-			            flashMsg($errors);
+			            $data['error'] = true;
 			        }
 			        else
 			        {
 			             $data['created'] = true;
 			
-						$data['title'] = 'New Ad';
-						$this->layout->view('forms/new_ad', $data);
 			      	}
 			    }
 			}
+			
+			$data['title'] = 'New Ad';
+			$this->layout->view('forms/new_ad', $data);
 		/*	
 		$this->form_validation->set_rules('title', 'Title', 'required');
 		$this->form_validation->set_rules('price', 'Price', 'required');
