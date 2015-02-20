@@ -12,15 +12,15 @@
 	
 	<div class="row">
 		<div class="col-xs-3">
-		<?php
-			$count = 0;
-		?>
 		<?php foreach ($categories->result() as $category) { ?>
 		    <b><a href="<?php echo base_url('/market/category/' . $category->category_id) ?>">
 			    <?php echo $category->name ?>
 			</a></b><br>
 	    	<?php foreach ($subcategories->result() as $subcategory) { ?>
-	    		<?php $total = count(get_object_vars($subcategories)); ?>
+	    		<?php
+		    		$total = count(get_object_vars($subcategories));
+		    		$count = 0;
+	    		?>
 	    		<?php if ($subcategory->category_id == $category->category_id) { ?>
 	    			<?php $count++; ?>
 				    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->category_id) ?>">
