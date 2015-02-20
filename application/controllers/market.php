@@ -5,7 +5,9 @@ class Market extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-
+		
+		$data['categories'] = $this->category_model->get_all_categories()
+		
 		$this->load->model('category_model');
 		$this->load->model('subcategory_model');
 		$data['menu'] = $this->load->view('shared/menu');
