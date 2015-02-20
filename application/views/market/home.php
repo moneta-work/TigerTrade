@@ -26,7 +26,7 @@
 		    		if ($count > 0) { ?> / <?php }
 		    		$count++;
 	    		?>
-				    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->category_id) ?>">
+				    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id) ?>">
 					    <?php echo $subcategory->name ?>
 					</a>
 				<?php } ?>
