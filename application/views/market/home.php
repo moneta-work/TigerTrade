@@ -11,8 +11,8 @@
 	<hr>
 	
 	<div class="row">
+		<div class="col-xs-3">
 		<?php foreach ($categories->result() as $category) { ?>
-		<div class="col-xs-6 col-sm-3">
 		    <a href="<?php echo base_url('/market/category/' . $category->category_id) ?>">
 			    <?php echo $category->name ?>
 			</a><br>
@@ -27,16 +27,16 @@
 				<?php } ?>
 	    	<?php } ?>
 			</ul>
-		</div>
 		<?php } ?>
+		</div>
+		<div class="col-xs-9">
+			<p>Main page for categories.</p>
+			<br>
+			<p>Form for new ad: <a href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a></p>
+			<p>Form for new offer: <a href="<?php echo base_url('/ad/make_offer') ?>">Make an Offer</a></p>
+			<p>Form to respond to an offer: <a href="<?php echo base_url('/ad/review_offer') ?>">Review an Offer</a></p>
+			<p>Form for new category: <a href="<?php echo base_url('/market/new_category') ?>">Create a Category</a></p>
+			<p>Form for new subcategory: <a href="<?php echo base_url('/market/new_subcategory') ?>">Create a Subcategory</a></p>	
+		</div>
 	</div>
-	
-	<br>
-	<p>Main page for categories.</p>
-	<br>
-	<p>Form for new ad: <a href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a></p>
-	<p>Form for new offer: <a href="<?php echo base_url('/ad/make_offer') ?>">Make an Offer</a></p>
-	<p>Form to respond to an offer: <a href="<?php echo base_url('/ad/review_offer') ?>">Review an Offer</a></p>
-	<p>Form for new category: <a href="<?php echo base_url('/market/new_category') ?>">Create a Category</a></p>
-	<p>Form for new subcategory: <a href="<?php echo base_url('/market/new_subcategory') ?>">Create a Subcategory</a></p>
 </div>
