@@ -20,7 +20,7 @@
 	    		<?php if ($subcategory->category_id == $category->category_id) { ?>
 				    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->category_id) ?>">
 					    <?php echo $subcategory->name ?>
-					</a>
+					</a> / 
 				<?php } ?>
 	    	<?php } ?>
 	    	<br>
