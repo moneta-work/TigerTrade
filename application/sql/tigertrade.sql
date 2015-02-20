@@ -184,7 +184,6 @@ INSERT INTO categories (name) VALUES
 ('study groups');
 	
 INSERT INTO kylecarlson_tigertrade.subcategories (category_id, name) VALUES
-	--For Sale
 	('1','books'), 
 	('1','tickets'), 
 	('1','furniture'), 
@@ -195,11 +194,9 @@ INSERT INTO kylecarlson_tigertrade.subcategories (category_id, name) VALUES
 	('1','vehicles'), 
 	('1','free'), 
 	('1','other'), 
-	--Services
 	('2', 'computers'), 
 	('2', 'manual labor'), 
 	('2', 'other'), 
-	--Tutoring
 	('3', 'math'), 
 	('3', 'english'), 
 	('3', 'science'), 
@@ -207,10 +204,8 @@ INSERT INTO kylecarlson_tigertrade.subcategories (category_id, name) VALUES
 	('3', 'computer science'), 
 	('3', 'engineering'), 
 	('3', 'other'), 
-	--Housing
 	('4','roommate'),
 	('4','lease'), 
-	--Jobs
 	('5', 'part time'),
 	('5', 'full time'), 
 	('5', 'internship'), 
