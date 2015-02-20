@@ -13,7 +13,7 @@
 	<div class="row">
 		<div class="col-xs-3">
 		<?php
-			$total = count($subcategories);
+			$total = count(get_object_vars($subcategories));
 			$count = 0;
 			echo $total;
 		?>
