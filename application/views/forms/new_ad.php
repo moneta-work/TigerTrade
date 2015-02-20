@@ -47,10 +47,17 @@
 		<div class="form-group" >
 			<label for="description" class="col-sm-2 control-label label-20">Upload Image</label>
 			<div class="col-sm-10">
-				<input type="file" class="imgUpload" id="imgInp1" name="userfile1" />
-				<br />
+				<div id="filediv"><input name="file[]" type="file" id="file"/></div>
 			</div>
 		</div>
+
+		<div class="form-group" >
+			<label for="description" class="col-sm-2 control-label label-20">Upload More Images</label>
+			<div class="col-sm-10">
+				<input type="button" id="add_more" class="upload" value="Add More Files"/>
+			</div>
+		</div>
+		
 		
 		<hr>
 		
