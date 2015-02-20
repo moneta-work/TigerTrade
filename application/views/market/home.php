@@ -16,7 +16,7 @@
 		    <a href="<?php base_url('/market/' . $category->category_id) ?>">
 			    <?php echo $category->name ?>
 			</a><br>
-			<ul class="list-inline">
+			<ul>
 	    	<?php foreach ($subcategories->result() as $subcategory) { ?>
 	    		<?php if ($subcategory->category_id == $category->category_id) { ?>
 	    		<li>
