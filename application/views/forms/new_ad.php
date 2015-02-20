@@ -45,7 +45,7 @@
 		</div>
 
 		<div class="form-group" >
-			<label for="description" class="col-sm-2 control-label label-20">Upload Images</label>
+			<label for="description" class="col-sm-2 control-label label-20">Upload Image</label>
 			<div class="col-sm-10">
 				<input type="file" class="imgUpload" id="imgInp1" name="userfile1" />
 				<br />
