@@ -44,13 +44,20 @@
 			</div>
 		</div>
 
-		<div class="form-group">
-			<label for="description" class="col-sm-2 control-label label-20">Upload Images</label>
+		<div class="form-group" >
+			<label for="description" class="col-sm-2 control-label label-20">Upload Image</label>
 			<div class="col-sm-10">
-				<input type="file" multiple="true" name="userfile[]" size="5"  />
-				<br />
+				<div id="filediv"><input name="userfile[]" type="file" id="file"/></div>
 			</div>
 		</div>
+
+		<div class="form-group" >
+			<label for="description" class="col-sm-2 control-label label-20">Upload More Images</label>
+			<div class="col-sm-10">
+				<input type="button" id="add_more" class="upload" value="Add More Files"/>
+			</div>
+		</div>
+		
 		
 		<hr>
 		
@@ -77,6 +84,7 @@
 			<h2 id="preview_title">Title</h2>
 			<h3 style="display: inline;">$</h3><h3 id="preview_price" style="display: inline;">Price</h3>
 			<p style="padding-top: 10px;" id="preview_message">Message</p>
+			<img id="pic1" src="#" alt="your image" />
 		</div>
 	</div>
 	
