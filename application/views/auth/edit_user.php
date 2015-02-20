@@ -89,6 +89,8 @@
 		</div>
 	  </div>
 	  <?php }; ?>
+	  
+	  <?php echo $first_name; ?>
       
 
       <?php echo form_open(uri_string(), array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
@@ -100,7 +102,7 @@
 					          'name'        => 'first_name',
 					          'id'          => 'first_name',
 					          'class'       => 'form-control',
-							  'value'       => '' . $first_name . '',
+							  'value'       => $first_name,
 					        );
 	                        echo form_input($data);
 	                    ?>
