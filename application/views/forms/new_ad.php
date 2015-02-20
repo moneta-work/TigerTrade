@@ -44,10 +44,10 @@
 			</div>
 		</div>
 
-		<div class="form-group">
+		<div class="form-group imgUpload" id="imgInp1">
 			<label for="description" class="col-sm-2 control-label label-20">Upload Images</label>
 			<div class="col-sm-10">
-				<input type="file" name="userfile[]" size="5"  multiple/>
+				<input type="file" name="userfile1" />
 				<br />
 			</div>
 		</div>
@@ -77,6 +77,7 @@
 			<h2 id="preview_title">Title</h2>
 			<h3 style="display: inline;">$</h3><h3 id="preview_price" style="display: inline;">Price</h3>
 			<p style="padding-top: 10px;" id="preview_message">Message</p>
+			<img id="pic1" src="#" alt="your image" />
 		</div>
 	</div>
 	
