@@ -83,7 +83,8 @@ CREATE TABLE kylecarlson_tigertrade.tags (
 CREATE TABLE kylecarlson_tigertrade.offers (
 	buyer_id INTEGER REFERENCES kylecarlson_tigertrade.users(id),
 	seller_id INTEGER REFERENCES kylecarlson_tigertrade.users(id),
-	buy_message BLOB,
+	ad_id INTEGER REFERENCES kylecarlson_tigertrade.ads(ad_id),
+	buyer_message BLOB,
 	seller_response BLOB,
 	status VARCHAR(10) DEFAULT "Pending"
 );
