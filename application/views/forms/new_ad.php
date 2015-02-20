@@ -47,7 +47,7 @@
 		<div class="form-group">
 			<label for="description" class="col-sm-2 control-label label-20">Upload Images</label>
 			<div class="col-sm-10">
-				<input type="file" name="userfile"  />
+				<input type="file" multiple="multiple" name="userfile[]" size="5"  />
 				<br />
 			</div>
 		</div>
