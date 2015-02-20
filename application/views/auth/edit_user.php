@@ -1,5 +1,5 @@
-<!-- OLD EDIT USER FORM -->
-
+<!-- OLD EDIT USER FORM-->
+<?php /*
 
 <h1><?php echo lang('edit_user_heading');?></h1>
 <p><?php echo lang('edit_user_subheading');?></p>
@@ -68,7 +68,7 @@
 
 <?php echo form_close();?>
 
-
+*/ ?>
 
 
 <div class="container">
