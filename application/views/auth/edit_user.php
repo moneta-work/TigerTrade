@@ -99,9 +99,10 @@
 	                         $data = array(
 					          'name'        => 'first_name',
 					          'id'          => 'first_name',
-					          'class'       => 'form-control'
+					          'class'       => 'form-control',
+							  'value'       => $first_name
 					        );
-	                        echo form_input($data['name']);
+	                        echo form_input($data);
 	                    ?>
                   </div>
             </div>
