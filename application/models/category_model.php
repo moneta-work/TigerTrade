@@ -29,6 +29,11 @@ class Category_model extends CI_Model
 		return $this->db->get('categories');
 	}
 
+	public function get_category($category_id)
+	{
+		return $this->db->get_where('categories', array('category_id' => $category_id));
+	}
+
 }
 
 ?>

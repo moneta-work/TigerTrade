@@ -32,9 +32,11 @@ class Market extends CI_Controller
 	}
 
 	//shows details of a specific ad
-	function details($category_id)
+	function view_category($category_id)
 	{
-
+		$data['category'] = $this->category_model->get_category($category_id);
+		$data['title'] = 'A Category Home';
+		$this->layout->view('market/category_home', $data);
 	}
 
 	//edit ad by id
