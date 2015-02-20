@@ -18,7 +18,7 @@
 			</a></b><br>
 	    	<?php foreach ($subcategories->result() as $subcategory) { ?>
 	    		<?php
-		    		$total = count(get_object_vars($subcategories));
+		    		$total = count(get_object_vars($this->subcategory_model->get_subcategories($category->category_id)));
 		    		echo $total;
 		    		$count = 0;
 	    		?>
