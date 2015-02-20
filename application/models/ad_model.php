@@ -28,6 +28,17 @@ class Ad_model extends CI_Model
 		}
 	}
 
+	public function get_new_ad_id($title, $description, $price, $user_id)
+	{
+		$this->db->where('title', $title);
+		$this->db->where('description', $description);
+		$this->db->where('price', $price);
+		$this->db->where('user_id', $user_id);
+		$this->db->select('ad_id');
+		
+		return $this->db->get('ads');
+	}
+
 
 }
 
