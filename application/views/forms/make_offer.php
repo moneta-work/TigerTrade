@@ -20,6 +20,20 @@
 				<input type="text" class="form-control" id="price" value="$PRICE_OF_ITEM">
 			</div>
 		</div>
+
+
+
+		<div class="form-group">
+			<label class="sr-only" for="price">Amount (in dollars)</label>
+			<div class="input-group">
+				<div class="input-group-addon">$</div>
+					<input type="text" class="form-control" id="price" placeholder="Amount">
+				<div class="input-group-addon">.00</div>
+			</div>
+		</div>
+
+
+
 		<div class="form-group">
 			<label for="description" class="col-sm-2 control-label label-20">Message</label>
 			<div class="col-sm-10">
