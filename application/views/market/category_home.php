@@ -11,7 +11,7 @@
 	<hr>
 	
 	<?php foreach ($subcategories->result() as $subcategory) { ?>
-		<a href="<?php echo base_url('/market/subcategory/' . $subcategory->category_id) ?>">
+		<a href="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id) ?>">
 			<?php echo $subcategory->name ?>
 		</a><br>
 	<?php } ?>
