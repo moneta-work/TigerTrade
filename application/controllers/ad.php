@@ -73,13 +73,12 @@ class Ad extends CI_Controller
 				// If file moved to uploads folder.
 					echo '<div class="alert alert-success">
 	        			<a href="#" class="close" data-dismiss="alert">&times;</a>
-	       				 <strong>Success!</strong> '.$j 'Image Uploaded.
-	    			</div>';
+	       				 <strong>Success!</strong> '.$j .' Image Uploaded.</div>';
 				} 
 				else {     //  If File Was Not Moved.
 					echo '<div class="alert alert-error">
 	        			<a href="#" class="close" data-dismiss="alert">&times;</a>
-	       				 <strong>Success!</strong> '.$j 'Image Not Uploaded.
+	       				 <strong>Success!</strong> '.$j .' Image Not Uploaded.
 	    			</div>';
 				}
 			}
@@ -87,7 +86,7 @@ class Ad extends CI_Controller
 			{     //   If File Size And File Type Was Incorrect.
 				echo '<div class="alert alert-error">
 	        			<a href="#" class="close" data-dismiss="alert">&times;</a>
-	       				 <strong>Success!</strong> '.$j 'Image Not Uploaded.
+	       				 <strong>Success!</strong> '.$j .' Image Not Uploaded.
 	    			</div>';
 			}
 
