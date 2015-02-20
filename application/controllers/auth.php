@@ -14,11 +14,6 @@ class Auth extends CI_Controller {
 
 		$this->lang->load('auth');
 		
-		if (!$this->ion_auth->logged_in())
-		{
-			//redirect them to the login page
-			redirect('auth/login', 'refresh');
-		}
 	}
 
 	//redirect if needed, otherwise display the user list
@@ -516,7 +511,7 @@ class Auth extends CI_Controller {
 
 		if (!$this->ion_auth->logged_in() || (!$this->ion_auth->is_admin() && !($this->ion_auth->user()->row()->id == $id)))
 		{
-			redirect('auth', 'refresh');
+			redirect('auth/login', 'refresh');
 		}
 
 		$user = $this->ion_auth->user($id)->row();
