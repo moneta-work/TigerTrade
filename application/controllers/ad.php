@@ -60,7 +60,7 @@ class Ad extends CI_Controller
 	function create()
 	{
 		$j = 0;     // Variable for indexing uploaded image.
-		$target_path = "uploads/";     // Declaring Path for uploaded images.
+		$target_path = "assets/images";     // Declaring Path for uploaded images.
 		for ($i = 0; $i < count($_FILES['file']['name']); $i++) {
 		// Loop to get individual element from the array
 		$validextensions = array("jpeg", "jpg", "png");      // Extensions which are allowed.
