@@ -59,6 +59,8 @@ class Ad extends CI_Controller
 	//create an ad
 	function create()
 	{
+		echo count($_FILES);
+		/*
 		$j = 0;     // Variable for indexing uploaded image.
 		$target_path = "assets/Images/";     // Declaring Path for uploaded images.
 		for ($i = 0; $i < count($_FILES['file']['name']); $i++) {
@@ -95,6 +97,7 @@ class Ad extends CI_Controller
    		$data['title'] = 'New Ad';
 		$this->layout->view('forms/new_ad', $data);
 		}
+		*/
 		/*
 		$upload_conf = array(
             'upload_path'   => realpath('assets/images'),
