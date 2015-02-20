@@ -117,8 +117,8 @@
 	                         $data = array(
 					          'name'        => 'email',
 					          'id'          => 'email',
-					          'class'       => 'form-control'
-							  'readonly'    => 'true'
+					          'class'       => 'form-control',
+							  'readonly'    => 'true',
 					        );
 	                        echo form_input($data);
 	                    ?>
