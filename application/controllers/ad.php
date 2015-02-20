@@ -79,7 +79,7 @@ class Ad extends CI_Controller
 
 			$this->ad_model->insert_new_ad($title, $description, $price, $user_id);
 
-			$data['Created'] = true;
+			$data['created'] = true;
 			
 		}
 		$data['title'] = 'New Ad';
