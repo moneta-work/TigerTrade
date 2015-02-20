@@ -25,6 +25,7 @@
 
 		<div class="form-group">
 			<label class="sr-only" for="price">Amount (in dollars)</label>
+			<label for="price" class="col-sm-2 control-label label-20">Price</label>
 			<div class="input-group col-sm-10 col-sm-offset-2">
 				<div class="input-group-addon">$</div>
 					<input type="text" class="form-control" id="price" placeholder="Amount">
