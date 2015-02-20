@@ -26,7 +26,7 @@ class Admin extends CI_Controller {
 		$data['menu'] = $this->load->view('shared/menu');
 	}
 
-	public function terms()
+	public function index()
 	{
 		//$this->load->view('header');
 		//$this->load->view('welcome_message');
