@@ -1,2 +1,1 @@
-HI!
-<?php var_dump($category); ?>
+<?php echo $category->name); ?>
