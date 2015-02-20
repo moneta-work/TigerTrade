@@ -12,22 +12,23 @@
 	
 	<div class="row">
 		<div class="col-xs-3">
-		<?php foreach ($categories->result() as $category) { ?>
-		    <b><a href="<?php echo base_url('/market/category/' . $category->category_id) ?>">
-			    <?php echo $category->name ?>
-			</a></b><br>
-				<?php
-		    		$total = count(get_object_vars($this->subcategory_model->get_subcategories($category->category_id)));
-		    		var_dump($total);
-		    		$count = 0;
+		<?php
+			foreach ($categories->result() as $category) { 
+			$count = 0;
+		?>
+		
+		    <a href="<?php echo base_url('/market/category/' . $category->category_id) ?>">
+			    <b><?php echo $category->name ?></b>
+			</a>
+			<br>
+	    	<?php foreach ($subcategories->result() as $subcategory) {
+	    		if ($subcategory->category_id == $category->category_id) { 
+		    		if ($count > 0) { ?> / <?php }
+		    		$count++;
 	    		?>
-	    	<?php foreach ($subcategories->result() as $subcategory) { ?>
-
-	    		<?php if ($subcategory->category_id == $category->category_id) { ?>
-	    			<?php $count++; ?>
 				    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->category_id) ?>">
 					    <?php echo $subcategory->name ?>
-					</a><?php if ($count < $total) { ?> / <?php } ?>
+					</a>
 				<?php } ?>
 	    	<?php } ?>
 	    	<br>
