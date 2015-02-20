@@ -19,6 +19,7 @@
 	    	<?php foreach ($subcategories->result() as $subcategory) { ?>
 	    		<?php
 		    		$total = count(get_object_vars($subcategories));
+		    		echo $total;
 		    		$count = 0;
 	    		?>
 	    		<?php if ($subcategory->category_id == $category->category_id) { ?>
