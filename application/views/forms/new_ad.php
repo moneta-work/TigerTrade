@@ -44,7 +44,7 @@
 			</div>
 		</div>
 
-		<div class="form-group imgUpload" id="imgInp1">
+		<div class="form-group imgUpload" id="imgInp">
 			<label for="description" class="col-sm-2 control-label label-20">Upload Images</label>
 			<div class="col-sm-10">
 				<input type="file" name="userfile1" />
