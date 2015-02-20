@@ -10,7 +10,7 @@
 	
 	<hr>
 	
-	<?php var_dump($categories); 
+	<?php
 		
 	foreach ($categories->result() as $row)
 {
