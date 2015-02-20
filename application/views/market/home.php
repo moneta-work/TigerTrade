@@ -11,7 +11,7 @@
 	<hr>
 	
 	<div class="row">
-		<div class="col-sm-3">
+		<div class="col-xs-3">
 		<?php foreach ($categories->result() as $category) { ?>
 		    <a href="<?php echo base_url('/market/category/' . $category->category_id) ?>">
 			    <?php echo $category->name ?>
@@ -29,7 +29,7 @@
 			</ul>
 		<?php } ?>
 		</div>
-		<div class="col-sm-9">
+		<div class="col-xs-9">
 			<p>Main page for categories.</p>
 			<br>
 			<p>Form for new ad: <a href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a></p>
