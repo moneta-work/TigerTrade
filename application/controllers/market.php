@@ -14,6 +14,7 @@ class Market extends CI_Controller
 	function index()
 	{
 		$data['categories'] = $this->category_model->get_all_categories();
+		$data['subcategories'] = $this->subcategory_model->get_all_subcategories();
 		$data['title'] = 'Market Home';
 		$this->layout->view('market/home', $data);
 	}

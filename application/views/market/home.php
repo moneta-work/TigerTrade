@@ -10,8 +10,17 @@
 	
 	<hr>
 	
-	<?php foreach ($categories->result() as $row) { ?>
-    <a href="<?php base_url('/market/' . $row->category_id) ?>"><?php echo $row->name ?> (<?php echo $row->category_id ?>)</a>
+	<?php foreach ($categories->result() as $category) { ?>
+	    <a href="<?php base_url('/market/' . $category->category_id) ?>">
+		    <?php echo $category->name ?> (<?php echo $category->category_id ?>)
+		</a>
+    	<?php foreach ($subcategories->result() as $subcategory) { ?>
+    		<?php if ($subcategory->category_id == $category->category_id) { ?>
+			    <a href="<?php base_url('/market/' . $subcategory->category_id) ?>">
+				    <?php echo $category->name ?> (<?php echo $category->category_id ?>)
+				</a>
+			<?php } ?>
+    	<?php } ?>
 	<?php } ?>
 	
 	<p>Main page for categories.</p>

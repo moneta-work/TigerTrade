@@ -25,6 +25,10 @@ class Subcategory_model extends CI_Model
 		}
 	}
 
+	public function get_all_subcategories()
+	{
+		return $this->db->get('subcategories');
+	}
 
 }
 
