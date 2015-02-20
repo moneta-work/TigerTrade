@@ -81,6 +81,8 @@ class Ad extends CI_Controller
 
 			$this->ad_model->insert_new_ad($title, $description, $price, $user_id);
 
+			$ad_id = $this->ad_model->get_new_ad_id($title, $description, $price, $user_id);
+
 			//$ad_id = $this->ad_model->get_new_ad_id($title, $description, $price, $user_id);
 
 			$j = 0;     // Variable for indexing uploaded image.
