@@ -10,6 +10,6 @@ function readURL(input) {
         }
     }
     
-    $("#imgInp").change(function(){
+    $("imgUpload").change(function(){
         readURL(this);
     });

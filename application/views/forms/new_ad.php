@@ -44,10 +44,10 @@
 			</div>
 		</div>
 
-		<div class="form-group imgUpload" >
+		<div class="form-group" >
 			<label for="description" class="col-sm-2 control-label label-20">Upload Images</label>
 			<div class="col-sm-10">
-				<input type="file" id="imgInp" name="userfile1" />
+				<input type="file" class="imgUpload" id="imgInp1" name="userfile1" />
 				<br />
 			</div>
 		</div>
