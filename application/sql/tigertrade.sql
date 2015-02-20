@@ -128,8 +128,20 @@ PRIMARY KEY (`id`)
 #
 # Dumping data for table 'users'
 #
+# Admin user account creation
 INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `created_on`, `last_login`, `active`, `first_name`, `last_name`, `company`, `phone`) VALUES
 ('1','127.0.0.1','administrator','$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36','','admin@admin.com','',NULL,'1268889823','1268889823','1', 'Admin','istrator','ADMIN','0');
+# Kyle user account creation
+INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `created_on`, `last_login`, `active`, `first_name`, `last_name`, `company`, `phone`) VALUES
+('2','161.130.188.151','kyle carlson','$2y$08$Wf2vrtBIkn7BhZ9ut.skweylYNi2dp.ipZjUNqdPlWxksH3D1uSGa','','krcz85@mail.missouri.edu','',NULL,'1424390141','1424390141','1', 'Kyle','Carlson','Mizzou','3144799706');
+# Tim G. user account creation
+INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `created_on`, `last_login`, `active`, `first_name`, `last_name`, `company`, `phone`) VALUES
+('3','161.130.188.154','tim gilman','$2y$08$CCvsdBcG8GTw1Q84fzhWpehqx5XmfX6/Sj.mCXwPXm0G73KAA07yC','','tmgy87@mail.missouri.edu','',NULL,'1424390513','1424390513','1', 'Tim','Gilman','Mizzou','3149607198');
+# Tim V. user account creation
+INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `created_on`, `last_login`, `active`, `first_name`, `last_name`, `company`, `phone`) VALUES
+('3','161.130.188.176','timothy van horn','$2y$08$kLHSUoheDLnPoogvX12pNevjRPZtXvk7thYUKxlLN7NSBiVbDdU72','','tjvkv6@mail.missouri.edu','',NULL,'1424390785','1424390785','1', 'Tim','Van Horn','Mizzou','3144020820');
+# Jason user account creation
+
 DROP TABLE IF EXISTS `users_groups`;
 #
 # Table structure for table 'users_groups'
