@@ -147,17 +147,17 @@
 	                    ?>
                   </div>
             </div>
+			
+			<?php 
+			echo form_hidden('id', $user->id);
+			echo form_hidden($csrf); 
+			?>
+			
             <div class="form-group">
                   <div class="col-sm-offset-4 col-sm-4">
                         <button type="submit" class="btn btn-default">Save</button>
                   </div>
             </div>
-			
-			<?php 
-			echo $user->id;
-			echo form_hidden('id', $user->id);
-			echo form_hidden($csrf); 
-			?>
 			
       <?php echo form_close();?>
       
