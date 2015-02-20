@@ -1,7 +1,7 @@
 <div class="container padding-top-20">
 	<div class="row">
 		<div class="col-xs-12">
-			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div><h1 class="">Market Index</h1>
+			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button><h1 class="">Market Index</h1></div>
 		</div>
 	</div>
 	
