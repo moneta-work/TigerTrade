@@ -10,7 +10,7 @@ class Ad_model extends CI_Model
 		$this->load->database();
 	}
 
-	public function insert_new_ad($title, $price, $description, $user_id)
+	public function insert_new_ad($title, $description, $price, $user_id)
 	{
 		$this->db->set('title', $title);
 		$this->db->set('description', $description);
