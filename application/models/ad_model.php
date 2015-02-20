@@ -36,7 +36,10 @@ class Ad_model extends CI_Model
 		$this->db->where('user_id', $user_id);
 		$this->db->select('ad_id');
 
-		return $this->db->get('ads');
+		$ad_id = $this->db->get('ads');
+
+
+		return $ad_id->row();
 	}
 
 	public function insert_img_ad($ad_id, $target_path)
