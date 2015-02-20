@@ -98,13 +98,8 @@
                   <label for="first_name" class="col-sm-4 control-label label-20">First Name</label>
                   <div class="col-sm-4">
                         <?php
-	                         $data = array(
-					          'name'        => 'first_name',
-					          'id'          => 'first_name',
-					          'class'       => 'form-control',
-							  'value'       => $first_name,
-					        );
-	                        echo form_input($data);
+							$class = 'class="form-control"';
+	                        echo form_input($first_name, $class);
 	                    ?>
                   </div>
             </div>
