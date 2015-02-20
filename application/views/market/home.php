@@ -10,7 +10,7 @@
 	
 	<hr>
 	
-	<?php echo $data['categories']; ?>
+	<?php var_dump($categories); ?>
 	
 	<p>Main page for categories.</p>
 	<br>
