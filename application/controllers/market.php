@@ -17,6 +17,18 @@ class Market extends CI_Controller
 		$this->layout->view('market/home', $data);
 	}
 
+	function new_category()
+	{
+		$data['title'] = 'New Category';
+		$this->layout->view('forms/new_category', $data);
+	}
+	
+	function new_subcategory()
+	{
+		$data['title'] = 'New Subcategory';
+		$this->layout->view('forms/new_subcategory', $data);
+	}
+
 	//shows details of a specific ad
 	function details($category_id)
 	{
