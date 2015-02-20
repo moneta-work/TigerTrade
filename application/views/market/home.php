@@ -10,13 +10,13 @@
 	
 	<hr>
 	
-	<div class="row">
+	
 		<?php foreach ($categories->result() as $category) { ?>
-		<div class="col-xs-4">
+		
 		    <a href="<?php base_url('/market/' . $category->category_id) ?>">
 			    <?php echo $category->name ?> (<?php echo $category->category_id ?>)
 			</a><br>
-			<ul>
+			<ul class="list-inline">
 	    	<?php foreach ($subcategories->result() as $subcategory) { ?>
 	    		<?php if ($subcategory->category_id == $category->category_id) { ?>
 	    		<li>
@@ -27,9 +27,9 @@
 				<?php } ?>
 	    	<?php } ?>
 			</ul>
-		</div>
+		
 		<?php } ?>
-	</div>
+	
 	
 	<br>
 	<p>Main page for categories.</p>
