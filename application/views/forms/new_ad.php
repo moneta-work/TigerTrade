@@ -1,12 +1,12 @@
 <div class="container">
 
-	<?php if($created) {?>
+	<?php isset($created) {?>
 	    <div class="alert alert-success">
 	        <a href="#" class="close" data-dismiss="alert">&times;</a>
 	        <strong>Success!</strong> Your ad has been created.
 	    </div>
     <?php }?>
-    <?php if($error) {?>
+    <?php isset($error) {?>
 	    <div class="alert alert-error">
 	        <a href="#" class="close" data-dismiss="alert">&times;</a>
 	        <strong>Error!</strong> Your ad was not created, something went wrong.
