@@ -5,7 +5,7 @@ class Market extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-
+		
 		$this->load->model('category_model');
 		$this->load->model('subcategory_model');
 		$data['menu'] = $this->load->view('shared/menu');
@@ -13,6 +13,8 @@ class Market extends CI_Controller
 
 	function index()
 	{
+		$data['categories'] = $this->category_model->get_all_categories();
+		$data['subcategories'] = $this->subcategory_model->get_all_subcategories();
 		$data['title'] = 'Market Home';
 		$this->layout->view('market/home', $data);
 	}
@@ -30,9 +32,19 @@ class Market extends CI_Controller
 	}
 
 	//shows details of a specific ad
-	function details($category_id)
+	function category($category_id)
 	{
-
+		$data['category'] = $this->category_model->get_category($category_id);
+		$data['subcategories'] = $this->subcategory_model->get_subcategories($category_id);
+		$data['title'] = 'Category Home';
+		$this->layout->view('market/category_home', $data);
+	}
+	
+	function subcategory($subcategory_id)
+	{
+		$data['subcategory'] = $this->subcategory_model->get_subcategory($subcategory_id);
+		$data['title'] = 'Subcategory Home';
+		$this->layout->view('market/subcategory_home', $data);
 	}
 
 	//edit ad by id

@@ -10,6 +10,28 @@
 	
 	<hr>
 	
+	<div class="row">
+		<?php foreach ($categories->result() as $category) { ?>
+		<div class="col-xs-6 col-sm-3">
+		    <a href="<?php echo base_url('/market/category/' . $category->category_id) ?>">
+			    <?php echo $category->name ?>
+			</a><br>
+			<ul>
+	    	<?php foreach ($subcategories->result() as $subcategory) { ?>
+	    		<?php if ($subcategory->category_id == $category->category_id) { ?>
+	    		<li>
+				    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->category_id) ?>">
+					    <?php echo $subcategory->name ?>
+					</a>
+	    		</li>
+				<?php } ?>
+	    	<?php } ?>
+			</ul>
+		</div>
+		<?php } ?>
+	</div>
+	
+	<br>
 	<p>Main page for categories.</p>
 	<br>
 	<p>Form for new ad: <a href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a></p>
