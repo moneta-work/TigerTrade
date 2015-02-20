@@ -90,16 +90,14 @@
 	  </div>
 	  <?php }; ?>
 	  
-	  <?php echo $first_name; ?>
-      
 
       <?php echo form_open(uri_string(), array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
             <div class="form-group">
                   <label for="first_name" class="col-sm-4 control-label label-20">First Name</label>
                   <div class="col-sm-4">
                         <?php
-							$class = 'class="form-control"';
-	                        echo form_input($first_name, $class);
+							$first_name['class'] = 'form-control';
+	                        echo form_input($first_name);
 	                    ?>
                   </div>
             </div>
