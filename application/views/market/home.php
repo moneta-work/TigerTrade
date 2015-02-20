@@ -15,7 +15,7 @@
 		<?php foreach ($categories->result() as $category) { ?>
 		    <b><a href="<?php echo base_url('/market/category/' . $category->category_id) ?>">
 			    <?php echo $category->name ?>
-			</a></b<br>
+			</a></b><br>
 	    	<?php foreach ($subcategories->result() as $subcategory) { ?>
 	    		<?php if ($subcategory->category_id == $category->category_id) { ?>
 				    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->category_id) ?>">
