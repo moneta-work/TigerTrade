@@ -1,1 +1,1 @@
-<?php echo $category->name); ?>
+<?php echo $category->name; ?>
