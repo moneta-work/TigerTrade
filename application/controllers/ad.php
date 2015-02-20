@@ -71,7 +71,7 @@ class Ad extends CI_Controller
 			    if (!empty($fileObject['name']))
 			    {
 			        $this->upload->initialize($config);
-			        if (!$this->upload->do_upload($fieldname))
+			        if (!$this->upload->do_upload($file))
 			        {
 			            $errors = $this->upload->display_errors();
 			            flashMsg($errors);
