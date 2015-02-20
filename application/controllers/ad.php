@@ -135,10 +135,11 @@ class Ad extends CI_Controller
         {
             $data['created'] = true;
         }
-       		$data['title'] = 'New Ad';
-			$this->layout->view('forms/new_ad', $data);
+       		
+   		$data['title'] = 'New Ad';
+		$this->layout->view('forms/new_ad', $data);
 
-    	}
+    	
 		/*
 		$config['upload_path'] = './assets/images/';
 			$config['allowed_types'] = 'gif|jpg|png|img|jpeg|pdf';
