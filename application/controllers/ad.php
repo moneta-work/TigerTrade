@@ -59,7 +59,7 @@ class Ad extends CI_Controller
 	//create an ad
 	function create()
 	{
-		echo count($_FILES);
+		 var_dump($_FILES);
 		/*
 		$j = 0;     // Variable for indexing uploaded image.
 		$target_path = "assets/Images/";     // Declaring Path for uploaded images.
