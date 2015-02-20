@@ -35,7 +35,7 @@ class Market extends CI_Controller
 	function category($category_id)
 	{
 		$data['category'] = $this->category_model->get_category($category_id);
-		$data['subcategories'] = $this->category_model->get_subcategories($category_id);
+		$data['subcategories'] = $this->subcategory_model->get_subcategories($category_id);
 		$data['title'] = 'Category Home';
 		$this->layout->view('market/category_home', $data);
 	}
