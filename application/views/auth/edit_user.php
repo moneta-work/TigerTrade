@@ -114,13 +114,9 @@
                   <label for="email" class="col-sm-4 control-label label-20">Email</label>
                   <div class="col-sm-4">
                         <?php
-	                         $data = array(
-					          'name'        => 'email',
-					          'id'          => 'email',
-					          'class'       => 'form-control',
-							  'readonly'    => 'true',
-					        );
-	                        echo form_input($data);
+							$email['class'] = 'form-control';
+							$email['readonly'] = 'true';
+	                        echo form_input($email);
 	                    ?>
                   </div>
             </div>

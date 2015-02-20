@@ -650,6 +650,12 @@ class Auth extends CI_Controller {
 			'id'   => 'password_confirm',
 			'type' => 'password'
 		);
+		$this->data['email'] = array(
+			'name' => 'email',
+			'id'   => 'email',
+			'type' => 'text',
+			'value' => $this->form_validation->set_value('email', $user->email),
+		);
 
 		$this->layout->view('auth/edit_user', $this->data);
 	}
