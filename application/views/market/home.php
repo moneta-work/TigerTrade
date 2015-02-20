@@ -14,14 +14,14 @@
 		<?php foreach ($categories->result() as $category) { ?>
 		
 		    <a href="<?php base_url('/market/' . $category->category_id) ?>">
-			    <?php echo $category->name ?> (<?php echo $category->category_id ?>)
+			    <?php echo $category->name ?>
 			</a><br>
 			<ul class="list-inline">
 	    	<?php foreach ($subcategories->result() as $subcategory) { ?>
 	    		<?php if ($subcategory->category_id == $category->category_id) { ?>
 	    		<li>
 				    <a href="<?php base_url('/market/' . $subcategory->category_id) ?>">
-					    <?php echo $subcategory->name ?> (<?php echo $subcategory->category_id ?>)
+					    <?php echo $subcategory->name ?>
 					</a>
 	    		</li>
 				<?php } ?>
