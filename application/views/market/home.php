@@ -13,20 +13,16 @@
 	<div class="row">
 		<div class="col-xs-3">
 		<?php foreach ($categories->result() as $category) { ?>
-		    <a href="<?php echo base_url('/market/category/' . $category->category_id) ?>">
+		    <b><a href="<?php echo base_url('/market/category/' . $category->category_id) ?>">
 			    <?php echo $category->name ?>
-			</a><br>
-			<ul>
+			</a></b<br>
 	    	<?php foreach ($subcategories->result() as $subcategory) { ?>
 	    		<?php if ($subcategory->category_id == $category->category_id) { ?>
-	    		<li>
 				    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->category_id) ?>">
 					    <?php echo $subcategory->name ?>
 					</a>
-	    		</li>
 				<?php } ?>
 	    	<?php } ?>
-			</ul>
 		<?php } ?>
 		</div>
 		<div class="col-xs-9">
