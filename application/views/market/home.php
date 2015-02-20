@@ -12,7 +12,7 @@
 	
 	<div class="row">
 		<?php foreach ($categories->result() as $category) { ?>
-		<div class="col-xs-6">
+		<div class="col-xs-6 col-sm-3">
 		    <a href="<?php base_url('/market/' . $category->category_id) ?>">
 			    <?php echo $category->name ?>
 			</a><br>
