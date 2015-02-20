@@ -6,7 +6,6 @@ class Ad extends CI_Controller
 	{
 		parent::__construct();
 
-		$this->load->helper('url');
 		$this->load->model('ad_model');
 		$data['menu'] = $this->load->view('shared/menu');
 	}
@@ -71,6 +70,14 @@ class Ad extends CI_Controller
 		//if validation passes
 		else
 		{
+			$config['upload_path'] = './assets/images/';
+			$config['allowed_types'] = 'gif|jpg|png|img|jpeg|pdf';
+			$config['max_size'] = '100';
+			$config['max_width'] = '1024';
+			$config['max_height'] = '768';
+
+			$this->load->library('upload', $config);
+
 			$title = $this->security->xss_clean($this->input->post('title'));
 			$description = $this->security->xss_clean($this->input->post('description'));
 			$price = $this->security->xss_clean($this->input->post('price'));
