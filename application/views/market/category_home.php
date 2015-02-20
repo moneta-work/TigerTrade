@@ -1,4 +1,4 @@
 <?php
   var_dump($category);
-  echo $category->result();	
+  echo $category->row();
 ?>
