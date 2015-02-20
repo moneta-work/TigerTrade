@@ -1,5 +1,5 @@
 <!-- OLD EDIT USER FORM-->
-
+<?php /*
 
 <h1><?php echo lang('edit_user_heading');?></h1>
 <p><?php echo lang('edit_user_subheading');?></p>
@@ -68,7 +68,7 @@
 
 <?php echo form_close();?>
 
-
+*/ ?>
 
 <div class="container">
       <div class="row">
@@ -129,7 +129,7 @@
                   </div>
             </div>
             <div class="form-group">
-                  <label for="password" class="col-sm-4 control-label label-20">Password</label>
+                  <label for="password" class="col-sm-4 control-label label-20">New Password</label>
                   <div class="col-sm-4">
                         <?php
 	                        $password['class'] = 'form-control';
@@ -138,7 +138,7 @@
                   </div>
             </div>
             <div class="form-group">
-                  <label for="password_confirm" class="col-sm-4 control-label label-20">Confirm Password</label>
+                  <label for="password_confirm" class="col-sm-4 control-label label-20">Confirm New Password</label>
                   <div class="col-sm-4">
                         <?php
 	                        $password_confirm['class'] = 'form-control';
