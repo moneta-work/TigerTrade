@@ -5,7 +5,8 @@ class Ad extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-
+		$this->load->library('upload');
+        $this->load->library('image_lib');
 		$this->load->model('ad_model');
 		$data['menu'] = $this->load->view('shared/menu');
 	}
