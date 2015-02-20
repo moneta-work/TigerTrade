@@ -175,14 +175,13 @@ CREATE TABLE `login_attempts` (
 PRIMARY KEY (`id`)
 ); 
 
---Category Data
-INSERT INTO categories ('name') VALUES
+INSERT INTO categories (name) VALUES
 ('for sale'), --1
 ('services'), --2
 ('tutoring'), --3
 ('housing'), --4
 ('jobs'), --5
-('study groups'); --6
+('study groups');
 	
 INSERT INTO kylecarlson_tigertrade.subcategories (category_id, name) VALUES
 	--For Sale
