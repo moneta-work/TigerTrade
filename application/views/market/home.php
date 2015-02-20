@@ -10,13 +10,9 @@
 	
 	<hr>
 	
-	<?php
-		
-	foreach ($categories->result() as $row)
-{
-    echo $row->name;
-}
-	?>
+	<?php foreach ($categories->result() as $row) { ?>
+    <a href=""><?php echo $row['name'] ?></a>
+	<?php } ?>
 	
 	<p>Main page for categories.</p>
 	<br>
