@@ -15,6 +15,7 @@
 		<?php
 			$total = count($subcategories);
 			$count = 0;
+			echo $total;
 		?>
 		<?php foreach ($categories->result() as $category) { ?>
 		    <b><a href="<?php echo base_url('/market/category/' . $category->category_id) ?>">
@@ -25,7 +26,7 @@
 	    			<?php $count++; ?>
 				    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->category_id) ?>">
 					    <?php echo $subcategory->name ?>
-					</a><?php if ($count < $total) { echo ' / '; } ?>
+					</a><?php if ($count < $total) { ?> / <?php } ?>
 				<?php } ?>
 	    	<?php } ?>
 	    	<br>
