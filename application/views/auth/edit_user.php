@@ -154,6 +154,7 @@
             </div>
 			
 			<?php 
+			echo $user->id;
 			echo form_hidden('id', $user->id);
 			echo form_hidden($csrf); 
 			?>
