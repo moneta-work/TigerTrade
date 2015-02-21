@@ -8,6 +8,7 @@
     <link href="<?php echo base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/font-awesome.min.css') ?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/custom.css') ?>" rel="stylesheet">
+	<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 
 </head>
 <body>
