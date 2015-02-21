@@ -532,6 +532,7 @@ class Auth extends CI_Controller {
 				//show_error($this->lang->line('error_csrf'));
 				echo $this->input->post($this->session->flashdata('csrfkey'));
 				echo $this->session->flashdata('csrfvalue');
+				echo "hello";
 				exit;
 				
 			}
