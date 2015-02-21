@@ -76,7 +76,7 @@
                   <div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
             </div>
             <div class="col-xs-10 col-md-11">
-                  <h1 class="">Edit User Form</h1>
+                  <h1 class="">Edit Profile</h1>
             </div>
       </div>
       <hr>
