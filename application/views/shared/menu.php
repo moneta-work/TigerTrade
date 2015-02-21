@@ -49,7 +49,7 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $user->first_name; ?><b class="caret"></b></a>
 						<ul class="dropdown-menu">
-						<li><a href="<?php echo base_url('/auth/edit_user/' . $this->ion_auth->get_user_id() ) ?>">Edit Info</a></li>
+						<li><a href="<?php echo base_url('/auth/edit_user/' . $this->ion_auth->get_user_id() ) ?>">Edit Profile</a></li>
 						</ul>
 					</li>
 	
