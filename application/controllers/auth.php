@@ -531,7 +531,7 @@ class Auth extends CI_Controller {
 			{
 				//show_error($this->lang->line('error_csrf'));
 				echo "test";
-				print_r $this->_valid_csrf_nonce();
+				echo $this->_valid_csrf_nonce();
 				exit;
 				
 			}
