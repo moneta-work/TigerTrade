@@ -530,7 +530,9 @@ class Auth extends CI_Controller {
 			if ($this->_valid_csrf_nonce() === FALSE || $id != $this->input->post('id'))
 			{
 				show_error($this->lang->line('error_csrf'));
+				echo "test";
 				echo $this->_valid_csrf_nonce();
+				break;
 				
 			}
 
