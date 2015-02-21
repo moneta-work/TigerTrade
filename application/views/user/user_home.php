@@ -12,5 +12,4 @@
 	
 	<p>This will be the homepage for logged in users.</p>
 	
-	<p>Form for user information: <a href="<?php echo base_url('/auth/edit_user/' . $this->ion_auth->get_user_id() ) ?>">Edit Profile Information</a></p>
 </div>
