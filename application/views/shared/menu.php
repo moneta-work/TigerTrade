@@ -45,6 +45,15 @@
 					<li><a href='<?= base_url("auth/create_user") ?>'>Register</a></li>
 					<li><a href='<?= base_url("auth/login") ?>'>Login</a></li>
 				<?php } else { ?>
+				
+					<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $user->first_name; ?><b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href=""<?php echo base_url('/auth/edit_user/' . $this->ion_auth->get_user_id() ) ?>">Edit Info</a></li>
+					</ul>
+					</li>
+					
+				
 					<li><a href='<?= base_url("auth/") ?>'><?php echo $user->first_name; ?></a></li>
 					<li><a href='<?= base_url("auth/logout") ?>'>Logout</a></li>
 				<?php }; ?>
