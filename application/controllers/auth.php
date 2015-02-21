@@ -584,7 +584,7 @@ class Auth extends CI_Controller {
 					}
 					else
 					{
-						redirect('auth/edit_user' . $id, 'refresh');
+						redirect('auth/edit_user/' . $id, 'refresh');
 					}
 
 			    }
