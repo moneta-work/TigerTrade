@@ -8,6 +8,12 @@ class User extends CI_Controller
 
 		$this->load->helper('url');
 		$data['menu'] = $this->load->view('shared/menu');
+		
+		if (!$this->ion_auth->logged_in())
+		{
+			//redirect them to the login page
+			redirect('auth/login', 'refresh');
+		}
 	}
 
 	function index()
