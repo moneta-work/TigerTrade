@@ -526,6 +526,10 @@ class Auth extends CI_Controller {
 
 		if (isset($_POST) && !empty($_POST))
 		{
+			echo "test";
+			echo $this->_valid_csrf_nonce();
+			exit;
+			
 			// do we have a valid request?
 			if ($this->_valid_csrf_nonce() === FALSE || $id != $this->input->post('id'))
 			{
