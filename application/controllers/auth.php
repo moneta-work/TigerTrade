@@ -527,7 +527,7 @@ class Auth extends CI_Controller {
 		if (isset($_POST) && !empty($_POST))
 		{
 			// do we have a valid request?
-			if (/*$this->_valid_csrf_nonce() === FALSE ||*/ $id != $this->input->post('id'))
+			if ($this->_valid_csrf_nonce() === FALSE || $id != $this->input->post('id'))
 			{
 				show_error($this->lang->line('error_csrf'));
 			}
@@ -783,6 +783,8 @@ class Auth extends CI_Controller {
 
 	function _valid_csrf_nonce()
 	{
+		echo $this->session->flashdata('csrfvalue');
+		
 		if ($this->input->post($this->session->flashdata('csrfkey')) !== FALSE &&
 			$this->input->post($this->session->flashdata('csrfkey')) == $this->session->flashdata('csrfvalue'))
 		{
