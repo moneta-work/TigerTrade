@@ -12,7 +12,7 @@
 	
 	<div class="row">
 		<div class="col-xs-3">
-			<a href="<?php echo base_url('/market/all' ?>">
+			<a href="<?php echo base_url('/market/all') ?>">
 			    <b>all</b>
 			</a>
 			<br>
