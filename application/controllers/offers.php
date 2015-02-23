@@ -6,6 +6,7 @@ class Offers extends CI_Controller
 	{
 		parent::__construct();
 
+		$this->load->model('offer_model');
 		$data['menu'] = $this->load->view('shared/menu');
 		
 		if (!$this->ion_auth->logged_in())
@@ -24,6 +25,9 @@ class Offers extends CI_Controller
 	function sent()
 	{
 		$data['title'] = 'Sent Offers';
+		$data['pending'] = $this->category_model->get_pending_offers();
+		$data['accepted'] = $this->category_model->get_buyer_accepted_offers();
+		$data['declined'] = $this->category_model->get_buyer_declined_offers();
 		$this->layout->view('offers/sent', $data);
 	}
 
