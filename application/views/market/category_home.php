@@ -33,7 +33,7 @@
 					<th>Category_ID</th>
 					<th>Subcategory_ID</th>
 				</tr>
-				<?php foreach ($pending->result() as $row) { ?>
+				<?php foreach ($ads->result() as $row) { ?>
 				<tr>
 					<td><?php echo $row->ad_id; ?></td>
 					<td><?php echo $row->title; ?></td>
