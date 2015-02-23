@@ -30,7 +30,7 @@ class Ad_model extends CI_Model
 		}
 	}
 
-	public function get_ads_category($category_id)
+	public function get_all_ads($category_id)
 	{
 		$result = $this->db->query("SELECT * FROM ads");
 		return $result;
