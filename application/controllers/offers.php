@@ -27,6 +27,7 @@ class Offers extends CI_Controller
 		
 		$this->form_validation->set_rules('price', 'Price', 'required');
 		$this->form_validation->set_rules('buyer_message', 'Buyer_Message', 'required');
+		$this->form_validation->set_rules('ad_id', 'Ad_ID', 'required');
 
 		//if validation fails
 		if ($this->form_validation->run() == false)
