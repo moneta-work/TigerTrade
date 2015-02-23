@@ -25,11 +25,11 @@
 			<div class="table-responsive">
 				<table class="table">
 					<tr>
-						<th>Ad ID</th>
+						<th>Ad_ID</th>
 						<th>Title</th>
 						<th>Description</th>
 						<th>Price</th>
-						<th>User ID</th>
+						<th>User_ID</th>
 						<th>Category_ID</th>
 						<th>Subcategory_ID</th>
 					</tr>
