@@ -15,7 +15,7 @@
 			<a href="<?php echo base_url('/market/all') ?>">
 			    <b>all</b>
 			</a>
-			<br>
+			<br><br>
 		<?php foreach ($categories->result() as $category) { $count = 0; ?>
 		    <a href="<?php echo base_url('/market/category/' . $category->category_id) ?>">
 			    <b><?php echo $category->name ?></b>
