@@ -15,14 +15,14 @@
 	<div class="row">
 		<a href="">
 		<div class="col-sm-6">
-			<h2>Sent Offers</h2>
-			<img src="http://placehold.it/350x250" class="img-thumbnail center-text" alt="Responsive image" style="width: 100%;">
+			<h2 class="text-center">Sent Offers</h2>
+			<img src="http://placehold.it/350x250" class="img-thumbnail" alt="Responsive image" style="width: 100%;">
 		</div>
 		</a>
-		<a href="">
+		<a class="col-sm-6">
 		<div class="col-sm-6">
 			<h2>Received Offers</h2>
-			<img src="http://placehold.it/350x250" class="img-thumbnail center-text" alt="Responsive image" style="width: 100%;">
+			<img src="http://placehold.it/350x250" class="img-thumbnail" alt="Responsive image" style="width: 100%;">
 		</div>
 		</a>
 	</div>
