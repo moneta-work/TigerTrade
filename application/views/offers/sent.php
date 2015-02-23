@@ -5,13 +5,13 @@
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
 		<div class="col-xs-10 col-md-11">
-			<h1 class="">Pending Offers</h1>
+			<h1 class="">Sent Offers</h1>
 		</div>
 	</div>
 
 	<hr>
 
-	<p>You can see your pending offers here!</p>
+	<p>You can see your sent offers here!</p>
 
 	
 </div>

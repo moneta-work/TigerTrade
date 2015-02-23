@@ -13,7 +13,7 @@
 
 	<p>You can see your offer statuses here!</p>
 	<div class="row">
-		<a href="<?php echo base_url('/offers/pending') ?>">
+		<a href="<?php echo base_url('/offers/sent') ?>">
 		<div class="col-sm-6">
 			<h2 class="text-center">Sent Offers</h2>
 			<img src="http://placehold.it/350x250" class="img-thumbnail" alt="Responsive image" style="width: 100%;">

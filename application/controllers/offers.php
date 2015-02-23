@@ -21,10 +21,10 @@ class Offers extends CI_Controller
 		$this->layout->view('offers/home', $data);
 	}
 
-	function pending()
+	function sent()
 	{
-		$data['title'] = 'Pending Offers';
-		$this->layout->view('offers/pending', $data);
+		$data['title'] = 'Sent Offers';
+		$this->layout->view('offers/sent', $data);
 	}
 
 	function received()
