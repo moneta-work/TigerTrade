@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class User extends CI_Controller
+class Offers extends CI_Controller
 {
 	function __construct()
 	{
@@ -17,8 +17,8 @@ class User extends CI_Controller
 
 	function index()
 	{
-		$data['title'] = 'User Home';
-		$this->layout->view('user/user_home', $data);
+		$data['title'] = 'Offers';
+		$this->layout->view('offers/home', $data);
 	}
 
 }
