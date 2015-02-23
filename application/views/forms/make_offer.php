@@ -19,7 +19,7 @@
 			<label for="price" class="col-sm-2 control-label label-20">Price</label>
 			<div class="input-group col-sm-3 col-sm-offset-2" style="padding: 0 15px;">
 				<div class="input-group-addon">$</div>
-					<input type="text" class="form-control" id="price" placeholder="Amount">
+					<input type="text" class="form-control" name="price" id="price" placeholder="Amount">
 				<div class="input-group-addon">.00</div>
 			</div>
 		</div>
@@ -29,7 +29,7 @@
 		<div class="form-group">
 			<label for="description" class="col-sm-2 control-label label-20">Message</label>
 			<div class="col-sm-10">
-				<textarea type="text" class="form-control description-box" id="buyer_message" rows="5"></textarea>
+				<textarea type="text" class="form-control description-box" name="buyer_message" id="buyer_message" rows="5"></textarea>
 				<p class="help-block">Write a message for the seller, including good times to meet.</p>
 			</div>
 		</div>
