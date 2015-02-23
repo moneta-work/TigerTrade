@@ -8,6 +8,8 @@
 			<h1 class="">New Offer</h1>
 		</div>
 	</div>
+	
+	<hr>
 		
 	<?php if (isset($error)) { ?>
 		<p>Could not create your offer. Please make sure you entered a price and message.</p>
