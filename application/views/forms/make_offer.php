@@ -12,7 +12,7 @@
 	</div>
 	
 	<hr>
-<?php echo form_open("offers/new_offer", array('class' => 'form-horizontal', 'id' => 'make-offer-form', 'enctype' => 'multipart/form-data'));?>
+<?php echo form_open("offers/create", array('class' => 'form-horizontal', 'id' => 'make-offer-form', 'enctype' => 'multipart/form-data'));?>
 
 		<div class="form-group">
 			<label class="sr-only" for="price">Amount (in dollars)</label>
