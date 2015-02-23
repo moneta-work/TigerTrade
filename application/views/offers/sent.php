@@ -14,7 +14,7 @@
 	<p>You can see your sent offers here!</p>
 	
 	<h2>Pending</h2>
-	<?php if (!empty($pending)) { ?>
+	<?php if ($pending===NULL) { ?>
 		<table class="table">
 			<tr>
 				<th>Ad ID</th>
@@ -36,7 +36,7 @@
 	<?php } ?>
 
 	<h2>Accepted</h2>
-	<?php if (!empty($accepted)) { ?>
+	<?php if ($accepted===NULL) { ?>
 		<table class="table">
 			<tr>
 				<th>Ad ID</th>
@@ -60,7 +60,7 @@
 	<?php } ?>
 	
 	<h2>Declined</h2>
-	<?php if (!empty($declined)) { ?>
+	<?php if ($declined===NULL) { ?>
 		<table class="table">
 			<tr>
 				<th>Ad ID</th>
