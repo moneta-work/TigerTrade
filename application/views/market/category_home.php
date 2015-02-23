@@ -23,7 +23,7 @@
 	<div class="row">
 		<div class="col-xs-9">
 			<h2><?php echo ucfirst($category->name); ?> Ads</h2>
-			<table class="table">
+			<table class="table-responsive">
 				<tr>
 					<th>Ad ID</th>
 					<th>Title</th>
