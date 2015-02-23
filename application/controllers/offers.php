@@ -25,9 +25,9 @@ class Offers extends CI_Controller
 	function sent()
 	{
 		$data['title'] = 'Sent Offers';
-		$data['pending'] = $this->offer_model->get_pending_offers();
-		$data['accepted'] = $this->offer_model->get_buyer_accepted_offers();
-		$data['declined'] = $this->offer_model->get_buyer_declined_offers();
+		$data['pending'] = $this->offer_model->get_pending_offers($this->ion_auth->user()->id());
+		$data['accepted'] = $this->offer_model->get_buyer_accepted_offers($this->ion_auth->user()->id());
+		$data['declined'] = $this->offer_model->get_buyer_declined_offers($this->ion_auth->user()->id());
 		$this->layout->view('offers/sent', $data);
 	}
 
