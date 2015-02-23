@@ -16,13 +16,13 @@
 		<a href="">
 		<div class="col-sm-6">
 			<h2>Sent Offers</h2>
-			<img src="http://placehold.it/350x250" class="img-thumbnail" alt="Responsive image" style="width: 100%;">
+			<img src="http://placehold.it/350x250" class="img-thumbnail text-center" alt="Responsive image" style="width: 100%;">
 		</div>
 		</a>
 		<a href="">
 		<div class="col-sm-6">
 			<h2>Received Offers</h2>
-			<img src="http://placehold.it/350x250" class="img-thumbnail" alt="Responsive image" style="width: 100%;">
+			<img src="http://placehold.it/350x250" class="img-thumbnail text-center" alt="Responsive image" style="width: 100%;">
 		</div>
 		</a>
 	</div>
