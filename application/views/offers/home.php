@@ -19,9 +19,9 @@
 			<img src="http://placehold.it/350x250" class="img-thumbnail" alt="Responsive image" style="width: 100%;">
 		</div>
 		</a>
-		<a class="col-sm-6">
+		<a href="">
 		<div class="col-sm-6">
-			<h2>Received Offers</h2>
+			<h2 class="text-center">Received Offers</h2>
 			<img src="http://placehold.it/350x250" class="img-thumbnail" alt="Responsive image" style="width: 100%;">
 		</div>
 		</a>
