@@ -12,6 +12,16 @@
 	
 	<div class="row">
 		<div class="col-xs-12">
+		<?php foreach ($subcategories->result() as $subcategory) { ?>
+			<a href="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id) ?>">
+				<?php echo $subcategory->name ?>
+			</a> / 
+		<?php } ?>
+		</div>
+	</div>	
+	
+	<div class="row">
+		<div class="col-xs-12">
 			<div class="table-responsive">
 				<table class="table">
 					<tr>
