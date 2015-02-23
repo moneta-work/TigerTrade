@@ -42,17 +42,19 @@ class Offers extends CI_Controller
 			$price = $this->security->xss_clean($this->input->post('price'));
 			$buyer_message = $this->security->xss_clean($this->input->post('buyer_message'));
 
+			$data['seller_id'] = $seller_id;
+			$data['ad_id'] = $ad_id;
+			$data['buyer_id'] = $buyer_id;
+			$data['price'] = $price;
+			$data['buyer_message'] = $buyer_message;
+
 			$this->offer_model->insert_new_offer($price, $seller_id, $ad_id, $buyer_id, $buyer_message);
 
 			$data['created'] = true;
 		}
+
 		$data['title'] = 'New Offer';
 		$this->layout->view('offers/new_offer', $data);
-	}
-
-	function new_offer() {
-		$data['title'] = 'New Offer';
-		$this->layout->view('offers/new_offer', $data);		
 	}
 
 	function sent()
