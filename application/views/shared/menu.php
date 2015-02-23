@@ -52,6 +52,9 @@
 						<ul class="dropdown-menu">
 							<li><a href="<?php echo base_url('/auth/edit_user/' . $this->ion_auth->get_user_id() ) ?>">Edit Profile</a></li>
 						</ul>
+						<ul class="dropdown-menu">
+							<li><a href="<?php echo base_url('/auth/offers/') ?>">Offers</a></li>
+						</ul>
 					</li>
 	
 					<li><a href='<?= base_url("auth/logout") ?>'>Logout</a></li>
