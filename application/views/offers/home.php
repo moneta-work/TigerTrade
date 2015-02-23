@@ -13,12 +13,18 @@
 
 	<p>You can see your offer statuses here!</p>
 	<div class="row">
+		<a href="">
 		<div class="col-sm-6">
 			<h2>Sent Offers</h2>
+			<img src="..." class="img-responsive" alt="Responsive image">
 		</div>
+		</a>
+		<a href="">
 		<div class="col-sm-6">
 			<h2>Received Offers</h2>
+			<img src="..." class="img-responsive" alt="Responsive image">
 		</div>
+		</a>
 	</div>
 	
 </div>
