@@ -8,7 +8,7 @@ class Offer_model extends CI_Model
 		$this->load->database();
 	}
 
-	public function insert_new_offer($name, $description, $category_id)
+	public function insert_new_offer($buyer_id, $seller_id, $ad_id, $buyer_message, $price)
 	{
 		$this->db->set('buyer_id', $buyer_id);
 		$this->db->set('seller_id', $seller_id);
