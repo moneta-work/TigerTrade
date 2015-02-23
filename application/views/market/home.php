@@ -23,7 +23,7 @@
 		    		$count++;
 	    		?>
 				    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id) ?>">
-					    <?php echo $subcategory->name ?><br class="visible-xs">
+					    <?php echo $subcategory->name ?>
 					</a>
 				<?php } ?>
 	    	<?php } ?>
