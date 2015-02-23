@@ -35,13 +35,30 @@
 		<?php } ?>
 		</div>
 		<div class="col-xs-9">
-			<p>Main page for categories.</p>
-			<br>
-			<p>Form for new ad: <a href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a></p>
-			<p>Form for new offer: <a href="<?php echo base_url('/ad/make_offer') ?>">Make an Offer</a></p>
-			<p>Form to respond to an offer: <a href="<?php echo base_url('/ad/review_offer') ?>">Review an Offer</a></p>
-			<p>Form for new category: <a href="<?php echo base_url('/market/new_category') ?>">Create a Category</a></p>
-			<p>Form for new subcategory: <a href="<?php echo base_url('/market/new_subcategory') ?>">Create a Subcategory</a></p>	
+			<div class="table-responsive">
+				<table class="table">
+					<tr>
+						<th>Ad_ID</th>
+						<th>Title</th>
+						<th>Description</th>
+						<th>Price</th>
+						<th>User_ID</th>
+						<th>Category_ID</th>
+						<th>Subcategory_ID</th>
+					</tr>
+					<?php foreach ($ads->result() as $row) { ?>
+					<tr>
+						<td><?php echo $row->ad_id; ?></td>
+						<td><?php echo $row->title; ?></td>
+						<td><?php echo $row->description; ?></td>
+						<td><?php echo $row->price; ?></td>
+						<td><?php echo $row->user_id; ?></td>
+						<td><?php echo $row->category_id; ?></td>
+						<td><?php echo $row->subcategory_id; ?></td>
+					</tr>
+					<?php } ?>
+				</table>
+			</div>
 		</div>
 	</div>
 </div>
