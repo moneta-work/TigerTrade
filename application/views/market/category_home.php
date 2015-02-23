@@ -26,20 +26,22 @@
 			<table class="table">
 				<tr>
 					<th>Ad ID</th>
-					<th>Buyer ID</th>
-					<th>Seller ID</th>
-					<th>Buyer Message</th>
+					<th>Title</th>
+					<th>Description</th>
 					<th>Price</th>
-					<th>Status</th>
+					<th>User ID</th>
+					<th>Category_ID</th>
+					<th>Subcategory_ID</th>
 				</tr>
 				<?php foreach ($pending->result() as $row) { ?>
 				<tr>
 					<td><?php echo $row->ad_id; ?></td>
-					<td><?php echo $row->buyer_id; ?></td>
-					<td><?php echo $row->seller_id; ?></td>
-					<td><?php echo $row->buyer_message; ?></td>
+					<td><?php echo $row->title; ?></td>
+					<td><?php echo $row->description; ?></td>
 					<td><?php echo $row->price; ?></td>
-					<td><?php echo $row->status; ?></td>
+					<td><?php echo $row->user_id; ?></td>
+					<td><?php echo $row->category_id; ?></td>
+					<td><?php echo $row->subcategory_id; ?></td>
 				</tr>
 				<?php } ?>
 			</table>
