@@ -48,7 +48,7 @@ class Offers extends CI_Controller
 			$data['price'] = $price;
 			$data['buyer_message'] = $buyer_message;
 
-			$this->offer_model->insert_new_offer($price, $seller_id, $ad_id, $buyer_id, $buyer_message);
+			$this->offer_model->insert_new_offer($buyer_id, $seller_id, $ad_id, $price, $buyer_message);
 
 			$data['created'] = true;
 		}
