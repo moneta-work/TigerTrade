@@ -14,17 +14,21 @@
 	<p>You can see your sent offers here!</p>
 	
 	<table class="table">
-		<th>Ad ID</th>
-		<th>Buyer ID</th>
-		<th>Seller ID</th>
-		<th>Buyer Message</th>
-		<th>Status</th>
+		<tr>
+			<th>Ad ID</th>
+			<th>Buyer ID</th>
+			<th>Seller ID</th>
+			<th>Buyer Message</th>
+			<th>Status</th>
+		</tr>
 		<?php foreach ($pending->result() as $row) { ?>
+		<tr>
 			<td><?php echo $row->ad_id; ?></td>
 			<td><?php echo $row->buyer_id; ?></td>
 			<td><?php echo $row->seller_id; ?></td>
 			<td><?php echo $row->buyer_message; ?></td>
 			<td><?php echo $row->status; ?></td>
+		</tr>
 		<?php } ?>
 	</table>	
 </div>
