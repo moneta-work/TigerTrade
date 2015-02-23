@@ -23,7 +23,7 @@
 			</div>
 		</div>
 
-
+		<input type="hidden" class="form-control" name="ad_id" id="ad_id" value="<?php echo $ad_id; ?>">
 
 		<div class="form-group">
 			<label for="buyer_message" class="col-sm-2 control-label label-20">Message</label>
