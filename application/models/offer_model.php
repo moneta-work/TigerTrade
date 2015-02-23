@@ -14,8 +14,11 @@ class Offer_model extends CI_Model
 		$this->db->set('seller_id', $seller_id);
 		$this->db->set('ad_id', $ad_id);
 		$this->db->set('buyer_message', $buyer_message);
-		$this->db->set('seller_response', $seller_response);
-		$this->db->set('status', $status);
+		$this->db->set('price', $price);
+		// Seller Message is null by default
+		//$this->db->set('seller_response', $seller_response);
+		// Default status is 'Pending'
+		//$this->db->set('status', $status);
 
 		//insert into db, throw error if data not inserted
 		if( $this->db->insert('offers') != TRUE)

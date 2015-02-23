@@ -86,6 +86,7 @@ CREATE TABLE kylecarlson_tigertrade.offers (
 	buyer_id INTEGER REFERENCES kylecarlson_tigertrade.users(id),
 	seller_id INTEGER REFERENCES kylecarlson_tigertrade.users(id),
 	ad_id INTEGER REFERENCES kylecarlson_tigertrade.ads(ad_id),
+	price	DECIMAL(7,2),
 	buyer_message BLOB,
 	seller_response BLOB,
 	status VARCHAR(10) DEFAULT "Pending"

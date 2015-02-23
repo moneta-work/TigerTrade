@@ -12,8 +12,7 @@
 	</div>
 	
 	<hr>
-
-	<form class="form-horizontal" id="make-offer-form">
+<?php echo form_open("offer/new_offer", array('class' => 'form-horizontal', 'id' => 'make-offer-form', 'enctype' => 'multipart/form-data'));?>
 
 		<div class="form-group">
 			<label class="sr-only" for="price">Amount (in dollars)</label>
@@ -51,6 +50,6 @@
 				<button type="submit" class="btn btn-default">Submit</button>
 			</div>
 		</div>
-	</form>
+	<?php echo form_close();?>
 	
 </div>
