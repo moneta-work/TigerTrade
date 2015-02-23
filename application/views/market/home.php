@@ -14,7 +14,7 @@
 		<div class="col-xs-3">
 		<?php foreach ($categories->result() as $category) { $count = 0; ?>
 		    <a href="<?php echo base_url('/market/category/' . $category->category_id) ?>">
-			    <b><?php echo $category->name ?></b>
+			    <b><?php echo $category->name ?></b><br class="visible-xs">
 			</a>
 			<br>
 	    	<?php foreach ($subcategories->result() as $subcategory) {
