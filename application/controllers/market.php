@@ -6,6 +6,7 @@ class Market extends CI_Controller
 	{
 		parent::__construct();
 		
+		$this->load->model('ad_model');
 		$this->load->model('category_model');
 		$this->load->model('subcategory_model');
 		$data['menu'] = $this->load->view('shared/menu');
