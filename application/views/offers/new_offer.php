@@ -10,7 +10,7 @@
 	</div>
 	
 	<hr>
-		
+	<?php var_dump($_POST); ?>
 	<?php if (isset($error)) { ?>
 		<p>Could not create your offer. Please make sure you entered a price and message.</p>
 	<?php } ?>

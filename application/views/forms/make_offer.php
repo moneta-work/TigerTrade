@@ -26,7 +26,7 @@
 
 
 		<div class="form-group">
-			<label for="description" class="col-sm-2 control-label label-20">Message</label>
+			<label for="buyer_message" class="col-sm-2 control-label label-20">Message</label>
 			<div class="col-sm-10">
 				<textarea type="text" class="form-control description-box" name="buyer_message" id="buyer_message" rows="5"></textarea>
 				<p class="help-block">Write a message for the seller, including good times to meet.</p>
