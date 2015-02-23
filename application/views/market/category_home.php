@@ -11,7 +11,7 @@
 	<hr>
 	
 	<div class="row">
-		<div class="col-xs-3">
+		<div class="col-xs-12">
 		<?php foreach ($subcategories->result() as $subcategory) { ?>
 			<a href="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id) ?>">
 				<?php echo $subcategory->name ?>
@@ -21,7 +21,7 @@
 	</div>
 	
 	<div class="row">
-		<div class="col-xs-9">
+		<div class="col-xs-12">
 			<div class="table-responsive">
 				<table class="table">
 					<tr>
