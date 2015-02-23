@@ -13,6 +13,7 @@
 	
 	<hr>
 	<?php echo form_open("offers/create", array('class' => 'form-horizontal', 'id' => 'make-offer-form', 'enctype' => 'multipart/form-data'));?>
+		<?php echo $ad_id; ?> 
 		<input type="hidden" class="form-control" name="ad_id" id="ad_id" value="<?php echo $ad_id; ?>">
 		<div class="form-group">
 			<label class="sr-only" for="price">Amount (in dollars)</label>
