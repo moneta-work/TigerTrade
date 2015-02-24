@@ -45,7 +45,7 @@
 				
 				<?php $count = 0; ?>
 				<?php foreach ($ads->result() as $row) { ?>
-					<?php if ($count % 3 == 1 && $count > 3) { ?><div class="row"><?php } ?>
+					<?php if (($count % 3 == 1 && $count > 2) || $count == 0 ) { ?><div class="row"><?php } ?>
 					<div class="col-sm-6 col-md-4" style="padding-bottom: 10px;">
 						<a class="market-link" href="<?php echo base_url('/ad/details/' . $row->ad_id) ?>">
 						<h3><?php echo $row->title; ?></h3>
