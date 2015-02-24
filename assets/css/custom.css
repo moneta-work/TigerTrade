@@ -71,8 +71,9 @@ code {
     resize: none;
 }
 
-a.market-ad, a.market-ad:hover, a.market-ad:active, a.market-ad:visited {
+a.market-ad, a.market-ad:hover, a.market-ad:visited {
 	text-decoration: none;
+	color: black;
 }
 
 @media (max-width: 599px) {
