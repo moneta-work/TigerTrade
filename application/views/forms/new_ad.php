@@ -1,4 +1,12 @@
-<div class="container">
+<div class="container padding-top-20">
+	<div class="row">
+		<div class="col-xs-3 col-sm-2 text-center">
+			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
+		</div>
+		<div class="col-xs-9 col-sm-10">
+			<h1 class="">New Ad Form</h1>
+		</div>
+	</div>
 
 	<?php if(isset($created)) {?>
 	    <div class="alert alert-success">
@@ -13,18 +21,9 @@
 	    </div>
     <?php }?>
 
-	<?php echo form_open("ad/create", array('class' => 'form-horizontal', 'id' => 'ad-form', 'enctype' => 'multipart/form-data'));?>
-	<div class="row">
-		<div class="col-xs-2 col-md-1">
-			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
-		</div>
-		<div class="col-xs-10 col-md-11">
-			<h1 class="">New Ad Form</h1>
-		</div>
-	</div>
-	
 	<hr>
-		
+	
+	<?php echo form_open("ad/create", array('class' => 'form-horizontal', 'id' => 'ad-form', 'enctype' => 'multipart/form-data'));?>		
 		<div class="form-group">
 			<label for="title" class="col-sm-2 control-label label-20">Title</label>
 			<div class="col-sm-10">
