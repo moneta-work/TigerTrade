@@ -18,6 +18,7 @@ class Market extends CI_Controller
 		$data['subcategories'] = $this->subcategory_model->get_all_subcategories();
 		$data['ads'] = $this->ad_model->get_all_ads();
 		$data['title'] = 'Market';
+		$data['market_menu'] = $this->load->view('market/menu');
 		$this->layout->view('market/home', $data);		
 	}
 
@@ -41,6 +42,7 @@ class Market extends CI_Controller
 		$data['subcategories'] = $this->subcategory_model->get_all_subcategories();
 		$data['ads'] = $this->ad_model->get_ads_category($category_id);
 		$data['title'] = 'Category Home';
+		$data['market_menu'] = $this->load->view('market/menu');
 		$this->layout->view('market/category_home', $data);
 	}
 	
@@ -52,6 +54,7 @@ class Market extends CI_Controller
 		$data['category'] = $this->category_model->get_category($data['subcategory']->category_id);
 		$data['ads'] = $this->ad_model->get_ads_subcategory($subcategory_id);
 		$data['title'] = 'Subcategory Home';
+		$data['market_menu'] = $this->load->view('market/menu');
 		$this->layout->view('market/subcategory_home', $data);
 	}
 
