@@ -17,7 +17,7 @@
 				<li class="<?php if ($this->uri->segment(1) == '' ) { ?>active<?php } ?>">
 					<a href='<?= base_url() ?>'>Home</a>
 				</li>
-				<li class="<?php if (in_array($this->uri->segment(1), array('market', 'ad')) { ?>active<?php } ?>">
+				<li class="<?php if (in_array($this->uri->segment(1), array('market', 'ad'))) { ?>active<?php } ?>">
 					<a href='<?= base_url("/market") ?>'>Market</a>
 				</li>
 				
