@@ -9,8 +9,6 @@
 	</div>
 	
 	<hr>
-	
-	<p>Form for new categories.</p>
 
 	<?php echo form_open("market/new_category", array('class' => 'form-horizontal', 'id' => 'ad-form', 'enctype' => 'multipart/form-data'));?>	
 		
@@ -18,14 +16,16 @@
 			<label for="list" class="col-sm-2 control-label label-20">Current Categories</label>
 			<div class="col-sm-10">
 				<select size="10" class="form-control" name="list" disabled>
-				<option selected>Plan 1
-				<option>Plan 2
-				<option>Plan 3
-				<option>Plan 4
-				<option>Plan 5
+				<option>Plan 1</option>
+				<option>Plan 2</option>
+				<option>Plan 3</option>
+				<option>Plan 4</option>
+				<option>Plan 5</option>
 				</select>
 			</div>
 		</div>
+		
+		<hr>
 		
 		<div class="form-group">
 			<label for="category_name" class="col-sm-2 control-label label-20">Category Name</label>
