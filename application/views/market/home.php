@@ -28,7 +28,7 @@
 			<div class="row">
 				<div class="alert alert-info row">
 					<div class="btn-group" role="group" aria-label="...">
-						<a href="<?php echo base_url('/ad/new_ad') ?>"><button type="button" class="btn btn-default" >Place an Ad</button></a>
+						<button type="button" class="btn btn-default" ><a href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a></button>
 						<a href="<?php echo base_url('/ad/make_offer') ?>"><button type="button" class="btn btn-default">Make an Offer</button></a>
 						<a href="<?php echo base_url('/ad/review_offer') ?>"><button type="button" class="btn btn-default">Review an Offer</button></a>
 						<a href="<?php echo base_url('/market/new_category') ?>"><button type="button" class="btn btn-default">Create a Category</button></a>
