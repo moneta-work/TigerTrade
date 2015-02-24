@@ -12,10 +12,7 @@
 	
 	<div class="row">
 		<div class="col-xs-3">
-			<a href="<?php echo base_url('/market/all') ?>">
-			    <b>all</b>
-			</a>
-			<br>
+			<a href="<?php echo base_url('/market/all') ?>"><b>all</b></a><br>
 			<?php foreach ($categories->result() as $category) { ?>
 			    <a href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a><br>
 		    	<?php foreach ($subcategories->result() as $subcategory) {
@@ -23,7 +20,7 @@
 					    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id); ?>"><?php echo $subcategory->name; ?></a><br>
 					<?php } ?>
 		    	<?php } ?>
-		    	<br><br>
+		    	<br>
 			<?php } ?>
 		</div>
 
