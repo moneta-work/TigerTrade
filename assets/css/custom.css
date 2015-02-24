@@ -71,6 +71,9 @@ code {
     resize: none;
 }
 
+.market-ad, .market-ad:hover, .market-ad:visited {
+}
+
 @media (max-width: 599px) {
 
 }
