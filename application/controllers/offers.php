@@ -84,7 +84,7 @@ class Offers extends CI_Controller
 		$user = $this->ion_auth->user()->row();
 		$data['offer'] = $this->offer_model->get_offer($offer_id);
 		$offer = $data['offer'];
-		if (isset($offer) || $user->id == $offer->seller_id) {
+		if ($offer != NULL || $user->id == $offer->seller_id) {
 			$data['ad'] = $this->ad_model->get_ad($offer->ad_id);
 			$data['title'] = 'Review Offer';
 			$this->layout->view('forms/offer_response', $data);
