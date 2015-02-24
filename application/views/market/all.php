@@ -54,7 +54,7 @@
 			<div class="row">
 				<?php foreach ($ads->result() as $row) { ?>
 				<div class="col-sm-6 col-md-4">
-					<?php echo $row->ad_id; ?><
+					<?php echo $row->ad_id; ?>
 					<?php echo $row->title; ?>
 					<?php echo $row->description; ?>
 					<?php echo $row->price; ?>
