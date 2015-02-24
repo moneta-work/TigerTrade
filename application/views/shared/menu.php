@@ -14,30 +14,16 @@
 		<!-- MENU OPTIONS -->
 		<nav class="collapse navbar-collapse bs-navbar-collapse" id="navbar">
 			<ul class="nav navbar-nav">
-				<li class="active">
+				<li class="<?php if ($this->uri->segment(1) == '' ); ?>active<?php } ?>">
 					<a href='<?= base_url() ?>'>Home</a>
 				</li>
-				<!-- DROPDOWN BUTTON
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Market <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">All</a></li>
-						<li><a href="#">For Sale</a></li>
-						<li><a href="#">Services</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Search</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Filter</a></li>
-					</ul>
-				</li>
-				-->
-				<li>
+				<li class="<?php if ($this->uri->segment(1) == 'market' ); ?>active<?php } ?>">
 					<a href='<?= base_url("/market") ?>'>Market</a>
 				</li>
-				<li>
+				<li class="<?php if ($this->uri->segment(1) == 'user' || $this->uri->segment(1) == 'auth' ); ?>active<?php } ?>">
 					<a href='<?= base_url("/user") ?>'>User</a>
 				</li>
-				<li>
+				<li class="<?php if ($this->uri->segment(1) == 'Ad' ); ?>active<?php } ?>">
 					<a href='<?= base_url("/ad") ?>'>Ad</a>
 				</li>
 			</ul>
