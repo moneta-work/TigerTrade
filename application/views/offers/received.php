@@ -24,7 +24,7 @@
 			<th>Status</th>
 		</tr>
 		<?php foreach ($pending->result() as $row) { ?>
-		<tr class='clickable-row' data-href='<?php echo base_url('/offers/review_offer/' . $row->offer_id) ?>'>
+		<tr style="cursor: hand;" class='clickable-row' data-href='<?php echo base_url('/offers/review_offer/' . $row->offer_id) ?>'>
 			<td><?php echo $row->ad_id; ?></td>
 			<td><?php echo $row->buyer_id; ?></td>
 			<td><?php echo $row->seller_id; ?></td>
