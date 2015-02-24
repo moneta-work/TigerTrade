@@ -14,16 +14,16 @@
 		<!-- MENU OPTIONS -->
 		<nav class="collapse navbar-collapse bs-navbar-collapse" id="navbar">
 			<ul class="nav navbar-nav">
-				<li class="<?php if ($this->uri->segment(1) == '' ); ?>active<?php } ?>">
+				<li class="<?php if ($this->uri->segment(1) == '' ) { ?>active<?php } ?>">
 					<a href='<?= base_url() ?>'>Home</a>
 				</li>
-				<li class="<?php if ($this->uri->segment(1) == 'market' ); ?>active<?php } ?>">
+				<li class="<?php if ($this->uri->segment(1) == 'market' ) { ?>active<?php } ?>">
 					<a href='<?= base_url("/market") ?>'>Market</a>
 				</li>
-				<li class="<?php if ($this->uri->segment(1) == 'user' || $this->uri->segment(1) == 'auth' ); ?>active<?php } ?>">
+				<li class="<?php if ($this->uri->segment(1) == 'user' || $this->uri->segment(1) == 'auth' ) { ?>active<?php } ?>">
 					<a href='<?= base_url("/user") ?>'>User</a>
 				</li>
-				<li class="<?php if ($this->uri->segment(1) == 'Ad' ); ?>active<?php } ?>">
+				<li class="<?php if ($this->uri->segment(1) == 'Ad' ) { ?>active<?php } ?>">
 					<a href='<?= base_url("/ad") ?>'>Ad</a>
 				</li>
 			</ul>
