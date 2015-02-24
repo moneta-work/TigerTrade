@@ -6,7 +6,7 @@
 		</div>
 		<div class="col-xs-10 col-md-11">
 			<h1 class="">Make Offer:</h1>
-			<h3 class="">LISTING_TITLE_HERE</h3>
+			<h3 class=""><?php echo $ad->title; ?></h3>
 		</div>
 		<div class="clearfix visible-sm-block"></div>
 	</div>
@@ -18,7 +18,7 @@
 			<label for="price" class="col-sm-2 control-label label-20">Price</label>
 			<div class="input-group col-sm-3 col-sm-offset-2" style="padding: 0 15px;">
 				<div class="input-group-addon">$</div>
-					<input type="text" class="form-control" name="price" id="price" placeholder="Amount">
+					<input type="text" class="form-control" name="price" id="price" value="<?php echo $ad->price; ?>" placeholder="$<?php echo $ad->price; ?>">
 				<div class="input-group-addon">.00</div>
 			</div>
 		</div>
