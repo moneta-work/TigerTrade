@@ -119,5 +119,12 @@ class Offers extends CI_Controller
 		$this->layout->view('offers/response', $data);
 	}
 	
+	function response($offer_id) {
+		$user = $this->ion_auth->user()->row();
+		$data['offer'] = $this->offer_model->get_offer($offer_id);
+		$data['ad'] = $this->ad_model->get_ad($offer->ad_id);
+		$data['title'] = 'Offer Details';
+		$this->layout->view('offers/details', $data);
+	}	
 }
 ?>
