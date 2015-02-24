@@ -4,7 +4,7 @@
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
 		<div class="col-xs-9 col-sm-8">
-			<h1 class="text-center">Market: All</h1>
+			<h1>Market: All</h1>
 		</div>
 	</div>
 	
