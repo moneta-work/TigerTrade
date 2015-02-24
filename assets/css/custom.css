@@ -71,6 +71,11 @@ code {
     resize: none;
 }
 
+a.market-ad, a.market-ad:hover, a.market-ad:active, a.market-ad:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
 @media (max-width: 599px) {
 
 }
