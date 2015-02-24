@@ -72,6 +72,7 @@ code {
 }
 
 .market-ad, .market-ad:hover, .market-ad:visited {
+	color: black;
 }
 
 @media (max-width: 599px) {
