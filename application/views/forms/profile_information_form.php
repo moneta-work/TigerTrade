@@ -5,13 +5,13 @@
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
 		<div class="col-xs-10 col-md-11">
-			<h1 class="">Profile Information Form</h1>
+			<h1>Profile Information Form</h1>
 		</div>
 	</div>
 	
 	<hr>
 		
-	<form class="form-horizontal" id="ad-form" action="<?php echo base_url();?>user/update_profile_info"" method="POST">
+	<form class="form-horizontal" id="ad-form" action="<?php echo base_url('user/update_profile_info');?>" method="POST">
 	
 		<div class="form-group">
 			<label for="username" class="col-sm-2 control-label label-20">Username</label>

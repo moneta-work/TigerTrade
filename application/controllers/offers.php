@@ -6,6 +6,7 @@ class Offers extends CI_Controller
 	{
 		parent::__construct();
 
+		$this->load->model('ad_model');
 		$this->load->model('offer_model');
 		$data['menu'] = $this->load->view('shared/menu');
 		
@@ -37,7 +38,7 @@ class Offers extends CI_Controller
 		else
 		{
 			$ad_id = $this->input->post('ad_id');
-			$seller_id = 1;
+			$seller_id = $this->ad_model->get_seller_id($ad_id);
 			$buyer_id = $user->id;
 			$price = $this->security->xss_clean($this->input->post('price'));
 			$buyer_message = $this->security->xss_clean($this->input->post('buyer_message'));
@@ -48,7 +49,7 @@ class Offers extends CI_Controller
 			$data['price'] = $price;
 			$data['buyer_message'] = $buyer_message;
 
-			$this->offer_model->insert_new_offer($buyer_id, $seller_id, $ad_id, $price, $buyer_message);
+			$this->offer_model->insert_new_offer($buyer_id, $seller_id, $ad_id, $buyer_message, $price);
 
 			$data['created'] = true;
 		}
@@ -61,7 +62,7 @@ class Offers extends CI_Controller
 	{
 		$user = $this->ion_auth->user()->row();
 		$data['title'] = 'Sent Offers';
-		$data['pending'] = $this->offer_model->get_pending_offers($user->id);
+		$data['pending'] = $this->offer_model->get_buyer_pending_offers($user->id);
 		$data['accepted'] = $this->offer_model->get_buyer_accepted_offers($user->id);
 		$data['declined'] = $this->offer_model->get_buyer_declined_offers($user->id);
 		$this->layout->view('offers/sent', $data);
@@ -69,9 +70,24 @@ class Offers extends CI_Controller
 
 	function received()
 	{
+		$user = $this->ion_auth->user()->row();
 		$data['title'] = 'Received Offers';
+		$data['pending'] = $this->offer_model->get_seller_pending_offers($user->id);
+		$data['accepted'] = $this->offer_model->get_seller_accepted_offers($user->id);
+		$data['declined'] = $this->offer_model->get_seller_declined_offers($user->id);
 		$this->layout->view('offers/received', $data);
 	}
 
+	//shows form to create a new ad
+	function review_offer($offer_id)
+	{
+		$user = $this->ion_auth->user()->row();
+		$data['offer'] = $this->offer_model->get_offer($offer_id);
+		$offer = $data['offer'];
+		$data['ad'] = $this->ad_model->get_ad($offer->ad_id);
+		$data['title'] = 'Review Offer';
+		$this->layout->view('forms/offer_response', $data);
+	}
+	
 }
 ?>

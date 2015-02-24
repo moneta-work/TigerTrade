@@ -1,14 +1,11 @@
-
-
-<div class="container">
-	
+<div class="container padding-top-20">
 	<div class="row">
-		<div class="col-xs-2 col-md-1">
+		<div class="col-xs-3 col-sm-2 text-center">
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
-		<div class="col-xs-10 col-md-11">
-			<h1 class="">Woohoo! You have an offer for:</h1>
-			<h3 class="">LISTING_TITLE_HERE</h3>
+		<div class="col-xs-9 col-sm-10">
+			<h1>Woohoo! You have an offer for:</h1>
+			<h3><?php echo $ad->title; ?></h3>
 		</div>
 	</div>
 	
@@ -16,15 +13,18 @@
 		
 	<form class="form-horizontal" id="offer-response-form">
 		<div class="form-group">
+			<label class="sr-only" for="price">Amount (in dollars)</label>
 			<label for="price" class="col-sm-2 control-label label-20">Price</label>
-			<div class="col-sm-10">
-				<input type="text" class="form-control" id="price" value="$OFFER_PRICE" disabled="">
+			<div class="input-group col-sm-3 col-sm-offset-2" style="padding: 0 15px;">
+				<div class="input-group-addon">$</div>
+					<input type="text" class="form-control" name="price" id="price" value="<?php echo $offer->price; ?>" placeholder="<?php echo $offer->price; ?>" disabled="true">
+				<div class="input-group-addon">.00</div>
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="description" class="col-sm-2 control-label label-20">Message</label>
 			<div class="col-sm-10">
-				<textarea type="text" class="form-control description-box" id="description" rows="5" disabled=""></textarea>
+				<textarea type="text" class="form-control description-box" id="description" rows="5" disabled="true" value="<?php echo $offer->buyer_message; ?>"><?php echo $offer->buyer_message; ?></textarea>
 				<p class="help-block">Offer message from the buyer.</p>
 			</div>
 		</div>

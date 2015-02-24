@@ -31,39 +31,52 @@ class Offer_model extends CI_Model
 		}
 	}
 
+	public function get_offer($offer_id)
+	{
+		$result = $this->db->query("SELECT * FROM offers WHERE offer_id = '$offer_id'");
+		$result = $result->row();
+		return $result;
+	}
+
 	public function get_all_offers()
 	{
 		return $this->db->get('offers');
 	}
 
-	public function get_pending_offers($buyer_id)
+	public function get_buyer_pending_offers($buyer_id)
 	{
-		$query = $this->db->query("SELECT * FROM offers WHERE buyer_id = '$buyer_id' AND status = 'Pending'");
-		return $query;
+		$result = $this->db->query("SELECT * FROM offers WHERE buyer_id = '$buyer_id' AND status = 'Pending'");
+		return $result;
 	}
 
 	public function get_buyer_declined_offers($buyer_id)
 	{
-		$query = $this->db->query("SELECT * FROM offers WHERE buyer_id = '$buyer_id' AND status = 'Declined'");
-		return $query;
+		$result = $this->db->query("SELECT * FROM offers WHERE buyer_id = '$buyer_id' AND status = 'Declined'");
+		return $result;
 	}
 	
 	public function get_buyer_accepted_offers($buyer_id)
 	{
-		$query = $this->db->query("SELECT * FROM offers WHERE buyer_id = '$buyer_id' AND status = 'Accepted'");
-		return $query;
+		$result = $this->db->query("SELECT * FROM offers WHERE buyer_id = '$buyer_id' AND status = 'Accepted'");
+		return $result;
+	}
+
+	public function get_seller_pending_offers($seller_id)
+	{
+		$result = $this->db->query("SELECT * FROM offers WHERE seller_id = '$seller_id' AND status = 'Pending'");
+		return $result;
 	}
 	
 	public function get_seller_declined_offers($seller_id)
 	{
-		$query = $this->db->query("SELECT * FROM offers WHERE buyer_id = '$seller_id' AND status = 'Declined'");
-		return $query;
+		$result = $this->db->query("SELECT * FROM offers WHERE buyer_id = '$seller_id' AND status = 'Declined'");
+		return $result;
 	}
 	
 	public function get_seller_accepted_offers($seller_id)
 	{
-		$query = $this->db->query("SELECT * FROM offers WHERE buyer_id = '$seller_id' AND status = 'Accepted'");
-		return $query;
+		$result = $this->db->query("SELECT * FROM offers WHERE buyer_id = '$seller_id' AND status = 'Accepted'");
+		return $result;
 	}
 
 }

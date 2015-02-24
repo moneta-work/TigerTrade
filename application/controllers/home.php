@@ -28,12 +28,8 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		//$this->load->view('header');
-		//$this->load->view('welcome_message');
-		//$this->load->view('footer');
 		$data['title'] = 'Home';
 		$this->layout->view('home/home', $data);
-		//$this->layout->view('welcome_message', $data);
 	}
 
 	public function databaseTest()

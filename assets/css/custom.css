@@ -6,7 +6,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   padding-top: 50px;
 }
 .footer {
@@ -47,7 +47,6 @@ code {
 }
 
 .back-button {
-	margin: 0 auto;
 	margin-top: 23px;
 }
 
@@ -69,6 +68,21 @@ code {
 
 .description-box {
     resize: none;
+}
+
+.market-link, .market-link:visited, .market-link:active {
+	text-decoration: none;
+	color: black;
+}	
+
+.market-link:hover {
+	text-decoration: none;
+	color: #373737;
+}
+
+button a, button a:visited, button a:hover, button a:active {
+	text-decoration: none;
+	color: inherit;
 }
 
 @media (max-width: 599px) {
