@@ -81,11 +81,17 @@ class Offers extends CI_Controller
 	//shows form to create a new ad
 	function review_offer($offer_id)
 	{
+		$user = $this->ion_auth->user()->row();
 		$data['offer'] = $this->offer_model->get_offer($offer_id);
 		$offer = $data['offer'];
-		$data['ad'] = $this->ad_model->get_ad($offer->ad_id);
-		$data['title'] = 'Review Offer';
-		$this->layout->view('forms/offer_response', $data);
+		if ($user->id == $offer->seller_id) {
+			$data['ad'] = $this->ad_model->get_ad($offer->ad_id);
+			$data['title'] = 'Review Offer';
+			$this->layout->view('forms/offer_response', $data);
+		} else {
+			$data['title'] = 'Home';
+			$this->layout->view('home/home', $data);
+		}
 	}
 	
 }
