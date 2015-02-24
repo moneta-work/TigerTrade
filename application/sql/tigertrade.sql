@@ -50,7 +50,7 @@ CREATE TABLE kylecarlson_tigertrade.ads (
 	description	VARCHAR (1024),
 	creation_date 	TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	expiration_date 	TIMESTAMP,
-	price	DECIMAL(7,2),
+	price	INTEGER,
 	user_id INTEGER REFERENCES kylecarlson_tigertrade.users(id),
 	category_id INTEGER REFERENCES kylecarlson_tigertrade.categories(category_id),
 	subcategory_id INTEGER REFERENCES kylecarlson_tigertrade.subcategories(subcategory_id),
@@ -87,7 +87,7 @@ CREATE TABLE kylecarlson_tigertrade.offers (
 	buyer_id INTEGER REFERENCES kylecarlson_tigertrade.users(id),
 	seller_id INTEGER REFERENCES kylecarlson_tigertrade.users(id),
 	ad_id INTEGER REFERENCES kylecarlson_tigertrade.ads(ad_id),
-	price	DECIMAL(7,2),
+	price	INTEGER,
 	buyer_message BLOB,
 	seller_response BLOB,
 	status VARCHAR(10) DEFAULT "Pending"
