@@ -83,6 +83,7 @@ code {
 
 button a, button a:visited, button a:hover, button a:active {
 	text-decoration: none;
+	color: inherit;
 }
 
 @media (max-width: 599px) {
