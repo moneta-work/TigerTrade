@@ -11,12 +11,22 @@
 	<hr>
 	
 	<div class="row">
-		<?php if (isset($market_menu)) { $market_menu; } ?>
+		<div class="col-xs-3 col-sm-2">
+			<a href="<?php echo base_url('/market') ?>"><b>all</b></a><br><br>
+			<?php foreach ($categories->result() as $category) { ?>
+			    <a href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a><br>
+		    	<?php foreach ($subcategories->result() as $subcategory) {
+		    		if ($subcategory->category_id == $category->category_id) { ?>
+					    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id); ?>"><?php echo $subcategory->name; ?></a><br>
+					<?php } ?>
+		    	<?php } ?>
+		    	<br>
+			<?php } ?>
+		</div>
 		
 		<div class="col-xs-9 col-sm-10">
 			<div class="row">
 				<div class="row text-center">
-
 					<div class="btn-group">
 						<a class="btn btn-default" href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a>
 						<a class="btn btn-default" href="<?php echo base_url('/ad/make_offer') ?>">Make an Offer</a>
@@ -24,7 +34,6 @@
 						<a class="btn btn-default" href="<?php echo base_url('/market/new_category') ?>">Create a Category</a>
 						<a class="btn btn-default" href="<?php echo base_url('/ad/new_subcategory') ?>">Create a Subcategory</a>
 					</div>
-
 				</div>
 				<?php foreach ($ads->result() as $row) { ?>
 					<div class="col-sm-6 col-md-4" style="padding-bottom: 10px;">

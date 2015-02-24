@@ -19,6 +19,7 @@ class Ad extends CI_Controller
 	//shows details of a specific ad
 	function details($ad_id)
 	{
+		$data['ad'] = $this->ad_model->get_ad($ad_id);
 		$data['title'] = 'Ad Detail';
 		$this->layout->view('ad/ad_detail', $data);
 	}
