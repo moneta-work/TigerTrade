@@ -27,13 +27,17 @@
 		<div class="col-xs-9 col-sm-10">
 			<div class="row">
 				<div class="alert alert-info row">
-					<div class="btn-group text-center" role="group" aria-label="...">
-						<button type="button" class="btn btn-default" ><a href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a></button>
-						<button type="button" class="btn btn-default"><a href="<?php echo base_url('/ad/make_offer') ?>">Make an Offer</a></button>
-						<button type="button" class="btn btn-default"><a href="<?php echo base_url('/ad/review_offer') ?>">Review an Offer</a></button>
-						<button type="button" class="btn btn-default"><a href="<?php echo base_url('/market/new_category') ?>">Create a Category</a></button>
-						<button type="button" class="btn btn-default"><a href="<?php echo base_url('/ad/new_subcategory') ?>">Create a Subcategory</a></button>
-					</div>
+
+					<ul class="pagination">
+						<li class="disabled"><a href="#">&laquo;</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a></li>
+						<li><a href="<?php echo base_url('/ad/make_offer') ?>">Make an Offer</a></li>
+						<li><a href="<?php echo base_url('/ad/review_offer') ?>">Review an Offer</a></li>
+						<li><a href="<?php echo base_url('/market/new_category') ?>">Create a Category</a></li>
+						<li><a href="<?php echo base_url('/ad/new_subcategory') ?>">Create a Subcategory</a></li>
+					</ul>
+
 				</div>
 				<?php foreach ($ads->result() as $row) { ?>
 					<div class="col-sm-6 col-md-4" style="padding-bottom: 10px;">
