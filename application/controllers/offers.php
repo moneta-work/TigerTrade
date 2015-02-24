@@ -39,7 +39,6 @@ class Offers extends CI_Controller
 		{
 			$ad_id = $this->input->post('ad_id');
 			$seller_id = $this->ad_model->get_seller_id($ad_id);
-			echo $seller_id;
 			$buyer_id = $user->id;
 			$price = $this->security->xss_clean($this->input->post('price'));
 			$buyer_message = $this->security->xss_clean($this->input->post('buyer_message'));
@@ -50,7 +49,7 @@ class Offers extends CI_Controller
 			$data['price'] = $price;
 			$data['buyer_message'] = $buyer_message;
 
-			$this->offer_model->insert_new_offer($buyer_id, $seller_id, $ad_id, $price, $buyer_message);
+			$this->offer_model->insert_new_offer($buyer_id, $seller_id, $ad_id, $buyer_message, $price);
 
 			$data['created'] = true;
 		}
