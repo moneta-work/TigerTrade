@@ -56,7 +56,7 @@
 				<div class="col-sm-6 col-md-4">
 					<h3><?php echo $row->title; ?></h3>
 					<p>Price: $<?php echo $row->price; ?></p>
-					<img src="http://placehold.it/300x200" class="img-thumbnail" alt="Responsive image" style="width: 100%;"><br>
+					<img src="http://placehold.it/300x200" class="img-thumbnail" alt="Responsive image" style="width: 100%;"><br><br><br>
 					<p>Description: <?php echo $row->description; ?></p>
 					<p>Ad ID: <?php echo $row->ad_id; ?></p>
 				</div>
