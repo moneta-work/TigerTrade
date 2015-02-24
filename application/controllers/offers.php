@@ -78,5 +78,13 @@ class Offers extends CI_Controller
 		$this->layout->view('offers/received', $data);
 	}
 
+	//shows form to create a new ad
+	function review_offer($offer_id)
+	{
+		$data['offer'] = $this->offer_model->get_offer($offer_id);
+		$data['title'] = 'Review Offer';
+		$this->layout->view('forms/offer_response', $data);
+	}
+	
 }
 ?>

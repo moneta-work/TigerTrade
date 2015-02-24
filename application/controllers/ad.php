@@ -50,13 +50,6 @@ class Ad extends CI_Controller
 		$data['title'] = 'Make an Offer';
 		$this->layout->view('forms/make_offer', $data);
 	}
-	
-	//shows form to create a new ad
-	function review_offer()
-	{
-		$data['title'] = 'Review Offer';
-		$this->layout->view('forms/offer_response', $data);
-	}
 
 	//create an ad
 	function create()

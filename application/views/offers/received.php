@@ -25,14 +25,14 @@
 			<th>Status</th>
 		</tr>
 		<?php foreach ($pending->result() as $row) { ?>
-		<tr>
+		<a class="btn btn-default" href="<?php echo base_url('/ad/review_offer/' . $row->offer_id) ?>"><tr>
 			<td><?php echo $row->ad_id; ?></td>
 			<td><?php echo $row->buyer_id; ?></td>
 			<td><?php echo $row->seller_id; ?></td>
 			<td><?php echo $row->buyer_message; ?></td>
 			<td><?php echo $row->price; ?></td>
 			<td><?php echo $row->status; ?></td>
-		</tr>
+		</tr></a>
 		<?php } ?>
 	</table>
 
