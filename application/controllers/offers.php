@@ -83,7 +83,7 @@ class Offers extends CI_Controller
 	{
 		$data['offer'] = $this->offer_model->get_offer($offer_id);
 		$offer = $data['offer'];
-		$data['ad'] = $this->ad_model->get_offer($offer->ad_id);
+		$data['ad'] = $this->ad_model->get_ad($offer->ad_id);
 		$data['title'] = 'Review Offer';
 		$this->layout->view('forms/offer_response', $data);
 	}
