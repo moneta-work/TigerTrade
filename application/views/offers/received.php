@@ -15,7 +15,7 @@
 	<a class="btn btn-default" href="<?php echo base_url('/ad/review_offer') ?>">Review an Offer Form</a>
 	
 	<h2>Pending</h2>
-	<table class="table">
+	<table class="table table-hover">
 		<tr>
 			<th>Ad ID</th>
 			<th>Buyer ID</th>
