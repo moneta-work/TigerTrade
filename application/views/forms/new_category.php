@@ -17,6 +17,7 @@
 			<div class="col-sm-10">
 				<select size="10" class="form-control" id="list" >
 				
+				<!--
 				<option disabled>A</option>
 				<option disabled>B</option>
 				<option disabled>C</option>
@@ -24,11 +25,11 @@
 				<option disabled>E</option>
 				<option disabled>F</option>
 				<option disabled>G</option>
+				-->
 				
-				
-				<?php/* foreach($categories as $category):
-				echo "<option disabled>" . $category['name'] . "</option>";
-				endforeach; */?>
+				<?php foreach($categories->result() as $category):
+				echo "<option disabled>" . $category->name . "</option>";
+				endforeach; ?>
 
 				
 				</select>
