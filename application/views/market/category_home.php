@@ -4,7 +4,7 @@
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
 		<div class="col-xs-10 col-md-11">
-			<h1 class=""><?php echo ucfirst($category->name); ?></h1>
+			<h1 class="">Market: <?php echo ucfirst($category->name); ?></h1>
 		</div>
 	</div>
 	
