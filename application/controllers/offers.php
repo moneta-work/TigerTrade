@@ -89,5 +89,35 @@ class Offers extends CI_Controller
 		$this->layout->view('forms/offer_response', $data);
 	}
 	
+	function response($offer_id)
+	{
+		$user = $this->ion_auth->user()->row();
+		
+		$this->form_validation->set_rules('status', 'Status', 'required');
+		$this->form_validation->set_rules('seller_response', 'Seller_Response', 'required');
+
+		//if validation fails
+		if ($this->form_validation->run() == false)
+		{
+			$data['error'] = true;
+		}
+		//if validation passes
+		else
+		{
+			$status = $this->security->xss_clean($this->input->post('status'));
+			$seller_response = $this->security->xss_clean($this->input->post('seller_response'));
+			
+			$data['status'] = $status;
+			$data['seller_response'] = $seller_response;
+
+			$this->offer_model->respond_to_offer($seller_response, $status, $offer_id);
+
+			$data['created'] = true;
+		}
+
+		$data['title'] = 'New Offer';
+		$this->layout->view('offers/response', $data);
+	}
+	
 }
 ?>

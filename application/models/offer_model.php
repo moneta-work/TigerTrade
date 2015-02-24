@@ -79,6 +79,16 @@ class Offer_model extends CI_Model
 		return $result;
 	}
 
+	public function respond_to_offer($seller_response, $status, $offer_id)
+	{
+		$data = array(
+               'seller_response' => $seller_response,
+               'status' => $status
+            );
+        $this->db->where('offer_id', $offer_id);
+		$this->db->update('offers', $data); 
+	}
+
 }
 
 ?>
