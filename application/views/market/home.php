@@ -27,10 +27,15 @@
 		<div class="col-xs-9 col-sm-10">
 			<div class="row">
 				<div class="row text-center">
-					<div class="btn-group">
+					<div class="btn-group hidden-xs">
 						<a class="btn btn-default" href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a>
 						<a class="btn btn-default" href="<?php echo base_url('/market/new_category') ?>">Create a Category</a>
 						<a class="btn btn-default" href="<?php echo base_url('/ad/new_subcategory') ?>">Create a Subcategory</a>
+					</div>
+					<div class="btn-group visible-xs">
+						<a class="btn btn-default" href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a><br>
+						<a class="btn btn-default" href="<?php echo base_url('/market/new_category') ?>">Create a Category</a><br>
+						<a class="btn btn-default" href="<?php echo base_url('/ad/new_subcategory') ?>">Create a Subcategory</a><br>
 					</div>
 				</div>
 				<?php foreach ($ads->result() as $row) { ?>
