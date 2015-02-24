@@ -54,12 +54,12 @@
 			<div class="row">
 				<?php foreach ($ads->result() as $row) { ?>
 				<div class="col-sm-6 col-md-4">
-					<?php echo $row->ad_id; ?>
-					<?php echo $row->title; ?>
-					<?php echo $row->description; ?>
-					<?php echo $row->price; ?>
-					<?php echo $row->user_id; ?>
-					<?php echo $row->category_id; ?>
+					<?php echo $row->ad_id; ?><br>
+					<?php echo $row->title; ?><br>
+					<?php echo $row->description; ?><br>
+					<?php echo $row->price; ?><br>
+					<?php echo $row->user_id; ?><br>
+					<?php echo $row->category_id; ?><br>
 					<?php echo $row->subcategory_id; ?>
 				</div>
 				<?php } ?>
