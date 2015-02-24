@@ -25,7 +25,7 @@
 			<label for="description" class="col-sm-2 control-label label-20">Message</label>
 			<div class="col-sm-10">
 				<textarea type="text" class="form-control description-box" id="description" rows="5" disabled="true" value="<?php echo $offer->buyer_message; ?>"><?php echo $offer->buyer_message; ?></textarea>
-				<p class="help-block">Offer message from the buyer.</p>
+				<p class="help-block">Buyer message to Seller.</p>
 			</div>
 		</div>
 		
@@ -35,7 +35,7 @@
 			<label for="description" class="col-sm-2 control-label label-20">Reply</label>
 			<div class="col-sm-10">
 				<textarea type="text" name="seller_response" class="form-control description-box" id="seller_response" rows="5" value="<?php echo $offer->seller_response; ?>" disabled="true"><?php echo $offer->seller_response; ?></textarea>
-				<p class="help-block">Write a message for the buyer, including good times to meet or preferred method of contact.</p>
+				<p class="help-block">Seller response to Buyer.</p>
 			</div>
 		</div>
 
