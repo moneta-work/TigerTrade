@@ -32,9 +32,12 @@
 			</div>
 		</div>
 		<div class="form-group">
+			<label class="sr-only" for="price">Amount (in dollars)</label>
 			<label for="price" class="col-sm-2 control-label label-20">Price</label>
-			<div class="col-sm-10">
-				<input type="text" class="form-control" name="price" id="price" placeholder="0.00" onkeyup="document.getElementById('preview_price').innerHTML = this.value" onkeypress="return isNumber(event)">
+			<div class="input-group col-sm-3 col-sm-offset-2" style="padding: 0 15px;">
+				<div class="input-group-addon">$</div>
+					<input type="text" class="form-control" name="price" id="price" placeholder="Amount">
+				<div class="input-group-addon">.00</div>
 			</div>
 		</div>
 		<div class="form-group">
