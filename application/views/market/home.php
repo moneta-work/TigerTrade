@@ -3,8 +3,8 @@
 		<div class="col-xs-3 col-sm-2 text-center">
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
-		<div class="col-xs-9 col-sm-10">
-			<h1 class="">Market: All</h1>
+		<div class="col-xs-9 col-sm-8">
+			<h1 class="text-center">Market: All</h1>
 		</div>
 	</div>
 	
