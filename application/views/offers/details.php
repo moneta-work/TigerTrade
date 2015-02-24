@@ -46,13 +46,13 @@
 			<div class="col-sm-10">
 				<div class="radio">
 					<label>
-						<input type="radio" id='accept-offer' name="status" id="status1" checked="<?php if ($offer->status == 'Accepted') ?>true<?php } ?>" value="Accepted" disabled>
+						<input type="radio" id='accept-offer' name="status" id="status1" checked="<?php if ($offer->status == 'Accepted') { ?>true<?php } ?>" value="Accepted" disabled>
 						Accept Offer<p class="text-danger" id='offer-warning' style='display: none; padding-left: 10px'> You and the buyer will exchange contact info.</p>
 					</label>
 				</div>
 				<div class="radio">
 					<label>
-						<input type="radio" name="status" id="status2" value="Declined" checked="<?php if ($offer->status == 'Declined') ?>true<?php } ?>" disabled>
+						<input type="radio" name="status" id="status2" value="Declined" checked="<?php if ($offer->status == 'Declined') { ?>true<?php } ?>" disabled>
 						Decline Offer
 					</label>
 				</div>
