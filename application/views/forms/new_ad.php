@@ -8,6 +8,8 @@
 		</div>
 	</div>
 
+	<hr>
+
 	<?php if(isset($created)) {?>
 	    <div class="alert alert-success">
 	        <a href="#" class="close" data-dismiss="alert">&times;</a>
@@ -21,8 +23,6 @@
 	    </div>
     <?php }?>
 
-	<hr>
-	
 	<?php echo form_open("ad/create", array('class' => 'form-horizontal', 'id' => 'ad-form', 'enctype' => 'multipart/form-data'));?>		
 		<div class="form-group">
 			<label for="title" class="col-sm-2 control-label label-20">Title</label>
