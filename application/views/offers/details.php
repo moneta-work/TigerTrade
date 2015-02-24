@@ -11,7 +11,7 @@
 	
 	<hr>
 		
-	<?php echo form_open("offers/response/" . $offer->offer_id, array('class' => 'form-horizontal', 'id' => 'offer-response-form', 'enctype' => 'multipart/form-data'));?>
+	<?php echo form_open("" . $offer->offer_id, array('class' => 'form-horizontal', 'id' => 'offer-response-form', 'enctype' => 'multipart/form-data'));?>
 		<div class="form-group">
 			<label class="sr-only" for="price">Amount (in dollars)</label>
 			<label for="price" class="col-sm-2 control-label label-20">Price</label>
@@ -68,11 +68,6 @@
 						<input type="checkbox" checked disabled> <a href="<?php echo base_url('/content/terms') ?>">I Agree to the Terms & Conditions</a>
 					</label>
 				</div>
-			</div>
-		</div>
-		<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-10">
-				<button type="submit" class="btn btn-default" disabled>Submit</button>
 			</div>
 		</div>
 	<?php echo form_close();?>
