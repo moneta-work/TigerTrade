@@ -42,6 +42,7 @@
 						<?php } ?>
 					</div>
 				</div>
+				
 				<?php foreach ($ads->result() as $row) { ?>
 					<div class="col-sm-6 col-md-4" style="padding-bottom: 10px;">
 						<a class="market-link" href="<?php echo base_url('/ad/details/' . $row->ad_id) ?>">

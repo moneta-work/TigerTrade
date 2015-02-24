@@ -26,6 +26,23 @@
 		
 		<div class="col-xs-9 col-sm-10">
 			<div class="row">
+				<div class="row text-center">
+					<div class="btn-group hidden-xs">
+						<a class="btn btn-default" href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a>
+						<?php if ($this->ion_auth->is_admin()) { ?>
+						<a class="btn btn-default" href="<?php echo base_url('/market/new_category') ?>">Create a Category</a>
+						<a class="btn btn-default" href="<?php echo base_url('/ad/new_subcategory') ?>">Create a Subcategory</a>
+						<?php } ?>
+					</div>
+					<div class="visible-xs">
+						<a class="btn btn-default" href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a><br><br>
+						<?php if ($this->ion_auth->is_admin()) { ?>
+						<a class="btn btn-default" href="<?php echo base_url('/market/new_category') ?>">Create a Category</a><br><br>
+						<a class="btn btn-default" href="<?php echo base_url('/ad/new_subcategory') ?>">Create a Subcategory</a><br>
+						<?php } ?>
+					</div>
+				</div>
+				
 				<?php foreach ($ads->result() as $row) { ?>
 					<div class="col-sm-6 col-md-4" style="padding-bottom: 10px;">
 						<a class="market-link" href="<?php echo base_url('/ad/details/' . $row->ad_id) ?>">
