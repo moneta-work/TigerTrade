@@ -53,7 +53,7 @@
 			-->
 			<div class="row">
 				<?php foreach ($ads->result() as $row) { ?>
-				<a class="" href="<?php echo base_url('/ad/' . $row->ad_id) ?>">
+				<a class="market-ad" href="<?php echo base_url('/ad/' . $row->ad_id) ?>">
 					<div class="col-sm-6 col-md-4" style="padding-bottom: 10px;">
 						<h3><?php echo $row->title; ?></h3>
 						<p>Price: $<?php echo $row->price; ?></p>
