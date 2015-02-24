@@ -42,7 +42,7 @@
 						<?php } ?>
 					</div>
 				</div>
-				<?php $count = 0; ?>
+				<?php $count = 1; ?>
 				<?php foreach ($ads->result() as $row) { ?>
 					<?php if ($count % 3 === 1 && $count >= 3) { ?><div class="row"><?php } ?>
 					<div class="col-sm-6 col-md-4" style="padding-bottom: 10px;">
