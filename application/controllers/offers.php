@@ -37,7 +37,7 @@ class Offers extends CI_Controller
 		else
 		{
 			$ad_id = $this->input->post('ad_id');
-			$seller_id = 1;
+			$seller_id = $this->ad_model->get_seller_id($ad_id);
 			$buyer_id = $user->id;
 			$price = $this->security->xss_clean($this->input->post('price'));
 			$buyer_message = $this->security->xss_clean($this->input->post('buyer_message'));

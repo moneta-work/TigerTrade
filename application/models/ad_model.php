@@ -55,6 +55,14 @@ class Ad_model extends CI_Model
 		return $result;
 	}
 
+	public function get_seller_id($ad_id)
+	{
+		$result = $this->db->query("SELECT * FROM ads WHERE ad_id = '$ad_id'");
+		$result = $result->row();
+		$seller_id = $result->seller_id;
+		return $seller_id;
+	}
+
 }
 
 ?>
