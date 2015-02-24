@@ -6,6 +6,7 @@ class Offers extends CI_Controller
 	{
 		parent::__construct();
 
+		$this->load->model('ad_model');
 		$this->load->model('offer_model');
 		$data['menu'] = $this->load->view('shared/menu');
 		
