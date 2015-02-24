@@ -28,7 +28,7 @@
 				-->
 				
 				<?php foreach($categories as $category):
-				echo "<option disabled>" . $category['name'] . "</option>"
+				echo "<option disabled>" . $category['name'] . "</option>";
 				endforeach; ?>
 				
 				</select>
