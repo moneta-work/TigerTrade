@@ -29,8 +29,6 @@
 				<div class="row text-center">
 					<div class="btn-group">
 						<a class="btn btn-default" href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a>
-						<a class="btn btn-default" href="<?php echo base_url('/ad/make_offer') ?>">Make an Offer</a>
-						<a class="btn btn-default" href="<?php echo base_url('/ad/review_offer') ?>">Review an Offer</a>
 						<a class="btn btn-default" href="<?php echo base_url('/market/new_category') ?>">Create a Category</a>
 						<a class="btn btn-default" href="<?php echo base_url('/ad/new_subcategory') ?>">Create a Subcategory</a>
 					</div>

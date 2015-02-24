@@ -12,5 +12,5 @@
 	<hr>
 
 	<p>You can see your received offers here!</p>
-	
+	<a class="btn btn-default" href="<?php echo base_url('/ad/review_offer') ?>">Review an Offer Form</a>	
 </div>
