@@ -33,8 +33,8 @@
 				
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $user->first_name; ?> <b class="caret"></b></a>
-						<ul class="dropdown-menu <?php if ($this->uri->segment(1) == 'user' || $this->uri->segment(1) == 'auth' ) { ?> active<?php } ?>">
-							<li><a href="<?php echo base_url('/auth/edit_user/' . $this->ion_auth->get_user_id() ) ?>">Edit Profile</a></li>
+						<ul class="dropdown-menu <?php if ($this->uri->segment(1) == 'user' || $this->uri->segment(1) == 'auth' || $this->uri->segment(1) == 'offers' ) { ?> active<?php } ?>">
+							<li class="<?php if ($this->uri->segment(1) == 'user' || $this->uri->segment(1) == 'auth' || $this->uri->segment(1) == 'offers' ) { ?> active<?php } ?>"><a href="<?php echo base_url('/auth/edit_user/' . $this->ion_auth->get_user_id() ) ?>">Edit Profile</a></li>
 							<li><a href="<?php echo base_url('/offers') ?>">Offers</a></li>
 							<li><a href='<?= base_url("/user") ?>'>User</a></li>
 						</ul>
