@@ -13,13 +13,6 @@
 	<p>Form for new categories.</p>
 
 	<?php echo form_open("market/new_category", array('class' => 'form-horizontal', 'id' => 'ad-form', 'enctype' => 'multipart/form-data'));?>	
-	
-		<div class="form-group">
-			<label for="list" class="col-sm-2 control-label label-20">Category List</label>
-			<div class="col-sm-10">
-				<h1>Categories</h1>
-			</div>
-		</div>
 		
 		<div class="form-group">
 			<label for="category_name" class="col-sm-2 control-label label-20">Category Name</label>
