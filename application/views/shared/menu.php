@@ -17,12 +17,12 @@
 				<li class="<?php if ($this->uri->segment(1) == '' ) { ?>active<?php } ?>">
 					<a href='<?= base_url() ?>'>Home</a>
 				</li>
-				<li class="<?php if ($this->uri->segment(1) == 'market' ) { ?>active<?php } ?>">
+				<li class="<?php if (in_array($this->uri->segment(1), array('market', 'ad')) { ?>active<?php } ?>">
 					<a href='<?= base_url("/market") ?>'>Market</a>
 				</li>
 				
-				<li class="<?php if ($this->uri->segment(1) == 'ad' ) { ?>active<?php } ?>">
-					<a href='<?= base_url("/ad") ?>'>Ad</a>
+				<li class="<?php if ($this->uri->segment(1) == 'content' ) { ?>active<?php } ?>">
+					<a href='<?= base_url("/content") ?>'>Terms of Use</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
