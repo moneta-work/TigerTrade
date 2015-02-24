@@ -22,7 +22,7 @@
 				</li>
 				
 				<li class="<?php if ($this->uri->segment(1) == 'content' ) { ?>active<?php } ?>">
-					<a href='<?= base_url("/content") ?>'>Terms of Use</a>
+					<a href='<?= base_url("/content/terms") ?>'>Terms of Use</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
@@ -41,7 +41,7 @@
 					</li>
 	
 					<li><a href='<?= base_url("auth/logout") ?>'>Logout</a></li>
-				<?php }; ?>
+				<?php } ?>
 			</ul>
 		</nav>
 	</div>
