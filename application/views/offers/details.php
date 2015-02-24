@@ -4,7 +4,7 @@
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
 		<div class="col-xs-9 col-sm-10">
-			<h1>Woohoo! You have an offer for:</h1>
+			<h1>Offer Details:</h1>
 			<h3><?php echo $ad->title; ?></h3>
 		</div>
 	</div>
