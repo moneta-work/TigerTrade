@@ -17,7 +17,7 @@
 		<div class="form-group">
 			<label for="list" class="col-sm-2 control-label label-20">Categories</label>
 			<div class="col-sm-10">
-				<select size="3" width="100" name="list">
+				<select size="3" class="form-control" name="list">
 				<option selected>Plan 1
 				<option>Plan 2
 				<option>Plan 3
