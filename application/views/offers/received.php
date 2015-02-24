@@ -10,8 +10,7 @@
 
 	<hr>
 
-	<p>You can see your received offers here!</p>
-	<a class="btn btn-default" href="<?php echo base_url('/ad/review_offer') ?>">Review an Offer Form</a>
+	<p>Click on offers to view them (if you have any).</p>
 	
 	<h2>Pending</h2>
 	<table class="table table-hover">
