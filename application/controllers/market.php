@@ -9,12 +9,7 @@ class Market extends CI_Controller
 		$this->load->model('ad_model');
 		$this->load->model('category_model');
 		$this->load->model('subcategory_model');
-				$data['categories'] = $this->category_model->get_all_categories();
-		$data['subcategories'] = $this->subcategory_model->get_all_subcategories();
 		$data['menu'] = $this->load->view('shared/menu');
-		$data['market_menu'] = $this->load->view('market/menu');
-				$data['categories'] = $this->category_model->get_all_categories();
-		$data['subcategories'] = $this->subcategory_model->get_all_subcategories();
 	}
 
 	function index()
