@@ -55,8 +55,8 @@
 				<?php foreach ($ads->result() as $row) { ?>
 					<div class="col-sm-6 col-md-4" style="padding-bottom: 10px;">
 						<a href="<?php echo base_url('/ad/' . $row->ad_id) ?>">
-						<h3><?php echo $row->title; ?></h3>
-							<p>Price: $<?php echo $row->price; ?></p>
+						<h3 style="text-decoration: none;"><?php echo $row->title; ?></h3>
+							<p style="color: black; text-decoration: none;">Price: $<?php echo $row->price; ?></p>
 							<img src="http://placehold.it/300x200" class="img-thumbnail" alt="Responsive image" style="width: 100%;">
 						</a><br><br>
 						<p>Description: <?php echo $row->description; ?></p>
