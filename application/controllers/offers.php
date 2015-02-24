@@ -62,7 +62,7 @@ class Offers extends CI_Controller
 	{
 		$user = $this->ion_auth->user()->row();
 		$data['title'] = 'Sent Offers';
-		$data['pending'] = $this->offer_model->get_pending_offers($user->id);
+		$data['pending'] = $this->offer_model->get_buyer_pending_offers($user->id);
 		$data['accepted'] = $this->offer_model->get_buyer_accepted_offers($user->id);
 		$data['declined'] = $this->offer_model->get_buyer_declined_offers($user->id);
 		$this->layout->view('offers/sent', $data);
@@ -70,7 +70,11 @@ class Offers extends CI_Controller
 
 	function received()
 	{
+		$user = $this->ion_auth->user()->row();
 		$data['title'] = 'Received Offers';
+		$data['pending'] = $this->offer_model->get_seller_pending_offers($user->id);
+		$data['accepted'] = $this->offer_model->get_seller_accepted_offers($user->id);
+		$data['declined'] = $this->offer_model->get_seller_declined_offers($user->id);
 		$this->layout->view('offers/received', $data);
 	}
 

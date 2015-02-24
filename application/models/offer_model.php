@@ -36,7 +36,7 @@ class Offer_model extends CI_Model
 		return $this->db->get('offers');
 	}
 
-	public function get_pending_offers($buyer_id)
+	public function get_buyer_pending_offers($buyer_id)
 	{
 		$query = $this->db->query("SELECT * FROM offers WHERE buyer_id = '$buyer_id' AND status = 'Pending'");
 		return $query;
@@ -51,6 +51,12 @@ class Offer_model extends CI_Model
 	public function get_buyer_accepted_offers($buyer_id)
 	{
 		$query = $this->db->query("SELECT * FROM offers WHERE buyer_id = '$buyer_id' AND status = 'Accepted'");
+		return $query;
+	}
+
+	public function get_seller_pending_offers($buyer_id)
+	{
+		$query = $this->db->query("SELECT * FROM offers WHERE buyer_id = '$buyer_id' AND status = 'Pending'");
 		return $query;
 	}
 	
