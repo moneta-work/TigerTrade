@@ -122,6 +122,7 @@ class Offers extends CI_Controller
 	function detail($offer_id) {
 		$user = $this->ion_auth->user()->row();
 		$data['offer'] = $this->offer_model->get_offer($offer_id);
+		$offer = $data['offer'];
 		$data['ad'] = $this->ad_model->get_ad($offer->ad_id);
 		$data['title'] = 'Offer Details';
 		$this->layout->view('offers/details', $data);
