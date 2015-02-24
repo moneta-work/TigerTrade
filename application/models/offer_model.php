@@ -69,14 +69,24 @@ class Offer_model extends CI_Model
 	
 	public function get_seller_declined_offers($seller_id)
 	{
-		$result = $this->db->query("SELECT * FROM offers WHERE buyer_id = '$seller_id' AND status = 'Declined'");
+		$result = $this->db->query("SELECT * FROM offers WHERE seller_id = '$seller_id' AND status = 'Declined'");
 		return $result;
 	}
 	
 	public function get_seller_accepted_offers($seller_id)
 	{
-		$result = $this->db->query("SELECT * FROM offers WHERE buyer_id = '$seller_id' AND status = 'Accepted'");
+		$result = $this->db->query("SELECT * FROM offers WHERE seller_id = '$seller_id' AND status = 'Accepted'");
 		return $result;
+	}
+
+	public function respond_to_offer($seller_response, $status, $offer_id)
+	{
+		$data = array(
+               'seller_response' => $seller_response,
+               'status' => $status
+            );
+        $this->db->where('offer_id', $offer_id);
+		$this->db->update('offers', $data); 
 	}
 
 }
