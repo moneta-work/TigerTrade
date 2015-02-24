@@ -17,7 +17,7 @@
 	    </div>
     <?php }?>
     <?php if(isset($error)) {?>
-	    <div class="alert alert-error">
+	    <div class="alert alert-danger">
 	        <a href="#" class="close" data-dismiss="alert">&times;</a>
 	        <strong>Error!</strong> Your ad was not created, something went wrong.
 	    </div>
