@@ -4,8 +4,8 @@
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
 		<div class="col-xs-9 col-sm-10">
-			<h1 class="">Make Offer:</h1>
-			<h3 class=""><?php echo $ad->title; ?></h3>
+			<h1>Make Offer:</h1>
+			<h3><?php echo $ad->title; ?></h3>
 		</div>
 	</div>
 	
