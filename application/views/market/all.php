@@ -35,6 +35,7 @@
 		<?php } ?>
 		</div>
 		<div class="col-xs-9">
+			<!--
 			<div class="table-responsive">
 				<table class="table">
 					<tr>
@@ -58,6 +59,20 @@
 					</tr>
 					<?php } ?>
 				</table>
+			</div>
+			-->
+			<div class="row">
+				<?php foreach ($ads->result() as $row) { ?>
+				<div class="col-sm-6 col-md-4">
+					<?php echo $row->ad_id; ?><
+					<?php echo $row->title; ?>
+					<?php echo $row->description; ?>
+					<?php echo $row->price; ?>
+					<?php echo $row->user_id; ?>
+					<?php echo $row->category_id; ?>
+					<?php echo $row->subcategory_id; ?>
+				</div>
+				<?php } ?>
 			</div>
 		</div>
 	</div>
