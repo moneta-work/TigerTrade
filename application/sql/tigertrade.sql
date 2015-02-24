@@ -83,6 +83,7 @@ CREATE TABLE kylecarlson_tigertrade.tags (
 -- 	seller_response	- Message offer of the seller or response from ad
 --	status			- Status of the offer of buyer or seller, could be pending, accepted, declined
 CREATE TABLE kylecarlson_tigertrade.offers (
+	offer_id  	 INTEGER PRIMARY KEY AUTO_INCREMENT,
 	buyer_id INTEGER REFERENCES kylecarlson_tigertrade.users(id),
 	seller_id INTEGER REFERENCES kylecarlson_tigertrade.users(id),
 	ad_id INTEGER REFERENCES kylecarlson_tigertrade.ads(ad_id),
