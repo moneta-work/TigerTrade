@@ -71,6 +71,15 @@ code {
     resize: none;
 }
 
+.market-link, .market-link:visited, .market-link:active {
+	text-decoration: none;
+	color: black;
+}	
+
+.market-link:hover {
+	color: #373737;
+}
+
 @media (max-width: 599px) {
 
 }

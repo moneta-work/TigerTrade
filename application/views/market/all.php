@@ -68,10 +68,3 @@
 		</div>
 	</div>
 </div>
-
-<style>
-.market-link, .market-link:hover, .market-link:visited {
-	text-decoration: none;
-	color: black;
-}	
-</style>
