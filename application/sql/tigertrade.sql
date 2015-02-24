@@ -47,7 +47,7 @@ CREATE TABLE kylecarlson_tigertrade.subcategories (
 CREATE TABLE kylecarlson_tigertrade.ads (
 	ad_id  	 INTEGER PRIMARY KEY AUTO_INCREMENT,
 	title	VARCHAR (128),
-	description	VARCHAR (512),
+	description	VARCHAR (1024),
 	creation_date 	TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	expiration_date 	TIMESTAMP,
 	price	DECIMAL(7,2),
