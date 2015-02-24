@@ -16,6 +16,8 @@
 			<label for="list" class="col-sm-2 control-label label-20">Categories</label>
 			<div class="col-sm-10">
 				<select size="10" class="form-control" id="list" >
+				
+				<!--
 				<option disabled>A</option>
 				<option disabled>B</option>
 				<option disabled>C</option>
@@ -23,6 +25,12 @@
 				<option disabled>E</option>
 				<option disabled>F</option>
 				<option disabled>G</option>
+				-->
+				
+				<?php foreach($categories as $category):
+				echo "<option disabled>" . $category['name'] . "</option>"
+				endforeach; ?>
+				
 				</select>
 			</div>
 		</div>
