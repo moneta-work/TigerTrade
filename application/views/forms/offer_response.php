@@ -8,7 +8,7 @@
 		</div>
 		<div class="col-xs-10 col-md-11">
 			<h1 class="">Woohoo! You have an offer for:</h1>
-			<h3 class="">LISTING_TITLE_HERE</h3>
+			<h3 class=""><?php echo $ad->title; ?></h3>
 		</div>
 	</div>
 	
