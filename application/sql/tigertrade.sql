@@ -167,9 +167,13 @@ CONSTRAINT `fk_users_groups_groups1` FOREIGN KEY (`group_id`) REFERENCES `groups
 
 INSERT INTO `users_groups` (`id`, `user_id`, `group_id`) VALUES
 (1,1,1),
-(2,1,1),
-(3,1,1),
-(4,1,1);
+(2,1,2),
+(3,2,1),
+(4,2,2),
+(5,3,1),
+(6,3,2),
+(7,4,1),
+(8,4,2);
 
 DROP TABLE IF EXISTS `login_attempts`;
 #
