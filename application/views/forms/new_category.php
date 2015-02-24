@@ -15,7 +15,7 @@
 		<div class="form-group">
 			<label for="list" class="col-sm-2 control-label label-20">Categories</label>
 			<div class="col-sm-10">
-				<select size="10" class="form-control" id="list" disabled>
+				<select size="10" class="form-control" id="list" >
 				<option>A</option>
 				<option>B</option>
 				<option>C</option>
