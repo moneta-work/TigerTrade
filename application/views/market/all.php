@@ -53,15 +53,16 @@
 			-->
 			<div class="row">
 				<?php foreach ($ads->result() as $row) { ?>
-				<a href="<?php echo base_url('/ad/' . $row->ad_id) ?>">
-					<div class="col-sm-6 col-md-4 market-ad" style="padding-bottom: 10px;">
+					<div class="col-sm-6 col-md-4" style="padding-bottom: 10px;">
+						<a href="<?php echo base_url('/ad/' . $row->ad_id) ?>">
 						<h3><?php echo $row->title; ?></h3>
-						<p>Price: $<?php echo $row->price; ?></p>
-						<img src="http://placehold.it/300x200" class="img-thumbnail" alt="Responsive image" style="width: 100%;"><br><br>
+							<p>Price: $<?php echo $row->price; ?></p>
+							<img src="http://placehold.it/300x200" class="img-thumbnail" alt="Responsive image" style="width: 100%;">
+						</a><br><br>
 						<p>Description: <?php echo $row->description; ?></p>
 						<p>Ad ID: <?php echo $row->ad_id; ?></p>
 					</div>
-				</a>
+				
 				<?php } ?>
 			</div>
 		</div>
