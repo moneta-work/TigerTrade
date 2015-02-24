@@ -59,7 +59,7 @@ class Ad_model extends CI_Model
 	{
 		$result = $this->db->query("SELECT * FROM ads WHERE ad_id = '$ad_id'");
 		$result = $result->row();
-		$seller_id = $result->seller_id;
+		$seller_id = $result->user_id;
 		return $seller_id;
 	}
 
