@@ -89,8 +89,7 @@ class Offers extends CI_Controller
 			$data['title'] = 'Review Offer';
 			$this->layout->view('forms/offer_response', $data);
 		} else {
-			$data['title'] = 'Home';
-			$this->layout->view('home/home', $data);
+			redirect('/home/home');
 		}
 	}
 	
