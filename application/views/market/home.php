@@ -28,17 +28,12 @@
 			<div class="row">
 				<div class="alert alert-info row">
 					<div class="btn-group" role="group" aria-label="...">
-						<button type="button" class="btn btn-default" href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</button>
-						<button type="button" class="btn btn-default">Make an Offer</button>
-						<button type="button" class="btn btn-default">Review an Offer</button>
-						<button type="button" class="btn btn-default">Create a Category</button>
-						<button type="button" class="btn btn-default">Create a Subcategory</button>
+						<a href="<?php echo base_url('/ad/new_ad') ?>"><button type="button" class="btn btn-default" >Place an Ad</button></a>
+						<a href="<?php echo base_url('/ad/make_offer') ?>"><button type="button" class="btn btn-default">Make an Offer</button></a>
+						<a href="<?php echo base_url('/ad/review_offer') ?>"><button type="button" class="btn btn-default">Review an Offer</button></a>
+						<a href="<?php echo base_url('/market/new_category') ?>"><button type="button" class="btn btn-default">Create a Category</button></a>
+						<a href="<?php echo base_url('/ad/new_subcategory') ?>"><button type="button" class="btn btn-default">Create a Subcategory</button></a>
 					</div>
-					<p>Form for new ad: <a href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a></p>
-					<p>Form for new offer: <a href="<?php echo base_url('/ad/make_offer') ?>">Make an Offer</a></p>
-					<p>Form to respond to an offer: <a href="<?php echo base_url('/ad/review_offer') ?>">Review an Offer</a></p>
-					<p>Form for new category: <a href="<?php echo base_url('/market/new_category') ?>">Create a Category</a></p>
-					<p>Form for new subcategory: <a href="<?php echo base_url('/market/new_subcategory') ?>">Create a Subcategory</a></p>	
 				</div>
 				<?php foreach ($ads->result() as $row) { ?>
 					<div class="col-sm-6 col-md-4" style="padding-bottom: 10px;">
