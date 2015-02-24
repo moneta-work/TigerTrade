@@ -27,8 +27,8 @@ class Market extends CI_Controller
 		
 		if (isset($_POST) && !empty($_POST))
 		{
-			$category_name = $this->input->post('category_name')
-			$category_description = $this->input->post('category_description')
+			$category_name = $this->input->post('category_name');
+			$category_description = $this->input->post('category_description');
 			$this->category_model->insert_new_category($category_name, $category_description);
 		}
 		
