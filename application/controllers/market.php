@@ -24,6 +24,15 @@ class Market extends CI_Controller
 	function new_category()
 	{
 		$data['title'] = 'New Category';
+		
+		if (isset($_POST) && !empty($_POST))
+		{
+			$category_name = $this->input->post('category_name');
+			$category_description = $this->input->post('category_description');
+			$this->category_model->insert_new_category($category_name, $category_description);
+		}
+		
+		$data['categories'] = $this->category_model->get_all_categories();
 		$this->layout->view('forms/new_category', $data);
 	}
 	
