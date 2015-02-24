@@ -55,7 +55,7 @@
 						<p>Description: <?php echo $row->description; ?></p>
 						<p>Ad ID: <?php echo $row->ad_id; ?></p>
 					</div>
-					<?php if ($count % 3 === 1 && $count >= 3) { ?></div><?php } $count++; ?>
+					<?php if (($count % 3 == 1 && $count > 2) || $count == 0 ) { ?></div><?php } $count++; ?>
 				<?php } ?>
 			</div>
 		</div>
