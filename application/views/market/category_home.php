@@ -21,30 +21,20 @@
 	</div>
 	
 	<div class="row">
-		<div class="col-xs-12">
-			<div class="table-responsive">
-				<table class="table">
-					<tr>
-						<th>Ad_ID</th>
-						<th>Title</th>
-						<th>Description</th>
-						<th>Price</th>
-						<th>User_ID</th>
-						<th>Category_ID</th>
-						<th>Subcategory_ID</th>
-					</tr>
-					<?php foreach ($ads->result() as $row) { ?>
-					<tr>
-						<td><?php echo $row->ad_id; ?></td>
-						<td><?php echo $row->title; ?></td>
-						<td><?php echo $row->description; ?></td>
-						<td><?php echo $row->price; ?></td>
-						<td><?php echo $row->user_id; ?></td>
-						<td><?php echo $row->category_id; ?></td>
-						<td><?php echo $row->subcategory_id; ?></td>
-					</tr>
-					<?php } ?>
-				</table>
+		<div class="col-xs-9 col-sm-10">
+			<div class="row">
+				<?php foreach ($ads->result() as $row) { ?>
+					<div class="col-sm-6 col-md-4" style="padding-bottom: 10px;">
+						<a class="market-link" href="<?php echo base_url('/ad/' . $row->ad_id) ?>">
+						<h3><?php echo $row->title; ?></h3>
+							<p style="color: black;">Price: $<?php echo $row->price; ?></p>
+							<img src="http://placehold.it/300x200" class="img-thumbnail" alt="Responsive image" style="width: 100%;">
+						</a><br><br>
+						<p>Description: <?php echo $row->description; ?></p>
+						<p>Ad ID: <?php echo $row->ad_id; ?></p>
+					</div>
+				
+				<?php } ?>
 			</div>
 		</div>
 	</div>
