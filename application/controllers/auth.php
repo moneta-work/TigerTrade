@@ -580,7 +580,7 @@ class Auth extends CI_Controller {
 				    $this->session->set_flashdata('message', $this->ion_auth->messages() );
 				    if ($this->ion_auth->is_admin())
 					{
-						redirect('auth', 'refresh');
+						redirect('auth/edit_user/' . $id, 'refresh');
 					}
 					else
 					{

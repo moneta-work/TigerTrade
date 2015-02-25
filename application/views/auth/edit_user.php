@@ -76,6 +76,34 @@
                   </div>
             </div>
 			
+			<?php if ($this->ion_auth->is_admin()): ?>
+			
+				<div class="form-group">
+					<label for="checkbox" class="col-sm-4 control-label label-20">Member of groups</label>
+					<div id="checkbox" class="col-sm-4">
+					<?php foreach ($groups as $group):?>
+						<?php
+							$gID=$group['id'];
+							$checked = null;
+							$item = null;
+							foreach($currentGroups as $grp) 
+							{
+								if ($gID == $grp->id) 
+								{
+									$checked= ' checked="checked"';
+									break;
+								}
+							}
+						?>
+						<input type="checkbox" id="<?php echo $group['name'];?>" name="groups[]" value="<?php echo $group['id'];?>"<?php echo $checked;?>>
+						<label for="<?php echo $group['name'];?>"><?php echo $group['name'];?></label>
+						<br>
+					<?php endforeach?>
+					</div>
+				</div>
+				
+			<?php endif ?>
+				
 			<?php 
 			echo form_hidden('id', $user->id);
 			echo form_hidden($csrf); 
