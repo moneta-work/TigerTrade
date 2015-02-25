@@ -80,7 +80,7 @@
 			
 			<div class="form-group">
 				<label for="checkbox" class="col-sm-4 control-label label-20">Member of groups</label>
-				<div id="checkbox" class="col-sm-4">
+				
 				<?php foreach ($groups as $group):?>
 					<?php
 						$gID=$group['id'];
@@ -94,11 +94,12 @@
 						}
 						}
 					?>
-				
+				<div id="checkbox" class="col-sm-4">
 				<label for="<?php echo $group['name'];?>"><?php echo $group['name'];?></label>
 				<input type="checkbox" class="form-control" id="<?php echo $group['name'];?>" name="groups[]" value="<?php echo $group['id'];?>"<?php echo $checked;?>>
-				<?php endforeach?>
 				</div>
+				<?php endforeach?>
+				
 			</div>
 			<?php endif ?>
 				
