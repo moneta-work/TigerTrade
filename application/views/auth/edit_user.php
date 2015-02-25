@@ -77,11 +77,10 @@
             </div>
 			
 			<?php if ($this->ion_auth->is_admin()): ?>
-
-			<hr>
 			
 			<h1>Member of Groups</h1>
 			<div class="form-group">
+			<div class="col-sm-offset-4 col-sm-4"
 				<!--<label for="checkbox" class="col-sm-4 control-label label-20">Member of groups</label>-->
 				<?php foreach ($groups as $group):?>
 					<?php
@@ -96,12 +95,12 @@
 						}
 						}
 					?>
-					
+				<div class="checkbox"
 				<label for="<?php echo $group['name'];?>"><?php echo $group['name'];?></label>
-				<input type="checkbox" id="<?php echo $group['name'];?>" class="form-control" name="groups[]" value="<?php echo $group['id'];?>"<?php echo $checked;?>>
-				<?php// echo htmlspecialchars($group['name'],ENT_QUOTES,'UTF-8');?>
+				<input type="checkbox" id="<?php echo $group['name'];?>" name="groups[]" value="<?php echo $group['id'];?>"<?php echo $checked;?>>
+				</div>
 				<?php endforeach?>
-			
+			</div>
 			</div>
 			<?php endif ?>
 				
