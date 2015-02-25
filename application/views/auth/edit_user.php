@@ -95,12 +95,9 @@
 						}
 					?>
 				
-				<input type="checkbox" name="groups[]" value="<?php echo $group['id'];?>"<?php echo $checked;?>>
+				<input type="checkbox" class="form-control" name="groups[]" value="<?php echo $group['id'];?>"<?php echo $checked;?>>
 				<?php echo $group['name'];?>
 				<?php endforeach?>
-				
-				<input type="checkbox" name="groups[]">
-				<?php echo "test";?>
 				</div>
 			</div>
 			<?php endif ?>
