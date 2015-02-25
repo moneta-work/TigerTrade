@@ -99,7 +99,7 @@
 					
 				<label for="<?php echo $group['name'];?>"><?php echo $group['name'];?></label>
 				<input type="checkbox" id="<?php echo $group['name'];?>" class="form-control" name="groups[]" value="<?php echo $group['id'];?>"<?php echo $checked;?>>
-				<?php echo htmlspecialchars($group['name'],ENT_QUOTES,'UTF-8');?>
+				<?php// echo htmlspecialchars($group['name'],ENT_QUOTES,'UTF-8');?>
 				<?php endforeach?>
 			
 			</div>
