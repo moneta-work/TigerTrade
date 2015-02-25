@@ -97,10 +97,10 @@
 				<input type="checkbox" id="<?php echo $group['name'];?>" name="groups[]" value="<?php echo $group['id'];?>"<?php echo $checked;?>>
 				<?php echo $group['name'];?>
 				<?php endforeach?>
-				</div>
+				
 				<input type="checkbox">
 				<?php echo "test";?>
-				
+				</div>
 			</div>
 			<?php endif ?>
 				
