@@ -100,7 +100,7 @@
 				<?php endforeach?>
 				
 				<input type="checkbox" name="groups[]">
-				<?php echo "test"; . "\n"?>
+				<?php echo "test" . "\n";?>
 				</div>
 			</div>
 			<?php endif ?>
