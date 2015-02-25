@@ -78,7 +78,6 @@
 			
 			<?php if ($this->ion_auth->is_admin()): ?>
 			
-			<h1>Member of Groups</h1>
 			<div class="form-group">
 				<!--<label for="checkbox" class="col-sm-4 control-label label-20">Member of groups</label>-->
 				<?php foreach ($groups as $group):?>
@@ -95,8 +94,8 @@
 						}
 					?>
 				<div class="checkbox">
-				<label for="<?php echo $group['name'];?>"><?php echo $group['name'];?></label>
 				<input type="checkbox" id="<?php echo $group['name'];?>" name="groups[]" value="<?php echo $group['id'];?>"<?php echo $checked;?>>
+				<p><?php echo $group['name'];?></p>
 				</div>
 				<?php endforeach?>
 			</div>
