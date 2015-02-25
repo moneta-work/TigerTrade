@@ -95,7 +95,7 @@
 						}
 						}
 					?>
-				<div class="checkbox"
+				<div class="checkbox">
 				<label for="<?php echo $group['name'];?>"><?php echo $group['name'];?></label>
 				<input type="checkbox" id="<?php echo $group['name'];?>" name="groups[]" value="<?php echo $group['id'];?>"<?php echo $checked;?>>
 				</div>
