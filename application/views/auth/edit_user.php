@@ -79,7 +79,7 @@
 			<?php if ($this->ion_auth->is_admin()): ?>
 
 			<div class="form-group">
-				<h3><?php echo lang('edit_user_groups_heading');?></h3>
+				<label for="checkbox" class="col-sm-4 control-label label-20">Member of groups</label>
 					<?php foreach ($groups as $group):?>
 					<label class="checkbox col-sm-4 control-label label-20" >
 					<?php
