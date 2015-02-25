@@ -96,7 +96,7 @@
 					?>
 				<div id="checkbox" class="col-sm-4">
 				<label for="<?php echo $group['name'];?>"><?php echo $group['name'];?></label>
-				<input type="checkbox" class="form-control" id="<?php echo $group['name'];?>" name="groups[]" value="<?php echo $group['id'];?>"<?php echo $checked;?>>
+				<input type="checkbox" id="<?php echo $group['name'];?>" name="groups[]" value="<?php echo $group['id'];?>"<?php echo $checked;?>>
 				</div>
 				<?php endforeach?>
 				
