@@ -81,6 +81,7 @@
 					<?php 
 						foreach($categories->result() as $category):
 							echo "<option value=" . $category->id . ">" . $category->name . "</option>";
+							echo $category->id;
 						endforeach; 
 					?>
 					</select>
