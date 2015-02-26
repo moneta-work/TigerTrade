@@ -50,12 +50,16 @@
 			</div><br>
 		<?php } ?>
 	</div>
+	
+	<hr>
 	-->
 	
 	<div class="row">
-		<!-- Market Menu -->
-		<div id="market-menu">
-			<div class="col-xs-3 col-sm-2">
+		
+		
+		<div class="col-xs-3 col-sm-2">
+			<!-- Market Menu -->
+			<div id="market-menu">
 				<a href="<?php echo base_url('/market') ?>"><b>all</b></a><br><br>
 				<?php foreach ($categories->result() as $category) { ?>
 				    <a href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a><br>
@@ -67,10 +71,8 @@
 			    	<br>
 				<?php } ?>
 			</div>
-		</div>
-	
-		<!-- Search/Filter Form -->
-		<div class="col-xs-3 col-sm-2">
+			
+			<!-- Search/Filter Form -->
 			<div class="form-group">
 				<label for="list" class="control-label label-20">Categories</label>
 				<select multiple size="<?php echo $categories->num_rows(); ?>" class="form-control" id="category_list" >
