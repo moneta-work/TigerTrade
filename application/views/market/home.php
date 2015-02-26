@@ -26,7 +26,9 @@
 		
 		<div class="col-xs-9 col-sm-10">
 			<div class="row">
-			Form
+				<div class="col-xs-12">
+					<p>Form</p>
+				</div>
 			</div>
 			<div class="row">
 				<div class="row text-center">
