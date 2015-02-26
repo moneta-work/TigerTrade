@@ -26,27 +26,25 @@
 		
 		<div class="col-xs-9 col-sm-10">
 			<div class="row">
-				<div class="form-group col-sm-2">
+				<div class="form-group col-sm-3">
 					<label for="list" class="control-label label-20">Categories</label>
-					<select multiple size="10" class="form-control btn btn-mini" id="list" >
+					<select multiple size="10" class="form-control" id="list" >
 					<?php 
 						foreach($categories->result() as $category):
 						echo "<option>" . $category->name . "</option>";
 						endforeach; 
 					?>
 					</select>
-					<span class="caret"></span>
 				</div>
-				<div class="form-group col-sm-2">
+				<div class="form-group col-sm-3">
 					<label for="list" class="control-label label-20">Categories</label>
-					<select multiple size="10" class="form-control btn btn-mini" id="list" >
+					<select multiple size="10" class="form-control btn" id="list" >
 					<?php 
 						foreach($subcategories->result() as $subcategory):
 						echo "<option>" . $subcategory->name . "</option>";
 						endforeach; 
 					?>
 					</select>
-					<span class="caret"></span>
 				</div>				
 			</div>
 			<div class="row">
