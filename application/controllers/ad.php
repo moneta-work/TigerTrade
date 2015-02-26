@@ -15,10 +15,8 @@ class Ad extends CI_Controller
 	function index()
 	{
 		$data['title'] = 'Ad Home';
-		$data['categories'] = $this->category_model->get_all_categories();
 
-		var_dump($data['categories']);
-		//$this->layout->view('ad/ad_view', $data);
+		$this->layout->view('ad/ad_view', $data);
 	}
 
 	//shows details of a specific ad
@@ -45,6 +43,7 @@ class Ad extends CI_Controller
 	function new_ad()
 	{
 		$data['title'] = 'New Ad';
+		$data['categories'] = $this->category_model->get_all_categories();
 		$this->layout->view('forms/new_ad', $data);
 	}
 

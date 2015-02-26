@@ -42,11 +42,7 @@
 		<div class="form-group">
 			<label for="category" class="col-sm-2 control-label label-20">Category</label>
 			<div class="col-sm-10">
-			<select name="category">
-				<option value="" selected="selected"></option>
-		        <option VALUE="abc"> ABC</option>
-		        <option VALUE="def"> def</option>
-		        <option VALUE="hij"> hij</option> 
+			<select name="category"> 
 				<?php
 					foreach($category as $cat)
 					{
