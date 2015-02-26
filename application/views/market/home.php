@@ -14,13 +14,13 @@
 
 	<!-- Experimental Market Menu -->
 	<div class="row">
-		<div class="col-xs-1">
+		<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1">
 			<a href="<?php echo base_url('/market') ?>"><b>all</b></a>
 		</div>
 	</div>
 		<?php foreach ($categories->result() as $category) { ?>
 			<div class="row">
-				<div class="col-xs-1">
+				<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1">
 			    	<a href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a>
 				</div>
 			    
@@ -32,7 +32,7 @@
 		    		if ($subcategory->category_id == $category->category_id) { ?>
 		    		
 		    		
-		    			<div class="col-xs-1">
+		    			<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1">
 					    	<a href="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id); ?>"><?php echo $subcategory->name; ?></a>
 		    			</div>
 					    
