@@ -46,7 +46,7 @@
 				<?php
 					foreach($categories as $cat)
 					{
-						echo '<option value="'.$cat->category_id.'">'.$cat->name.'</option>';
+						echo '<option value="'.$cat['category_id'].'">'.$cat['name'].'</option>';
 					}
 				?>	
 			</select>
