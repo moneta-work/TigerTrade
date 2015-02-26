@@ -43,7 +43,9 @@
 			<label for="category" class="col-sm-2 control-label label-20">Category</label>
 			<div class="col-sm-10">
 			<select>
+
 				<?php
+				var_dump($category)
 					foreach($category as $cat)
 					{
 						echo '<option value="'.$cat->category_id.'">'.$cat->name.'</option>';
