@@ -11,30 +11,25 @@
 	<hr>
 
 
-	<div class="row">
-		<div class="form-group col-sm-3">
-			<label for="list" class="control-label label-20">Categories</label>
-			<select multiple size="<?php echo $categories->num_rows(); ?>" class="form-control" id="category_list" >
-			<?php 
-				foreach($categories->result() as $category):
-				echo "<option>" . $category->name . "</option>";
-				endforeach; 
-			?>
-			</select>
-		</div>
-		<div class="form-group col-sm-3">
-			<label for="list" class="control-label label-20">Subcategories</label>
-			<select multiple size="10" class="form-control" id="subcategory_list" >
-			<?php 
-				foreach($subcategories->result() as $subcategory):
-				echo "<option>" . $subcategory->name . "</option>";
-				endforeach; 
-			?>
-			</select>
-		</div>				
-	</div>
 
+	<!-- Experimental Market Menu -->
 	<div class="row">
+		<a href="<?php echo base_url('/market') ?>"><b>all</b></a><br><br>
+		<?php foreach ($categories->result() as $category) { ?>
+		    <a href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a><br>
+	    	<?php foreach ($subcategories->result() as $subcategory) {
+	    		if ($subcategory->category_id == $category->category_id) { ?>
+				    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id); ?>"><?php echo $subcategory->name; ?></a><br>
+				<?php } ?>
+	    	<?php } ?>
+	    	<br>
+		<?php } ?>
+	</div>
+	
+	
+	<div class="row">
+		<!-- Market Menu -->
+		<!--
 		<div class="col-xs-3 col-sm-2">
 			<a href="<?php echo base_url('/market') ?>"><b>all</b></a><br><br>
 			<?php foreach ($categories->result() as $category) { ?>
@@ -47,19 +42,30 @@
 		    	<br>
 			<?php } ?>
 		</div>
-	</div>
-	<div class="row">
+		-->
+	
+		<!-- Search/Filter Form -->
 		<div class="col-xs-3 col-sm-2">
-			<a href="<?php echo base_url('/market') ?>"><b>all</b></a><br><br>
-			<?php foreach ($categories->result() as $category) { ?>
-			    <a href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a><br>
-		    	<?php foreach ($subcategories->result() as $subcategory) {
-		    		if ($subcategory->category_id == $category->category_id) { ?>
-					    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id); ?>"><?php echo $subcategory->name; ?></a><br>
-					<?php } ?>
-		    	<?php } ?>
-		    	<br>
-			<?php } ?>
+			<div class="form-group col-sm-3">
+				<label for="list" class="control-label label-20">Categories</label>
+				<select multiple size="<?php echo $categories->num_rows(); ?>" class="form-control" id="category_list" >
+				<?php 
+					foreach($categories->result() as $category):
+					echo "<option>" . $category->name . "</option>";
+					endforeach; 
+				?>
+				</select>
+			</div>
+			<div class="form-group col-sm-3">
+				<label for="list" class="control-label label-20">Subcategories</label>
+				<select multiple size="10" class="form-control" id="subcategory_list" >
+				<?php 
+					foreach($subcategories->result() as $subcategory):
+					echo "<option>" . $subcategory->name . "</option>";
+					endforeach; 
+				?>
+				</select>
+			</div>				
 		</div>
 		
 		<div class="col-xs-9 col-sm-10">
