@@ -43,26 +43,6 @@ class Subcategory_model extends CI_Model
 		return $query;
 	}
 
-	function get_subcategories_for_filter($category_id, $tree = null){
-        $this->db->select('subcategory_id, name');
-
-        if($tree != NULL){
-            $this->db->where('categories', $category_id);
-        }
-
-        $query = $this->db->get('subcategories');
-        $subcategories = array();
-
-        if($query->result()){
-            foreach ($query->result() as $subcategory) {
-                $subcategories[$subcategory->id] = $subcategory->name;
-            }
-            return $subcategories;
-        } else {
-            return FALSE;
-        }
-    } 
-
 }
 
 ?>

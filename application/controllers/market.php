@@ -64,32 +64,6 @@ class Market extends CI_Controller
 		$this->layout->view('market/subcategory_home', $data);
 	}
 
-	function filter_list(){
-
-        #Validate entry form information
-        $this->load->model('subcategory_model','', TRUE);        
-        $this->form_validation->set_rules('category', 'State', 'required');
-        $this->form_validation->set_rules('subcategory', 'City', 'required');
-
-        $data['subcategories'] = $this->subcategory_model->get_subcategories_for_filter(); //gets the available groups for the dropdown
-
-        if ($this->form_validation->run() == FALSE)
-        {
-              $this->layout->view('market/home', $data);
-        }
-        else
-        {
-            $this->layout->view('market/home');
-        }
-    } 
-	
-	function get_subcategories($category_id){
-        $this->load->model('subcategory_model','', TRUE);    
-        header('Content-Type: application/x-json; charset=utf-8');
-        echo(json_encode($this->subcategory_model->get_subcategories_for_filter($category_id)));
-    } 
-
-	
 	//edit ad by id
 	function edit($category_id)
 	{

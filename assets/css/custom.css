@@ -86,12 +86,16 @@ button a, button a:visited, button a:hover, button a:active {
 	color: inherit;
 }
 
-#market-menu #category {
+#category_list {
 	font-size: 1.1rem;
 }
 
-#market-menu #subcategory {
+#subcategory_list {
 	font-size: 1.1rem;
+}
+
+#market-menu {
+
 }
 
 #market-menu {

@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <div class="container padding-top-20">
 	<div class="row">
 		<div class="col-xs-3 col-sm-2 text-center">
@@ -78,22 +74,26 @@
 			
 			<!-- Search/Filter Form -->
 			<div id="search-form">
-				<?php echo form_open('market/filter_list'); ?>
-				    <label for="category">Category</label>
-				    <select id="category" name="category">
-				        <option value=""></option>
-				        <?php
-				        foreach($categories->result() as $category){
-				            echo '<option value="' . $category->category_id . '">' . $category->name . '</option>';
-				        }
-				        ?>
-				    </select>
-				    <label for="subcategory">Subcategory</label>
-				    <!--this will be filled based on the tree selection above-->
-				    <select id="subcategory" name="subcategory" id="subcategory_label"> 
-				        <option value=""></option>
-				    </select>
-				<?php echo form_close(); ?> 
+				<div class="form-group">
+					<label for="list" class="control-label">Categories</label>
+					<select multiple size="<?php echo $categories->num_rows(); ?>" class="form-control" id="category_list" >
+					<?php 
+						foreach($categories->result() as $category):
+						echo "<option>" . $category->name . "</option>";
+						endforeach; 
+					?>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="list" class="control-label">Subcategories</label>
+					<select multiple size="10" class="form-control" id="subcategory_list" >
+					<?php 
+						foreach($subcategories->result() as $subcategory):
+						echo "<option>" . $subcategory->name . "</option>";
+						endforeach; 
+					?>
+					</select>
+				</div>
 			</div>
 		</div>
 		
