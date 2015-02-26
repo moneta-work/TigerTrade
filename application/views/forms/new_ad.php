@@ -39,6 +39,7 @@
 				<div class="input-group-addon">.00</div>
 			</div>
 		</div>
+		hello
 		<div class="form-group">
 			<label for="category" class="col-sm-2 control-label label-20">Category</label>
 			<div class="col-sm-10">
