@@ -40,6 +40,19 @@
 			</div>
 		</div>
 		<div class="form-group">
+			<label for="category" class="col-sm-2 control-label label-20">Category</label>
+			<div class="col-sm-10">
+			<select>
+				<?php
+					foreach($category as $cat)
+					{
+						echo '<option value="'.$cat->category_id.'">'.$cat->name.'</option>';
+					}
+				?>	
+			</select>
+			</div>
+		</div>
+		<div class="form-group">
 			<label for="description" class="col-sm-2 control-label label-20">Description</label>
 			<div class="col-sm-10">
 				<textarea type="text" class="form-control description-box" name="description" id="description" onkeyup="document.getElementById('preview_message').innerHTML = this.value" rows="5"></textarea>
