@@ -13,11 +13,12 @@
 
 <hr>
 
+<div id="infoMessage"><?php echo $message;?></div>
+
 <div class="col-sm-offset-2 col-sm-10">
 <p><?php echo lang('edit_group_subheading');?></p>
 </div>
-
-<div id="infoMessage"><?php echo $message;?></div>
+<br>
 
 <?php echo form_open(current_url(), array('class' => 'form-horizontal'));?>
 
