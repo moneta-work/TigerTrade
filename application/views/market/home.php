@@ -1,21 +1,21 @@
 <script>
 $('#subcategory, #subcategory_label').hide();
 $('#category').change(function(){
-    var category_id = $('#category').val();
-    if (category_id != ""){
-        var post_url = "/market/get_subcategories/" + category_id;
+    var state_id = $('#category').val();
+    if (state_id != ""){
+        var post_url = "/index.php/control_form/get_cities/" + state_id;
         $.ajax({
             type: "POST",
              url: post_url,
-             success: function(subcategories) //we're calling the response json array 'cities'
+             success: function(cities) //we're calling the response json array 'cities'
               {
                 $('#subcategory').empty();
                 $('#subcategory, #subcategory_label').show();
-                   $.each(subcategories,function(subcategory_id,subcategory) 
+                   $.each(cities,function(id,city) 
                    {
                     var opt = $('<option />'); // here we're creating a new select option for each group
-                      opt.val(subcategory_id);
-                      opt.text(subcategory);
+                      opt.val(id);
+                      opt.text(city);
                       $('#subcategory').append(opt); 
                 });
                } //end success
@@ -103,26 +103,22 @@ $('#category').change(function(){
 			
 			<!-- Search/Filter Form -->
 			<div id="search-form">
-			<?php echo form_open('market/add_all'); ?>
-				<div class="form-group">
-					<label for="category" class="control-label">Categories</label>
-					<select name="category" class="form-control" id="category" >
-						<option value=""></option>
-						<?php 
-							foreach($categories->result() as $category):
-								echo "<option value='" . $category->id . "'>" . $category->name . "</option>";
-								echo $category->id;
-							endforeach; 
-						?>
-					</select>
-				</div>
-				<div class="form-group">
-					<label for="subcategory" class="control-label">Subcategories</label>
-					<select name="subcategory" class="form-control" id="subcategory" id="subcategory_label" >
-						<option value=""></option>
-					</select>
-				</div>
-			<?php echo form_close(); ?> 
+				<?php echo form_open('control_form/filter_list'); ?>
+				    <label for="category">Category</label>
+				    <select id="category" name="category">
+				        <option value=""></option>
+				        <?php
+				        foreach($categories as $category){
+				            echo '<option value="' . $category->category_id . '">' . $category->name . '</option>';
+				        }
+				        ?>
+				    </select>
+				    <label for="subcategory">Subcategory</label>
+				    <!--this will be filled based on the tree selection above-->
+				    <select id="subcategory" name="subcategory" id="subcategory_label"> 
+				        <option value=""></option>
+				    </select>
+				<?php echo form_close(); ?> 
 			</div>
 		</div>
 		

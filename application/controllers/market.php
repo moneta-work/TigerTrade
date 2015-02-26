@@ -64,33 +64,31 @@ class Market extends CI_Controller
 		$this->layout->view('market/subcategory_home', $data);
 	}
 
-	function add_all() {
+	function filter_list(){
 
         #Validate entry form information
-        $this->load->model('Model_form','', TRUE);        
-        $this->form_validation->set_rules('category', 'Category', 'required');
-        $this->form_validation->set_rules('subcategory', 'Subcategory', 'required');
-        
-        $category_id = $this->input->post('category');
-        
-        $data['subcategories_list'] = $this->subcategory_model->get_subcategories($category_id); //gets the available groups for the dropdown
+        $this->load->model('subcategory_model','', TRUE);        
+        $this->form_validation->set_rules('category', 'State', 'required');
+        $this->form_validation->set_rules('subcategory', 'City', 'required');
+
+        $data['city'] = $this->Model_form->get_all_subcategories(); //gets the available groups for the dropdown
 
         if ($this->form_validation->run() == FALSE)
         {
-              $this->load->view('market/home', $data);
+              $this->load->view('view_form_all', $data);
         }
         else
         {
-            #Add Member to Database
-            echo "SUCCESS!!!!!!!!!!!!!!";
-            $this->layout->view('market/home');
+            $this->load->view('view_form_success');
         }
     } 
+	
+	function get_cities($category_id){
+        $this->load->model('Model_form','', TRUE);    
+        header('Content-Type: application/x-json; charset=utf-8');
+        echo(json_encode($this->Model_form->get_subcategories_for_filter($category_id)));
+    } 
 
-	function get_subcategories($category_id) {
-		header('Content-Type: application/x-json; charset=utf-8');
-        echo(json_encode($this->subcategory_model->get_subcategories_for_filter($category_id)));
-	}
 	
 	//edit ad by id
 	function edit($category_id)
