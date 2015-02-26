@@ -38,7 +38,7 @@
 				</div>
 				<div class="form-group col-sm-3">
 					<label for="list" class="control-label label-20">Categories</label>
-					<select multiple size="10" class="form-control btn" id="list" >
+					<select multiple size="10" class="form-control" id="list" >
 					<?php 
 						foreach($subcategories->result() as $subcategory):
 						echo "<option>" . $subcategory->name . "</option>";
