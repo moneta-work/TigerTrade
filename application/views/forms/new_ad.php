@@ -45,7 +45,7 @@
 			<select>
 
 				<?php
-				var_dump($category)
+				var_dump($category);
 					foreach($category as $cat)
 					{
 						echo '<option value="'.$cat->category_id.'">'.$cat->name.'</option>';
