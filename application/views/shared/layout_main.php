@@ -17,11 +17,7 @@
 	<?php echo $content_for_layout ?>
 	
     <!-- FOOTER -->
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
+
 	<footer class="footer">
 		<div class="container text-muted">
 			<div class="row">
