@@ -27,7 +27,7 @@
 	<?php echo form_hidden($csrf); ?>
 	<?php echo form_hidden(array('id'=>$user->id)); ?>
 
-	<p><?php echo form_submit('submit', lang('deactivate_submit_btn'), array('class' => 'btn btn-default'));?></p>
+	<p><button type="submit" class="btn btn-default">Submit</button></p>
 
 	<?php echo form_close();?>
 	</div>
