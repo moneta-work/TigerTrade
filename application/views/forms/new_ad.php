@@ -52,8 +52,8 @@
 			</select>
 			</div>
 		</div>
-		<div class="form-group" id="subcategory-form">
-			<label for="category" class="col-sm-2 control-label label-20">Category</label>
+		<div class="form-group hidden" id="subcategory-form">
+			<label for="sub-category" class="col-sm-2 control-label label-20">Sub-Category</label>
 			<div class="col-sm-10">
 			<select name="category"> 
 				<?php
