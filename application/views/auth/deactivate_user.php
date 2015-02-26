@@ -12,6 +12,7 @@
 	
     <hr>
 	
+	<div class="col-sm-offset-2 col-sm-10">
 	<p><?php echo sprintf(lang('deactivate_subheading'), $user->username);?></p>
 
 	<?php echo form_open("auth/deactivate/".$user->id, array('class' => 'form-horizontal')); ?>
@@ -29,4 +30,5 @@
 	<p><?php echo form_submit('submit', lang('deactivate_submit_btn'));?></p>
 
 	<?php echo form_close();?>
+	</div>
 </div>
