@@ -83,7 +83,7 @@ class Market extends CI_Controller
         }
     } 
 	
-	function get_cities($category_id){
+	function get_subcategories($category_id){
         $this->load->model('Model_form','', TRUE);    
         header('Content-Type: application/x-json; charset=utf-8');
         echo(json_encode($this->Model_form->get_subcategories_for_filter($category_id)));
