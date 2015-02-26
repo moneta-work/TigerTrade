@@ -11,21 +11,22 @@
 	</div>
 	
       <hr>
-      <?php if ($message != "") { ?>
+	  
+      <?php/* if ($message != "") { ?>
       <div id="infoMessage">
 		<div class="alert alert-info" role="alert" style="margin-top: 10px;">
 		  <span class="sr-only">Error:</span>
 		  <?php echo $message;?>
 		</div>
 	  </div>
-	  <?php }; ?>
+	  <?php }; */?>
 
 
 	<h1><?php echo lang('deactivate_heading');?></h1>
 	<p><?php echo sprintf(lang('deactivate_subheading'), $user->username);?></p>
 
 	<?php echo form_open(uri_string(), array('class' => 'form-horizontal', 'id' => 'ad-form'));?>
-	<?php// echo form_open("auth/deactivate/".$user->id);?>
+	<?php/* echo form_open("auth/deactivate/".$user->id); */?>
 
   <p>
   	<?php echo lang('deactivate_confirm_y_label', 'confirm');?>
