@@ -24,7 +24,6 @@
 					<?php } ?>
 		    	<?php } ?>
 			</div>
-	    	<br>
 		<?php } ?>
 	</div>
 	
