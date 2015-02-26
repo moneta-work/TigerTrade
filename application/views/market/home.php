@@ -76,7 +76,7 @@
 			<div id="search-form">
 				<div class="form-group">
 					<label for="list" class="control-label">Categories</label>
-					<select multiple size="<?php echo $categories->num_rows(); ?>" class="form-control" >
+					<select multiple size="<?php echo $categories->num_rows(); ?>" class="form-control" id="categories_list">
 					<?php 
 						foreach($categories->result() as $category):
 						echo "<option>" . $category->name . "</option>";
@@ -86,7 +86,7 @@
 				</div>
 				<div class="form-group">
 					<label for="list" class="control-label">Subcategories</label>
-					<select multiple size="10" class="form-control" >
+					<select multiple size="10" class="form-control" id="subcategories_list">
 					<?php 
 						foreach($subcategories->result() as $subcategory):
 						echo "<option>" . $subcategory->name . "</option>";
