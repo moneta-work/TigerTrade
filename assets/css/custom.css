@@ -89,7 +89,7 @@ button a, button a:visited, button a:hover, button a:active {
 	font-size: 1.1rem;
 }
 
-#market-menu option {
+#market-menu select {
 	font-size: 1.2rem;
 }
 
