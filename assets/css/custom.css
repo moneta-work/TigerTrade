@@ -93,6 +93,10 @@ button a, button a:visited, button a:hover, button a:active {
 	font-size: 1.1rem;
 }
 
+#market-menu {
+	font-size: 1rem;
+}
+
 @media (max-width: 599px) {
 
 }
