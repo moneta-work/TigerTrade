@@ -1,21 +1,21 @@
 <script>
 $('#subcategory, #subcategory_label').hide();
 $('#category').change(function(){
-    var state_id = $('#category').val();
-    if (state_id != ""){
-        var post_url = "/index.php/control_form/get_cities/" + state_id;
+    var category_id = $('#category').val();
+    if (category_id != ""){
+        var post_url = "/market/get_subcategories/" + category_id;
         $.ajax({
             type: "POST",
              url: post_url,
-             success: function(cities) //we're calling the response json array 'cities'
+             success: function(subcategories) //we're calling the response json array 'subcategories'
               {
                 $('#subcategory').empty();
                 $('#subcategory, #subcategory_label').show();
-                   $.each(cities,function(id,city) 
+                   $.each(subcategories,function(subcategory_id,name) 
                    {
                     var opt = $('<option />'); // here we're creating a new select option for each group
-                      opt.val(id);
-                      opt.text(city);
+                      opt.val(subcategory_id);
+                      opt.text(name);
                       $('#subcategory').append(opt); 
                 });
                } //end success
@@ -103,7 +103,7 @@ $('#category').change(function(){
 			
 			<!-- Search/Filter Form -->
 			<div id="search-form">
-				<?php echo form_open('control_form/filter_list'); ?>
+				<?php echo form_open('market/filter_list'); ?>
 				    <label for="category">Category</label>
 				    <select id="category" name="category">
 				        <option value=""></option>
