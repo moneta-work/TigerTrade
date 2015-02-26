@@ -7,16 +7,16 @@ class Ad extends CI_Controller
 		parent::__construct();
 		$this->load->library('upload');
         $this->load->library('image_lib');
-		$this->load->model('ad_model', 'category_model');
+		$this->load->model('ad_model');
+		$this->load->model('category_model');
 		$data['menu'] = $this->load->view('shared/menu');
 	}
 
 	function index()
 	{
 		$data['title'] = 'Ad Home';
-		$data['category'] = $this->category_model->get_all_categories();
+		$data['categories'] = $this->category_model->get_all_categories();
 
-		var_dump($data['category']);
 		$this->layout->view('ad/ad_view', $data);
 	}
 
