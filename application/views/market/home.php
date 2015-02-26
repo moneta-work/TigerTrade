@@ -107,12 +107,13 @@ $('#category').change(function(){
 				<div class="form-group">
 					<label for="category" class="control-label">Categories</label>
 					<select name="category" class="form-control" id="category" >
-					<?php 
-						foreach($categories->result() as $category):
-							echo "<option value='" . $category->id . "'>" . $category->name . "</option>";
-							echo $category->id;
-						endforeach; 
-					?>
+						<option value=""></option>
+						<?php 
+							foreach($categories->result() as $category):
+								echo "<option value='" . $category->id . "'>" . $category->name . "</option>";
+								echo $category->id;
+							endforeach; 
+						?>
 					</select>
 				</div>
 				<div class="form-group">
