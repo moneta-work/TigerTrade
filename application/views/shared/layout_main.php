@@ -10,7 +10,7 @@
     <link href="<?php echo base_url('assets/css/custom.css') ?>" rel="stylesheet">
 
 </head>
-<body>
+<body class="modal-open">
 	<!-- MAIN NAVIGATION -->
 	<?php if (isset($menu)) { $menu; } ?>
 	
