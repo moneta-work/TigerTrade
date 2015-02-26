@@ -17,7 +17,7 @@
 
 <div id="infoMessage"><?php echo $message;?></div>
 
-<?php echo form_open(current_url(), array('class' => 'form-horizontal');?>
+<?php echo form_open(current_url(), array('class' => 'form-horizontal'));?>
 
 		<div class="form-group">
                   <label for="group_name" class="col-sm-4 control-label label-20">Group Name</label>
