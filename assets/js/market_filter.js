@@ -1,10 +1,13 @@
 $('#subcategory, #subcategory_label').hide();
 $('#category').change(function(){
     var category_id = $('#category').val();
-    document.write(category_id)
     if (category_id != ""){
-	    document.write('GOOD TO GO: ' + category_id)
+	    
+	    document.write('GOOD TO GO: ' + category_id + "<br>"); 
+	    
         var post_url = "/market/get_subcategories/" + category_id;
+        
+        document.write('Post URL: ' + post_url + "<br>"); 
         $.ajax({
             type: "POST",
              url: post_url,
@@ -22,7 +25,6 @@ $('#category').change(function(){
                } //end success
          }); //end AJAX
     } else {
-	    document.write('Uh Oh....: ')
         $('#subcategory').empty();
         $('#subcategory, #subcategory_label').hide();
     }//end if
