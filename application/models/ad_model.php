@@ -16,6 +16,8 @@ class Ad_model extends CI_Model
 		$this->db->set('description', $description);
 		$this->db->set('price', $price);
 		$this->db->set('user_id', $user_id);
+		$this->db->set('category_id', 1);
+		$this->db->set('subcategory_id', 1);
 
 		//insert into db, throw error if data not inserted
 		if( $this->db->insert('ads') != TRUE)

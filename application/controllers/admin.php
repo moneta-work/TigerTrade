@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Admin extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -28,30 +28,11 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$data['title'] = 'Home';
-		$this->layout->view('home/home', $data);
-	}
-
-	public function databaseTest()
-	{
-		$dbconn = mysqli_connect("localhost", "kylecarlson", "QRvC3TMCBt", "kylecarlson_tigertrade");
-
-		if (!$dbconn)
-		{
-		  echo "Please try later.";
-		}
-		else
-		{
-			echo "it worked";
-		}
-
-		$blah = mysqli_query($dbconn, "SELECT * FROM users");
-
-		var_dump($blah);
-
-
+		//$this->load->view('header');
+		//$this->load->view('welcome_message');
+		//$this->load->view('footer');
+		$data['title'] = 'Admin';
+		$this->layout->view('admin/dashboard', $data);
+		//$this->layout->view('welcome_message', $data);
 	}
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */

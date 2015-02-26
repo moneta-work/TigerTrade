@@ -1,4 +1,14 @@
-<div class="container">
+<div class="container padding-top-20">
+	<div class="row">
+		<div class="col-xs-3 col-sm-2 text-center">
+			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
+		</div>
+		<div class="col-xs-9 col-sm-10">
+			<h1>New Ad Form</h1>
+		</div>
+	</div>
+
+	<hr>
 
 	<?php if(isset($created)) {?>
 	    <div class="alert alert-success">
@@ -7,24 +17,13 @@
 	    </div>
     <?php }?>
     <?php if(isset($error)) {?>
-	    <div class="alert alert-error">
+	    <div class="alert alert-danger">
 	        <a href="#" class="close" data-dismiss="alert">&times;</a>
 	        <strong>Error!</strong> Your ad was not created, something went wrong.
 	    </div>
     <?php }?>
 
-	<?php echo form_open("ad/create", array('class' => 'form-horizontal', 'id' => 'ad-form', 'enctype' => 'multipart/form-data'));?>
-	<div class="row">
-		<div class="col-xs-2 col-md-1">
-			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
-		</div>
-		<div class="col-xs-10 col-md-11">
-			<h1 class="">New Ad Form</h1>
-		</div>
-	</div>
-	
-	<hr>
-		
+	<?php echo form_open("ad/create", array('class' => 'form-horizontal', 'id' => 'ad-form', 'enctype' => 'multipart/form-data'));?>		
 		<div class="form-group">
 			<label for="title" class="col-sm-2 control-label label-20">Title</label>
 			<div class="col-sm-10">
@@ -32,9 +31,12 @@
 			</div>
 		</div>
 		<div class="form-group">
+			<label class="sr-only" for="price">Amount (in dollars)</label>
 			<label for="price" class="col-sm-2 control-label label-20">Price</label>
-			<div class="col-sm-10">
-				<input type="text" class="form-control" name="price" id="price" placeholder="0.00" onkeyup="document.getElementById('preview_price').innerHTML = this.value" onkeypress="return isNumber(event)">
+			<div class="input-group col-sm-3 col-sm-offset-2" style="padding: 0 15px;">
+				<div class="input-group-addon">$</div>
+					<input type="text" class="form-control" name="price" id="price" placeholder="Amount">
+				<div class="input-group-addon">.00</div>
 			</div>
 		</div>
 		<div class="form-group">

@@ -6,37 +6,20 @@ class User extends CI_Controller
 	{
 		parent::__construct();
 
-		$this->load->helper('url');
 		$data['menu'] = $this->load->view('shared/menu');
+		
+		if (!$this->ion_auth->logged_in())
+		{
+			//redirect them to the login page
+			redirect('auth/login', 'refresh');
+		}
 	}
 
 	function index()
 	{
 		$data['title'] = 'User Home';
 		$this->layout->view('user/user_home', $data);
+	}
 
-	}
-	
-	//shows form to edit profile information
-	function edit_profile_info()
-	{
-		$data['title'] = 'Edit Info';
-		$this->layout->view('forms/profile_information_form', $data);
-	}
-	
-	//update profile info
-	function update_profile_info()
-	{
-		$firstName = $this->input->post('firstName');
-		$lastName = $this->input->post('lastName');
-		$optional_email = $this->input->post('optionalEmail');
-		$phone_number = $this->input->post('phoneNumber');
-		
-		//call model to update info
-		
-		//Go to user home for now
-		redirect('user');
-		
-	}
 }
 ?>
