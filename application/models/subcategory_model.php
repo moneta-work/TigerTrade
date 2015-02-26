@@ -42,6 +42,25 @@ class Subcategory_model extends CI_Model
 		$query = $query->row();
 		return $query;
 	}
+	function get_cities_by_state ($state, $tree = null) {
+        $this->db->select('category_id, name');
+
+        if($tree != NULL){
+            $this->db->where('category', $category_id);
+        }
+
+        $query = $this->db->get('subcategories');
+        $subcategories = array();
+
+        if($query->result()){
+            foreach ($query->result() as $city) {
+                $subcategories[$subcategory->subcategory_id] = $subcategory->name;
+            }
+            return $subcategories;
+        } else {
+            return FALSE;
+        }
+    } 
 
 }
 

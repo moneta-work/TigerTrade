@@ -87,6 +87,11 @@ class Market extends CI_Controller
         }
     } 
 
+	function get_subcategories($category_id) {
+		header('Content-Type: application/x-json; charset=utf-8');
+        echo(json_encode($this->subcategory_model->get_subcategories_for_filter($category_id)));
+	}
+	
 	//edit ad by id
 	function edit($category_id)
 	{
