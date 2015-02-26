@@ -28,7 +28,7 @@
 			<div class="row">
 				<div class="form-group col-sm-4">
 					<label for="list" class="control-label label-20">Categories</label>
-					<select multiple size="10" class="form-control" id="list" >
+					<select multiple size="10" class="form-control btn btn-mini" id="list" >
 					<?php 
 						foreach($categories->result() as $category):
 						echo "<option>" . $category->name . "</option>";
@@ -38,7 +38,7 @@
 				</div>
 				<div class="form-group col-sm-4">
 					<label for="list" class="control-label label-20">Categories</label>
-					<select multiple size="10" class="form-control" id="list" >
+					<select multiple size="10" class="form-control btn btn-mini" id="list" >
 					<?php 
 						foreach($subcategories->result() as $subcategory):
 						echo "<option>" . $subcategory->name . "</option>";
