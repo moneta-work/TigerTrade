@@ -73,7 +73,7 @@ class Market extends CI_Controller
         
         $category_id = $this->input->post('category');
         
-        $data['subcategories'] = $this->subcategory_model->get_subcategories($category_id); //gets the available groups for the dropdown
+        $data['subcategories_list'] = $this->subcategory_model->get_subcategories($category_id); //gets the available groups for the dropdown
 
         if ($this->form_validation->run() == FALSE)
         {

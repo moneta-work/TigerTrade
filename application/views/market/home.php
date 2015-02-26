@@ -89,7 +89,7 @@
 					<label for="subcategory" class="control-label">Subcategories</label>
 					<select name="subcategory" class="form-control" id="subcategory" >
 					<?php 
-						foreach($subcategories->result() as $subcategory):
+						foreach($subcategories_list->result() as $subcategory):
 						echo "<option>" . $subcategory->name . "</option>";
 						endforeach; 
 					?>
