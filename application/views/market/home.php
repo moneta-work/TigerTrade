@@ -14,31 +14,34 @@
 
 	<!-- Experimental Market Menu -->
 	<div class="row">
-		<a href="<?php echo base_url('/market') ?>"><b>all</b></a>
+		<div class="col-xs-1">
+			<a href="<?php echo base_url('/market') ?>"><b>all</b></a>
+		</div>
 	</div>
 		<?php foreach ($categories->result() as $category) { ?>
 			<div class="row">
-		    <a href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a>
-		    
-		    
-		    
-	    	<?php foreach ($subcategories->result() as $subcategory) {
-		    	
-		    	
-		    	
-	    		if ($subcategory->category_id == $category->category_id) { ?>
-	    		
-	    		
-	    		
-				    <a href="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id); ?>"><?php echo $subcategory->name; ?></a>
-				    
-				    
-				    
-				<?php } ?>
-				
-				
-				
-	    	<?php } ?>
+				<div class="col-xs-1">
+			    	<a href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a>
+				</div>
+			    
+			    
+		    	<?php foreach ($subcategories->result() as $subcategory) {
+			    	
+			    	
+			    	
+		    		if ($subcategory->category_id == $category->category_id) { ?>
+		    		
+		    		
+		    			<div class="col-xs-1">
+					    	<a href="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id); ?>"><?php echo $subcategory->name; ?></a>
+		    			</div>
+					    
+					    
+					<?php } ?>
+					
+					
+					
+		    	<?php } ?>
 	    	
 
 
