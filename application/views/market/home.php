@@ -13,11 +13,12 @@
 
 
 	<!-- Experimental Market Menu -->
-	<div class="row">
-		<div class="col-xs-4 col-sm-3 col-md-2">
-			<a href="<?php echo base_url('/market') ?>"><b>all</b></a>
+	<div id="market-menu">
+		<div class="row">
+			<div class="col-xs-4 col-sm-3 col-md-2">
+				<a href="<?php echo base_url('/market') ?>"><b>all</b></a>
+			</div>
 		</div>
-	</div>
 		<?php foreach ($categories->result() as $category) { ?>
 			<div class="row">
 				<div class="col-xs-4 col-sm-3 col-md-2">
@@ -45,9 +46,9 @@
 	    	
 
 
-			</div>
+			</div><br>
 		<?php } ?>
-
+	</div>
 	
 	
 	<div class="row">
