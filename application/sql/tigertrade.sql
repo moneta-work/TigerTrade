@@ -11,6 +11,7 @@ USE kylecarlson_tigertrade;
 CREATE TABLE kylecarlson_tigertrade.comments (
 	ad_id INTEGER REFERENCES kylecarlson_tigertrade.ad(ad_id),
 	description		VARCHAR(500),
+	user_id INTEGER REFERENCES kylecarlson_tigertrade.users(id),
 	timestmp 	TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -20,7 +21,8 @@ CREATE TABLE kylecarlson_tigertrade.comments (
 --    description	   - A description for the category, provided by admins.
 CREATE TABLE kylecarlson_tigertrade.categories (
 	category_id  	INTEGER PRIMARY KEY AUTO_INCREMENT,
-	description VARCHAR(500) NOT NULL
+	name VARCHAR(128) NOT NULL,
+	description VARCHAR(512)
 );
 
 -- Table: kylecarlson_tigertrade.subcategories
@@ -31,7 +33,8 @@ CREATE TABLE kylecarlson_tigertrade.categories (
 CREATE TABLE kylecarlson_tigertrade.subcategories (
 	subcategory_id	  INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,
 	category_id INTEGER REFERENCES kylecarlson_tigertrade.categories(category_id),
-	description VARCHAR (500)
+	name VARCHAR(128) NOT NULL,
+	description VARCHAR (512)
 );
 
 -- Table: kylecarlson_tigertrade.ads
@@ -44,11 +47,13 @@ CREATE TABLE kylecarlson_tigertrade.subcategories (
 CREATE TABLE kylecarlson_tigertrade.ads (
 	ad_id  	 INTEGER PRIMARY KEY AUTO_INCREMENT,
 	title	VARCHAR (128),
-	description	VARCHAR (512),
+	description	VARCHAR (1024),
 	creation_date 	TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	expiration_date 	TIMESTAMP,
-	price	DECIMAL(7,2),
+	price	INTEGER,
 	user_id INTEGER REFERENCES kylecarlson_tigertrade.users(id),
+	category_id INTEGER REFERENCES kylecarlson_tigertrade.categories(category_id),
+	subcategory_id INTEGER REFERENCES kylecarlson_tigertrade.subcategories(subcategory_id),
 	flag_count	INTEGER	
 );
 
@@ -78,9 +83,12 @@ CREATE TABLE kylecarlson_tigertrade.tags (
 -- 	seller_response	- Message offer of the seller or response from ad
 --	status			- Status of the offer of buyer or seller, could be pending, accepted, declined
 CREATE TABLE kylecarlson_tigertrade.offers (
+	offer_id  	 INTEGER PRIMARY KEY AUTO_INCREMENT,
 	buyer_id INTEGER REFERENCES kylecarlson_tigertrade.users(id),
 	seller_id INTEGER REFERENCES kylecarlson_tigertrade.users(id),
-	buy_message BLOB,
+	ad_id INTEGER REFERENCES kylecarlson_tigertrade.ads(ad_id),
+	price	INTEGER,
+	buyer_message BLOB,
 	seller_response BLOB,
 	status VARCHAR(10) DEFAULT "Pending"
 );
@@ -139,7 +147,7 @@ INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`
 ('3','161.130.188.154','tim gilman','$2y$08$CCvsdBcG8GTw1Q84fzhWpehqx5XmfX6/Sj.mCXwPXm0G73KAA07yC','','tmgy87@mail.missouri.edu','',NULL,'1424390513','1424390513','1', 'Tim','Gilman','Mizzou','3149607198');
 # Tim V. user account creation
 INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `created_on`, `last_login`, `active`, `first_name`, `last_name`, `company`, `phone`) VALUES
-('3','161.130.188.176','timothy van horn','$2y$08$kLHSUoheDLnPoogvX12pNevjRPZtXvk7thYUKxlLN7NSBiVbDdU72','','tjvkv6@mail.missouri.edu','',NULL,'1424390785','1424390785','1', 'Tim','Van Horn','Mizzou','3144020820');
+('4','161.130.188.176','timothy van horn','$2y$08$kLHSUoheDLnPoogvX12pNevjRPZtXvk7thYUKxlLN7NSBiVbDdU72','','tjvkv6@mail.missouri.edu','',NULL,'1424390785','1424390785','1', 'Tim','Van Horn','Mizzou','3144020820');
 # Jason user account creation
 
 DROP TABLE IF EXISTS `users_groups`;
@@ -157,9 +165,17 @@ CONSTRAINT `uc_users_groups` UNIQUE (`user_id`, `group_id`),
 CONSTRAINT `fk_users_groups_users1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION,
 CONSTRAINT `fk_users_groups_groups1` FOREIGN KEY (`group_id`) REFERENCES `groups` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION
 );
+
 INSERT INTO `users_groups` (`id`, `user_id`, `group_id`) VALUES
 (1,1,1),
-(2,1,2);
+(2,1,2),
+(3,2,1),
+(4,2,2),
+(5,3,1),
+(6,3,2),
+(7,4,1),
+(8,4,2);
+
 DROP TABLE IF EXISTS `login_attempts`;
 #
 # Table structure for table 'login_attempts'
@@ -172,18 +188,15 @@ CREATE TABLE `login_attempts` (
 PRIMARY KEY (`id`)
 ); 
 
---Category Data
-
-INSERT INTO categories (description) VALUES 
-	('for sale'), --1
-	('services'), --2
-	('tutoring'), --3
-	('housing'), --4
-	('jobs'), --5
-	('study groups'); --6
+INSERT INTO categories (name) VALUES
+('for sale'),
+('services'),
+('tutoring'),
+('housing'),
+('jobs'),
+('study groups');
 	
-INSERT INTO subcategories (category_id, description) VALUES
-	--For Sale
+INSERT INTO kylecarlson_tigertrade.subcategories (category_id, name) VALUES
 	('1','books'), 
 	('1','tickets'), 
 	('1','furniture'), 
@@ -194,11 +207,9 @@ INSERT INTO subcategories (category_id, description) VALUES
 	('1','vehicles'), 
 	('1','free'), 
 	('1','other'), 
-	--Services
 	('2', 'computers'), 
 	('2', 'manual labor'), 
 	('2', 'other'), 
-	--Tutoring
 	('3', 'math'), 
 	('3', 'english'), 
 	('3', 'science'), 
@@ -206,10 +217,8 @@ INSERT INTO subcategories (category_id, description) VALUES
 	('3', 'computer science'), 
 	('3', 'engineering'), 
 	('3', 'other'), 
-	--Housing
-	('4','roomate'),
+	('4','roommate'),
 	('4','lease'), 
-	--Jobs
 	('5', 'part time'),
 	('5', 'full time'), 
 	('5', 'internship'), 
