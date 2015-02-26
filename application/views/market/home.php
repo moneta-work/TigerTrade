@@ -1,3 +1,32 @@
+<script>
+$('#subcategory, #subcategory_label').hide();
+$('#category').change(function(){
+    var category_id = $('#category').val();
+    if (category_id != ""){
+        var post_url = "/market/get_subcategories/" + category_id;
+        $.ajax({
+            type: "POST",
+             url: post_url,
+             success: function(subcategories) //we're calling the response json array 'cities'
+              {
+                $('#subcategory').empty();
+                $('#subcategory, #subcategory_label').show();
+                   $.each(subcategories,function(subcategory_id,subcategory) 
+                   {
+                    var opt = $('<option />'); // here we're creating a new select option for each group
+                      opt.val(subcategory_id);
+                      opt.text(subcategory);
+                      $('#subcategory').append(opt); 
+                });
+               } //end success
+         }); //end AJAX
+    } else {
+        $('#subcategory').empty();
+        $('#subcategory, #subcategory_label').hide();
+    }//end if
+}); //end change 
+</script>
+
 <div class="container padding-top-20">
 	<div class="row">
 		<div class="col-xs-3 col-sm-2 text-center">
@@ -88,12 +117,8 @@
 				</div>
 				<div class="form-group">
 					<label for="subcategory" class="control-label">Subcategories</label>
-					<select name="subcategory" class="form-control" id="subcategory" >
-					<?php 
-						foreach($subcategories_list->result() as $subcategory):
-						echo "<option>" . $subcategory->name . "</option>";
-						endforeach; 
-					?>
+					<select name="subcategory" class="form-control" id="subcategory" id="subcategory_label" >
+						<option value=""></option>
 					</select>
 				</div>
 			<?php echo form_close(); ?> 
