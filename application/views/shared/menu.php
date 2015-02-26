@@ -27,7 +27,7 @@
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<?php if (!$this->ion_auth->logged_in()) { ?>
-					<li><a href='<?= base_url("auth/create_user") ?>'>Register</a></li>
+					<li class="<?php if (in_array($this->uri->segment(2), array('create_user'))) { ?>active<?php } ?>"><a href='<?= base_url("auth/create_user") ?>'>Register</a></li>
 					<li><a href='<?= base_url("auth/login") ?>'>Login</a></li>
 				<?php } else { ?>
 				
