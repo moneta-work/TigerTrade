@@ -26,9 +26,9 @@
 		
 		<div class="col-xs-9 col-sm-10">
 			<div class="row">
-				<div class="form-group">
-					<label for="list" class="col-sm-2 control-label label-20">Categories</label>
-					<select multiple size="10" class="form-control col-sm-2" id="list" >
+				<div class="form-group col-sm-4">
+					<label for="list" class="control-label label-20">Categories</label>
+					<select multiple size="10" class="form-control" id="list" >
 					<?php 
 						foreach($categories->result() as $category):
 						echo "<option>" . $category->name . "</option>";
@@ -36,7 +36,16 @@
 					?>
 					</select>
 				</div>
-				
+				<div class="form-group col-sm-4">
+					<label for="list" class="control-label label-20">Categories</label>
+					<select multiple size="10" class="form-control" id="list" >
+					<?php 
+						foreach($subcategories->result() as $subcategory):
+						echo "<option>" . $subcategory->name . "</option>";
+						endforeach; 
+					?>
+					</select>
+				</div>				
 			</div>
 			<div class="row">
 				<div class="row text-center">
