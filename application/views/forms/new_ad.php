@@ -39,7 +39,7 @@
 				<div class="input-group-addon">.00</div>
 			</div>
 		</div>
-		<div class="form-group" id="category-form">
+		<div class="form-group" id="categoryForm">
 			<label for="category" class="col-sm-2 control-label label-20">Category</label>
 			<div class="col-sm-10">
 			<select name="category"> 
@@ -52,7 +52,7 @@
 			</select>
 			</div>
 		</div>
-		<div class="form-group hidden" id="subcategory-form">
+		<div class="form-group hidden" id="subcategoryForm">
 			<label for="sub-category" class="col-sm-2 control-label label-20">Sub-Category</label>
 			<div class="col-sm-10">
 			<select name="category"> 
