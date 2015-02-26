@@ -44,7 +44,7 @@
 			<div class="col-sm-10">
 			<select name="category"> 
 				<?php
-				var_dump($data['categories']);
+				var_dump($categories);
 					foreach($categories as $cat)
 					{
 						echo '<option value="'.$cat->category_id.'">'.$cat->name.'</option>';
