@@ -75,11 +75,11 @@ class Market extends CI_Controller
 
         if ($this->form_validation->run() == FALSE)
         {
-              $this->load->view('market/home', $data);
+              $this->layout->view('market/home', $data);
         }
         else
         {
-            $this->load->view('market/home');
+            $this->layout->view('market/home');
         }
     } 
 	
