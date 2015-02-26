@@ -45,7 +45,7 @@
 		-->
 	
 		<!-- Search/Filter Form -->
-		<div class="col-xs-3 col-sm-2" style="padding: 0;">
+		<div class="col-xs-3 col-sm-2">
 			<div class="form-group">
 				<label for="list" class="control-label label-20">Categories</label>
 				<select multiple size="<?php echo $categories->num_rows(); ?>" class="form-control" id="category_list" >
