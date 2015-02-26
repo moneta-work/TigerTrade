@@ -42,7 +42,7 @@ class Subcategory_model extends CI_Model
 		$query = $query->row();
 		return $query;
 	}
-	function get_cities_by_state ($state, $tree = null) {
+	function get_subcategories_for_filter($state, $tree = null) {
         $this->db->select('category_id, name');
 
         if($tree != NULL){
