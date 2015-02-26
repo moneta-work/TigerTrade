@@ -28,7 +28,7 @@
 			<div class="row">
 				<div class="form-group col-sm-3">
 					<label for="list" class="control-label label-20">Categories</label>
-					<select multiple size="10" class="form-control" id="category_list" >
+					<select multiple size="<?php echo $categories->count(); ?>" class="form-control" id="category_list" >
 					<?php 
 						foreach($categories->result() as $category):
 						echo "<option>" . $category->name . "</option>";
