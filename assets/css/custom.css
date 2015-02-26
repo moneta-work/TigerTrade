@@ -86,7 +86,7 @@ button a, button a:visited, button a:hover, button a:active {
 }
 
 #category_list {
-	font-size: 10px;
+	font-size: 1rem;
 }
 
 #subcategory_list {
