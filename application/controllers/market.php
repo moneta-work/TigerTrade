@@ -83,7 +83,7 @@ class Market extends CI_Controller
         {
             #Add Member to Database
             echo "SUCCESS!!!!!!!!!!!!!!"
-            $this->load->view('market/home');
+            $this->layout->view('market/home');
         }
     } 
 
