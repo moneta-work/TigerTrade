@@ -8,6 +8,7 @@ class Ad extends CI_Controller
 		$this->load->library('upload');
         $this->load->library('image_lib');
 		$this->load->model('ad_model');
+		$this->load->model('subcategory_model');
 		$this->load->model('category_model');
 		$data['menu'] = $this->load->view('shared/menu');
 	}
