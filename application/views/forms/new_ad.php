@@ -1,33 +1,56 @@
-<div class="container">
-	
+<div class="container padding-top-20">
 	<div class="row">
-		<div class="col-xs-2 col-md-1">
+		<div class="col-xs-3 col-sm-2 text-center">
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
-		<div class="col-xs-10 col-md-11">
-			<h1 class="">New Ad Form</h1>
+		<div class="col-xs-9 col-sm-10">
+			<h1>New Ad Form</h1>
 		</div>
 	</div>
-	
+
 	<hr>
-		
-	<form class="form-horizontal" id="ad-form">
+
+	<?php if(isset($created)) {?>
+	    <div class="alert alert-success">
+	        <a href="#" class="close" data-dismiss="alert">&times;</a>
+	        <strong>Success!</strong> Your ad has been created.
+	    </div>
+    <?php }?>
+    <?php if(isset($error)) {?>
+	    <div class="alert alert-danger">
+	        <a href="#" class="close" data-dismiss="alert">&times;</a>
+	        <strong>Error!</strong> Your ad was not created, something went wrong.
+	    </div>
+    <?php }?>
+
+	<?php echo form_open("ad/create", array('class' => 'form-horizontal', 'id' => 'ad-form', 'enctype' => 'multipart/form-data'));?>		
 		<div class="form-group">
 			<label for="title" class="col-sm-2 control-label label-20">Title</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="title" placeholder="...">
+				<input type="text" class="form-control" name="title" id="title" placeholder="..." onkeyup="document.getElementById('preview_title').innerHTML = this.value">
 			</div>
 		</div>
 		<div class="form-group">
+			<label class="sr-only" for="price">Amount (in dollars)</label>
 			<label for="price" class="col-sm-2 control-label label-20">Price</label>
-			<div class="col-sm-10">
-				<input type="text" class="form-control" id="price" placeholder="$0.00">
+			<div class="input-group col-sm-3 col-sm-offset-2" style="padding: 0 15px;">
+				<div class="input-group-addon">$</div>
+					<input type="text" class="form-control" name="price" id="price" placeholder="Amount">
+				<div class="input-group-addon">.00</div>
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="description" class="col-sm-2 control-label label-20">Description</label>
 			<div class="col-sm-10">
-				<textarea type="text" class="form-control description-box" id="description" rows="5"></textarea>
+				<textarea type="text" class="form-control description-box" name="description" id="description" onkeyup="document.getElementById('preview_message').innerHTML = this.value" rows="5"></textarea>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="description" class="col-sm-2 control-label label-20">Upload Images</label>
+			<div class="col-sm-10">
+				<input type="file" multiple="true" name="userfile[]" size="5"  />
+				<br />
 			</div>
 		</div>
 		
@@ -47,6 +70,16 @@
 				<button type="submit" class="btn btn-default">Submit</button>
 			</div>
 		</div>
-	</form>
+	<?php echo form_close();?>
+	<hr>
+	
+	<div class="row">
+		<label class="col-sm-2 control-label label-20">Preview</label>
+		<div class="col-sm-10">
+			<h2 id="preview_title">Title</h2>
+			<h3 style="display: inline;">$</h3><h3 id="preview_price" style="display: inline;">Price</h3>
+			<p style="padding-top: 10px;" id="preview_message">Message</p>
+		</div>
+	</div>
 	
 </div>

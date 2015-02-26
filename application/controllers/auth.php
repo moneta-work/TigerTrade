@@ -13,13 +13,14 @@ class Auth extends CI_Controller {
 		$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
 
 		$this->lang->load('auth');
+		
 	}
 
 	//redirect if needed, otherwise display the user list
 	function index()
 	{
 
-		if (!$this->ion_auth->logged_in())
+		/*if (!$this->ion_auth->logged_in())
 		{
 			//redirect them to the login page
 			redirect('auth/login', 'refresh');
@@ -30,7 +31,7 @@ class Auth extends CI_Controller {
 			return show_error('You must be an administrator to view this page.');
 		}
 		else
-		{
+		{*/
 			//set the flash data error message if there is one
 			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
 
@@ -42,7 +43,7 @@ class Auth extends CI_Controller {
 			}
 
 			$this->layout->view('auth/index', $this->data);
-		}
+		/*}*/
 	}
 
 	//log the user in
@@ -510,7 +511,7 @@ class Auth extends CI_Controller {
 
 		if (!$this->ion_auth->logged_in() || (!$this->ion_auth->is_admin() && !($this->ion_auth->user()->row()->id == $id)))
 		{
-			redirect('auth', 'refresh');
+			redirect('auth/login', 'refresh');
 		}
 
 		$user = $this->ion_auth->user($id)->row();
@@ -521,7 +522,7 @@ class Auth extends CI_Controller {
 		$this->form_validation->set_rules('first_name', $this->lang->line('edit_user_validation_fname_label'), 'required');
 		$this->form_validation->set_rules('last_name', $this->lang->line('edit_user_validation_lname_label'), 'required');
 		$this->form_validation->set_rules('phone', $this->lang->line('edit_user_validation_phone_label'), 'required');
-		$this->form_validation->set_rules('company', $this->lang->line('edit_user_validation_company_label'), 'required');
+		//$this->form_validation->set_rules('company', $this->lang->line('edit_user_validation_company_label'), 'required');
 
 		if (isset($_POST) && !empty($_POST))
 		{
@@ -583,7 +584,7 @@ class Auth extends CI_Controller {
 					}
 					else
 					{
-						redirect('/', 'refresh');
+						redirect('auth/edit_user/' . $id, 'refresh');
 					}
 
 			    }
@@ -649,6 +650,12 @@ class Auth extends CI_Controller {
 			'name' => 'password_confirm',
 			'id'   => 'password_confirm',
 			'type' => 'password'
+		);
+		$this->data['email'] = array(
+			'name' => 'email',
+			'id'   => 'email',
+			'type' => 'text',
+			'value' => $this->form_validation->set_value('email', $user->email),
 		);
 
 		$this->layout->view('auth/edit_user', $this->data);
@@ -775,7 +782,7 @@ class Auth extends CI_Controller {
 	}
 
 	function _valid_csrf_nonce()
-	{
+	{	
 		if ($this->input->post($this->session->flashdata('csrfkey')) !== FALSE &&
 			$this->input->post($this->session->flashdata('csrfkey')) == $this->session->flashdata('csrfvalue'))
 		{

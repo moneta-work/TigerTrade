@@ -4,12 +4,12 @@
 			<div class="back-button"><button class="btn btn-default" onclick="goBack()">Back</button></div>
 		</div>
 		<div class="col-xs-9 col-sm-10">
-			<h1>404: Not Found</h1>
+			<h1>New Category</h1>
 		</div>
 	</div>
-
-	<hr>
-
-	<p>We're sorry, but there's no content here!</p>
 	
+	<hr>
+	
+	<p>Form for new categories.</p>
+
 </div>
