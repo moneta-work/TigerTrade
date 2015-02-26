@@ -11,15 +11,15 @@ $('#category').change(function(){
         $.ajax({
             type: "POST",
              url: post_url,
-             success: function(subcategories) //we're calling the response json array 'subcategories'
+             success: function(subcategories_list) //we're calling the response json array 'subcategories'
               {
                 $('#subcategory').empty();
                 $('#subcategory, #subcategory_label').show();
-                   $.each(subcategories,function(subcategory_id,name) 
+                   $.each(subcategories_list,function(subcategory_id,subcategory) 
                    {
                     var opt = $('<option />'); // here we're creating a new select option for each group
                       opt.val(subcategory_id);
-                      opt.text(name);
+                      opt.text(subcategory);
                       $('#subcategory').append(opt); 
                 });
                } //end success
