@@ -10,11 +10,11 @@ $('#category').change(function(){
               {
                 $('#subcategory').empty();
                 $('#subcategory, #subcategory_label').show();
-                   $.each(subcategories,function(subcategory_id,subcategory) 
+                   $.each(subcategories,function(subcategory_id,name) 
                    {
                     var opt = $('<option />'); // here we're creating a new select option for each group
                       opt.val(subcategory_id);
-                      opt.text(subcategory);
+                      opt.text(name);
                       $('#subcategory').append(opt); 
                 });
                } //end success
