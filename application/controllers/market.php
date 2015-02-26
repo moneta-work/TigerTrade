@@ -71,7 +71,9 @@ class Market extends CI_Controller
         $this->form_validation->set_rules('category', 'Category', 'required');
         $this->form_validation->set_rules('subcategory', 'Subcategory', 'required');
         
-        $data['subcategories'] = $this->subcategory_model->get_subcategories($this->input->post('category')); //gets the available groups for the dropdown
+        $category_id = $this->input->post('category_description');
+        
+        $data['subcategories'] = $this->subcategory_model->get_subcategories($category_id); //gets the available groups for the dropdown
 
         if ($this->form_validation->run() == FALSE)
         {
