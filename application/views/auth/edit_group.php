@@ -16,11 +16,11 @@
 <div id="infoMessage"><?php echo $message;?></div>
 
 <h3 class="col-sm-offset-3 col-sm-10">Please enter the group information below</h3>
-<br>
 
 
 <?php echo form_open(current_url(), array('class' => 'form-horizontal'));?>
-
+		
+		<br>
 		<div class="form-group">
                   <label for="group_name" class="col-sm-4 control-label label-20">Group Name</label>
                   <div class="col-sm-4">
