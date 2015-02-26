@@ -17,6 +17,7 @@ class Ad extends CI_Controller
 		$data['title'] = 'Ad Home';
 		$data['categories'] = $this->category_model->get_all_categories();
 
+		var_dump($data['categories']);
 		$this->layout->view('ad/ad_view', $data);
 	}
 
