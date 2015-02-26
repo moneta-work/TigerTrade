@@ -5,7 +5,7 @@ $('#category').change(function(){
 	    
 	    document.write('GOOD TO GO: ' + category_id + "<br>"); 
 	    
-        var post_url = "/market/get_subcategories/" + category_id;
+        var post_url = "/market/category/" + category_id;
         
         document.write('Post URL: ' + post_url + "<br>"); 
         $.ajax({
