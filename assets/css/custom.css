@@ -86,11 +86,11 @@ button a, button a:visited, button a:hover, button a:active {
 }
 
 #category_list {
-	font-size: 8px;
+	font-size: 10px;
 }
 
 #subcategory_list {
-	font-size: 8px;
+	font-size: 10px;
 }
 
 @media (max-width: 599px) {
