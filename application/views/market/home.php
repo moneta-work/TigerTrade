@@ -26,6 +26,9 @@
 		
 		<div class="col-xs-9 col-sm-10">
 			<div class="row">
+			Form
+			</div>
+			<div class="row">
 				<div class="row text-center">
 					<div class="btn-group hidden-xs">
 						<a class="btn btn-default" href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a>
