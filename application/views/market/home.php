@@ -26,7 +26,7 @@
 		
 		<div class="col-xs-9 col-sm-10">
 			<div class="row">
-				<div class="form-group col-sm-4">
+				<div class="form-group col-sm-2">
 					<label for="list" class="control-label label-20">Categories</label>
 					<select multiple size="10" class="form-control btn btn-mini" id="list" >
 					<?php 
@@ -35,8 +35,9 @@
 						endforeach; 
 					?>
 					</select>
+					<span class="caret"></span>
 				</div>
-				<div class="form-group col-sm-4">
+				<div class="form-group col-sm-2">
 					<label for="list" class="control-label label-20">Categories</label>
 					<select multiple size="10" class="form-control btn btn-mini" id="list" >
 					<?php 
@@ -45,6 +46,7 @@
 						endforeach; 
 					?>
 					</select>
+					<span class="caret"></span>
 				</div>				
 			</div>
 			<div class="row">
