@@ -74,19 +74,20 @@
 			
 			<!-- Search/Filter Form -->
 			<div id="search-form">
+			<?php echo form_open('market/add_all'); ?>
 				<div class="form-group">
-					<label for="list" class="control-label">Categories</label>
-					<select multiple size="<?php echo $categories->num_rows(); ?>" class="form-control" id="category_list" >
+					<label for="category" class="control-label">Categories</label>
+					<select name="category" class="form-control" id="category" >
 					<?php 
 						foreach($categories->result() as $category):
-						echo "<option>" . $category->name . "</option>";
+							echo "<option>" . $category->name . "</option>";
 						endforeach; 
 					?>
 					</select>
 				</div>
 				<div class="form-group">
-					<label for="list" class="control-label">Subcategories</label>
-					<select multiple size="10" class="form-control" id="subcategory_list" >
+					<label for="subcategory" class="control-label">Subcategories</label>
+					<select name="subcategory" class="form-control" id="subcategory" >
 					<?php 
 						foreach($subcategories->result() as $subcategory):
 						echo "<option>" . $subcategory->name . "</option>";
@@ -94,6 +95,7 @@
 					?>
 					</select>
 				</div>
+			<?php echo form_close(); ?> 
 			</div>
 		</div>
 		

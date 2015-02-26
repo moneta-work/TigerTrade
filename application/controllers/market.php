@@ -64,6 +64,27 @@ class Market extends CI_Controller
 		$this->layout->view('market/subcategory_home', $data);
 	}
 
+	function add_all() {
+
+        #Validate entry form information
+        $this->load->model('Model_form','', TRUE);        
+        $this->form_validation->set_rules('category', 'Category', 'required');
+        $this->form_validation->set_rules('subcategory', 'Subcategory', 'required');
+        
+        $data['subcategories'] = $this->subcategory_model->get_subcategories($this->input->post('category')); //gets the available groups for the dropdown
+
+        if ($this->form_validation->run() == FALSE)
+        {
+              $this->load->view('market/home', $data);
+        }
+        else
+        {
+            #Add Member to Database
+            echo "SUCCESS!!!!!!!!!!!!!!"
+            $this->load->view('market/home');
+        }
+    } 
+
 	//edit ad by id
 	function edit($category_id)
 	{
