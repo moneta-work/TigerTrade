@@ -75,7 +75,7 @@
 			<!-- Search/Filter Form -->
 			<div id="search-form">
 				<div class="form-group">
-					<label for="list" class="control-label label-20">Categories</label>
+					<label for="list" class="control-label">Categories</label>
 					<select multiple size="<?php echo $categories->num_rows(); ?>" class="form-control" >
 					<?php 
 						foreach($categories->result() as $category):
@@ -85,7 +85,7 @@
 					</select>
 				</div>
 				<div class="form-group">
-					<label for="list" class="control-label label-20">Subcategories</label>
+					<label for="list" class="control-label">Subcategories</label>
 					<select multiple size="10" class="form-control" >
 					<?php 
 						foreach($subcategories->result() as $subcategory):
