@@ -27,7 +27,7 @@
 		<div class="col-xs-9 col-sm-10">
 			<div class="row">
 				<div class="form-group">
-					<label for="list" class="col-sm-2 control-label label-20">Categories</label>
+					<label for="list" class="col-sm-2 control-label">Categories</label>
 					<select multiple size="10" class="form-control" id="list" >
 					<?php 
 						foreach($categories->result() as $category):
