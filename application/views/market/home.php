@@ -109,7 +109,7 @@ $('#category').change(function(){
 					<select name="category" class="form-control" id="category" >
 					<?php 
 						foreach($categories->result() as $category):
-							echo "<option value=" . $category->id . ">" . $category->name . "</option>";
+							echo "<option value='" . $category->id . "'>" . $category->name . "</option>";
 							echo $category->id;
 						endforeach; 
 					?>
