@@ -411,7 +411,7 @@ class Auth extends CI_Controller {
 			}
 
 			//redirect them back to the auth page
-			$this->session->set_flashdata('message', "successfully deactivated user");
+			$this->session->set_flashdata('message', "Account Deactivated");
 			redirect('auth', 'refresh');
 		}
 	}
