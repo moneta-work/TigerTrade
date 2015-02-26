@@ -13,7 +13,7 @@
       <hr>
 
 
-	<div class="col-xs-9 col-sm-10">
+	<div class="text-center">
 	<p><?php echo sprintf(lang('deactivate_subheading'), $user->username);?></p>
 
 	<?php echo form_open("auth/deactivate/".$user->id, array('class' => 'form-horizontal')); ?>
