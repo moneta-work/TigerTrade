@@ -14,7 +14,7 @@
 
 	<!-- Experimental Market Menu -->
 	<div class="row">
-		<a href="<?php echo base_url('/market') ?>"><b>all</b></a><br><br>
+		<div class="col-xs-1"><a href="<?php echo base_url('/market') ?>"><b>all</b></a></div><br>
 		<?php foreach ($categories->result() as $category) { ?>
 		    <div class="col-xs-1"><a href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a></div>
 	    	<?php foreach ($subcategories->result() as $subcategory) {
