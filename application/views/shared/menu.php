@@ -15,9 +15,9 @@
 		<nav class="collapse navbar-collapse bs-navbar-collapse" id="navbar">
 			<ul class="nav navbar-nav">
 				<li class="active">
-				<a href='<?= base_url() ?>'>Home</a>
+					<a href='<?= base_url() ?>'>Home</a>
 				</li>
-				<!-- DROPDOWN BUTTON -->
+				<!-- DROPDOWN BUTTON
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Market <b class="caret"></b></a>
 					<ul class="dropdown-menu">
@@ -30,14 +30,15 @@
 						<li><a href="#">Filter</a></li>
 					</ul>
 				</li>
+				-->
 				<li>
-				<a href='<?= base_url("/user") ?>'>User</a>
+					<a href='<?= base_url("/market") ?>'>Market</a>
 				</li>
 				<li>
-				<a href='<?= base_url("/ad") ?>'>Ad</a>
+					<a href='<?= base_url("/user") ?>'>User</a>
 				</li>
 				<li>
-				<a href='<?= base_url("/bad-url") ?>'>404 Test</a>
+					<a href='<?= base_url("/ad") ?>'>Ad</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
