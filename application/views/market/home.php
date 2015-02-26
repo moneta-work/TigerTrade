@@ -28,10 +28,10 @@
 			<div class="row">
 				<div class="form-group">
 					<label for="list" class="col-sm-2 control-label label-20">Categories</label>
-					<select size="10" class="form-control" id="list" >
+					<select multiple size="10" class="form-control" id="list" >
 					<?php 
 						foreach($categories->result() as $category):
-						echo "<option disabled>" . $category->name . "</option>";
+						echo "<option>" . $category->name . "</option>";
 						endforeach; 
 					?>
 					</select>
