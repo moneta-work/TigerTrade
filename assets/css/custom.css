@@ -85,6 +85,14 @@ button a, button a:visited, button a:hover, button a:active {
 	color: inherit;
 }
 
+#category_list {
+	font-size: 8px;
+}
+
+#subcategory_list {
+	font-size: 8px;
+}
+
 @media (max-width: 599px) {
 
 }
