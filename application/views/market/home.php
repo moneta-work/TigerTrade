@@ -16,10 +16,10 @@
 	<div class="row">
 		<div class="col-xs-1"><a href="<?php echo base_url('/market') ?>"><b>all</b></a></div><br>
 		<?php foreach ($categories->result() as $category) { ?>
-		    <div class="col-xs-1"><a href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a></div>
+		    <div class="row"><div class="col-xs-1"><a href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a></div>
 	    	<?php foreach ($subcategories->result() as $subcategory) {
 	    		if ($subcategory->category_id == $category->category_id) { ?>
-				    <div class="col-xs-1"><a href="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id); ?>"><?php echo $subcategory->name; ?></a></div>
+				    <div class="col-xs-1"><a href="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id); ?>"><?php echo $subcategory->name; ?></a></div></div>
 				<?php } ?>
 	    	<?php } ?>
 	    	<br>
