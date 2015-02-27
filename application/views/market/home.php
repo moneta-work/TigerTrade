@@ -73,7 +73,7 @@
 			</div>
 			
 			<!-- Search/Filter Form -->
-			<div id="search-form">
+			<div id="filter-form">
 				<div class="form-group">
 					<label for="list" class="control-label">Categories</label>
 					<select multiple size="<?php echo $categories->num_rows(); ?>" class="form-control" id="category_list" >
@@ -93,6 +93,13 @@
 						endforeach; 
 					?>
 					</select>
+				</div>
+			</div>
+			
+			<div class="search-form">
+				<div class="form-group">
+					<label for="search" class="control-label">Search</label>
+					<input type="text" name="search" ></div>
 				</div>
 			</div>
 		</div>
