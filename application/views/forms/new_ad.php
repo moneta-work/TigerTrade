@@ -9,21 +9,21 @@ $(document).ready(function (){
 	        var post_url = "<?php echo base_url('ajax') ?>/get_subcategories/" + category_id;
 	        $.ajax({
 	            type: "POST",
-	             url: post_url,
-	             success: function(subCategories) //we're calling the response json array 'cities'
-	              {
+	            url: post_url,
+	            success: function(subCategories) //we're calling the response json array 'cities'
+	            {
 	              	console.log(subCategories);
 	                $('#subCategorySelectForm').empty();
 	                $('#subCategoryForm').show();
-	                   $.each(subCategories,function(id,name) 
-	                   {
-	                    var opt = $('<option />'); // here we're creating a new select option for each group
-	                      opt.val(id);
-	                      opt.text(name);
-	                      $('#subCategorySelectForm').append(opt); 
+                   	$.each(subCategories,function(id,name) 
+                   	{	
+                    	var opt = $('<option />'); // here we're creating a new select option for each group
+                      	opt.val(id);
+                      	opt.text(name);
+                      	$('#subCategorySelectForm').append(opt); 	
 	                });
 	        		
-	               } //end success
+	            } //end success
 	         }); //end AJAX
 	    } else {
 	        $('#subCategoryForm').hide();
