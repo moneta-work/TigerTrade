@@ -15,16 +15,16 @@
 			<!-- Market Menu -->
 			<div id="market-menu" class="text-center">
 				<a class="btn btn-default btn-sm wide-button" role="button" href="<?php echo base_url('/market') ?>"><b>all</b></a><br><br>
-				<?php foreach ($categories->result() as $category) { ?>
-				    <a class="btn <?php if ($category_id == $category->category_id) { echo 'btn-primary'; } else { echo 'btn-default'; } ?> btn-sm wide-button" role="button" href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a><br>
+				<?php foreach ($categories->result() as $cat) { ?>
+				    <a class="btn <?php if ($category->category_id == $cat->category_id) { echo 'btn-primary'; } else { echo 'btn-default'; } ?> btn-sm wide-button" role="button" href="<?php echo base_url('/market/category/' . $cat->category_id); ?>"><b><?php echo $cat->name; ?></b></a><br>
 				    <select onchange="location = this.options[this.selectedIndex].value;" class="form-control" id="" >
 					    	<option>Subcategory</option>
-			    	<?php foreach ($subcategories->result() as $subcategory) { ?>
+			    	<?php foreach ($subcategories->result() as $sub) { ?>
 				    	
-			    		<?php if ($subcategory->category_id == $category->category_id) { ?>
+			    		<?php if ($sub->category_id == $cat->category_id) { ?>
 			    			
-			    			<option value="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id); ?>">
-			    				<?php echo $subcategory->name; ?>
+			    			<option value="<?php echo base_url('/market/subcategory/' . $sub->subcategory_id); ?>">
+			    				<?php echo $sub->name; ?>
 			    			</option>
 						<?php } ?>
 				    	
@@ -40,8 +40,8 @@
 					<label for="list" class="control-label">Categories</label>
 					<select multiple size="<?php echo $categories->num_rows(); ?>" class="form-control" id="category_list" >
 					<?php 
-						foreach($categories->result() as $category):
-						echo "<option>" . $category->name . "</option>";
+						foreach($categories->result() as $cat):
+						echo "<option>" . $cat->name . "</option>";
 						endforeach; 
 					?>
 					</select>
@@ -50,8 +50,8 @@
 					<label for="list" class="control-label">Subcategories</label>
 					<select multiple size="10" class="form-control" id="subcategory_list" >
 					<?php 
-						foreach($subcategories->result() as $subcategory):
-						echo "<option>" . $subcategory->name . "</option>";
+						foreach($subcategories->result() as $sub):
+						echo "<option>" . $sub->name . "</option>";
 						endforeach; 
 					?>
 					</select>
