@@ -36,7 +36,7 @@
 			</div>
 			
 			<!-- Filter Form -->
-			<div id="filter-form">
+			<div id="filter-form" class="hidden-xs">
 				<div class="form-group">
 					<label for="list" class="control-label">Categories</label>
 					<select multiple size="<?php echo $categories->num_rows(); ?>" class="form-control" id="category_list" >
