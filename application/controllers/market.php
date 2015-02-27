@@ -45,7 +45,6 @@ class Market extends CI_Controller
 	//shows details of a specific ad
 	function category($category_id)
 	{
-		$data['category_id'] = $category_id;
 		$data['category'] = $this->category_model->get_category($category_id);
 		$data['categories'] = $this->category_model->get_all_categories();
 		$data['subcategories'] = $this->subcategory_model->get_all_subcategories();
