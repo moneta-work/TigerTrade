@@ -11,7 +11,7 @@ $(document).ready(function () {
                         url: "<?php echo base_url('ad');?>/get_subcategories/"+value,
                         type: 'post',
                         dataType: 'json',
-                        data: data,
+                        data: data
                      success: function (data) {
                             if (data != null) {
                                 console.log(data);
