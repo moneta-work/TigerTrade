@@ -21,6 +21,10 @@ $(document).ready(function (){
                       	$('#subCategory').append(opt); 	
 	                });
 	            } //end success
+	            else
+	            {
+	            	$('#subCategory').empty();
+	            }
 	         }); //end AJAX
 	    } 
 	}); //end change 
