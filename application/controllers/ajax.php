@@ -5,12 +5,12 @@ class Ajax extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('subcategory_model');
+		$this->load->model('ad_model');
 	}
 
 	function get_subcategories($category_id)
 	{
-        echo(json_encode($this->subcategory_model->get_subcategories($category_id)));
+        echo(json_encode($this->ad_model->get_subcategories($category_id)));
 	}
 
 	function test()
