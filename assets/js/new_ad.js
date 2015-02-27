@@ -11,10 +11,11 @@ $(document).ready(function () {
                         type: 'post',
                         dataType: 'json',
                      success: function (data) {
-                            if (data != null) {
-                            	console.log("Success");
-                                console.log(data);
-                            }
+                        	console.log("Success");
+                            console.log(data);
+                        }
+                        failure: function (data){
+                        	console.log("failure")
                         }
                     });
 
