@@ -2,7 +2,9 @@
 
 <script type="text/javascript">
 $(document).ready(function () {
-	
+	var subCategories = new Array();
+	subCategories = '<?= $subcategories->result(); ?>';
+	console.log(subCategories);
 	$('#categorySelectForm').change(function () {
 	  	var value = $(this).val();
 
