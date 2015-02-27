@@ -19,11 +19,11 @@
 				    <a class="btn <?php if ($subcategory->category_id == $category->category_id) { echo 'btn-primary'; } else { echo 'btn-default'; } ?> btn-sm wide-button" role="button" href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a><br>
 				    <select onchange="location = this.options[this.selectedIndex].value;" class="form-control" id="" >
 					    	<option>Subcategory</option>
-			    	<?php foreach ($subcategories->result() as $subcategory) { ?>
+			    	<?php foreach ($subcategories->result() as $sub) { ?>
 				    	
-			    		<?php if ($subcategory->category_id == $category->category_id) { ?>
+			    		<?php if ($subc->category_id == $category->category_id) { ?>
 			    			
-			    			<option value="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id); ?>">
+			    			<option <?php if ($subcategory->category_id == $sub->category_id) { echo 'selected'; } ?> value="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id); ?>">
 			    				<?php echo $subcategory->name; ?>
 			    			</option>
 						<?php } ?>
