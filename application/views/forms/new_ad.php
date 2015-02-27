@@ -4,15 +4,17 @@
 	$(document).ready(function (){
 	$('#categorySelectForm').change(function(){
     
-    var value = $(this).val();
+    var category_id = $(this).val();
     alert(value);
-    /*if (state_id != ""){
-        var post_url = "/index.php/control_form/get_cities/" + state_id;
+    if (category_id != ""){
+        var post_url = "<?php echo base_url('ad') ?>/ad/get_subCategories" + category_id;
         $.ajax({
             type: "POST",
              url: post_url,
-             success: function(cities) //we're calling the response json array 'cities'
+             success: function(subCategories) //we're calling the response json array 'cities'
               {
+              	console.log(subCategories);
+              	/*
                 $('#f_city').empty();
                 $('#f_city, #f_city_label').show();
                    $.each(cities,function(id,city) 
@@ -22,11 +24,11 @@
                       opt.text(city);
                       $('#f_city').append(opt); 
                 });
+        		*/
                } //end success
          }); //end AJAX
     } else {
-        $('#f_city').empty();
-        $('#f_city, #f_city_label').hide();
+        $('#subCategoryForm').hide();
     }//end if
     */
 }); //end change 
