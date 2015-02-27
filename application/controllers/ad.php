@@ -51,7 +51,7 @@ class Ad extends CI_Controller
 
 	function get_subcategories($category_id)
 	{
-		$sub = $this->subcategory_model->get_subcategories($category_id));
+		$sub = $this->subcategory_model->get_subcategories($category_id);
 		$sub = $sub->result();
 		echo json_encode($sub);
 	}
