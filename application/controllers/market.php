@@ -10,7 +10,6 @@ class Market extends CI_Controller
 		$this->load->model('category_model');
 		$this->load->model('subcategory_model');
 		$data['menu'] = $this->load->view('shared/menu');
-		$data['buttons'] = $this->load->view('market/buttons');
 	}
 
 	function index()
