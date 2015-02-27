@@ -30,7 +30,6 @@
     } else {
         $('#subCategoryForm').hide();
     }//end if
-    */
 }); //end change 
 });
 
