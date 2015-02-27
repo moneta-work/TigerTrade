@@ -11,8 +11,6 @@
 	
 	<hr>
 	
-	<p>Form for new subcategories.</p>
-	
 	<?php echo form_open("market/new_subcategory", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>	
 		
 		<div class="form-group">
