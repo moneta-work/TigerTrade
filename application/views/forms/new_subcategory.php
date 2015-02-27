@@ -44,14 +44,14 @@
 		<div class="form-group">
 			<label for="subcategory_name" class="col-sm-3 control-label label-20">Subcategory Name</label>
 			<div class="col-sm-9">
-				<input type="text" class="form-control" name="subcategory_name" id="subcategory_name" placeholder="">
+				<input type="text" class="form-control" name="subcategory_name" id="subcategory_name" placeholder="" disabled>
 			</div>
 		</div>
 		
 		<div class="form-group">
 			<label for="subcategory_description" class="col-sm-3 control-label label-20">Description</label>
 			<div class="col-sm-9">
-				<input type="text" class="form-control" name="subcategory_description" id="subcategory_description" placeholder="">
+				<input type="text" class="form-control" name="subcategory_description" id="subcategory_description" placeholder="" disabled>
 			</div>
 		</div>
 		
