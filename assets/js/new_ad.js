@@ -1,5 +1,5 @@
-$('#categoryForm').change(function () {
-    console.log($(this).val());
-    console.log(2);
+$('#categorySelectForm').change(function () {
+   	var value = $(this).val();
+    console.log(value);
 });	
 
