@@ -20,7 +20,7 @@ $(document).ready(function (){
                     	var opt = $('<option />'); // here we're creating a new select option for each group
                       	opt.val(id);
                       	opt.text(name);
-                      	$('#subCategorySelectForm').append(opt); 	
+                      	$('#subCategory').append(opt); 	
 	                });
 	        		
 	            } //end success
