@@ -20,8 +20,8 @@ $(document).ready(function (){
                       	opt.text(name);
                       	$('#subCategory').append(opt); 	
 	                });
-					$('#subcategory_name').removeAttr('disabled');
-					$('#subcategory_description').removeAttr('disabled');
+					$('#subcategory_name').Attr('disabled');
+					$('#subcategory_description').Attr('disabled');
 	            } //end success
 	         }); //end AJAX
 	    } 
