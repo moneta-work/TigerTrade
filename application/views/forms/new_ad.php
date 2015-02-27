@@ -3,12 +3,7 @@
 <script type="text/javascript">
 $(document).ready(function () {
 	var subCategories = new Array();
-	<?php
-		foreach($subCategories->result() as $sub)
-		{
-			?>console.log(<php= $sub ?>); <?php
-		}
-	?>
+	subCategories = JSON.stringify(<?php echo 'subCategories->result();' ?>);
 	console.log(subCategories);
 	$('#categorySelectForm').change(function () {
 	  	var value = $(this).val();
