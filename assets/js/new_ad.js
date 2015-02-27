@@ -13,7 +13,7 @@ $(document).ready(function () {
                      success: function (data) {
                         	console.log("Success");
                             console.log(data);
-                        }
+                        },
                         failure: function (data){
                         	console.log("failure")
                         }
