@@ -64,7 +64,7 @@
 				<?php foreach ($categories->result() as $category) { ?>
 				    <a href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a><br>
 			    	<?php foreach ($subcategories->result() as $subcategory) { ?>
-				    	<select multiple size="<?php echo $categories->num_rows(); ?>" class="form-control" id="category_list" >
+				    	<select size="<?php echo $categories->num_rows(); ?>" class="form-control" id="category_list" >
 					    	<option>Subcategory</option>
 			    		<?php if ($subcategory->category_id == $category->category_id) { ?>
 			    			
