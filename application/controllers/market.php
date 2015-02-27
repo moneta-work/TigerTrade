@@ -43,6 +43,16 @@ class Market extends CI_Controller
 		$data['categories'] = $this->category_model->get_all_categories();
 		$this->layout->view('forms/new_subcategory', $data);
 	}
+	
+	function get_subcategories($category_id){
+
+        $sucategory_array = $this->general->get_categories
+
+        $output_string = $subcategory_array;
+
+        echo json_encode($output_string);
+
+    }
 
 	//shows details of a specific ad
 	function category($category_id)
