@@ -95,13 +95,13 @@ button a, button a:visited, button a:hover, button a:active {
 }
 
 #market-menu {
-
-}
-
-#market-menu {
 	font-size: 1.2rem;
 }
 
+.wide-button {
+	width: 100%;
+	margin-bottom: 5px;
+}
 @media (max-width: 599px) {
 
 }
