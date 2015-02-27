@@ -17,7 +17,7 @@
 
 <h3 class="col-sm-offset-3">Please enter the group information below</h3>
 
-<?php echo form_open(current_url(), array('class' => 'form-horizontal'));?>
+<?php echo form_open(current_url(), array('class' => 'form-horizontal top-buffer'));?>
 		
 		<div class="form-group">
                   <label for="group_name" class="col-sm-4 control-label label-20">Group Name</label>
