@@ -1,3 +1,37 @@
+<script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
+
+<script type="text/javascript">
+$(document).ready(function (){
+	$('#categorySelectForm').change(function(){
+	    var category_id = $(this).val();
+	    if (category_id != ""){
+	        var post_url = "<?php echo base_url('ajax') ?>/get_subcategories/" + category_id;
+	        $.ajax({
+	            type: "POST",
+	            url: post_url,
+	            success: function(subCategories) //we're calling the response json array 'cities'
+	            {
+	                $('#subCategory').empty();
+	                subCategories = $.parseJSON(subCategories);
+                   	$.each(subCategories,function(id,name) 
+                   	{	
+                    	var opt = $('<option  disabled/>'); // here we're creating a new select option for each group
+                      	opt.val(id);
+                      	opt.text(name);
+                      	$('#subCategory').append(opt); 	
+	                });
+	            } //end success
+	         }); //end AJAX
+	    } 
+	    else
+	    {
+	    	$('#subCategory').empty();
+	    }
+	}); //end change 
+});
+
+</script>
+
 <div class="container padding-top-20">
 
 	<div class="row">
@@ -14,9 +48,9 @@
 	<?php echo form_open("market/new_subcategory", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>	
 		
 		<div class="form-group">
-			<label for="list" class="col-sm-3 control-label label-20">Categories</label>
+			<label for="categorySelectForm" class="col-sm-3 control-label label-20">Categories</label>
 			<div class="col-sm-9">
-				<select class="form-control" id="list" >
+				<select class="form-control" id="categorySelectForm" >
 				<?php 
 					foreach($categories->result() as $category):
 					echo "<option>" . $category->name . "</option>";
@@ -27,9 +61,9 @@
 		</div>
 		
 		<div class="form-group">
-			<label for="list" class="col-sm-3 control-label label-20">Subcategories</label>
+			<label for="subCategories" class="col-sm-3 control-label label-20">Subcategories</label>
 			<div class="col-sm-9">
-				<select size="10" class="form-control" id="list" >
+				<select size="10" class="form-control" id="subCategories" >
 				<?php /*
 					foreach($categories->result() as $category):
 					echo "<option disabled>" . $category->name . "</option>";
