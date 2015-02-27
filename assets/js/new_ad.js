@@ -1,5 +1,5 @@
 $('#categoryForm').change(function () {
-    var value = $("select#categoryForm option:selected").val();
+    var value = $("#categoryForm").val();
     alert(value);
 });	
 
