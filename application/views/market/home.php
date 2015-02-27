@@ -73,7 +73,7 @@
 			
 			<div class="row">
 				
-				<?php render 'button_options'; ?>
+				<?php if (isset($buttons)) { $buttons; } ?>
 								
 				<?php $count = 0; ?>
 				<?php foreach ($ads->result() as $row) { ?>
