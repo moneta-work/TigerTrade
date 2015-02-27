@@ -46,11 +46,7 @@ class Market extends CI_Controller
 			$subcategory_name = $this->input->post('subcategory_name');
 			$subcategory_description = $this->input->post('subcategory_description');
 			
-			echo $category_id;
-			echo $subcategory_name;
-			echo $subcategory_description;
-			
-			//$this->category_model->insert_new_category($subcategory_name, $subcategory_description, $category_id);
+			$this->subcategory_model->insert_new_subcategory($subcategory_name, $subcategory_description, $category_id);
 		}
 		
 		$data['categories'] = $this->category_model->get_all_categories();

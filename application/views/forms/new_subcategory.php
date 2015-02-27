@@ -69,11 +69,6 @@ $(document).ready(function (){
 			<label for="subCategories" class="col-sm-3 control-label label-20">Subcategories</label>
 			<div class="col-sm-6">
 				<select size="10" class="form-control" id="subCategory" >
-				<?php /*
-					foreach($categories->result() as $category):
-					echo "<option disabled>" . $category->name . "</option>";
-					endforeach;*/ 
-				?>
 				</select>
 			</div>
 		</div>
