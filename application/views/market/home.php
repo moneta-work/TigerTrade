@@ -15,7 +15,7 @@
 		<div class="col-xs-3 col-sm-2">
 			<!-- Market Menu -->
 			<div id="market-menu" class="text-center">
-				<a class="btn btn-primary btn-sm wide-button" role="button" href="<?php echo base_url('/market') ?>"><b>all</b></a><br><br>
+				<a class="btn btn-primary btn-sm wide-button" role="button" href="<?php echo base_url('/market') ?>"><b>all</b></a><br>
 				<?php foreach ($categories->result() as $cat) { ?>
 				    <a class="btn btn-default btn-sm wide-button" role="button" href="<?php echo base_url('/market/category/' . $cat->category_id); ?>"><b><?php echo $cat->name; ?></b></a><br>
 				    <select onchange="location = this.options[this.selectedIndex].value;" class="form-control" id="" >
