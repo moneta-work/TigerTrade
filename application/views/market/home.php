@@ -102,7 +102,7 @@
 					<input type="text" class="form-control" name="search" ></div>
 				</div>
 			</div>
-		</div>
+
 		
 		<div class="col-xs-9 col-sm-10">
 			
