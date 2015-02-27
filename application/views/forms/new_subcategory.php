@@ -30,6 +30,8 @@ $(document).ready(function (){
 	    	$('#subCategory').empty();
 			$('#subcategory_name').attr('disabled');
 			$('#subcategory_description').attr('disabled');
+			$('#subcategory_name').hide()
+			$('#subcategory_description').hide()
 	    }
 	}); //end change 
 });
