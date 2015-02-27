@@ -11,7 +11,6 @@ $(document).ready(function () {
 	    	console.log(value);
 	    	$.ajax({
                 url: "<?php echo base_url('ad');?>/test",
-                type: 'post',
                 dataType: 'json',
              	success: function (data) {
                 	console.log("Success");
