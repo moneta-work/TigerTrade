@@ -49,12 +49,12 @@ $(document).ready(function (){
 	
 	<hr>
 	
-	<?php echo form_open("market/new_subcategory", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>	
+	<?php echo form_open("market/new_subcategory/" . $category_id, array('class' => 'form-horizontal', 'id' => 'ad-form'));?>	
 		
 		<div class="form-group">
 			<label for="categorySelectForm" class="col-sm-3 control-label label-20">Categories</label>
 			<div class="col-sm-6">
-				<select class="form-control" id="categorySelectForm" >
+				<select class="form-control" id="categorySelectForm" name="category_id">
 				<option value="">Select a Category</option>
 				<?php 
 					foreach($categories->result() as $category):
