@@ -13,10 +13,6 @@ class Ajax extends CI_Controller
         echo(json_encode($this->ad_model->get_subcategories($category_id)));
 	}
 
-	function test()
-	{
-		echo "hello";
-	}
 
 }
 ?>
