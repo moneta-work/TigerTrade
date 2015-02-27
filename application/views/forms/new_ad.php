@@ -21,12 +21,12 @@ $(document).ready(function (){
                       	$('#subCategory').append(opt); 	
 	                });
 	            } //end success
-	            else
-	            {
-	            	$('#subCategory').empty();
-	            }
 	         }); //end AJAX
 	    } 
+	    else
+	    {
+	    	$('#subCategory').empty();
+	    }
 	}); //end change 
 });
 
