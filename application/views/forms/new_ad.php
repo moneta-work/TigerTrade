@@ -2,7 +2,6 @@
 
 <script type="text/javascript">
 $(document).ready(function (){
-	$('#subCategoryForm').hide();
 	$('#categorySelectForm').change(function(){
 	    var category_id = $(this).val();
 	    if (category_id != ""){
@@ -13,7 +12,6 @@ $(document).ready(function (){
 	            success: function(subCategories) //we're calling the response json array 'cities'
 	            {
 	                $('#subCategory').empty();
-	                $('#subCategoryForm').show();
 	                subCategories = $.parseJSON(subCategories);
                    	$.each(subCategories,function(id,name) 
                    	{	
