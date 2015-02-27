@@ -62,7 +62,7 @@
 			<div id="market-menu" class="text-center">
 				<a class="btn btn-default btn-sm wide-button" role="button" href="<?php echo base_url('/market') ?>"><b>all</b></a><br><br>
 				<?php foreach ($categories->result() as $category) { ?>
-				    <a class="btn <?php if ($category_id = $category->category_id) { echo 'btn-primary' } else { echo 'btn-default' } ?> btn-sm wide-button" role="button" href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a><br>
+				    <a class="btn <?php if ($category_id == $category->category_id) { echo 'btn-primary' } else { echo 'btn-default' } ?> btn-sm wide-button" role="button" href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a><br>
 				    <select onchange="location = this.options[this.selectedIndex].value;" class="form-control" id="" >
 					    	<option>Subcategory</option>
 			    	<?php foreach ($subcategories->result() as $subcategory) { ?>
