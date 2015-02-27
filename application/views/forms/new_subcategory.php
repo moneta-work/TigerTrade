@@ -53,7 +53,7 @@ $(document).ready(function (){
 				<select class="form-control" id="categorySelectForm" >
 				<?php 
 					foreach($categories->result() as $category):
-					echo "<option>" . $category->name . "</option>";
+					echo '<option value="'.$category->category_id.'">' . $category->name . "</option>";
 					endforeach; 
 				?>
 				</select>
