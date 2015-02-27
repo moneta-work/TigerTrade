@@ -20,8 +20,6 @@ $(document).ready(function (){
                       	opt.text(name);
                       	$('#subCategory').append(opt); 	
 	                });
-	                console.log(subCategories);
-	        		
 	            } //end success
 	         }); //end AJAX
 	    } else {
