@@ -21,7 +21,7 @@
 					    	<option>Subcategory</option>
 			    	<?php foreach ($subcategories->result() as $sub) { ?>
 				    	
-			    		<?php if ($subc->category_id == $category->category_id) { ?>
+			    		<?php if ($sub->category_id == $category->category_id) { ?>
 			    			
 			    			<option value="<?php echo base_url('/market/subcategory/' . $sub->subcategory_id); ?>">
 			    				<?php echo $sub->name; ?>
