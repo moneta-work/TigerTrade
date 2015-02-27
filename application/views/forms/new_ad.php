@@ -1,36 +1,35 @@
 <script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
 
 <script type="text/javascript">
-	$(document).ready(function (){
+$(document).ready(function (){
 	$('#categorySelectForm').change(function(){
-    
-    var category_id = $(this).val();
-    alert(value);
-    if (category_id != ""){
-        var post_url = "<?php echo base_url('ad') ?>/ad/get_subCategories" + category_id;
-        $.ajax({
-            type: "POST",
-             url: post_url,
-             success: function(subCategories) //we're calling the response json array 'cities'
-              {
-              	console.log(subCategories);
-              	/*
-                $('#f_city').empty();
-                $('#f_city, #f_city_label').show();
-                   $.each(cities,function(id,city) 
-                   {
-                    var opt = $('<option />'); // here we're creating a new select option for each group
-                      opt.val(id);
-                      opt.text(city);
-                      $('#f_city').append(opt); 
-                });
-        		*/
-               } //end success
-         }); //end AJAX
-    } else {
-        $('#subCategoryForm').hide();
-    }//end if
-}); //end change 
+	    var category_id = $(this).val();
+	    alert(value);
+	    if (category_id != ""){
+	        var post_url = "<?php echo base_url('ad') ?>/ad/get_subCategories" + category_id;
+	        $.ajax({
+	            type: "POST",
+	             url: post_url,
+	             success: function(subCategories) //we're calling the response json array 'cities'
+	              {
+	              	console.log(subCategories);
+	              	/*
+	                $('#f_city').empty();
+	                $('#f_city, #f_city_label').show();
+	                   $.each(cities,function(id,city) 
+	                   {
+	                    var opt = $('<option />'); // here we're creating a new select option for each group
+	                      opt.val(id);
+	                      opt.text(city);
+	                      $('#f_city').append(opt); 
+	                });
+	        		*/
+	               } //end success
+	         }); //end AJAX
+	    } else {
+	        $('#subCategoryForm').hide();
+	    }//end if
+	}); //end change 
 });
 
 </script>
