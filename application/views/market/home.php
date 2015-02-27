@@ -72,7 +72,7 @@
 				<?php } ?>
 			</div>
 			
-			<!-- Search/Filter Form -->
+			<!-- Filter Form -->
 			<div id="filter-form">
 				<div class="form-group">
 					<label for="list" class="control-label">Categories</label>
@@ -96,13 +96,15 @@
 				</div>
 			</div>
 			
+			
+			<!-- Search Form -->
 			<div class="search-form">
 				<div class="form-group">
 					<label for="search" class="control-label">Search</label>
-					<input type="text" class="form-control" name="search" ></div>
+					<input type="text" class="form-control" name="search" ></input>
 				</div>
 			</div>
-
+		</div>
 		
 		<div class="col-xs-9 col-sm-10">
 			
