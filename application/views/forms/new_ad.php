@@ -12,7 +12,6 @@ $(document).ready(function (){
 	            url: post_url,
 	            success: function(subCategories) //we're calling the response json array 'cities'
 	            {
-	              	console.log(subCategories);
 	                $('#subCategory').empty();
 	                $('#subCategoryForm').show();
                    	$.each(subCategories,function(id,name) 
@@ -22,6 +21,7 @@ $(document).ready(function (){
                       	opt.text(name);
                       	$('#subCategory').append(opt); 	
 	                });
+	                console.log(subCategories);
 	        		
 	            } //end success
 	         }); //end AJAX
