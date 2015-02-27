@@ -13,8 +13,8 @@ $(document).ready(function (){
 	            success: function(subCategories) //we're calling the response json array 'cities'
 	            {
 	              	console.log(subCategories);
-	                $('#subCategorySelectForm').empty();
-	                $('#subCategoryForm').show();
+	                //$('#subCategorySelectForm').empty();
+	                //$('#subCategoryForm').show();
                    	$.each(subCategories,function(id,name) 
                    	{	
                     	var opt = $('<option />'); // here we're creating a new select option for each group
@@ -88,16 +88,11 @@ $(document).ready(function (){
 			</select>
 			</div>
 		</div>
-		<div class="form-group hidden" id="subCategoryForm">
+		<div class="form-group" id="subCategoryForm">
 			<label for="sub-category" class="col-sm-2 control-label label-20">Sub-Category</label>
 			<div class="col-sm-10">
 			<select name="subCategory" id="subCategorySelectForm"> 
-				<?php
-					foreach($categories->result() as $category)
-					{
-						echo '<option value="'.$category->category_id.'">'.$category->name.'</option>';
-					}
-				?>	
+				<option value=""><option>	
 			</select>
 			</div>
 		</div>
