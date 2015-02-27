@@ -10,17 +10,17 @@ $(document).ready(function () {
 	    {
 	    	console.log(value);
 	    	$.ajax({
-                        url: "<?php echo base_url('ad');?>/test",
-                        type: 'post',
-                        dataType: 'json',
-                     success: function (data) {
-                        	console.log("Success");
-                            console.log(data);
-                        },
-                        failure: function (data){
-                        	console.log("failure")
-                        }
-                    });
+                url: "<?php echo base_url('ad');?>/test",
+                type: 'post',
+                dataType: 'json',
+             	success: function (data) {
+                	console.log("Success");
+                    console.log(data);
+                },
+                failure: function (data){
+                	console.log("failure")
+                }
+            });
 
 	    }
 	    
