@@ -4,7 +4,7 @@
 $(document).ready(function (){
 	$('#categorySelectForm').change(function(){
 	    var category_id = $(this).val();
-	    alert(value);
+	    alert(category_id);
 	    if (category_id != ""){
 	        var post_url = "<?php echo base_url('ad') ?>/ad/get_subCategories" + category_id;
 	        $.ajax({
