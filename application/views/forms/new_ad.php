@@ -6,12 +6,11 @@ $(document).ready(function () {
 	
 	$('#categorySelectForm').change(function () {
 	  	var value = $(this).val();
-	    alert(value);
 	    if(value != "")
 	    {
-	    	alert("Entering ajax");
+	    	console.log(value);
 	    	$.ajax({
-                        url: "<?php echo base_url('ad');?>/get_subcategories/"+value,
+                        url: "<?php echo base_url('ad');?>/test",
                         type: 'post',
                         dataType: 'json',
                      success: function (data) {
