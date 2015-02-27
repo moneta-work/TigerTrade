@@ -1,14 +1,34 @@
 	<script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
-<script type="text/javascript">
 
+<script type="text/javascript">
+$(document).ready(function () {
+	alert("ready!");
+	
 	$('#categorySelectForm').change(function () {
 	  	var value = $(this).val();
-	    alert(value);
 	    
+	    if(value != "")
+	    {
+	    	$.ajax({
+                        url: "<?php echo base_url('ad');?>/get_subcategories/"+value,
+                        type: 'post',
+                        dataType: 'json',
+                     success: function (data) {
+                        	console.log("Success");
+                            console.log(data);
+                        },
+                        failure: function (data){
+                        	console.log("failure")
+                        }
+                    });
+
+	    }
 	    
 		
 	});	
 
+
+});
 </script>
 
 <div class="container padding-top-20">
