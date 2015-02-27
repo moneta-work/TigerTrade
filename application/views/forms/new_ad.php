@@ -13,17 +13,16 @@ $(document).ready(function (){
 	             success: function(subCategories) //we're calling the response json array 'cities'
 	              {
 	              	console.log(subCategories);
-	              	/*
-	                $('#f_city').empty();
-	                $('#f_city, #f_city_label').show();
-	                   $.each(cities,function(id,city) 
+	                $('#subCategorySelectForm').empty();
+	                $('#subCategoryForm').show();
+	                   $.each(subCategories,function(id,name) 
 	                   {
 	                    var opt = $('<option />'); // here we're creating a new select option for each group
 	                      opt.val(id);
-	                      opt.text(city);
-	                      $('#f_city').append(opt); 
+	                      opt.text(name);
+	                      $('#subCategorySelectForm').append(opt); 
 	                });
-	        		*/
+	        		
 	               } //end success
 	         }); //end AJAX
 	    } else {
