@@ -49,6 +49,13 @@ class Ad extends CI_Controller
 		$this->layout->view('forms/new_ad', $data);
 	}
 
+	function get_subcategories($category_id)
+	{
+		$sub = $this->subcategory_model->get_subcategories($category_id));
+		$sub = $sub->result();
+		echo json_encode($sub);
+	}
+
 	//shows form to create a new ad
 	function make_offer($ad_id)
 	{
