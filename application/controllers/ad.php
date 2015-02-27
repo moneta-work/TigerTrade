@@ -8,12 +8,15 @@ class Ad extends CI_Controller
 		$this->load->library('upload');
         $this->load->library('image_lib');
 		$this->load->model('ad_model');
+		$this->load->model('subcategory_model');
+		$this->load->model('category_model');
 		$data['menu'] = $this->load->view('shared/menu');
 	}
 
 	function index()
 	{
 		$data['title'] = 'Ad Home';
+
 		$this->layout->view('ad/ad_view', $data);
 	}
 
@@ -41,6 +44,8 @@ class Ad extends CI_Controller
 	function new_ad()
 	{
 		$data['title'] = 'New Ad';
+		$data['categories'] = $this->category_model->get_all_categories();
+		$data['subcategories'] = $this->subcategory_model->get_all_subcategories();
 		$this->layout->view('forms/new_ad', $data);
 	}
 

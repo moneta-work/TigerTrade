@@ -1,3 +1,37 @@
+<script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
+
+<script type="text/javascript">
+$(document).ready(function (){
+	$('#categorySelectForm').change(function(){
+	    var category_id = $(this).val();
+	    if (category_id != ""){
+	        var post_url = "<?php echo base_url('ajax') ?>/get_subcategories/" + category_id;
+	        $.ajax({
+	            type: "POST",
+	            url: post_url,
+	            success: function(subCategories) //we're calling the response json array 'cities'
+	            {
+	                $('#subCategory').empty();
+	                subCategories = $.parseJSON(subCategories);
+                   	$.each(subCategories,function(id,name) 
+                   	{	
+                    	var opt = $('<option />'); // here we're creating a new select option for each group
+                      	opt.val(id);
+                      	opt.text(name);
+                      	$('#subCategory').append(opt); 	
+	                });
+	                console.log(subCategories);
+	        		
+	            } //end success
+	         }); //end AJAX
+	    } else {
+	        $('#subCategoryForm').hide();
+	    }//end if
+	}); //end change 
+});
+
+</script>
+
 <div class="container padding-top-20">
 	<div class="row">
 		<div class="col-xs-3 col-sm-2 text-center">
@@ -37,6 +71,28 @@
 				<div class="input-group-addon">$</div>
 					<input type="text" class="form-control" name="price" id="price" placeholder="Amount">
 				<div class="input-group-addon">.00</div>
+			</div>
+		</div>
+		<div class="form-group" id="categoryForm">
+			<label for="category" class="col-sm-2 control-label label-20">Category</label>
+			<div class="col-sm-10">
+			<select name="category" id="categorySelectForm"> 
+				<option value="">Select One</option>
+				<?php
+					foreach($categories->result() as $category)
+					{
+						echo '<option value="'.$category->category_id.'">'.$category->name.'</option>';
+					}
+				?>	
+			</select>
+			</div>
+		</div>
+		<div class="form-group" id="subCategoryForm">
+			<label for="sub-category" class="col-sm-2 control-label label-20">Sub-Category</label>
+			<div class="col-sm-10">
+			<select name="subCategory" id="subCategory"> 
+				<option value=""><option>	
+			</select>
 			</div>
 		</div>
 		<div class="form-group">
