@@ -63,7 +63,7 @@
 				<a href="<?php echo base_url('/market') ?>"><b>all</b></a><br><br>
 				<?php foreach ($categories->result() as $category) { ?>
 				    <a href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a>
-				    <select size="<?php echo $categories->num_rows(); ?>" class="form-control" id="category_list" >
+				    <select class="form-control" id="" >
 					    	<option>Subcategory</option>
 			    	<?php foreach ($subcategories->result() as $subcategory) { ?>
 				    	
