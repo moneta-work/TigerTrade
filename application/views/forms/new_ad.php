@@ -1,18 +1,4 @@
-	<script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
 
-<script type="text/javascript">
-$(document).ready(function () {
-	var subCategories = new Array();
-	subCategories = JSON.stringify(<?php echo 'subCategories->result();' ?>);
-	console.log(subCategories);
-	$('#categorySelectForm').change(function () {
-	  	var value = $(this).val();
-
-	  	alert(value);
-
-	});
-});
-</script>
 
 <div class="container padding-top-20">
 	<div class="row">
