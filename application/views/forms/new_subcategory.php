@@ -15,6 +15,9 @@
 	
 	<?php echo form_open("market/new_subcategory", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>	
 		
+		
+		<?php /*
+		
 		<div class="form-group">
 			<label for="list" class="col-sm-2 control-label label-20">Categories</label>
 			<div class="col-sm-10">
@@ -27,6 +30,8 @@
 				</select>
 			</div>
 		</div>
+		
+		*/ ?>
 		
 		<hr>
 		
