@@ -1,10 +1,10 @@
 <script type="text/javascript">
-	$(document).ready(function () {
-	alert("ready!");
+
+	
 	
 	$('#categorySelectForm').change(function () {
 	  	var value = $(this).val();
-	    
+	    alert(value);
 	    if(value != "")
 	    {
 	    	$.ajax({
@@ -26,7 +26,7 @@
 	});	
 
 
-});
+
 </script>
 
 <div class="container padding-top-20">
