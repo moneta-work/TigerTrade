@@ -55,7 +55,7 @@ $(document).ready(function (){
 			<label for="categorySelectForm" class="col-sm-3 control-label label-20">Categories</label>
 			<div class="col-sm-7">
 				<select class="form-control" id="categorySelectForm" >
-				<option>Select a Category</option>
+				<option value="">Select a Category</option>
 				<?php 
 					foreach($categories->result() as $category):
 					echo '<option value="'.$category->category_id.'">' . $category->name . "</option>";
