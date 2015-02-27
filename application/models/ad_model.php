@@ -33,7 +33,7 @@ class Ad_model extends CI_Model
 
 	public function get_subcategories($category_id){
         $this->db->select('subcategory_id, name');
-        $this->db->where('category_id', $categord_id);
+        $this->db->where('category_id', $category_id);
         $query = $this->db->get('subcategories');
         $subcategories = array();
 
