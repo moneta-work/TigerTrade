@@ -99,7 +99,7 @@
 			<div class="search-form">
 				<div class="form-group">
 					<label for="search" class="control-label">Search</label>
-					<input type="text" name="search" ></div>
+					<input type="text" class="form-control" name="search" ></div>
 				</div>
 			</div>
 		</div>
