@@ -1,11 +1,14 @@
 	<script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
 
 <script type="text/javascript">
-$('#categorySelectForm').change(function () {
-  	var value = $(this).val();
-  	alert(value);
+$(document).ready(function () {
+	
+	$('#categorySelectForm').change(function () {
+	  	var value = $(this).val();
 
+	  	alert(value);
 
+	});
 });
 </script>
 
