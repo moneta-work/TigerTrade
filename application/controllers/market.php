@@ -39,6 +39,8 @@ class Market extends CI_Controller
 	function new_subcategory()
 	{
 		$data['title'] = 'New Subcategory';
+		
+		$data['categories'] = $this->category_model->get_all_categories();
 		$this->layout->view('forms/new_subcategory', $data);
 	}
 
