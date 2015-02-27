@@ -103,11 +103,6 @@ button a, button a:visited, button a:hover, button a:active {
 	margin-bottom: 5px;
 }
 
-.wide-button-90 {
-	padding: 15px 0;
-	margin-bottom: 5px;	
-}
-
 @media (max-width: 599px) {
 
 }
