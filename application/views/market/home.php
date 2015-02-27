@@ -74,7 +74,8 @@
 			<div class="row">
 				
 				<!-- Buttons on top of page -->
-				<div class="row text-center visible-md">
+				<div class="hidden-xs">
+				<div class="row text-center">
 					<div class="btn-group hidden-xs">
 						<a class="btn btn-default btn-sm" href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a>
 						<?php if ($this->ion_auth->is_admin()) { ?>
@@ -89,7 +90,8 @@
 						<a class="btn btn-default btn-sm" href="<?php echo base_url('/ad/new_subcategory') ?>">Create a Subcategory</a><br>
 						<?php } ?>
 					</div>
-				</div>				
+				</div>
+				</div>
 								
 				<?php $count = 0; ?>
 				<?php foreach ($ads->result() as $row) { ?>
