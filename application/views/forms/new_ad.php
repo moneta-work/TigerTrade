@@ -2,9 +2,9 @@
 
 <script type="text/javascript">
 $(document).ready(function (){
+	$('#subCategoryForm').hide();
 	$('#categorySelectForm').change(function(){
 	    var category_id = $(this).val();
-	    alert(category_id);
 	    if (category_id != ""){
 	        var post_url = "<?php echo base_url('ajax') ?>/get_subcategories/" + category_id;
 	        $.ajax({
@@ -89,7 +89,7 @@ $(document).ready(function (){
 			</select>
 			</div>
 		</div>
-		<div class="form-group hidden" id="subCategoryForm">
+		<div class="form-group" id="subCategoryForm">
 			<label for="sub-category" class="col-sm-2 control-label label-20">Sub-Category</label>
 			<div class="col-sm-10">
 			<select name="subCategory" id="subCategory"> 
