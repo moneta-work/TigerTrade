@@ -39,7 +39,7 @@ class Ad_model extends CI_Model
 
         if($query->result()){
             foreach ($query->result() as $sub) {
-                $subcategories[$subcategory->id] = $sub->name;
+                $subcategories[$sub->id] = $sub->name;
             }
             return $subcategories;
         } else {
