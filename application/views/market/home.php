@@ -72,24 +72,9 @@
 		<div class="col-xs-9 col-sm-10">
 			
 			<div class="row">
-				<!-- Buttons on top of page -->
-				<div class="row text-center">
-					<div class="btn-group hidden-xs">
-						<a class="btn btn-default btn-sm" href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a>
-						<?php if ($this->ion_auth->is_admin()) { ?>
-						<a class="btn btn-default btn-sm" href="<?php echo base_url('/market/new_category') ?>">Create a Category</a>
-						<a class="btn btn-default btn-sm" href="<?php echo base_url('/ad/new_subcategory') ?>">Create a Subcategory</a>
-						<?php } ?>
-					</div>
-					<div class="visible-xs">
-						<a class="btn btn-default btn-sm" href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a><br><br>
-						<?php if ($this->ion_auth->is_admin()) { ?>
-						<a class="btn btn-default btn-sm" href="<?php echo base_url('/market/new_category') ?>">Create a Category</a><br><br>
-						<a class="btn btn-default btn-sm" href="<?php echo base_url('/ad/new_subcategory') ?>">Create a Subcategory</a><br>
-						<?php } ?>
-					</div>
-				</div>
 				
+				<?php render 'button_options'; ?>
+								
 				<?php $count = 0; ?>
 				<?php foreach ($ads->result() as $row) { ?>
 					<?php if ($count == 0 || $count % 3 == 0) { ?><div class="row"><?php } ?>
