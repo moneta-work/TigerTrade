@@ -28,10 +28,8 @@ $(document).ready(function (){
 	    else
 	    {
 	    	$('#subCategory').empty();
-			$('#subcategory_name').attr('disabled');
-			$('#subcategory_description').attr('disabled');
-			$('#subcategory_name').hide()
-			$('#subcategory_description').hide()
+			$('#subcategory_name').attr('disabled', true);
+			$('#subcategory_description').attr('disabled', true);
 	    }
 	}); //end change 
 });
