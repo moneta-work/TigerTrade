@@ -20,16 +20,16 @@ $(document).ready(function (){
                       	opt.text(name);
                       	$('#subCategory').append(opt); 	
 	                });
-					$('#subcategory_name').Attr('disabled');
-					$('#subcategory_description').Attr('disabled');
+					$('#subcategory_name').removeAttr('disabled');
+					$('#subcategory_description').removeAttr('disabled');
 	            } //end success
 	         }); //end AJAX
 	    } 
 	    else
 	    {
 	    	$('#subCategory').empty();
-			$('#subcategory_name').addAttr('disabled');
-			$('#subcategory_description').addAttr('disabled');
+			$('#subcategory_name').Attr('disabled');
+			$('#subcategory_description').Attr('disabled');
 	    }
 	}); //end change 
 });
