@@ -63,13 +63,16 @@
 				<a href="<?php echo base_url('/market') ?>"><b>all</b></a><br><br>
 				<?php foreach ($categories->result() as $category) { ?>
 				    <a href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a><br>
-			    	<?php foreach ($subcategories->result() as $subcategory) {
-			    		if ($subcategory->category_id == $category->category_id) { ?>
-			    			<option>Subcategory</option>
+			    	<?php foreach ($subcategories->result() as $subcategory) { ?>
+				    	<select multiple size="<?php echo $categories->num_rows(); ?>" class="form-control" id="category_list" >
+					    	<option>Subcategory</option>
+			    		<?php if ($subcategory->category_id == $category->category_id) { ?>
+			    			
 			    			<option value="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id); ?>">
 			    				<?php echo $subcategory->name; ?>
 			    			</option>
 						<?php } ?>
+				    	</select>
 			    	<?php } ?>
 			    	<br>
 				<?php } ?>
