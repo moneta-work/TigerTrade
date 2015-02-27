@@ -56,13 +56,6 @@ class Ad extends CI_Controller
 		echo json_encode($sub);
 	}
 
-	function test()
-	{
-		$arr = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);    
-
-	    echo json_encode( $arr );
-	}
-
 	//shows form to create a new ad
 	function make_offer($ad_id)
 	{
