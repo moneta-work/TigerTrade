@@ -1,4 +1,4 @@
 $('#categoryForm').change(function () {
-    alert($(this).val());
+    console.log($(this).val());
 });	
 
