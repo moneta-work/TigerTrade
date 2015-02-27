@@ -1,11 +1,12 @@
 <script type="text/javascript">
 $(document).ready(function () {
-
+	alert("ready!");
+	/*
 	$('#categorySelectForm').change(function () {
 	  	var value = $(this).val();
 	  	console.log(value);
 	    
-	    /*if(value != "")
+	    if(value != "")
 	    {
 	    	$.ajax({
                         url: "<?php echo base_url('ad');?>/get_subcategories/"+value,
@@ -19,10 +20,11 @@ $(document).ready(function () {
                         }
                     });
 
-	    }*/
+	    }
 	    
 		
 	});	
+*/
 
 });
 </script>
