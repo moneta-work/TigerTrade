@@ -1,34 +1,3 @@
-<script>	
-	$(document).ready(function() {
-
-    	$('#category_select').change(function(){
-
-        var category_id = $('#category_select').val();
-
-		var post_url = "<?php echo base_url();?>/market/get_subcategories/" + category_id;
-
-		$.ajax({
-                type: 'GET',
-                dataType: 'json',
-                url: post_url,
-                success: function(output_string) 
-                {
-                    	$('#assignment').empty(); 
-		    	$('#assignment').append('<option value="">-- Select Assignment --</option>');
-
-				$.each(output_string, function( key, value ){
-					 var opt = $('<option/>');
-                            		opt.val(value.assignment_id);
-                            		opt.text(value.assignment_name);
-                            		$('#assignment').append(opt);
-				});
-			
-                } //end success
-             	}); //end AJAX
-		}
-	}
-</script>
-
 <div class="container padding-top-20">
 
 	<div class="row">
@@ -47,7 +16,7 @@
 		<div class="form-group">
 			<label for="list" class="col-sm-3 control-label label-20">Categories</label>
 			<div class="col-sm-9">
-				<select class="form-control" id="list category_select" >
+				<select class="form-control" id="list" >
 				<?php 
 					foreach($categories->result() as $category):
 					echo "<option>" . $category->name . "</option>";
