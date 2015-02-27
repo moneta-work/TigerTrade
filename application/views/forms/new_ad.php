@@ -6,9 +6,10 @@ $(document).ready(function () {
 	
 	$('#categorySelectForm').change(function () {
 	  	var value = $(this).val();
-	    
+	    alert(value);
 	    if(value != "")
 	    {
+	    	alert("Entering ajax");
 	    	$.ajax({
                         url: "<?php echo base_url('ad');?>/get_subcategories/"+value,
                         type: 'post',
