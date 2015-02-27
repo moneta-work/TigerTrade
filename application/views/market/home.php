@@ -62,7 +62,7 @@
 			<div id="market-menu" class="text-center">
 				<a class="btn btn-default wide-button" role="button" href="<?php echo base_url('/market') ?>"><b>all</b></a><br><br>
 				<?php foreach ($categories->result() as $category) { ?>
-				    <a class="btn btn-default wide-button" role="button" href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a>
+				    <a class="btn btn-default wide-button" role="button" href="<?php echo base_url('/market/category/' . $category->category_id); ?>"><b><?php echo $category->name; ?></b></a><br><br>
 				    <select onchange="location = this.options[this.selectedIndex].value;" class="form-control" id="" >
 					    	<option>Subcategory</option>
 			    	<?php foreach ($subcategories->result() as $subcategory) { ?>
@@ -117,6 +117,7 @@
 		<div class="col-xs-9 col-sm-10">
 			
 			<div class="row">
+				<!-- Buttons on top of page -->
 				<div class="row text-center">
 					<div class="btn-group hidden-xs">
 						<a class="btn btn-default" href="<?php echo base_url('/ad/new_ad') ?>">Place an Ad</a>
