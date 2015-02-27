@@ -12,6 +12,7 @@ $(document).ready(function (){
 	            success: function(subCategories) //we're calling the response json array 'cities'
 	            {
 	                $('#subCategory').empty();
+	                $('#subCategoryForm').show();
 	                subCategories = $.parseJSON(subCategories);
                    	$.each(subCategories,function(id,name) 
                    	{	
