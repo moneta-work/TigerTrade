@@ -3,6 +3,7 @@ $(document).ready(function () {
 
 	$('#categorySelectForm').change(function () {
 	  	var value = $(this).val();
+	  	console.log(value);
 	    if(value != "")
 	    {
 	    	$.ajax({
