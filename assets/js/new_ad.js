@@ -3,7 +3,6 @@ $(document).ready(function () {
 	
 	$('#categorySelectForm').change(function () {
 	  	var value = $(this).val();
-	  	console.log(value);
 	    
 	    if(value != "")
 	    {
@@ -13,6 +12,7 @@ $(document).ready(function () {
                         dataType: 'json',
                      success: function (data) {
                             if (data != null) {
+                            	console.log("Success");
                                 console.log(data);
                             }
                         }
