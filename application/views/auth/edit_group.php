@@ -17,6 +17,7 @@
 
 <div class="row">
 <h3 class="col-sm-offset-3 col-sm-10">Please enter the group information below</h3>
+<br>
 </div>
 
 <?php echo form_open(current_url(), array('class' => 'form-horizontal'));?>
