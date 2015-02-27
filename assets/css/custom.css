@@ -104,7 +104,7 @@ button a, button a:visited, button a:hover, button a:active {
 }
 
 .wide-button-90 {
-	width: 90%;
+	padding: 15px 0;
 	margin-bottom: 5px;	
 }
 
