@@ -15,23 +15,19 @@
 	
 	<?php echo form_open("market/new_subcategory", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>	
 		
-		
-		<?php /*
-		
 		<div class="form-group">
 			<label for="list" class="col-sm-2 control-label label-20">Categories</label>
 			<div class="col-sm-10">
-				<select class="form-control" id="list" >
+				<select size="10" class="form-control" id="list" >
 				<?php 
 					foreach($categories->result() as $category):
-					echo "<option>" . $category->name . "</option>";
+					echo "<option disabled>" . $category->name . "</option>";
 					endforeach; 
 				?>
 				</select>
 			</div>
 		</div>
 		
-		*/ ?>
 		
 		<hr>
 		
