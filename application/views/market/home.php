@@ -12,9 +12,9 @@
 	
 	<div class="row">
 			
-		<div class="col-xs-3 col-sm-2">
+		<div class="col-xs-3 col-sm-2 hidden-xs">
 			<!-- Market Menu -->
-			<div id="market-menu" class="text-center hidden-xs">
+			<div id="market-menu" class="text-center">
 				<a class="btn btn-primary btn-sm wide-button" role="button" href="<?php echo base_url('/market') ?>"><b>all</b></a><br>
 				<?php foreach ($categories->result() as $cat) { ?>
 				    <a class="btn btn-default btn-sm wide-button" role="button" href="<?php echo base_url('/market/category/' . $cat->category_id); ?>"><b><?php echo $cat->name; ?></b></a><br>
@@ -36,7 +36,7 @@
 			</div>
 			
 			<!-- Filter Form -->
-			<div id="filter-form" class="hidden-xs">
+			<div id="filter-form" class="">
 				<div class="form-group">
 					<label for="list" class="control-label">Categories</label>
 					<select multiple size="<?php echo $categories->num_rows(); ?>" class="form-control" id="category_list" >
@@ -69,7 +69,7 @@
 			</div>
 		</div>
 		
-		<div class="col-xs-9 col-sm-10">
+		<div class="col-xs-12 col-sm-10">
 			
 			<div class="row">
 				
