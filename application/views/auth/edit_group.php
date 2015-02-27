@@ -15,8 +15,7 @@
 
 <div id="infoMessage"><?php echo $message;?></div>
 
-<h3 class="col-sm-offset-3 col-sm-10">Please enter the group information below</h3>
-<div class="row"></div>
+<h3 class="col-sm-offset-3">Please enter the group information below</h3>
 
 <?php echo form_open(current_url(), array('class' => 'form-horizontal'));?>
 		
