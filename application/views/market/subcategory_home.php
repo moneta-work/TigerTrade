@@ -23,8 +23,8 @@
 				    	
 			    		<?php if ($subc->category_id == $category->category_id) { ?>
 			    			
-			    			<option <?php if ($subcategory->category_id == $sub->category_id) { echo 'selected'; } ?> value="<?php echo base_url('/market/subcategory/' . $subcategory->subcategory_id); ?>">
-			    				<?php echo $subcategory->name; ?>
+			    			<option value="<?php echo base_url('/market/subcategory/' . $sub->subcategory_id); ?>">
+			    				<?php echo $sub->name; ?>
 			    			</option>
 						<?php } ?>
 				    	
