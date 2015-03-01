@@ -6,6 +6,7 @@ $(document).ready(function (){
 	    var category_id = $(this).val();
 	    if (category_id != ""){
 	        var post_url = "<?php echo base_url('ajax') ?>/get_subcategories/" + category_id;
+			var count = 0;
 	        $.ajax({
 	            type: "POST",
 	            url: post_url,
@@ -19,9 +20,11 @@ $(document).ready(function (){
                       	opt.val(id);
                       	opt.text(name);
                       	$('#subCategory').append(opt); 	
+						count++;
 	                });
 					$('#subcategory_name').removeAttr('disabled');
 					$('#subcategory_description').removeAttr('disabled');
+					$('#subCategory').attr('size', count);
 	            } //end success
 	         }); //end AJAX
 	    } 
