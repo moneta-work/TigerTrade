@@ -25,7 +25,15 @@ $(document).ready(function (){
 
 	<?php echo form_open("market/new_category", array('class' => 'form-horizontal', 'id' => 'ad-form', 'enctype' => 'multipart/form-data'));?>	
 		
-		<?php $count = 1; ?>
+		<?php 
+			$count = sizeof($categories);
+			/*
+			foreach($categories->result() as $category):
+			$count++;
+			endforeach;
+				*/
+		?>
+		
 		<div class="form-group">
 			<label for="list" class="col-sm-2 control-label label-20">Categories</label>
 			<div class="col-sm-10">
@@ -33,7 +41,6 @@ $(document).ready(function (){
 				<?php 
 					foreach($categories->result() as $category):
 					echo "<option disabled>" . $category->name . "</option>";
-					$count++;
 					endforeach; 
 				?>
 				</select>
