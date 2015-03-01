@@ -22,6 +22,13 @@ $(document).ready(function (){
                       	$('#subCategory').append(opt); 	
 						count++;
 	                });
+					
+					if( count==0){
+						var opt = $('<option  disabled/>'); // here we're creating a new select option for each group
+                      	opt.text("No Subcategories");
+                      	$('#subCategory').append(opt); 
+					}
+					
 					$('#subcategory_name').removeAttr('disabled');
 					$('#subcategory_description').removeAttr('disabled');
 					$('#subCategory').attr('size', count);
