@@ -72,7 +72,7 @@ $(document).ready(function (){
     <?php if(isset($error)) {?>
 	    <div class="alert alert-danger">
 	        <a href="#" class="close" data-dismiss="alert">&times;</a>
-	        <strong>Error!</strong> Subcategory was not added
+	        <strong>Error!</strong> Subcategory was not added. <?php echo $message; ?>
 	    </div>
     <?php }?>
 	
