@@ -26,7 +26,7 @@ $(document).ready(function (){
 	<?php echo form_open("market/new_category", array('class' => 'form-horizontal', 'id' => 'ad-form', 'enctype' => 'multipart/form-data'));?>	
 		
 		<?php 
-			$count = sizeof($categories);
+			$count = count($categories);
 			/*
 			foreach($categories->result() as $category):
 			$count++;
