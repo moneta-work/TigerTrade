@@ -63,6 +63,19 @@ $(document).ready(function (){
 	
 	<hr>
 	
+	<?php if(isset($created)) {?>
+	    <div class="alert alert-success">
+	        <a href="#" class="close" data-dismiss="alert">&times;</a>
+	        <strong>Success!</strong> New Subcategory Added
+	    </div>
+    <?php }?>
+    <?php if(isset($error)) {?>
+	    <div class="alert alert-danger">
+	        <a href="#" class="close" data-dismiss="alert">&times;</a>
+	        <strong>Error!</strong> Subcategory was not added
+	    </div>
+    <?php }?>
+	
 	<?php echo form_open("market/new_subcategory", array('class' => 'form-horizontal', 'id' => 'ad-form'));?>	
 		
 		<div class="form-group">
