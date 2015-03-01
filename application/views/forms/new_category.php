@@ -31,7 +31,7 @@
 		<div class="form-group">
 			<label for="category_name" class="col-sm-2 control-label label-20">Category Name</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" name="category_name" id="category_name" placeholder="">
+				<input type="text" class="form-control" name="category_name" id="category_name" required>
 			</div>
 		</div>
 		
