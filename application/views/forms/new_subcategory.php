@@ -29,10 +29,13 @@ $(document).ready(function (){
                       	$('#subCategory').append(opt); 
 						$('#subCategory').attr('size', 2);
 					}
+					else{
+						$('#subCategory').attr('size', count);
+					}
 					
 					$('#subcategory_name').removeAttr('disabled');
 					$('#subcategory_description').removeAttr('disabled');
-					$('#subCategory').attr('size', count);
+					
 	            } //end success
 	         }); //end AJAX
 	    } 
