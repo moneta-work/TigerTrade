@@ -30,13 +30,21 @@ class Market extends CI_Controller
 			$category_name = $this->input->post('category_name');
 			$category_description = $this->input->post('category_description');
 			
-			if($this->category_model->insert_new_category($category_name, $category_description))
+			if($this->category_model->get_category($category_name)
 			{
-				$data['success'] = true;
+					$data['failed'] = true;
+					$data['message'] = "Category already exists"
 			}
 			else
 			{
-				$data['failed'] = true;
+				if($this->category_model->insert_new_category($category_name, $category_description))
+				{
+					$data['created'] = true;
+				}
+				else
+				{
+					$data['failed'] = true;
+				}
 			}
 		}
 		
@@ -54,13 +62,21 @@ class Market extends CI_Controller
 			$subcategory_name = $this->input->post('subcategory_name');
 			$subcategory_description = $this->input->post('subcategory_description');
 			
-			if($this->subcategory_model->insert_new_subcategory($subcategory_name, $subcategory_description, $category_id))
+			if($this->subcategory_model->get_subcategory($subcategory_name)
 			{
-				$data['created'] = true;
+					$data['failed'] = true;
+					$data['message'] = "Subcategory already exists"
 			}
 			else
 			{
-				$data['failed'] = true;
+				if($this->subcategory_model->insert_new_subcategory($subcategory_name, $subcategory_description, $category_id))
+				{
+					$data['created'] = true;
+				}
+				else
+				{
+					$data['failed'] = true;
+				}
 			}
 		}
 		

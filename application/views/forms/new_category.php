@@ -10,6 +10,19 @@
 	</div>
 	
 	<hr>
+	
+	<?php if(isset($created)) {?>
+	    <div class="alert alert-success">
+	        <a href="#" class="close" data-dismiss="alert">&times;</a>
+	        <strong>Success!</strong> New Category Added
+	    </div>
+    <?php }?>
+    <?php if(isset($error)) {?>
+	    <div class="alert alert-danger">
+	        <a href="#" class="close" data-dismiss="alert">&times;</a>
+	        <strong>Error!</strong> Category was not added. <?php echo $message ?>
+	    </div>
+    <?php }?>
 
 	<?php echo form_open("market/new_category", array('class' => 'form-horizontal', 'id' => 'ad-form', 'enctype' => 'multipart/form-data'));?>	
 		
