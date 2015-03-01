@@ -32,8 +32,7 @@ class Market extends CI_Controller
 			
 			if($this->category_model->get_category_by_name($category_name))
 			{
-					$data['failed'] = true;
-					$data['message'] = "Category already exists";
+					$data['error'] = "Category already exists";
 			}
 			else
 			{
@@ -43,7 +42,7 @@ class Market extends CI_Controller
 				}
 				else
 				{
-					$data['failed'] = true;
+					$data['error'] = true;
 				}
 			}
 		}
@@ -64,8 +63,7 @@ class Market extends CI_Controller
 			
 			if($this->subcategory_model->get_subcategory_by_name($subcategory_name))
 			{
-					$data['error'] = true;
-					$data['message'] = "Subcategory already exists";
+					$data['error'] = "Subcategory already exists";
 			}
 			else
 			{
