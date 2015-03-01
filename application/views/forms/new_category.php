@@ -20,7 +20,7 @@
     <?php if(isset($error)) {?>
 	    <div class="alert alert-danger">
 	        <a href="#" class="close" data-dismiss="alert">&times;</a>
-	        <strong>Error!</strong> Category was not added. <?php echo $message ?>
+	        <strong>Error!</strong> Category was not added. <?php echo $message; ?>
 	    </div>
     <?php }?>
 

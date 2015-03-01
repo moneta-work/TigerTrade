@@ -36,7 +36,7 @@ class Category_model extends CI_Model
 		return $query;
 	}
 	
-	public function get_category($name)
+	public function get_category_by_name($name)
 	{
 		$query = $this->db->query("SELECT * FROM categories WHERE name = '$name'");
 		$query = $query->row();
