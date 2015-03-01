@@ -30,10 +30,10 @@ class Market extends CI_Controller
 			$category_name = $this->input->post('category_name');
 			$category_description = $this->input->post('category_description');
 			
-			if($this->category_model->get_category($category_name)
+			if($this->category_model->get_category_by_name($category_name))
 			{
 					$data['failed'] = true;
-					$data['message'] = "Category already exists"
+					$data['message'] = "Category already exists";
 			}
 			else
 			{
@@ -62,10 +62,10 @@ class Market extends CI_Controller
 			$subcategory_name = $this->input->post('subcategory_name');
 			$subcategory_description = $this->input->post('subcategory_description');
 			
-			if($this->subcategory_model->get_subcategory($subcategory_name)
+			if($this->subcategory_model->get_subcategory_by_name($subcategory_name))
 			{
 					$data['failed'] = true;
-					$data['message'] = "Subcategory already exists"
+					$data['message'] = "Subcategory already exists";
 			}
 			else
 			{
