@@ -14,7 +14,7 @@
 	<?php echo form_open("market/new_category", array('class' => 'form-horizontal', 'id' => 'ad-form', 'enctype' => 'multipart/form-data'));?>	
 		
 		<div class="form-group">
-			<label for="list" class="col-sm-2 control-label label-20">Categories</label>
+			<label for="list" class="col-sm-3 control-label label-20">Categories</label>
 			<div class="col-sm-6">
 				<select size="<?php echo sizeof($categories->result()); ?>" class="form-control" id="list" >
 				<?php 
@@ -29,21 +29,21 @@
 		<hr>
 		
 		<div class="form-group">
-			<label for="category_name" class="col-sm-2 control-label label-20">Category Name</label>
+			<label for="category_name" class="col-sm-3 control-label label-20">Category Name</label>
 			<div class="col-sm-6">
 				<input type="text" class="form-control" name="category_name" id="category_name" required>
 			</div>
 		</div>
 		
 		<div class="form-group">
-			<label for="category_description" class="col-sm-2 control-label label-20">Description</label>
+			<label for="category_description" class="col-sm-3 control-label label-20">Description</label>
 			<div class="col-sm-6">
 				<input type="text" class="form-control" name="category_description" id="category_description" placeholder="">
 			</div>
 		</div>
 		
 		<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-6">
+			<div class="col-sm-offset-3 col-sm-6">
 				<button type="submit" class="btn btn-default">Add</button>
 			</div>
 		</div>
