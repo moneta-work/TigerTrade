@@ -1,3 +1,16 @@
+<script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function (){
+	
+	
+	
+}
+
+</script>
+
+
 <div class="container padding-top-20">
 	<div class="row">
 		<div class="col-xs-3 col-sm-2 text-center">
@@ -12,13 +25,15 @@
 
 	<?php echo form_open("market/new_category", array('class' => 'form-horizontal', 'id' => 'ad-form', 'enctype' => 'multipart/form-data'));?>	
 		
+		<?php $count = 1; ?>
 		<div class="form-group">
 			<label for="list" class="col-sm-2 control-label label-20">Categories</label>
 			<div class="col-sm-10">
-				<select size="10" class="form-control" id="list" >
+				<select size="<?php$count;?>" class="form-control" id="list" >
 				<?php 
 					foreach($categories->result() as $category):
 					echo "<option disabled>" . $category->name . "</option>";
+					$count++;
 					endforeach; 
 				?>
 				</select>
