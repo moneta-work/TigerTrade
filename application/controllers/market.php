@@ -56,7 +56,7 @@ class Market extends CI_Controller
 			
 			if($this->subcategory_model->insert_new_subcategory($subcategory_name, $subcategory_description, $category_id))
 			{
-				$data['success'] = true;
+				$data['created'] = true;
 			}
 			else
 			{
