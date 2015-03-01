@@ -1,15 +1,3 @@
-<script src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
-
-<script type="text/javascript">
-
-$(document).ready(function (){
-	
-	
-	
-}
-
-</script>
-
 
 <div class="container padding-top-20">
 	<div class="row">
@@ -26,7 +14,7 @@ $(document).ready(function (){
 	<?php echo form_open("market/new_category", array('class' => 'form-horizontal', 'id' => 'ad-form', 'enctype' => 'multipart/form-data'));?>	
 		
 		<?php 
-			$count = count($categories);
+			$count = count($categories->result());
 			/*
 			foreach($categories->result() as $category):
 			$count++;
