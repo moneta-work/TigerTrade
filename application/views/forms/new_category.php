@@ -14,7 +14,7 @@
 	<?php echo form_open("market/new_category", array('class' => 'form-horizontal', 'id' => 'ad-form', 'enctype' => 'multipart/form-data'));?>	
 		
 		<?php 
-			$count = sizeof($categories);
+			$count = sizeof($categories->result());
 			echo $count;
 			/*
 			foreach($categories->result() as $category):
